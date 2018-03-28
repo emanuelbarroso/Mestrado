@@ -1,0 +1,727 @@
+%TCIDATA{LaTeXparent=0,0,cap_RevisaoBibliografica.tex}
+
+\section{Conceitos de Otimiza\c{c}\~{a}o}
+
+\subsection{Defini\c{c}\~{o}es e Fatos B\'{a}sicos}
+Antes de se proceder \`{a} an\'{a}lise do problema estudado, fazem-se necess\'{a}rios alguns conceitos b\'{a}sicos da \'{a}rea de otimiza\c{c}\~{a}o e \'{a}lgebra linear. A presente se\c{c}\~{a}o apresenta algumas defini\c{c}\~{o}es que ser\~{a}o importantes ao descorrer da an\'{a}lise de convexidade e de problemas de otimiza\c{c}\~{a}o. Primeiramente, s\~{a}o dadas algumas defini\c{c}\~{o}es sobre vetores e matrizes, conforme Aguirre \cite{aguirre}:
+\begin{definition}\label{dotProd}
+Dadas duas vari\'{a}veis $\mathbf{x} \in \mathbb{R}^{n}$ e $\mathbf{y} \in \mathbb{R}^{n}$, o \textit{produto interno} entre $\mathbf{x}$ e $\mathbf{y}$ \'{e} dado por $\left\langle \mathbf{x},\mathbf{y}\right\rangle = \mathbf{x}^{T}\mathbf{y} = \mathbf{y}^{T}\mathbf{x}$. Caso este produto seja nulo, os vetores s\~{a}o ditos \textit{ortogonais}.
+\end{definition}
+\begin{definition}
+Uma matriz $\mathbf{A} \in \mathbb{R}^{n \times n}$ \'{e} dita \textit{semidefinida positiva} se $\mathbf{x}^{T}\mathbf{A}\mathbf{x} \ge \mathbf{0}, \forall\mathbf{x} \ne \mathbf{0}, \mathbf{x} \in \mathbb{R}^{n}$. No caso de desigualdade estrita, a matriz $\mathbf{A}$ \'{e} dita \textit{definida positiva}. 
+\end{definition}
+
+\begin{definition}
+Uma matriz $\mathbf{A} \in \mathbb{R}^{n \times n}$ \'{e} dita \textit{semidefinida negativa} se $\mathbf{x}^{T}\mathbf{A}\mathbf{x} \le \mathbf{0}, \forall\mathbf{x} \ne \mathbf{0}, \mathbf{x} \in \mathbb{R}^{n}$. No caso de desigualdade estrita, a matriz $\mathbf{A}$ \'{e} dita \textit{definida negativa}. 
+\end{definition}
+
+\begin{definition}
+Uma matriz $\mathbf{A} \in \mathbb{R}^{n \times n}$ \'{e} dita \textit{indefinida} se ela n\~{a}o for semidefinida positiva nem semidefinida negativa.
+\end{definition}
+
+Uma \'{u}ltima defini\c{c}\~{a}o b\'{a}sica de \'{a}lgebra linear se refere ao conceito de normas de vetores e matrizes, de acordo com Yang \cite{yang}:
+
+\begin{definition} \label{pNorm}
+Seja $\mathbf{v} \in \mathbb{R}^{n}$. A \textit{p-norma} ou $\ell_p$\textit{-norma} de $v$ \'{e} dada por
+\begin{equation}
+	\label{vecNorm}
+	\left\|\mathbf{v}\right\|_{p} = \left(\sum_{i=1}^{n}\lvert v_i \rvert ^{p}\right)^{\frac{1}{p}},~p \in \mathbb{Z}_{+} - \left\lbrace 0\right\rbrace.
+\end{equation}
+\end{definition}
+Algumas propriedades elementares da norma vetorial devem ser satisfeitas para todo valor de $p$, entre as quais:
+\begin{enumerate}[label=(\alph*)]
+\item $\left\|\mathbf{v}\right\| \ge 0 ,~ \forall \mathbf{v}$;
+\item $\left\|\mathbf{v}\right\| = 0 \Rightarrow \mathbf{v} = \mathbf{0}$;
+\item $\left\|\alpha\mathbf{v}\right\| = \lvert\alpha\rvert \left\|\mathbf{v}\right\|,~ \forall \alpha \in \mathbb{R}$;
+\item $\left\|\mathbf{u} + \mathbf{v}\right\| \le \left\|\mathbf{u}\right\| + \left\|\mathbf{v}\right\|$ (Desigualdade triangular).
+\end{enumerate}
+
+Algumas normas vetoriais comuns s\~{a}o calculadas tomando-se \eqref{vecNorm} com $p = 1$ e $p = 2$, sendo a \textit{2-norma} de $\mathbf{v}$ tamb\'{e}m conhecida como \textit{norma euclidiana}, ou \textit{comprimento} de $\mathbf{v}$. Neste caso, a norma de $v$ tamb\'{e}m pode ser escrita como
+\begin{equation}
+	\left\|\mathbf{v}\right\|_{2} = \sqrt{\mathbf{v}^T\mathbf{v}}.
+\end{equation} 
+
+Um caso especial de norma vetorial ocorre quando $p = \infty$; a $\ell_{\infty}$-norma, ou \textit{norma de Chebyshev} de $\mathbf{v}$, \'{e} dada por
+\begin{equation}
+\left\|\mathbf{v}\right\|_{p} = v_{max} = \max_{1 \le i \le n} \lvert v_i \rvert.
+\end{equation}
+
+\begin{definition}
+Dada uma matriz $\mathbf{A} \in \mathbb{R}^{m \times n}$ qualquer, a sua \textit{$p$-norma}, analogamente \`{a} Defini\c{c}\~{a}o \ref{pNorm}, pode ser escrita como
+\begin{equation}
+	\label{matNorm}
+	\left\|\mathbf{A}\right\|_{p} = \left(\sum_{i=1}^{m} \sum_{j=1}^{n}\lvert a_{ij} \rvert ^{p}\right)^{\frac{1}{p}},~p \in \mathbb{Z}_{+} - \left\lbrace 0\right\rbrace.
+\end{equation}
+\end{definition} 
+
+Um caso especial da norma matricial ocorre quando se aplica a Equa\c{c}\~{a}o \eqref{matNorm} com $p = 2$; tal norma \'{e} denominada \textit{norma de Frobenius} de $\mathbf{A}$. Outras normas matriciais populares s\~{a}o tidas como a m\'{a}xima soma de linhas ou de colunas da matriz ($\left\|\mathbf{A}\right\|_{1}$ e $\left\|\mathbf{A}\right\|_{\infty}$, respectivamente). Deve-se destacar tamb\'{e}m que todas as propriedades b\'{a}sicas satisfeitas para a norma vetorial devem ser verdadeiras tamb\'{e}m para a norma matricial.
+
+Outros conceitos b\'{a}sicos a serem apresentados s\~{a}o pertencentes \`{a} \'{a}rea de otimiza\c{c}\~{a}o. Izmailov e Solodov \cite{izmailov} trazem o conceito elementar de problema de otimiza\c{c}\~{a}o e m\'{i}nimo (ou m\'{a}ximo) de uma fun\c{c}\~{a}o:
+
+\begin{definition} 
+Sejam um conjunto $D \subset \mathbb{R}^{n}$ e uma fun\c{c}\~{a}o $f: D \to \mathbb{R}$. O problema de se encontrar uma minimizador de $f$ em $D$ \'{e} escrito como
+\begin{equation}
+\label{basicProb}
+\min f(\mathbf{x}) \text{ sujeito a } \mathbf{x} \in D.
+\end{equation} A fun\c{c}\~{a}o $f$ \'{e} denominada \textit{fun\c{c}\~{a}o objetivo}; o conjunto $D$ \'{e} o \textit{conjunto vi\'{a}vel} do problema, ou \textit{conjunto de restri\c{c}\~{o}es} --- seus pontos ser\~{a}o chamados de \textit{pontos vi\'{a}veis}. Normalmente, o conjunto de restri\c{c}\~{o}es $D$ pode ser definido como
+\begin{equation}
+D = \left\lbrace \mathbf{x} \in \Omega \mid h(\mathbf{x}) = 0, g(\mathbf{x}) < 0 \right\rbrace
+\end{equation} em que $\Omega$ \'{e} o conjunto de \textit{restri\c{c}\~{o}es diretas} do problema ($\Omega \subset \mathbb{R}^{n}$), $h: \Omega \to \mathbb{R}^{l}$ e $g: \Omega \to \mathbb{R}^{m}$ s\~{a}o as $l \in \mathbb{Z}_{+}$ restri\c{c}\~{o}es de igualdade e $m \in \mathbb{Z}_{+}$ restri\c{c}\~{o}es de desigualdade (tamb\'{e}m denomiadas \textit{restri\c{c}\~{o}es funcionais}). Caso $D = \mathbb{R}^{n}$, o problema \'{e} dito de \textit{otimiza\c{c}\~{a}o irrestrita}; em caso contr\'{a}rio, se trata de problema com restri\c{c}\~{o}es.
+\end{definition} 
+\begin{definition} 
+Um problema de maximiza\c{c}\~{a}o pode ser escrito como
+\begin{equation}
+\label{def2_4}
+\max f(\mathbf{x}) \text{ sujeito a } \mathbf{x} \in D.
+\end{equation} 
+Nota-se que o problema \eqref{def2_4} pode ser reescrito como um problema de minimiza\c{c}\~{a}o equivalente:
+\begin{equation*}
+\min -f(\mathbf{x}) \text{ sujeito a } \mathbf{x} \in D.
+\end{equation*}
+\end{definition}  
+Visto que resolver um problema de maximiza\c{c}\~{a}o n\~{a}o exige t\'{e}cnicas substancialmente diferentes de um problema de minimiza\c{c}\~{a}o, uma vez que um pode ser reescrito como o outro, ser\~{a}o considerados a partir dessa se\c{c}\~{a}o problemas de minimiza\c{c}\~{a}o.
+
+Antes de se prosseguir com os conceitos de minimizador e valor \'{o}timo, s\~{a}o necess\'{a}rios os
+conceitos de supremo, \'{i}nfimo, m\'{a}ximos e m\'{i}nimos de um conjunto. A defini\c{c}\~{a}o a seguir \'{e} encontrada em Yang \cite{yang}:
+\begin{definition} \label{defSupInf}
+Dado um conjunto $S \in \mathbb{R}$, o n\'{u}mero $u$ \'{e} denominado \textit{limite superior} de $S$ se $u \ge x, ~ \forall x \in S$. Por consequ\^{e}ncia, o n\'{u}mero $\beta$ \'{e} denominado \textit{supremo} de $S$ se $\beta$ \'{e} o menor dos limites superiores $u$ de $S$ ($\beta \le u ,~\forall u$). O supremo de $S$ pode ser denotado por
+\begin{equation}
+\beta \equiv \sup_{x \in S} x \equiv \sup S \equiv \sup(S).
+\end{equation}
+Caso $\beta \in S$, pode-se dizer que $\beta$ \'{e} o \textit{valor m\'{a}ximo} de $S$, ou seja,
+\begin{equation}
+\beta \equiv \max S \equiv \max(S).
+\end{equation}
+
+De maneira an\'{a}loga, o n\'{u}mero $l$ \'{e} denominado \textit{limite inferior} de $S$ se $l \le x, ~ \forall x \in S$. Por consequ\^{e}ncia, o n\'{u}mero $\alpha$ \'{e} denominado \textit{\'{i}nfimo} de $S$ se $\alpha$ \'{e} o maior dos limites inferiores $l$ de $S$ ($\alpha \ge l ,~\forall l$). O \'{i}nfimo de $S$ pode ser denotado por
+\begin{equation}
+\alpha \equiv \inf_{x \in S} x \equiv \inf S \equiv \inf(S).
+\end{equation}
+Caso $\alpha \in S$, pode-se dizer que $\alpha$ \'{e} o \textit{valor m\'{i}nimo} de $S$, ou seja,
+\begin{equation}
+\alpha \equiv \min S \equiv \min(S).
+\end{equation}
+\end{definition} 
+
+Algumas propriedades b\'{a}sicas sobre \'{i}nfimos e supremos s\~{a}o apresentadas a seguir, de acordo com Yang \cite{yang}:
+\begin{equation}
+\inf Q = -\sup(-Q),
+\end{equation}
+\begin{equation}
+\sup_{p \in P, q \in Q} (p+q) = sup(P) + sup(Q),
+\end{equation}
+\begin{equation}
+\sup_{x \in S}\left(f(x)+g(x)\right) \le \sup_{x \in S}\left(f(x)\right) + \sup_{x \in S}\left(g(x)\right).
+\end{equation}
+
+Vale notar que os conceitos de supremo e \'{i}nfimo apresentados n\~{a}o extendem a conjuntos n\~{a}o-limitados; por exemplo, seja o conjunto $S = \left[ 2,+\infty \right)$. Verifica-se que, de acordo com a Defini\c{c}\~{a}o \ref{defSupInf}, $\inf S = 2$, mas o supremo n\~{a}o existe, ou seja, $\sup S \to +\infty$. Por este exemplo, conclui-se que \'{i}nfimos ou supremos podem n\~{a}o existir em conjuntos n\~{a}o limitados; portanto, para contornar este fato, faz-se a defini\c{c}\~{a}o de uma extens\~{a}o dos n\'{u}meros reais \cite{yang}: 
+\begin{equation}
+\label{altR}
+\bar{\mathbb{R}} = \mathbb{R} \cup \left\lbrace \pm \infty \right\rbrace.
+\end{equation}
+
+Considerando-se a Equa\c{c}\~{a}o \eqref{altR} e que $\sup(\emptyset) = -\infty$, para qualquer subconjunto de $\bar{\mathbb{R}}$, o supremo e \'{i}nfimo sempre existir\~{a}o, supondo-se $\sup \mathbb{R} = +\infty$ e $\inf \mathbb{R} = -\infty$.
+
+De posse das defini\c{c}\~{o}es at\'{e} aqui dadas, \'{e} poss\'{i}vel definir os conceitos de minimizador e valor \'{o}timo de uma fun\c{c}\~{a}o. As defini\c{c}\~{o}es a seguir s\~{a}o dadas por Izmailov e Solodov \cite{izmailov}:
+
+\begin{definition} 
+Dado o problema \eqref{basicProb}, diz-se que um ponto $\bar{\mathbf{x}} \in D$ \'{e}
+\begin{enumerate}[label=(\alph*)]
+\item \textit{minimizador global} de \eqref{basicProb}, se
+\begin{equation}
+\label{globalMin}
+f(\bar{\mathbf{x}}) \le f(\mathbf{x}) ~ \forall \mathbf{x} \in D;
+\end{equation}
+\item \textit{minimizador local} de \eqref{basicProb}, se existe uma vizinhan\c{c}a $U$ de $\bar{\mathbf{x}}$ tal que
+\begin{equation}
+\label{localMin}
+f(\bar{\mathbf{x}}) \le f(\mathbf{x}) ~ \forall \mathbf{x} \in D \cap U,
+\end{equation} ou, de forma an\'{a}loga,
+\begin{equation}
+\exists \epsilon > 0 ~ \bullet ~ f(\bar{\mathbf{x}}) \le f(\mathbf{x}) ~ \forall \mathbf{x} \in \left\lbrace \mathbf{x} \in D \mid \left\|\mathbf{x} - \bar{\mathbf{x}} \right\| \le \epsilon \right\rbrace.
+\end{equation}
+\end{enumerate}
+\end{definition} 
+
+Observa-se que todo minimizador global \'{e} tamb\'{e}m local, mas n\~{a}o de forma rec\'{i}proca. Se, para $\mathbf{x} \ne \bar{\mathbf{x}}$, a desigualdade \eqref{globalMin} ou \eqref{localMin} \'{e} estrita, $\bar{\mathbf{x}}$ \'{e} chamado de \textit{minimizador estrito} (global ou local, respectivamente).
+
+\begin{definition} 
+Seja $\bar{\mathbf{v}} \in \left[ -\infty,+\infty \right)$ definido por
+\begin{equation}
+\bar{\mathbf{v}} = \inf_{\mathbf{x} \in D} f(\mathbf{x});
+\end{equation}
+neste caso, $\bar{\mathbf{v}}$ \'{e} denominado \textit{valor \'{o}timo} do problema \eqref{basicProb}.
+\end{definition} 
+
+\subsection{Diferenciabilidade de Fun\c{c}\~{o}es Escalares}
+
+A maioria dos algoritmos de otimiza\c{c}\~{a}o e conceitos associados empregam conceitos de diferencia\c{c}\~{a}o de fun\c{c}\~{o}es. Esses conceitos aparecem principalmente no estudo de condi\c{c}\~{o}es de otimalidade, visto que a an\'{a}lise das derivadas de uma fun\c{c}\~{a}o em um ponto pode, por exemplo, confirmar ou n\~{a}o sua natureza como minimizador (ou maximizador) de uma fun\c{c}\~{a}o.
+
+Inicialmente, ser\~{a}o apresentados conceitos de continuidade e diferencia\c{c}\~{a}o b\'{a}sicos para uma fun\c{c}\~{a}o escalar (monovari\'{a}vel), isto \'{e}, $f: D \to \mathbb{R},~D \subset \mathbb{R}$.
+
+\begin{definition}\footnote{Ver \cite{thomas1}, p. 120} \label {scalarCont} 
+Uma fun\c{c}\~{a}o escalar $f(x)$ \'{e} considerada cont\'{i}nua em um ponto $c \in \mathbb{R}$ se:
+\begin{enumerate}[label=(\alph*)]
+\item $f$ \'{e} definida em $c$ ($\exists f(c)$);
+\item $\exists \lim_{x \to c} f(x)$;
+\item $\lim_{x \to c} f(x) = f(c)$.
+\end{enumerate}
+\end{definition}
+
+Diz-se que $f(x)$ \'{e} cont\'{i}nua se ela satisfaz as propriedades da Defini\c{c}\~{a}o \ref{scalarCont} em todos os pontos de seu dom\'{i}nio. Caso ela seja con\'{i}nua em intervalos separados do seu dom\'{i}nio, diz-se que $f(x)$ \'{e} \textit{cont\'{i}nua por partes}.
+
+\begin{definition}\footnote{\textit{Ibid.}, p. 145}
+Dizemos que a \textit{derivada} de $f(x)$ escalar em rela\c{c}\~{a}o a $x$ \'{e} equivalente ao limite
+\begin{equation}
+\frac{d}{dx}f(x) \equiv \frac{df}{dx} \equiv f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h},
+\end{equation}
+desde que tal limite exista.
+\end{definition}
+
+Caso $f$ possua derivada no ponto $x$, diz-se que $f$ \'{e} \textit{diferenci\'{a}vel} em $x$; se $f$ possui derivada em todos os pontos de seu dom\'{i}nio, diz-se simplesmente que $f$ \'{e} diferenci\'{a}vel.
+
+Vale ressaltar que a derivada possui algumas propriedades elementares, mostradas a seguir (ser\'{a} utilizada simplesmente a nota\c{c}\~{a}o $f'$ como redu\c{c}\~{a}o de $f'(x)$):
+\begin{enumerate}[label=(\alph*)]
+\item $(f \pm g)' = f' \pm g'$;
+\item $(fg)' = fg' + f'g$;
+\item $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$;
+\item \textit{(Regra da Cadeia)} $(f \circ g)' \equiv f'(g) = f'(g)g' \equiv (f' \circ g)g'$ \footnote{Uma prova dessa regra se encontra em \cite{thomas1}, p. 246}
+\end{enumerate}
+
+Em cursos introdut\'{o}rios de c\'{a}lculo, geralmente s\~{a}o apresentados conceitos relativos a testes de sinais de derivadas de uma fun\c{c}\~{a}o $f(x)$ qualquer de maneira a se encontrar pontos especiais, os \textit{pontos cr\'{i}ticos} ou \textit{estacion\'{a}ros} e sua natureza. Ser\'{a} visto nas Se\c{c}\~{o}es seguintes que esse estudo no fundo \'{e} uma aplica\c{c}\~{a}o espec\'{i}fica das condi\c{c}\~{o}es de otimalidade em problemas sem restri\c{c}\~{a}o; a seguir, os conceitos de continuidade e diferencia\c{c}\~{a}o ser\~{a}o extendidos de forma a abranger fun\c{c}\~{o}es de v\'{a}rias vari\'{a}veis e tamb\'{e}m fun\c{c}\~{o}es multiobjetivo, ou campos vetoriais.
+
+\subsection{Diferenciabilidade de Fun\c{c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}
+
+Antes de se proceder \`{a} an\'{a}lise de fun\c{c}\~{o}es que possuem dom\'{i}nio ou contradom\'{i}nio (ou ambos) multidimensionais, ser\'{a} feita uma diferencia\c{c}\~{a}o conceitual entre fun\c{c}\~{o}es multivari\'{a}veis e campos vetoriais (fun\c{c}\~{o}es multiobjetivo):
+
+\begin{definition}
+Uma aplica\c{c}\~{a}o $f(\mathbf{x}): A \to B,~ A \subset \mathbb{R}^{n}$ \'{e} denominada fun\c{c}\~{a}o multivari\'{a}vel se seu contradom\'{i}nio \'{e} subconjunto dos n\'{u}meros reais, isto \'{e}, $B \subset \mathbb{R}$.
+\end{definition}
+
+\begin{definition}
+Uma aplica\c{c}\~{a}o $\mathbf{F}(\mathbf{x}): A \to B,~ A \subset \mathbb{R}^{n}$ \'{e} denominada campo vetorial (ou fun\c{c}\~{a}o multiobjetivo) se seu contradom\'{i}nio \'{e} subconjunto de um espa\c{c}o euclidiano de dimens\~{a}o $m > 1$, isto \'{e}, $B \subset \mathbb{R}^{m}$.
+\end{definition}
+
+O conceito de continuidade, nesses casos, pode ser visto como uma extens\~{a}o da Defini\c{c}\~{a}o \ref{scalarCont}\footnote{Ver \cite{thomas2}, p. 301}; por\'{e}m, o conceito de diferenciabilidade deve ser largamente extendido, pois agora, ao contr\'{a}rio do caso escalar, o n\'{u}mero de dire\c{c}\~{o}es poss\'{i}veis \'{e} infinito. Em casos em que essas dire\c{c}\~{o}es correspondem aos vetores da base can\^{o}nica do espa\c{c}o do dom\'{i}nio ($\mathbf{e_i} = (0,...,1,...,0)$ com o elemento n\~{a}o-nulo na $i$-\'{e}sima posi\c{c}\~{a}o), as derivadas de uma fun\c{c}\~{a}o vetorial nessas dire\c{c}\~{o}es s\~{a}o conhecidas como \textit{derivadas parciais}.
+
+\begin{definition}\footnote{Adaptado de \cite{thomas2}, p. 308}
+Dizemos que a \textit{derivada parcial} de $f(\mathbf{x})$ em rela\c{c}\~{a}o \`{a} componente $x_i$ \'{e} equivalente ao limite
+\begin{equation}
+\frac{\partial}{\partial x_i}f(\mathbf{x}) \equiv \frac{\partial f}{\partial x} \equiv f_{x_i}(\mathbf{x}) = \lim_{h \to 0} \frac{f(x_1,...,x_i + h,...,x_n)-f(\mathbf{x})}{h},
+\end{equation}
+desde que tal limite exista.
+\end{definition}
+
+Quando todas as derivadas parciais de uma fun\c{c}\~{a}o $f(\mathbf{x})$ existem, o \textit{gradiente} de $f$ \'{e} dado, por defini\c{c}\~{a}o, como
+\begin{equation}
+\nabla f := (\frac{\partial f}{\partial x_1},\frac{\partial f}{\partial x_2},...,\frac{\partial f}{\partial x_n})
+\end{equation}
+
+A principal diferen\c{c}a entre fun\c{c}\~{o}es com dom\'{i}nio multidimensional e as escalares reside no fato de que o n\'{u}mero de dire\c{c}\~{o}es poss\'{i}veis n\~{a}o \'{e} finito; como as derivadas parciais apenas consideram as dire\c{c}\~{o}es da base do espa\c{c}o, um novo conceito de derivada \'{e} necess\'{a}rio. Para tanto, seja o vetor $\mathbf{d} \in \mathbb{R}^{n}$ definido como
+\begin{equation*}
+\mathbf{d} = (d_1,d_2,...,d_n) = \sum_{i=1}^{n} d_i\mathbf{e_i}
+\end{equation*}
+com $\mathbf{e_i}$ sendo o $i$-\'{e}simo vetor de coordenadas, conceito j\'{a} discutido anteriormente. Esse vetor $\mathbf{d}$ pode ser entendido como uma \textit{dire\c{c}\~{a}o} em $\mathbb{R}^{n}$. A defini\c{c}\~{a}o a seguir de derivada direcional se encontra em Guller \cite{guller}:
+ 
+\begin{definition}\label{direcDif}
+A derivada direcional de $f$ em um ponto $\mathbf{x}$ de seu dom\'{i}nio na dire\c{c}\~{a}o $\mathbf{d} \in \mathbb{R}^{n}$ \'{e} dada por
+\begin{equation}
+f'(\mathbf{x};\mathbf{d}) = \lim_{t \searrow 0} \frac{f(\mathbf{x}+t\mathbf{d})-f(\mathbf{x})}{t},
+\end{equation}
+desde que o limite exista \`{a} medida que $t \ge 0$ se aproxima de $0$.
+\end{definition}
+
+Guller ainda destaca que, al\'{e}m do fato de que $f'(\mathbf{x};\alpha\mathbf{d}) = \alpha f'(\mathbf{x};\mathbf{d})$ para $\alpha \ge 0$, a derivada direcional pode ser calculada como mostrado a seguir, se $f'(\mathbf{x};-\mathbf{d}) = -f'(\mathbf{x};\mathbf{d})$:
+\begin{equation*}
+f'(\mathbf{x};\mathbf{d}) = \lim_{t \to 0} \frac{f(\mathbf{x}+t\mathbf{d})-f(\mathbf{x})}{t}.
+\end{equation*}
+
+Fica claro que, quando a dire\c{c}\~{a}o $\mathbf{d}$ equivale a algum vetor de coordenadas de $\mathbb{R}^{n}$, como $\mathbf{e_i}$, aplicar a Defini\c{c}\~{a}o \ref{direcDif} implica em calcular a derivada parcial de $f$ na coordenada $x_i$, ou seja,
+\begin{equation*}
+f'(\mathbf{x};\mathbf{e_i}) \equiv \frac{\partial f}{\partial x_i}.
+\end{equation*}
+Com isso, permite-se concluir que a no\c{c}\~{a}o de derivada direcional \'{e} uma generaliza\c{c}\~{a}o da derivada parcial para qualquer dire\c{c}\~{a}o.
+
+Antes de se prosseguir com a an\'{a}lise de diferencia\c{c}\~{a}o de fun\c{c}\~{o}es multivari\'{a}veis e campos vetoriais, faz-se necess\'{a}rio apresentar uma nota\c{c}\~{a}o que ser\'{a} utilizada posteriormente, a \textit{nota\c{c}\~{a}o de Landau (``o'' pequeno)}:
+
+\begin{definition}[Nota\c{c}\~{a}o de Landau]\footnote{Ver \cite{guller}, p. 6}
+Segundo a nota\c{c}\~{a}o de Landau, um vetor pode ser chamado $o(\mathbf{h}) \in \mathbb{R}^{n}$ se
+\begin{equation*}
+\lim_{\mathbf{h} \to \mathbf{0}} \frac{\norm{o(\mathbf{h})}}{\norm{\mathbf{h}}} = 0.
+\end{equation*}
+\end{definition}
+
+\begin{definition}\label{gateauxDef}\footnote{\textit{Ibid.}}
+Uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$ \'{e} dita \textit{G\^{a}teaux diferenci\'{a}vel} em $\mathbf{x} \in U$ se a derivada direcional $f'(\mathbf{x};\mathbf{d})$ existe para toda dire\c{c}\~{a}o $\mathbf{d} \in \mathbb{R}^{n}$ e \'{e} uma fun\c{c}\~{a}o linear de $\mathbf{d}$.
+\end{definition}
+
+Pela defin\c{c}\~{a}o de diferenciabilidade de G\^{a}teaux e utilizando a defini\c{c}\~{a}o de dire\c{c}\~{a}o, a derivada de G\^{a}teaux pode ser calculada como
+\begin{equation}\label{gateauxCalc}
+f'(\mathbf{x};\mathbf{d}) = f'(\mathbf{x};\sum_{i=1}^{n}d_i\mathbf{e_i}) = \sum_{i=1}^{n} d_i f'(\mathbf{x};\mathbf{e_i}) = \sum_{i = 1}^{n} d_i \frac{\partial f}{\partial x_i} = \left\langle \mathbf{d},\nabla f \right\rangle = \mathbf{d}^T \nabla f.
+\end{equation}
+
+\begin{definition}\label{frechetDef}\footnote{\textit{Ibid.}}
+Uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$ \'{e} dita \textit{Fr\'{e}chet diferenci\'{a}vel} em $\mathbf{x} \in U$ se existe uma fun\c{c}\~{a}o linear $\ell: \mathbb{R}^{n} \to \mathbb{R},~\ell(\mathbf{x}) = \mathbf{l}^T\mathbf{x}$, tal que
+\begin{equation*}
+\lim_{\norm{\mathbf{h}} \to 0} \frac{f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) - \mathbf{l}^T\mathbf{h}}{\norm{\mathbf{h}}} = 0.
+\end{equation*}
+\end{definition}
+
+Dizer que uma fun\c{c}\~{a}o $f$ \'{e} Fr\'{e}chet diferenci\'{a}vel em $\mathbf{x}$ equivale a dizer que
+\begin{equation}
+\label{frechetEqu}
+f(\mathbf{x} + \mathbf{h}) = f(\mathbf{x}) + \mathbf{l}^T\mathbf{h} + o(\mathbf{h})
+\end{equation}
+
+Dois fatos importantes podem ser retirados da Equa\c{c}\~{a}o \eqref{frechetEqu}; o primeiro \'{e} que, se tomarmos o limite quando $\mathbf{h} \to \mathbf{0}$, tem-se que $\lim_{\mathbf{h} \to \mathbf{0}} f(\mathbf{x} + \mathbf{h}) = f(\mathbf{x})$; isto equivale a dizer que, se $f$ \'{e} Fr\'{e}chet diferenci\'{a}vel em $\mathbf{x}$, ela \'{e} cont\'{i}nua nesse ponto. O outro fato a ser analisado pressup\~{o}e que $\mathbf{l}$ pode ser escolhido como $\nabla f$; neste caso, aplicando-se tamb\'{e}m a Defini\c{c}\~{a}o \ref{dotProd}, \eqref{frechetEqu} se torna
+\begin{equation}
+\label{frechetEqu2}
+f(\mathbf{x} + \mathbf{h}) = f(\mathbf{x}) + \mathbf{h}^T \nabla f + o(\mathbf{h}).
+\end{equation}
+
+Claramente, de acordo com a Equa\c{c}\~{a}o \ref{gateauxCalc}, o segundo termo \'{e} a derivada de G\^{a}teaux de $f$ em $\mathbf{x}$ na dire\c{c}\~{a}o $\mathbf{h}$. Portanto, $f$ Fr\'{e}chet diferenci\'{a}vel em $\mathbf{x}$ implica em $f$ G\^{a}teaux diferenci\'{a}vel em $\mathbf{x}$.
+
+A segunda derivada de uma fun\c{c}\~{a}o multivari\'{a}vel requer aten\c{c}\~{a}o especial: uma vez que a primeira derivada, ou gradiente, \'{e} um vetor, a segunda derivada de uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$ \'{e} uma matriz quadrada de ordem $n$. Essa matriz \'{e} conhecida como \textit{Hessiana}.
+
+\begin{definition}\footnote{Adaptado de \cite{yang}, p. 51}
+A segunda derivada de uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$, tamb\'{e}m conhecida como Hessiana de $f$, \'{e} dada por
+\begin{equation}
+H(f) \equiv \nabla^2 f \equiv f''(\mathbf{x}) = [h_{ij}],~h_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}.
+\end{equation}
+\end{definition}
+
+Um fato interessante sobre a Hessiana \'{e} que, se as segundas derivadas parciais de $f$ existem e s\~{a}o cont\'{i}nuas, tem-se que $\frac{\partial^2 f}{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i}$; neste caso, temos que $H(f) = H^{T}(f)$, ou seja, tem-se $H(f)$ sim\'{e}trica. Este fato \'{e} largamente utilizado em alguns algoritmos de otimiza\c{c}\~{a}o, particularmente em problemas de programa\c{c}\~{a}o quadr\'{a}tica.
+
+Todos os conceitos vistos at\'{e} aqui para fun\c{c}\~{o}es $f: \mathbb{R}^{n} \to \mathbb{R}$ podem ser tamb\'{e}m aplicados a campos vetoriais $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$. Os conceitos de diferenciabilidade segundo G\^{a}teaux e Fr\'{e}chet s\~{a}o an\'{a}logos aos presentes nas Defini\c{c}\~{o}es \ref{gateauxDef} e \ref{frechetDef} \footnote{Ver \cite{guller}, pp. 8-9}. Guller ainda afirma que, se um campo $\mathbf{F}(\mathbf{x})$ \'{e} G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}vel em $\mathbf{x}$, ent\~{a}o suas fun\c{c}\~{o}es componentes $f_i(\mathbf{x})$ s\~{a}o G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}veis em $\mathbf{x}$. A mudan\c{c}a aqui \'{e} o c\'{a}lculo da derivada de $\mathbf{F}$, agora uma matriz.
+
+\begin{definition}\footnote{Adaptado de \cite{guller}, p. 9}
+Dado um campo vetorial $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$, sua derivada, denominada Jacobiana de $\mathbf{F}$, \'{e} dada por
+\begin{equation}
+J(\mathbf{F}) = \left[ \frac{\partial f_i}{\partial x_j} \right].
+\end{equation}
+\end{definition}
+
+Nota-se, pela defini\c{c}\~{a}o de Jacobiana, que o conceito de gradiente de uma fun\c{c}\~{a}o multivari\'{a}vel \'{e} um caso espec\'{i}fico de Jacobiana, assim como uma fun\c{c}\~{a}o multivari\'{a}vel \'{e} um tipo especial de campo vetorial, em que o contradom\'{i}nio \'{e} unidimensional.
+
+\subsection{Convexidade}
+Segundo Izmailov e Solodov \cite{izmailov}, o conceito de convexidade \'{e} muito importante na teoria de otimiza\c{c}\~{a}o; com no\c{c}\~{o}es de convexidade, condi\c{c}\~{o}es de otimalidade necess\'{a}rias passam a ser suficientes, ou seja, basta encontrar um ponto estacion\'{a}rio para o problema. Em particular, sob condi\c{c}\~{o}es de convexidade, todo minimizador local torna-se global. Outra possibilidade poss\'{i}vel utilizando convexidade \'{e} o uso da teoria da dualidade na sua forma mais completa, ou seja, \'{e} poss\'{i}vel associar o problema original (primal) a um problema alternativo (dual) que \'{e}, em determinadas condi\c{c}\~{o}es, equivalente ao original e \`{a}s vezes de mais f\'{a}cil resolu\c{c}\~{a}o. Por fim, o conceito de convexidade possibilita o uso de uma das condi\c{c}\~{o}es de otimalidade mais poderosas aplicadas a problemas com restri\c{c}\~{o}es: as condi\c{c}\~{o}es KKT.
+
+\begin{definition}
+Um conjunto $D \subset \eucR{n}$ \'{e} dito convexo se, para quaisquer $\mathbf{x} \in D,~\mathbf{y} \in D$ e $\alpha \in [0,1]$, tem-se $\alpha\mathbf{x} + (1-\alpha)\mathbf{y} \in D$.
+\end{definition}
+
+O ponto $\alpha\mathbf{x} + (1-\alpha)\mathbf{y},~\alpha \in [0,1]$, \'{e} conhecido como a \textit{combina\c{c}\~{a}o convexa} de $\mathbf{x}$ e $\mathbf{y}$, com par\^{a}metro $\alpha$.
+
+Em termos de convexidade de uma fun\c{c}\~{a}o, as defini\c{c}\~{o}es a seguir s\~{a}o adptadas de Izmailov e Solodov\footnote{Ver \cite{izmailov}, pp. 66-70}. Sup\~{o}e-se, para todas as defini\c{c}\~{o}es, que o conjunto $D \subset \eucR{n}$ presente nelas \'{e} convexo.
+
+\begin{definition}\label{convDef}
+Uma fun\c{c}\~{a}o $f: D \to \setR$ \'{e} convexa em $D$ se, para quaisquer $\mathbf{x} \in D,~\mathbf{y} \in D$ e $\alpha \in [0,1]$, tem-se
+\begin{equation}
+f(\alpha\mathbf{x} + (1-\alpha)\mathbf{y}) \le \alpha f(\mathbf{x}) + (1-\alpha)f(\mathbf{y}).
+\end{equation}
+\end{definition}
+
+\begin{definition}
+Uma fun\c{c}\~{a}o $f: D \to \setR$ \'{e} estritamente convexa em $D$ se, para quaisquer $\mathbf{x} \in D,~\mathbf{y} \in D, \mathbf{x} \ne \mathbf{y}$ e $\alpha \in (0,1)$, tem-se
+\begin{equation}
+f(\alpha\mathbf{x} + (1-\alpha)\mathbf{y}) < \alpha f(\mathbf{x}) + (1-\alpha)f(\mathbf{y}).
+\end{equation}
+\end{definition}
+
+\begin{definition}
+Uma fun\c{c}\~{a}o $f: D \to \setR$ \'{e} fortemente convexa em $D$, com m\'{o}dulo $\gamma > 0$ se, para quaisquer $\mathbf{x} \in D,~\mathbf{y} \in D$ e $\alpha \in [0,1]$, tem-se
+\begin{equation}
+f(\alpha\mathbf{x} + (1-\alpha)\mathbf{y}) \le \alpha f(\mathbf{x}) + (1-\alpha)f(\mathbf{y}) - \gamma\alpha(1-\alpha)\norm{\mathbf{x}-\mathbf{y}}^2.
+\end{equation}
+\end{definition}
+
+Vale notar que uma fun\c{c}\~{a}o fortemente convexa \'{e} estritamente convexa, e que uma fun\c{c}\~{a}o estritamente convexa \'{e} uma fun\c{c}\~{a}o convexa; a rec\'{i}proca, por\'{e}m, nem sempre \'{e} verdadeira.
+
+\begin{definition}
+Uma fun\c{c}\~{a}o $f: D \to \setR$ \'{e} c\^{o}ncava em $D$ se $-f$ for convexa em $D$.
+\end{definition}
+
+\begin{definition}\label{concaveDef}
+O problema de otimiza\c{c}\~{a}o \eqref{basicProb} \'{e} um problema de minimiza\c{c}\~{a}o convexo quando $D$ \'{e} um conjunto convexo e $f$ \'{e} uma fun\c{c}\~{a}o convexa.
+\end{definition}
+
+Uma vez que a fun\c{c}\~{a}o e o conjunto de restri\c{c}\~{o}es s\~{a}o convexos, resolver um problema de otimiza\c{c}\~{a}o torna-se menos tortuoso; encontrar um minimizador \'{e} garantido. A import\^{a}ncia desse fato pode ser vista no teorema a seguir, retirado de Izmailov e Solodov \footnote{\textit{Ibid.}, p. 69. Ver prova em \textit{Ibid.}, pp. 69-70.}.
+
+\begin{theorem}[Teorema de minimiza\c{c}\~{a}o convexa]
+Todo minimizador local de um problema convexo \'{e} um minimizador global, e o conjunto de minimizadores \'{e} convexo. Al\'{e}m disso, se a fun\c{c}\~{a}o objetivo for estritamente convexa, s\'{o} h\'{a} no m\'{a}ximo um minimizador.
+\end{theorem}
+
+Uma vez que resolver um problema de maximiza\c{c}\~{a}o \'{e} an\'{a}logo a resolver um problema de minimiza\c{c}\~{a}o, o teorema acima pode ser adaptado com o conceito de concavidade visto na Defini\c{c}\~{a}o \ref{concaveDef}: o problema a ser resolvido neste caso se trata de maximiza\c{c}\~{a}o de uma fun\c{c}\~{a}o c\^{o}ncava num conjunto convexo.
+
+Tentar determinar a convexidade de uma fun\c{c}\~{a}o por meio da Defini\c{c}\~{a}o \ref{convDef} pode-se tornar um trabalho \'{a}rduo; Yang apresenta uma alternativa para se determinar a convexidade de uma fun\c{c}\~{a}o, dada a seguir.
+
+\begin{theorem}\footnote{Adaptado de \cite{yang}, pp. 56-57.}
+Uma fun\c{c}\~{a}o $f: D \subset \eucR{n} \to \setR$ \'{e} convexa se sua matriz Hessiana \'{e} semidefinida positiva em todos os pontos de $D$.
+\end{theorem}
+
+Guller destaca, por\'{e}m, que o teorema acima \'{e} v\'{a}lido apenas se a fun\c{c}\~{a}o $f$ \'{e} duas vezes Fr\'{e}chet diferenci\'{a}vel; al\'{e}m disso, afirma que, se a Hessiana \'{e} definida positiva, a fun\c{c}\~{a}o $f$ \'{e} estritamente convexa\footnote{Ver Teorema 4.28 em \cite{guller}, p. 99.}.
+
+Um outro resultado importante obtido com an\'{a}lise convexa se refere aos conceitos de diferenciabilidade de G\^{a}teaux e Fr\'{e}chet. O teorema a seguir destaca essa rela\c{c}\~{a}o.
+
+\begin{theorem}\footnote{Ver escrita original e prova em \cite{guller}, p. 101.}
+Seja $C \subset \eucR{n}$ convexo com interior n\~{a}o-vazio ($int(C) \ne \emptyset$) e $f: C \to \setR$ uma fun\c{c}\~{a}o convexa. Se todas as derivadas parciais de $f$ existem para um ponto $\mathbf{x}$ no interior de $C$, $f$ \'{e} Fr\'{e}chet diferenci\'{a}vel em $\mathbf{x}$. Mais ainda, se $f$ \'{e} G\^{a}teaux diferenci\'{a}vel em $\mathbf{x}$, $f$ \'{e} Fr\'{e}chet diferenci\'{a}vel em $\mathbf{x}$.
+\end{theorem}
+
+Nota-se que a convexidade suprime a distin\c{c}\~{a}o entre os conceitos de diferenciabilidade de G\^{a}teaux e Fr\'{e}chet vistos anteriormente; isso resulta em uma melhor an\'{a}lise de derivadas da fun\c{c}\~{a}o atingida, visto que obter derivadas de Fr\'{e}chet normalmente \'{e} um processo mais dif\'{i}cil que a diferencia\c{c}\~{a}o segundo G\^{a}teaux.
+
+A presente Se\c{c}\~{a}o se dedicou a abordar os conceitos mais elementares de an\'{a}lise convexa, que foram analisados no presente estudo; Guller, Izmailov e Solodov apresentam outros elementos dessa an\'{a}lise, como os teoremas de separa\c{c}\~{a}o, que s\~{a}o aplicados \`{a} no\c{c}\~{a}o de dualidade. Tendo em vista este fato, algumas condi\c{c}\~{o}es de otimalidade foram reunidas, considerando ou n\~{a}o an\'{a}lise convexa. As semelhan\c{c}as e diferen\c{c}as entre tais condi\c{c}\~{o}es ser\~{a}o vistas na Se\c{c}\~{a}o a seguir.
+
+
+\subsection{Condi\c{c}\~{o}es de Otimalidade}
+
+As condi\c{c}\~{o}es de otimalidade podem ser vistas como condi\c{c}\~{o}es que devem ser satisfeitas para que um ponto dado seja minimizador de uma fun\c{c}\~{a}o, ou condi\c{c}\~{o}es que garantem que um ponto \'{e} minimizador da fun\c{c}\~{a}o; tais condi\c{c}\~{o}es s\~{a}o denominadas, respectivamente, \textit{condi\c{c}\~{o}es necess\'{a}rias de otimalidade} e \textit{condi\c{c}\~{o}es suficientes de otimalidade}. Existem v\'{a}rias maneiras de apresentar essas condi\c{c}\~{o}es; contudo, para efeitos deste estudo, ser\~{a}o apresentadas somente condi\c{c}\~{o}es para problemas irrestritos e problemas com restri\c{c}\~{o}es de igualdade e desigualdade.
+
+\begin{definition}
+Um problema de minimiza\c{c}\~{a}o irrestrita \'{e} aquele cuja forma \'{e}
+\begin{equation}
+\label{unconstProb}
+\min f(\mathbf{x}),~\mathbf{x} \in \eucR{n}.
+\end{equation}
+Analogamente, um problema de maximiza\c{c}\~{a}o irrestrita pode ser escrito como
+\begin{equation}
+\max f(\mathbf{x}),~\mathbf{x} \in \eucR{n}.
+\end{equation}
+\end{definition}
+
+Um fato importante sobre a exist\^{e}ncia de um minimizador global de um problema pode ser mostrado pelo teorema a seguir:
+
+\begin{theorem}[Teorema de Weierstrass]\footnote{Ver teorema e prova em \cite{guller}, p. 33}
+Seja $f: K \to \setR$ uma fun\c{c}\~{a}o cont\'{i}nua e $K$ um espa\c{c}o de medida compacto. Logo, existe um ponto $\mathbf{\bar{x}} \in K$ que \'{e} minimizador global de $f$ em $K$, isto \'{e},
+\begin{equation*}
+f(\mathbf{\bar{x}}) \le f(\mathbf{x}),~\forall \mathbf{x} \in K.
+\end{equation*} 
+\end{theorem}
+
+As condi\c{c}\~{o}es de otimalidade a serem apresentadas a seguir s\~{a}o relevantes para o problema irrestrito \eqref{unconstProb}\footnote{Essas condi\c{c}\~{o}es, juntamente com suas provas, se encontram em \cite{guller}, pp. 35-39.}:
+
+\begin{theorem}[Condi\c{c}\~{a}o Necess\'{a}ria de Primeira Ordem]\label{theoCO1}
+Seja uma fun\c{c}\~{a}o $f: U \to \setR$ G\^{a}teaux diferenci\'{a}vel em um conjunto aberto $U \subseteq \eucR{n}$. Um m\'{i}nimo local \'{e} tamb\'{e}m ponto cr\'{i}tico de $f$, ou seja, 
+\begin{equation*}
+\mathbf{x} \text{ \'{e} m\'{i}nimo local } \Rightarrow ~ \nabla f(\mathbf{x}) = 0.
+\end{equation*}
+\end{theorem}
+
+\begin{corollary}
+Seja uma fun\c{c}\~{a}o $f: U \to \setR$ definida em um conjunto aberto $U \subseteq \eucR{n}$. Se $\mathbf{x} \in U$ \'{e} um minimizador local de $f$ e existe a derivada direcional $f'(\mathbf{x};\mathbf{d})$ para alguma dire\c{c}\~{a}o $\mathbf{d} \in \eucR{n}$, ent\~{a}o $f'(\mathbf{x};\mathbf{d}) \ge 0$.
+\end{corollary}
+
+\begin{theorem}[Condi\c{c}\~{a}o Necess\'{a}ria de Segunda Ordem]
+Seja uma fun\c{c}\~{a}o $f: U \to \setR$ duas vezes G\^{a}teaux diferenci\'{a}vel em um conjunto aberto $U \subseteq \eucR{n}$, e com segundas derivadas parciais cont\'{i}nuas ($f \in C^2$). Se $\mathbf{x} \in U$ \'{e} um minimizador local de $f$, ent\~{a}o sua Hessiana $H(f(\mathbf{x}))$ \'{e} semidefinida positiva.
+\end{theorem}
+
+\begin{theorem}[Condi\c{c}\~{o}es Suficientes de Segunda Ordem]
+Seja uma fun\c{c}\~{a}o $f: U \to \setR$ tal que $f \in C^2$ em um conjunto aberto $U \subseteq \eucR{n}$. Portanto:
+\begin{enumerate}[label=(\alph*)]
+\item Se $\nabla f(\mathbf{x}) = 0$ e $H(f(\mathbf{x}))$ \'{e} definida positiva para $\mathbf{x} \in U$, ent\~{a}o $\mathbf{x}$ \'{e} minimizador local estrito de $f$;
+\item Se o conjunto $U$ \'{e} convexo, $H(f)$ \'{e} semidefinida positiva em $U$ e $\nabla f(\mathbf{x}) = 0$, ent\~{a}o $\mathbf{x}$ \'{e} minimizador global de $f$;
+\item Se $\nabla f(\mathbf{x}) = 0$ e $H(f(\mathbf{x}))$ \'{e} indefinida para $\mathbf{x} \in U$, ent\~{a}o $\mathbf{x}$ \'{e} um ponto de sela de $f$.
+\end{enumerate}
+\end{theorem}
+
+Agora, seja um problema de otimiza\c{c}\~{a}o em sua forma geral
+\begin{equation}
+\label{compProb}
+\begin{array}{ccc}
+\min f(\mathbf{x}) & &\\
+\text{s. a.} & g_i (\mathbf{x}) \le 0, & i = 1,...,r\\ 
+ & h_j (\mathbf{x}) = 0, & j = 1,...,m
+\end{array}.
+\end{equation} Tal problema \'{e} tamb\'{e}m conhecido como \textit{programa n\~{a}o-linear} ou \textit{matem\'{a}tico}. Ele ser\'{a} denotado por $\mathbb{P}$.
+
+\begin{definition}
+O conjunto
+\begin{equation*}
+\feasible{\setP} = \left\lbrace \mathbf{x} \in \eucR{n} \mid g_i (\mathbf{x}) \le 0,h_j (\mathbf{x}) = 0, 1 \le i \le r, 1 \le j \le m \right\rbrace 
+\end{equation*}
+\'{e} denominado conjunto fact\'{i}vel de $\setP$.
+\end{definition} 
+
+Deve-se ressaltar que se $g_i(\bar{\mathbf{x}}) < 0$ implica que essa $i$-\'{e}sima condi\c{c}\~{a}o de desigualdade n\~{a}o influi na determina\c{c}\~{a}o da condi\c{c}\~{a}o de minizador local de $\bar{\mathbf{x}}$; tal condi\c{c}\~{a}o \'{e} denominada \textit{inativa}. Sendo assim, a Defini\c{c}\~{a}o a seguir trata das restri\c{c}\~{o}es de desigualdade \textit{ativas} do problema $\setP$.
+
+\begin{definition}\label{defIndex}
+Uma restri\c{c}\~{a}o $g_i(\mathbf{x})$ \'{e} dita ativa se $g_i(\mathbf{x}) = 0,~\mathbf{x} \in \feasible{\setP}$. O conjunto 
+\begin{equation*}
+\indexSet{\mathbf{x}} := \makeSet{i \mid g_i(\mathbf{x}) = 0}
+\end{equation*} \'{e} chamado de conjunto de \'{i}ndices das restri\c{c}\~{o}es ativas de $\setP$.
+\end{definition}
+
+\begin{definition}
+Um ponto fact\'{i}vel $\bar{\mathbf{x}} \in \feasible{\setP}$ \'{e} minimizador local do problema $\setP$ se for minimizador de $f$ numa vizinhan\c{c}a fact\'{i}vel de $\bar{\mathbf{x}}$, ou seja,
+\begin{equation}
+\exists \epsilon > 0 ~\bullet~ f(\bar{\mathbf{x}}) \le f(\mathbf{x}) ,~\forall \mathbf{x} \in \feasible{\setP} \cap \bar{B}_{\epsilon}(\bar{\mathbf{x}}),
+\end{equation}
+em que $\bar{B}_{\epsilon}(\bar{\mathbf{x}})$ \'{e} uma bola aberta de centro $\bar{\mathbf{x}}$ e raio $\epsilon$. Caso $\bar{\mathbf{x}}$ satisfa\c{c}a
+\begin{equation}
+f(\bar{\mathbf{x}}) \le f(\mathbf{x}) ,~\forall \mathbf{x} \in \feasible{\setP},
+\end{equation}
+o ponto \'{e} um minimizador global do problema $\setP$.
+\end{definition}
+
+Vale ressaltar que, utilizando os sinais de desigualdade apropriados, as defini\c{c}\~{o}es de minimizadores podem ser modificadas para o caso de maximizadores.
+
+Para se dar prosseguimento \`{a} an\'{a}lise de condi\c{c}\~{o}es de otimalidade sobre o problema \eqref{compProb}, ser\'{a} definido o operador \textit{Lagrangiano} do problema (tamb\'{e}m conhecido como multiplicadores de Lagrange):
+
+\begin{definition}
+A fun\c{c}\~{a}o
+\begin{equation}
+\mathcal{L}(\mathbf{x},\mathbf{\lambda},\mathbf{\mu}) := \lambda_0 f(\mathbf{x}) + \sum_{i=1}^{r} \lambda_i g_i(\mathbf{x}) + \sum_{j=1}^{m} \mu_j h_j(\mathbf{x}) ~~(\lambda_i \ge 0,0 \le i \le r) 
+\end{equation}
+\'{e} chamada de Lagrangiana fraca do problema $\setP$. Caso $\lambda_0 = 1$, a fun\c{c}\~{a}o \'{e} simplesmente chamada de Lagrangiana.
+\end{definition} 
+
+A Lagrangiana \'{e} utilizada como base para as condi\c{c}\~{o}es a seguir:
+
+\begin{theorem}[Condi\c{c}\~{o}es de Fritz-John]
+Se $\bar{\mathbf{x}}$ \'{e} minimizador local de \eqref{compProb}, ent\~{a}o existem multiplicadores $(\mathbf{\lambda,\mu}) := (\lambda_0,lambda_1,...,\lambda_r,\mu_1,\mu_2,...,\mu_m)$, n\~{a}o todos nulos, com $(\lambda_0,...,\lambda_r) \ge 0$, em que
+\begin{equation}
+\label{FJdef1}
+\nabla_{\mathbf{x}} \mathcal{L}(\bar{\mathbf{x}},\mathbf{\lambda},\mathbf{\mu}) = 0,
+\end{equation}
+\begin{equation}
+\lambda_i \ge 0,~ g_i(\bar{\mathbf{x}}) \le 0,~ \lambda_i g_i(\bar{\mathbf{x}}) = 0,~i = 1,2,...,r.
+\end{equation}
+Ressalta-se que a Lagrangiana nessas condi\c{c}\~{o}es est\'{a} em sua vers\~{a}o fraca.
+\end{theorem}
+
+Utilizando-se a no\c{c}\~{a}o de $\indexSet{\mathbf{x}}$, vista na Defini\c{c}\~{a}o \ref{defIndex}, e utilizando-se o gradiente do Lagrangiano, pode-se reescrever \eqref{FJdef1} na forma
+\begin{equation}
+\label{FJdef2}
+\lambda_0 \nabla f(\critP{x}) + \sum_{j \in \indexSet{\critP{x}}} \lambda_j \nabla g_j(\critP{x}) + \sum_{j=1}^{m} \mu_j \nabla h_j (\critP{x}) = 0.
+\end{equation}
+
+Uma aplica\c{c}\~{a}o interessante das condi\c{c}\~{o}es FJ reside no fato de que agora \'{e} poss\'{i}vel escrever \textit{condi\c{c}\~{o}es suficientes de primeira ordem} de otimalidade:
+
+\begin{theorem}[Condi\c{c}\~{o}es Suficientes de Primeira Ordem]
+Seja $\critP{x}$ uma solu\c{c}\~{a}o vi\'{a}vel para o problema $\setP$ em \eqref{compProb}, satisfazendo as condi\c{c}\~{o}es FJ, em que a primeira condi\c{c}\~{a}o \'{e} usada conforme \eqref{FJdef2}. Se a totalidade dos vetores
+\begin{equation*}
+\lambda_0 \nabla f(\critP{x}),~\makeSet{\lambda_i \nabla g_i(\critP{x})}_{i \in \indexSet{\critP{x}}},~\makeSet{\nabla h_j(\critP{x})}_{1}^{m}
+\end{equation*}
+formam uma base de $\eucR{n}$, ent\~{a}o $\critP{x}$ \'{e} minimizador local de $\setP$.
+\end{theorem}
+
+A import\^{a}ncia do teorema de Fritz-John reside no fato de que ele sempre \'{e} aplic\'{a}vel nos pontos minimizadores locais. Por\'{e}m, h\'{a} casos em que $\lambda_0$ pode ser $0$, um fato estranho visto que significa que a fun\c{c}\~{a}o objetivo n\~{a}o teria influ\^{e}ncia nas condi\c{c}\~{o}es de otimalidade de primeira ordem. Portanto, s\~{a}o necess\'{a}rias suposi\c{c}\~{o}es adicionais sobre o problema $\setP$ de maneira que essa possibilidade n\~{a}o seja alcan\c{c}ada. Tais suposi\c{c}\~{o}es que garantem $\lambda_0 > 0 ~(\lambda_0 = 1 \text{, de fato})$ s\~{a}o denominadas \textit{qualifica\c{c}\~{a}o das restri\c{c}\~{o}es}, e as condi\c{c}\~{o}es de otimalidade resultantes s\~{a}o chamadas \textit{condi\c{c}\~{o}es de Karush-Kuhn-Tucker (KKT)}.
+
+\begin{corollary}[Condi\c{c}\~{o}es de Karush-Kuhn-Tucker]
+Se os vetores
+\begin{equation*}
+\makeSet{\nabla g_i(\critP{x}),~i \in \indexSet{\critP{x}},~\nabla h_j(\critP{x}),~j = 1,...,m}
+\end{equation*}
+s\~{a}o linearmente independentes, ent\~{a}o $\lambda_0 > 0$ e, portanto, utilizando a fun\c{c}\~{a}o Lagrangiana n\~{a}o-fraca,
+\begin{equation}
+\label{KKTdef1}
+\nabla_{\mathbf{x}} \mathcal{L}(\bar{\mathbf{x}},\mathbf{\lambda},\mathbf{\mu}) = 0,
+\end{equation}
+\begin{equation}
+\lambda_i \ge 0,~ g_i(\bar{\mathbf{x}}) \le 0,~ \lambda_i g_i(\bar{\mathbf{x}}) = 0,~i = 1,2,...,r,
+\end{equation}
+\begin{equation}
+h_j(\critP{x}) = 0,~j=1,2,...m.
+\end{equation}
+\end{corollary}
+
+O problema das condi\c{c}\~{o}es KKT reside no fato de que elas falham em pontos que, ao se aplicar as condi\c{c}\~{o}es FJ, tem-se $\lambda_0 = 0$, o que significa que a fun\c{c}\~{a}o objetivo n\~{a}o entra nas condi\c{c}\~{o}es de otimalidade, o contr\'{a}rio do que \'{e} esperado. \'{E} importante ent\~{a}o, ao se considerar as condi\c{c}\~{o}es KKT, identificar, dado o problema $\setP$ em \eqref{compProb}, condi\c{c}\~{o}es adicionais sobre a fun\c{c}\~{a}o objetivo $f$ e principalmente sobre as restri\c{c}\~{o}es de desigualdade $g_i$ e de igualdade $h_j$. Ser\~{a}o apresentadas, a seguir, condi\c{c}\~{o}es e necess\'{a}rias para a exist\^{e}ncia das condi\c{c}\~{o}es KKT:
+
+\begin{theorem}
+Seja um ponto $\critP{x}$ FJ para o problema $\setP$. As condi\c{c}\~{o}es KKT se aplicam a $\critP{x}$ se e somente se 
+\begin{equation}
+\begin{aligned}
+\makeSet{\mathbf{d}\mid\dotP{\nabla f(\critP{x})}{\mathbf{d}} < 0} &\cap \makeSet{\mathbf{d}\mid\dotP{\nabla g_i(\critP{x})}{\mathbf{d}} \le 0,~i \in \indexSet{\critP{x}}} \\ &\cap \makeSet{\mathbf{d}\mid\dotP{\nabla h_j(\critP{x})}{\mathbf{d}} = 0,~j = 1,...,m} = \emptyset.
+\end{aligned}
+\end{equation}
+\end{theorem}
+
+\begin{corollary}[Restri\c{c}\~{o}es Lineares e C\^{o}ncavas]\label{cor:restLinConc}
+Seja $\critP{x}$ minimizador local de $\setP$. As condi\c{c}\~{o}es KKT se aplicam a $\critP{x}$ se as restri\c{c}\~{o}es ativas $\makeSet{g_i}_{i \in \indexSet{\critP{x}}}$ forem fun\c{c}\~{o}es c\^{o}ncavas numa vizinhan\c{c}a convexa de $\critP{x}$ e as restri\c{c}\~{o}es de igualdade $\makeSet{h_j}_{1}^{m}$ forem fun\c{c}\~{o}es afins em $\eucR{n}$.
+
+Em particular, as condi\c{c}\~{o}es KKT se aplicam a todos os minimizadores locais se todas as restri\c{c}\~{o}es $g_i$ e $h_j$ forem fun\c{c}\~{o}es afins, ou seja,
+\begin{equation*}
+g_i(\mathbf{x}) = \dotP{a_i}{\mathbf{x}} + \alpha_i ,~~ h_j(\mathbf{x}) = \dotP{b_j}{\mathbf{x}} + \beta_j.
+\end{equation*}
+\end{corollary}
+
+\begin{theorem}[Mangasarian-Fromovitz]
+Seja um ponto $\critP{x}$ FJ para o problema $\setP$. Se os gradientes das restri\c{c}\~{o}es de igualdade $\makeSet{\nabla h_j(\critP{x})}_{1}^{m}$ forem linearmente independentes e se existir uma dire\c{c}\~{a}o $\mathbf{d}$ tal que 
+\begin{equation}
+\dotP{\nabla g_i(\critP{x})}{\mathbf{d}} < 0,~i \in \indexSet{\critP{x}},~~\dotP{\nabla h_j(\critP{x})}{\mathbf{d}} = 0,~j = 1,...,m,
+\end{equation}
+ent\~{a}o as condi\c{c}\~{o}es KKT s\~{a}o satisfeitas em $\critP{x}$
+\end{theorem}
+
+Uma das qualifica\c{c}\~{o}es de restri\c{c}\~{o}es mais antigas e conhecidas \'{e} a \textit{qualifica\c{c}\~{a}o de restri\c{c}\~{o}es de Slater}, quando as restri\c{c}\~{o}es s\~{a}o convexas.
+
+\begin{corollary}[Slater]
+Seja o problema $\setP$ em \eqref{compProb}, com as restri\c{c}\~{o}es de desigualdade convexas, as restri\c{c}\~{o}es de desigualdade afins e um minimizador local $\critP{x}$. Se existe um ponto vi\'{a}vel $\mathbf{x}_0$ tal que $g_i(\mathbf{x}_0) <0,~i \in \indexSet{\critP{x}}$, ent\~{a}o as condi\c{c}\~{o}es KKT s\~{a}o satisfeitas em $\critP{x}$.
+\end{corollary}
+
+Todas as condi\c{c}\~{o}es apresentadas at\'{e} aqui s\~{a}o condi\c{c}\~{o}es de otimalidade de primeira ordem para o problema \eqref{compProb}\footnote{Mais detalhes e provas dessas condi\c{c}\~{o}es se encontram em \cite{guller}, pp. 211-220.}. A seguir, ser\~{a}o apresentadas as condi\c{c}\~{o}es de segunda ordem para \eqref{compProb}. 
+
+Primeiramente, denota-se por $\nabla_{\mathbf{x}}^2 \mathcal{L}(\bar{\mathbf{x}},\mathbf{\lambda},\mathbf{\mu})$ a Hessiana do Lagrangiano em rela\c{c}\~{a}o a $\mathbf{x}$ do problema $\setP$:
+\begin{equation*}
+\nabla_{\mathbf{x}}^2 \mathcal{L}(\bar{\mathbf{x}},\mathbf{\lambda},\mathbf{\mu}) = \nabla^2 f(\mathbf{x}) \sum_{i=1}^{r} \lambda_i \nabla^2 g_i(\mathbf{x}) + \sum_{j=1}^{m} \mu_j \nabla^2 h_j(\mathbf{x}).
+\end{equation*}
+
+\begin{theorem}[Condi\c{c}\~{o}es Necess\'{a}rias de Segunda Ordem]
+Seja $\critP{x}$ um minimizador local do problema $\setP$ satisfazendo as condi\c{c}\~{o}es KKT com multiplicadores $\critP{\lambda}$ e $\critP{\mu}$. Se os gradientes das condi\c{c}\~{o}es ativas
+\begin{equation*}
+\nabla g_i(\critP{x}),~i \in \indexSet{\critP{x}},~~\nabla h_j(\critP{x}),~j = 1,...,m
+\end{equation*}
+s\~{a}o linearmente independentes, ent\~{a}o $\nabla_{\mathbf{x}}^{2} \mathcal{L}(\critP{x},\critP{\lambda},\critP{\mu})$ deve ser semidefinida positiva no subespa\c{c}o linear dado por
+\begin{equation*}
+M = \left(\text{span}\makeSet{\nabla g_i(\critP{x}),i \in \indexSet{\critP{x}},\nabla h_j(\critP{x}),j = 1,...,m}\right)^{\bot},
+\end{equation*}
+isto \'{e}, se uma dire\c{c}\~{a}o $\mathbf{d}$ satisfaz 
+\begin{equation*}
+\dotP{\mathbf{d}}{\nabla g_i(\critP{x})} = 0,~i \in \indexSet{\critP{x}},~~ \dotP{\mathbf{d}}{\nabla h_j(\critP{x})} = 0,~j = 1,...,m,
+\end{equation*}
+ent\~{a}o $\dotP{\nabla_{\mathbf{x}}^{2} \mathcal{L}(\critP{x},\critP{\lambda},\critP{\mu})\mathbf{d}}{\mathbf{d}} \ge 0$.
+\end{theorem}
+
+\begin{theorem}[Condi\c{c}\~{o}es Suficientes de Segunda Ordem]
+Seja $\critP{x}$ um minimizador local do problema $\setP$ satisfazendo as condi\c{c}\~{o}es KKT com multiplicadores $\critP{\lambda}$ e $\critP{\mu}$. Se 
+\begin{equation}
+\dotP{\nabla_{\mathbf{x}}^{2} \mathcal{L}(\critP{x},\critP{\lambda},\critP{\mu})\mathbf{d}}{\mathbf{d}} > 0
+\end{equation}
+para todo $\mathbf{d} \ne \mathbf{0}$ tal que
+\begin{equation}
+\begin{aligned}
+&\dotP{\mathbf{d}}{\nabla g_i(\critP{x})} \le 0,~i \in \indexSet{\critP{x}}, \\
+&\dotP{\mathbf{d}}{\nabla g_i(\critP{x})} = 0,~i \in \indexSet{\critP{x}} \text{ e } \critP{\lambda}_{i} > 0, \\
+&\dotP{\mathbf{d}}{\nabla h_j(\critP{x})} = 0,~j = 1,...,m,
+\end{aligned}
+\end{equation}
+ent\~{a}o $\critP{x}$ \'{e} minimizador local estrito de $\setP$ e existem uma constante $c > 0$ e uma bola $\bar{B}_{\epsilon}(\critP{x})$ tal que
+\begin{equation}
+f(\mathbf{x}) \ge f(\critP{x}) + c\norm{\mathbf{x} - \critP{x}}^{2},~\forall \mathbf{x} \in \bar{B}_{\epsilon}(\critP{x}) \text{ vi\'{a}vel.}
+\end{equation}
+\end{theorem}
+
+\begin{corollary}
+Seja $\critP{x}$ um minimizador local do problema $\setP$ satisfazendo as condi\c{c}\~{o}es KKT com multiplicadores $\critP{\lambda}$ e $\critP{\mu}$. Se $\critP{\lambda}_i > 0,~\forall i \in \indexSet{\critP{x}}$ e a Hessiana $\nabla_{\mathbf{x}}^{2} \mathcal{L}(\critP{x},\critP{\lambda},\critP{\mu})$ for definida positiva no subespa\c{c}o
+\begin{equation*}
+\makeSet{\mathbf{d} \mid \dotP{\mathbf{d}}{\nabla g_i(\critP{x})} = 0,~i \in \indexSet{\critP{x}},~\dotP{\mathbf{d}}{\nabla h_j(\critP{x})} = 0,~j = 1,...,m},
+\end{equation*}
+ent\~{a}o $\critP{x}$ \'{e} minimizador local estrito de $\setP$.
+\end{corollary}
+
+As condi\c{c}\~{o}es de otimalidade at\'{e} aqui apresentadas foram al\'{e}m daquelas para problemas irrestritos; agora, al\'{e}m de procurar minimizar a fun\c{c}\~{a}o objetivo, deve-se ter cuidado com as restri\c{c}\~{o}es. Nota-se que \'{e} conveniente que essas restri\c{c}\~{o}es sejam de natureza espec\'{i}fica, de maneira a tornar o problema $\setP$ vi\'{a}vel em termos de resolu\c{c}\~{a}o\footnote{Todas as condi\c{c}\~{o}es at\'{e} aqui e suas provas se encontram em \cite{guller}, pp. 230-235.}.
+
+\subsection{Principais Algoritmos de Otimiza\c{c}\~{a}o}
+O prop\'{o}sito desta Se\c{c}\~{a}o \'{e} oferecer uma vis\~{a}o geral dos principais algoritmos de otimiza\c{c}\~{a}o vistos na literatura; uma an\'{a}lise detalhada dos mesmos \'{e} excessiva do ponto de vista deste relat\'{o}rio de estudo dirigido; tal an\'{a}lise demanda at\'{e} v\'{a}rias produ\c{c}\~{o}es liter\'{a}rias, conforme destaca Yang \cite{yang}.
+
+Segundo Yang, resolver um problema de otimiza\c{c}\~{a}o pode ser comparado a uma ca\c{c}a ao tesouro: imaginemos que estamos ca\c{c}ando um tesouro em uma cordilheira, com limite de tempo. Em um extremo, n\~{a}o temos ideia de onde come\c{c}ar a procurar e estamos de olhos vendados; isto resulta em uma busca aleat\'{o}ria, que n\~{a}o \'{e} t\~{a}o eficiente quanto poder\'{i}amos esperar. Por outro lado, temos ideia de que o tesouro se encontra no ponto mais alto da cordilheira; isto nos leva a buscar um caminho direto. Na maioria dos casos, estamos entre os dois extremos: n\~{a}o estamos de olhos vendados, mas n\~{a}o sabemos por onde come\c{c}ar a procurar. Uma vez que \'{e} ineficiente andar em passos aleat\'{o}rios, na pr\'{a}tica andamos seguindo algumas pistas, olhando de forma razoavelmente aleat\'{o}ria, mas com um prop\'{o}sito por tr\'{a}s; esta \'{e} a ess\^{e}ncia de v\'{a}rios algoritmos de otimiza\c{c}\~{a}o modernos.
+
+De maneira geral, algoritmos de otimiza\c{c}\~{a}o podem ser classificados como \textit{determin\'{i}sticos} ou \textit{estoc\'{a}sticos}. Em alguns algoritmos determin\'{i}sticos, a no\c{c}\~{a}o de gradiente \'{e} utilizada; s\~{a}o os algoritmos \textit{baseados em gradiente}. Quando a fun\c{c}\~{a}o objetivo apresenta descontinuidades, tais algoritmos tendem a falhar; sendo assim, h\'{a} algoritmos determin\'{i}sticos que n\~{a}o utilizam gradiente; s\~{a}o os algoritmos \textit{livres de gradiente}.
+
+Os algoritmos estoc\'{a}sticos s\~{a}o divididos em dois tipos, geralmente: \textit{heur\'{i}sticos} e \textit{meta-heur\'{i}sticos}; embora a diferen\c{c}a entre esses tipos seja pequena. De maneira geral, \textit{heur\'{i}stica} significa ``descoberta ou busca por tentativa e erro''. Boas solu\c{c}\~{o}es podem ser encontradas deste modo em tempo razo\'{a}vel; n\~{a}o \'{e} garantido, por\'{e}m, que a solu\c{c}\~{a}o \'{o}tima seja encontrada. Isso \'{e} vantajoso quando se quer n\~{a}o uma solu\c{c}\~{a}o \'{o}tima dificilmente ating\'{i}vel, mas uma boa solu\c{c}\~{a}o que possa ser encontrada com razo\'{a}vel facilidade.
+
+Na linha dos algoritmos heur\'{i}sticos, a adi\c{c}\~{a}o de aleatoriza\c{c}\~{a}o e buscas locais gera a classe dos chamados algoritmos \textit{meta-heur\'{i}sticos} --- \textit{``meta-''} aqui quer dizer ``al\'{e}m de''. De forma geral, os algoritmos meta-heur\'{i}sticos possuem melhor desempenho do que seus equivalentes heur\'{i}sticos.
+
+Antes de se proceder \`{a} descri\c{c}\~{a}o dos principais algoritmos de otimiza\c{c}\~{a}o, revisitaremos a defini\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o com restri\c{c}\~{o}es, apresentado como $\setP$:
+
+\begin{equation}
+\label{compProb2}
+\begin{array}{ccc}
+\min f(\mathbf{x}) & &\\
+\text{s. a.} & g_i (\mathbf{x}) \le 0, & i = 1,...,r\\ 
+ & h_j (\mathbf{x}) = 0, & j = 1,...,m
+\end{array} (\setP).
+\end{equation}
+
+Duas classes de problemas especiais devem ser mencionadas a respeito do poblema $\setP$:
+
+\begin{itemize}
+\item \textbf{Programa\c{c}\~{a}o Linear} Caso especial do problema $\setP$ quando a fun\c{c}\~{a}o objetivo \'{e} uma forma afim, isto \'{e},
+\begin{equation*}
+f(\mathbf{x}) = \mathbf{q}^T \mathbf{x} + c;
+\end{equation*}
+\item \textbf{Programa\c{c}\~{a}o Quadr\'{a}tica} Caso especial do problema $\setP$ quando a fun\c{c}\~{a}o objetivo \'{e} uma forma quadr\'{a}tica, isto \'{e},
+\begin{equation*}
+f(\mathbf{x}) = \frac{1}{2}\mathbf{x}^T \mathbf{Hx} + \mathbf{q}^T \mathbf{x} + c,
+\end{equation*}
+Com $\mathbf{H}$ sim\'{e}trica. Em caso contr\'{a}rio, faz se a aproxima\c{c}\~{a}o
+\begin{equation*}
+\tilde{\mathbf{H}} := \frac{1}{2} (\mathbf{H} + \mathbf{H}^T),
+\end{equation*}
+que \'{e} sempre sim\'{e}trica.
+\end{itemize}
+
+Ressalta-se que esses casos especiais s\~{a}o facilmente resolvidos sob dadas condi\c{c}\~{o}es --- por exemplo, a mtriz $\mathbf{H}$ (ou $\tilde{\mathbf{H}}$) ser semidefinida positiva. Para outras classes de problemas, ser\~{a}o apresentados v\'{a}rios algoritmos. Tais algoritmos podem ser encontrados alguns em \cite{guller} e outros em \cite{yang}:
+
+\begin{itemize}
+\item \textbf{M\'{e}todo de Newton}: Assume que o problema $\setP$ \'{e} irrestrito e a fun\c{c}\~{a}o objetivo \'{e} continuamente diferenci\'{a}vel. Originalmente aplicado \`{a} solu\c{c}\~{a}o de equa\c{c}\~{o}es, o M\'{e}todo de Newton tamb\'{e}m pode ser aplicado em otimiza\c{c}\~{a}o no sentido de que ele \'{e} utilizado para resolver a condi\c{c}\~{a}o de otimalidade necess\'{a}ria de primeira ordem (ver Teorema \ref{theoCO1}). \'{E} um algoritmo iterativo cujos passos s\~{a}o dados por
+\begin{equation}
+\mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} - H^{-1}(f(\mathbf{x}^{(n)}))f(\mathbf{x}^{(n)}),
+\end{equation}
+tomando-se um ponto vi\'{a}vel inicial $\mathbf{x}^{(0)}$. $H^{-1}$ \'{e} a matriz Hessiana inversa da fun\c{c}\~{a}o objetivo; uma dificuldade desse algoritmo reside no condicionamento num\'{e}rico resultante da aplica\c{c}\~{a}o de sucessivas invers\~{o}es dessa matriz, al\'{e}m do c\'{a}lculo dessas invers\~{o}es em si.
+
+\item \textbf{M\'{e}todo do Gradiente Descendente}: Busca obter o menor valor da fun\c{c}\~{a}o objetivo a partir de um ponto $\mathbf{x}^{(0)}$. Toma-se um passo $\alpha{(i)} > 0$ para cada itera\c{c}\~{a}o, com o cuidado de situ\'{a}-lo em casos que as itera\c{c}\~{o}es aproximem-se adequadamente do ponto desejado. Cada itera\c{c}\~{a}o \'{e} dada por
+\begin{equation*}
+\mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} - \alpha^{(n)}\norm{\nabla f(\mathbf{x}^{(n)})}_{2}^{2}.
+\end{equation*}
+
+\item \textbf{M\'{e}todo Simplex}: Utilizado em problemas de programa\c{c}\~{a}o linear, foi introduzido por George Dantzig em 1947. Funciona da seguinte forma: assume-se que os pontos extremos do problema s\~{a}o conhecidos, ou se determina esses pontos para se checar a exist\^{e}ncia de solu\c{c}\~{a}o vi\'{a}vel. Com esses pontos conhecidos, \'{e} trivial determinar o ponto de \'{o}timo utilizado rela\c{c}\~{o}es alg\'{e}bricas e a fun\c{c}\~{a}o objetivo. Se o teste de otimalidade falha, um ponto extremo adjacente \'{e} testado. O algoritmo para em caso de encontro de uma solu\c{c}\~{a}o vi\'{a}vel ou quando se trata de um problema ilimitado\footnote{Ver algoritmo detalhado em \cite{yang},pp 70-75.}.
+
+\item \textbf{M\'{e}todo de Penalidade}: Utilizado em problemas de forma geral, como \eqref{compProb2}. A ideia \'{e} definir uma fun\c{c}\~{a}o de penalidade a ser minimizada de maneira que o problema de otimiza\c{c}\~{a}o sobre ela seja irrestrito. Normalmente, essa fun\c{c}\~{a}o de penaliza\c{c}\~{a}o \'{e} dada por
+\begin{equation}
+\Pi(\mathbf{x},\mu_i,\nu_j) = f(\mathbf{x}) + \sum_{i=1}^{r} \mu_i g_i(\mathbf{x}) + \sum_{j=1}^{m} \nu_j h_j(\mathbf{x}),
+\end{equation} 
+em que $\mu_i \gg 1$ e $\nu_j \ge 0$ grandes o suficiente para se garantir uma boa qualidade da solu\c{c}\~{a}o a ser encontrada. Por\'{e}m, um m\'{e}todo mais geral para transformar um problema com restri\c{c}\~{o}es num problema irrestrito \'{e} utilizar ferramentas como as condi\c{c}\~{o}es FJ e KKT.
+
+\item \textbf{Algoritmo BFGS}: \'{E} um tipo de algoritmo quase-Newton utilizado na resolu\c{c}\~{a}o de problemas de otimiza\c{c}\~{a}o irrestritos com fun\c{c}\~{a}o objetivo n\~{a}o-linear. A ideia \'{e} aproximar a Hessiana da fun\c{c}\~{a}o por uma matriz $\mathbf{B}^{(n)}$. A ideia geral se resume em utilizar as equa\c{c}\~{o}es
+\begin{equation*}
+\begin{array}{c}
+\mathbf{x}^{(k+1)} = \mathbf{x}^{(k)} + \beta^{(k)} \mathbf{s}^{(k)},\\
+\mathbf{u}^{(k)} = \mathbf{x}^{(k+1)} - \mathbf{x}^{(k)},~~\mathbf{v}^{(k)} = \nabla f(\mathbf{x}^{(k+1)}) - \nabla f(\mathbf{x}^{(k)}),\\
+\mathbf{B}^{(k+1)} = \mathbf{B}^{(k)} + \frac{\mathbf{v}^{(k)}\mathbf{v}^{(k)T}}{\mathbf{v}^{(k)T}\mathbf{v}^{(k)}} - \frac{\left(\mathbf{B}^{(k)}\mathbf{u}^{(k)}\right)\left(\mathbf{B}^{(k)}\mathbf{u}^{(k)}\right)^{T}}{\mathbf{u}^{(k)T}\mathbf{B}^{(k)}\mathbf{u}^{(k)}},
+\end{array}
+\end{equation*}
+para iterar a matriz $\mathbf{B}$ de maneira a se buscar o \'{o}timo desejado.
+
+\item \textbf{Algoritmo Nelder-Mead}: Desenvolvido por J. A. Nelder e R. Mead em 1965, possui a ideia de se buscar a solu\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o por meio de opera\c{c}\~{o}es sobre figuras $n$-dimensionais conhecidas como \textit{simplex}. Um \textit{simplex} nada mais \'{e} do que uma generaliza\c{c}\~{a}o do tri\^{a}ngulo para todas dimensionais; ou seja, um simplex $n$-dimensional \'{e} definido pelo fecho convexo (o menor conjunto convexo contendo todos os pontos dados) de $n+1$ pontos distintos. Tal simplex pode ser refletido, expandido, contra\'{i}do ou reduzido de forma a conter, eventualmente, a solu\c{c}\~{a}o do problema. Este fato deu o apelido de ``Algoritmo da Ameba'' para este m\'{e}todo.
+
+\item \textbf{Programa\c{c}\~{a}o Quadr\'{a}tica Sequencial (SQP)}: \'{E} outro m\'{e}todo bastante difundido na literatura. Consiste em utilizar sucessivas aplica\c{c}\~{o}es de Programa\c{c}\~{a}o Quadr\'{a}tica para se encontrar a solu\c{c}\~{a}o do problema original, considerando-se que a fun\c{c}\~{a}o objetivo pode ser aproximada por uma expans\~{a}o de Taylor de 2ª ordem. O problema a ser resolvido em cada itera\c{c}\~{a}o se torna
+\begin{equation}
+\begin{array}{ccc}
+\min \frac{1}{2}\mathbf{s}^{T}\nabla^2 \mathcal{L}(\mathbf{x}^{(k)})\mathbf{s} + \nabla f(\mathbf{x}^{(k)})^{T}\mathbf{s} + f(\mathbf{x}^{(k)})& \text{s. a.} &\\
+\nabla g_i (\mathbf{x}^{(k)})\mathbf{s} + g_i (\mathbf{x}^{(k)})\le 0, & i = 1,...,r&\\
+\nabla h_j (\mathbf{x}^{(k)})\mathbf{s} + h_j (\mathbf{x}^{(k)}) = 0, & j = 1,...,m&
+\end{array} (\setP^{*}),
+\end{equation}
+em que $\nabla^2 \mathcal{L}(\mathbf{x}^{(k)})$ \'{e} a Hessiana do Lagrangiano da fun\c{c}\~{a}o objetivo aplicada em $\mathbf{x}^{(k)}$. Nota-se que, em $\mathbf{s}$, as restri\c{c}\~{o}es do problema $\setP^{*}$ s\~{a}o todas afins; portanto vale o Corol\'{a}rio \ref{cor:restLinConc}, ou seja, as condi\c{c}\~{o}es KKT se aplicam a todos os minimizadores locais de $\setP^{*}$. Ao se resolver $\setP^{*}$, o ponto $\critP{s}^{(k)}$ encontrado \'{e} ent\~{a}o utilizado para atualizar a solu\c{c}\~{a}o do problema original, utilizando-se um fator de corre\c{c}\~{a}o $\alpha$:
+\begin{equation}
+\mathbf{x}^{(k+1)} = \mathbf{x}^{(k)} + \alpha \critP{s}^{(k)}.
+\end{equation} 
+Uma vez que \'{e} dispendioso calcular a Hessiana do Lagrangiano a cada itera\c{c}\~{a}o, uma alternativa \'{e} aproxim\'{a}-la utilizando uma aproxima\c{c}\~{a}o BFGS, j\'{a} discutida anteriormente. \'{E} de interesse que, a cada itera\c{c}\~{a}o, a fun\c{c}\~{a}o objetivo de $\setP^{*}$ tenha Hessiana semidefinida positiva, o que garante sua convexidade e exist\^{e}ncia de solu\c{c}\~{a}o para o problema de otimiza\c{c}\~{a}o a cada itera\c{c}\~{a}o.
+
+\item \textbf{Algoritmos meta-heur\'{i}sticos}: Como discutido anteriormente, s\~{a}o algoritmos de tentativa e erro que utilizam buscas aleat\'{o}rias, mas com uma predi\c{c}\~{a}o de passos inerente \`{a} estrutura do algoritmo para evitar o uso da chamada ``for\c{c}a bruta''. Normalmente, esses algoritmos se baseiam em fen\^{o}menos naturais, visto que j\'{a} foi observada a efici\^{e}ncia de fatos naturais em resultados considerados \'{o}timos. Alguns algoritmos nessa classe s\~{a}o\footnote{Todos os algoritmos se encontram em \cite{yang}, pp. 173-229.}:
+\subitem \textbf{Algoritmos Gen\'{e}ticos}: Se baseiam em princ\'{i}pios da gen\'{e}tica, notadamente a teoria da sele\c{c}\~{a}o natural de Charles Darwin;
+\subitem \textbf{\textit{Simulated Annealing}}: \'{E} baseado em uma mimetiza\c{c}\~{a}o do processo de recozimento de um material em que um metal resfria e \'{e} congelado em um estado cristalino de energia m\'{i}nima e maoir tamanho dos cristais de maneira a reduzir defeitos em estruturas met\'{a}licas;
+\subitem \textbf{Algoritmo das Formigas}: Simula o comportamento geral de uma col\^{o}nia de formigas na natureza. Particularmente, \'{e} uma analogia \`{a} comunica\c{c}\~{a}o desses animais por meio de ferom\^{o}nios, em casos de busca e encontro de comida, por exemplo;
+\subitem \textbf{Algoritmo das Abelhas}: Bem similar ao Algoritmo das Formigas, tomando-se por base col\^{o}nias de abelhas; al\'{e}m da an\'{a}lise de ferom\^{o}nios, h\'{a} a an\'{a}lise de ``dan\c{c}as sinalizadoras'' desses animais sinalizando alguns tipos de ocorr\^{e}ncias;
+\subitem \textbf{\textit{Particle Swarm} (PSO)}: Utiliza o comportamento de grandes grupos de animais como peixes e aves. \'{E} mais simples que algoritmos gen\'{e}ticos e os de abelhas e formigas por n\~{a}o utilizar no\c{c}\~{o}es como \textit{crossover} gen\'{e}tico ou ferom\^{o}nios; usa apenas randomiza\c{c}\~{a}o e comunica\c{c}\~{a}o geral entre os elementos considerados;
+\subitem \textbf{\textit{Harmony Search}}: Baseado na m\'{u}sica, e sua tentativa de se encontrar um estado de harmonia; a harmonia musical pode ser comparada ao \'{o}timo em um problema de otimiza\c{c}\~{a}o. Os passos podem ser entendidos como um refinamento do musicista;
+\subitem \textbf{Algoritmo dos Vaga-Lumes}: Assim como os Algoritmos das Formigas e das Abelhas, utiliza um comportamento animal como base de seus passos. Neste caso, utiliza o fato de que vaga-lumes usam sinais luminosos distintos para v\'{a}rias formas de comunica\c{c}\~{a}o, como busca de parceiros, encontro de presas e fuga de predadores.
+
+\end{itemize}
+
+\subsection{Tratamento de Problemas de Otimiza\c{c}\~{a}o}\label{sub:tratamento}
+Segundo Reklaitis \cite{reklaitis}, para que seja poss\'{i}vel se aplicar as t\'{e}cnicas e algoritmos de otimiza\c{c}\~{a}o descritos at\'{e} aqui em problemas concretos de engenharia, \'{e} necess\'{a}rio:
+\begin{itemize}
+\item Definir os limites do sistema a ser otimizado;
+\item Definir um crit\'{e}rio de classifica\c{c}\~{a}o das solu\c{c}\~{o}es candidatas para se determinar qual a ``melhor'';
+\item Selecionar as vari\'{a}veis do sistema que ser\~{a}o utilizadas para caracterizar ou identificar pontos candidatos;
+\item Definir um modelo que expressar\'{a} o modo com que as vari\'{a}veis relacionadas se relacionam.
+\end{itemize}
+
+Definir os limites do sistema significa que definir os limites que separam o sistema estudado do resto do universo. Esses limites servem para isolar o sistema da sua vizinhan\c{c}a, pois, para fins de an\'{a}lise, todas as intera\c{c}\~{o}es entre sistema e vizinhan\c{c}a s\~{a}o consideradas inativas em determinados n\'{i}veis. Como essas intera\c{c}\~{o}es sempre existem, definir os limites do sistema \'{e} um passo na aproxima\c{c}\~{a}o de um sistema real.
+
+Uma vez que o sistema tenha sido identificado e limitado, \'{e} necess\'{a}rio estabelecer um crit\'{e}rio no qual um ponto candidato pode ser selecionado de modo a se obter o melhor desempenho poss\'{i}vel; por exemplo, em muitos problemas de engenharia (este problema inclusive), o crit\'{e}rio econ\^{o}mico \'{e} utilizado. O problema \'{e} que definir m\'{u}ltiplos crit\'{e}rios para um problema pode resultar no fato de que alguns entram em conflito; normalmente, na engenharia, custo e desempenho caminham em dire\c{c}\~{o}es opostas, por exemplo. Dessa maneira, normalmente toma-se um crit\'{e}rio como prim\'{a}rio e todos os outros se tornam crit\'{e}rios secund\'{a}rios.
+
+O terceiro elemento na concep\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o \'{e} a escolha de vari\'{a}veis independentes que possam caracterizar poss\'{i}veis solu\c{c}\~{o}es para o sistema. Primeiramente, \'{e} necess\'{a}rio distinguir vari\'{a}veis que podem mudar daquelas cujos valores s\~{a}o fixos devido a fatores externos, estando al\'{e}m dos limites dados do sistema em quest\~{a}o. Al\'{e}m disso, \'{e} importante diferenciar par\^{a}metros fixos do sistema daqueles que s\~{a}o sujeitos a flutua\c{c}\~{o}es influenciadas por fatores externos n\~{a}o-control\'{a}veis. Segundamente, \'{e} importante incluir todas as vari\'{a}veis importantes que influenciam o desempenho do sistema ou afetam a defini\c{c}\~{a}o do modelo. Finalmente, \'{e} necess\'{a}rio se considerar o n\'{i}vel de detalhamento no qual o sistema se encontra; embora seja importante tratar todas as vari\'{a}veis independentes importantes, tamb\'{e}m \'{e} necess\'{a}rio que o problema n\~{a}o seja dificultado devido \`{a} inclus\~{a}o de um n\'{u}mero muito grande de detalhes de import\^{a}ncia menor. Uma boa regra nesse \'{u}ltimo quesito \'{e} selecionar apenas vari\'{a}veis que tenham impacto significativo no crit\'{e}rio de desempenho do sistema estudado.
+
+Por fim, o pr\'{o}ximo passo na formula\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o para engenharia \'{e} construir o modelo que descreve como as vari\'{a}veis do problema se relacionam e de que modo o crit\'{e}rio de desempenho \'{e} afetado pelas vari\'{a}veis independentes. Modelos s\~{a}o utilizados por que \'{e} caro, demorado ou arriscado usar o sistema real no estudo; logo, modelos s\~{a}o usados por oferecerem a maneira mais r\'{a}pida e barata de se estudar os efeitos de mudan\c{c}as das vari\'{a}veis essenciais no desempenho geral do sistema. No geral, o modelo \'{e} composto de equa\c{c}\~{o}es b\'{a}sicas de conserva\c{c}\~{a}o de mat\'{e}ria e energia, rela\c{c}\~{o}es de engenharia e equa\c{c}\~{o}es de propriedades f\'{i}sicas que descrevem fen\^{o}menos f\'{i}sicos presentes no sistema estudado; essas equa\c{c}\~{o}es s\~{a}o suplementadas por inequa\c{c}\~{o}es que definem regi\~{o}es de opera\c{c}\~{a}o, especificam restri\c{c}\~{o}es de desempenho m\'{a}ximas ou m\'{i}nimas, ou estabelecem limites de disponibilidade de recursos. Portanto, o modelo consiste de todos os elementos que devem ser considerados ao se prever o desempenho de um sistema de engenharia.

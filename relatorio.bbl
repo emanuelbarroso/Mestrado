@@ -1,0 +1,61 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Aguirre 2015]{aguirre}
+\abntrefinfo{Aguirre}{AGUIRRE}{2015}
+{AGUIRRE, L.~A. \emph{Introdução à identificação de sistemas: técnicas lineares
+  e não lineares: teoria e aplicação}. Belo Horizonte, MG: Editora UFMG, 2015.}
+
+\bibitem[Guller 2010]{guller}
+\abntrefinfo{Guller}{GULLER}{2010}
+{GULLER, O. \emph{Foundations of Optimization}. New York: Springer Science \&
+  Business Media, 2010.
+ISBN 978-0-387-68407-9.}
+
+\bibitem[Izmailov e Solodov 2005]{izmailov}
+\abntrefinfo{Izmailov e Solodov}{IZMAILOV; SOLODOV}{2005}
+{IZMAILOV, A.; SOLODOV, M. \emph{Otimização volume 1. Condições de otimalidade,
+  elementos de análise convexa e de dualidade}. Rio de Janeiro, RJ: IMPA, 2005.
+ISBN 85-244-0238-5.}
+
+\bibitem[Reklaitis 1983]{reklaitis}
+\abntrefinfo{Reklaitis}{REKLAITIS}{1983}
+{REKLAITIS, G.~V. \emph{Engineering Optimization: Methods and Applications}.
+  New York: John Wiley, 1983.
+ISBN 0-471-05579-4.}
+
+\bibitem[Rosa, Carvalho e Xavier 2006]{engres}
+\abntrefinfo{Rosa, Carvalho e Xavier}{ROSA; CARVALHO; XAVIER}{2006}
+{ROSA, A.~J.; CARVALHO, R. de S.; XAVIER, J. A.~D. \emph{Engenharia de
+  Reservatórios de Petróleo}. Rio de Janeiro: Interciência: PETROBRAS, 2006.
+ISBN 85-7193-135-6.}
+
+\bibitem[Thomas 2009]{thomas1}
+\abntrefinfo{Thomas}{THOMAS}{2009a}
+{THOMAS, G. \emph{Cálculo, volume 1}. 11th. ed. São Paulo, SP: Addison Wesley,
+  2009.
+ISBN 978-85-88639-31-7.}
+
+\bibitem[Thomas 2009]{thomas2}
+\abntrefinfo{Thomas}{THOMAS}{2009b}
+{THOMAS, G. \emph{Cálculo, volume 2}. 11th. ed. São Paulo, SP: Addison Wesley,
+  2009.
+ISBN 978-85-88639-36-2.}
+
+\bibitem[Thomas et al. 2004]{engpetro}
+\abntrefinfo{Thomas et al.}{THOMAS et al.}{2004}
+{THOMAS, J.~E. et al. \emph{Fundamentos de Engenharia de Petróleo}. 2. ed. Rio
+  de Janeiro: Interciência: PETROBRAS, 2004.
+ISBN 85-7193-099-6.}
+
+\bibitem[Yang 2010]{yang}
+\abntrefinfo{Yang}{YANG}{2010}
+{YANG, X.-S. \emph{Engineering optimization: an introduction with metaheuristic
+  applications}. New York: Wiley, 2010.
+ISBN 978-0-470-58246-6.}
+
+\end{thebibliography}

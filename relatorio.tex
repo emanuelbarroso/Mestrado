@@ -1,0 +1,372 @@
+% Classe default, de acordo com o modelo:
+\documentclass[11pt,a4paper,openright,titlepage,oneside]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Template editado por:
+%%%% Juan Sebastian Toquica Arenas - UnB/GRACO
+%%%% Prof. Alberto Alvares - UnB/PPMEC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Classe alternativa, apropriada para impressão frente-verso. Inclui páginas em branco
+% de forma que capítulos sempre tenham início na página à direita:
+% \documentclass[11pt,a4paper,openright,titlepage]{book}
+
+% Pacotes
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\numberwithin{equation}{section}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\setR}{\mathbb{R}}
+\newcommand{\eucR}[1]{\mathbb{R}^{#1}}
+\newcommand{\setP}{\mathbb{P}}
+\newcommand{\feasible}[1]{\mathcal{F}(#1)}
+\newcommand{\indexSet}[1]{\mathcal{I}(#1)}
+\newcommand{\makeSet}[1]{\left\lbrace#1\right\rbrace}
+\newcommand{\critP}[1]{\bar{\mathbf{#1}}}
+\newcommand{\dotP}[2]{\left\langle#1,#2\right\rangle}
+\usepackage[thmmarks,amsmath]{ntheorem}%\usepackage{amsthm}
+\usepackage{boxedminipage}
+\usepackage{geometry}
+\usepackage{theorem}
+\usepackage{fancybox}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{url}
+\usepackage{afterpage}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{makeidx}
+\usepackage{indentfirst}
+\usepackage{epstopdf}
+\usepackage{multirow} 
+\usepackage{pdfpages} %pra incluir paginas em formato PDF
+\usepackage{longtable}
+\usepackage{siunitx} %simbolos SI
+\sisetup{binary-units = true} %opções SI
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Pacote para os hyperlinks
+%\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref} %oculta os hyperlinks 
+
+%\hypersetup{
+%	colorlinks=true,       		% false: boxed links; true: colored links
+%	linkcolor=blue,          	% color of internal links
+%	citecolor=blue,        		% color of links to bibliography
+%	filecolor=blue,      		% color of file links
+%	urlcolor=blue,
+%}
+%% Fim da configuração do pacote {hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{hypcap}
+\usepackage{bm}
+\usepackage{mleftright} %linhas verticais pra matrizes
+\usepackage{listings, multicol} %Para fazer uma lista de codigo de programação
+\usepackage{physics} %Pacote para novas opções matemáticas
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Pacote {array} Edição colunas das tabelas
+\usepackage{array}
+\newcolumntype{K}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{Q}[1]{>{\centering\arraybackslash}m{#1}} %Coluna de tabela centrada e opção edição de tamanho 
+%%Fim edição com pacote {array}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\allowdisplaybreaks %dividir equações entre paginas
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Pacote normas ABNT
+%\usepackage{abntex2}
+%\usepackage{abntex2cite}
+%\usepackage[num]{abntex2cite}
+\usepackage[alf]{abntex2cite} %citações ABNT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{setspace}
+%\usepackage{sectsty}
+%\chapterfont{\MakeUppercase}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Escolher um dos seguintes formatos da FT:
+% Não usar com pacote "abntex2", só com "abntex2cite"
+%\usepackage{ft1unb} % segue padrão de fonte Times
+\usepackage{ft2unb} % segue padrão de fontes Helvetica
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{theorem}{Teorema}[subsection]
+\newtheorem{definition}[theorem]{Definição}
+\newtheorem{corollary}[theorem]{Corolário}
+\newtheorem{lemma}[theorem]{Lema}
+
+\makeindex
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compilações parciais: com o comando abaixo, selecione apenas os capitulos
+% que deseja compilar. Por exemplo, veja o que acontece se descomentar a
+% linha abaixo:
+% \includeonly{cap_Desenvolvimento, apend_teach, apend_rep, luvamotor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documento principal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\setcounter{secnumdepth}{3} % numeração de seções até nível 3
+\setcounter{tocdepth}{2} % numeração de seções no sumário até nível 2
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Capa e contra-capa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Grau pretendido e o tipo de monografia. Alguns exemplos seguem abaixo. Se o seu for algum deles, descomente-o. Em geral, o grau e o tipo de monografia associado estão na mesma linha.
+%\grau{Doutor em Engenharia Elétrica} \tipodemonografia{TESE DE DOUTORADO}
+\grau{Mestre em Sistemas Mecatr\^{o}nicos} \tipodemonografia{DISSERTA\c{C}\~{A}O DE MESTRADO}
+%\grau{Engenheiro Eletricista} \tipodemonografia{TRABALHO DE GRADUAÇÃO}
+
+% Os comandos a seguir servem para definir o título do trabalho. Para evitar 
+% que o latex defina automaticamente a quebra de linha, foram definidos um comando por linha. 
+% Desta forma o autor define como quer que o título seja dividio em várias linhas. 
+% O exemplo abaixo é para um título que ocupa três linhas. Observe que mesmo com a linha
+% 4 não sendo utilizada, o comando \titulolinhaiv é chamado. \mbox no caso que latex divida a palavra.
+\titulolinhai {\MakeUppercase{retrofitting do rob\^{o} ASEA IRB6-S2 baseado em tecnologias de comando num\'{e}rico usando LinuxCNC}} 
+%\titulolinhaii{TESE DE DOUTORADO, DISSERTAÇÃO}
+%\titulolinhaiii{DE MESTRADO E TRABALHO DE GRADUAÇÃO}
+%\titulolinhaiv{}
+
+% Os nomes dos autores são definidos pelos comandos \autori (autor 1) e \autorii (autor 2).
+% Para trabalhos com apenas um autor, deve-se usar \autorii{} para que não apareça 
+% um nome para segundo autor.
+\autori{JUAN SEBASTIAN TOQUICA ARENAS}
+%\autorii{Nome do Autor 2}
+\autorii{} % descomente esta linha se não houver segundo autor.
+%\autoriii{Nome do Autor 3}
+\autoriii{} % descomente esta linha se não houver terceiro autor.
+
+% Os nomes dos membros da banca são definidos a seguir. Pode-se ter até 5 membros da banca, 
+% numerados de i a v (algarismos romanos).
+% Para trabalhos com apenas um autor, deve-se usar \autorii{} para que não apareça 
+% um nome para segundo autor. É incubêcia do usuário definir no argumento dos comandos a 
+% afiliação membro da banca, assim como sua posição (se for orientador ou co-orientador).	 
+% Os nomes definidos pelos comandos abaixo aparecem na ordem de i a v.
+\membrodabancai{}
+\membrodabancaifuncao{}
+\membrodabancaii{Prof. Dr. Alberto J. Alvares, PPMEC/UnB}
+\membrodabancaiifuncao{Orientador}
+\membrodabancaiii{Prof. Dr. André Murilo de Almeida, Gama/UnB}
+\membrodabancaiiifuncao{Membro Interno}
+\membrodabancaiv{Prof. Dr. Renan Bonnard, MENESR/França}
+\membrodabancaivfuncao{Membro Externo}
+\membrodabancav{}
+\membrodabancavfuncao{}
+
+% data de defesa: mês e ano.
+\mes{Dezembro}
+\ano{2016}
+
+% Comandos para criar a capa e a página de assinaturas.
+\capaprincipal
+\capaassinaturas
+
+% Inserir a ficha bibliografica
+\begin{fichacatalografica}
+	\sffamily
+	\vspace*{\fill}					% Posição vertical
+	\begin{center}					% Minipage Centralizado
+		\fbox{\begin{minipage}[c][6cm]{13.5cm}		% Largura
+				\small
+				Toquica Arenas, Juan Sebastian
+				
+				\hspace{0.5cm}{{Retrofitting do rob\^{o} ASEA IRB6-S2 baseado em tecnologias de comando num\'{e}rico usando LinuxCNC}  / \autorinome . --Brasil, 2016.}
+				
+				\hspace{0.5cm}170 p.\\
+				
+				\hspace{0.5cm}Orientador:~Alberto José Alvares\\				
+				
+				\hspace{0.5cm}\parbox[l]{13cm}{
+				\parbox[t]{\textwidth}{Dissertação (Mestrado)~--~Universidade de Brasília~--~UnB \\ Faculdade de Tecnologia~--~FT\\ Programa de Pós-Graduação em Sistemas Mecatrônicos~--~PPMEC, 2016.}}\\
+				
+				\hspace{0.5cm}
+				1. Retrofitting.
+				2. Robô Asea IRB6-S2.
+				3. Cinemática.
+				4. LinuxCNC.
+				5. Arquitetura aberta de controle.
+				I. Alberto José Alvares, orientador.
+				II. Universidade de Brasília.
+				III. Faculdade de Tecnologia.		
+		\end{minipage}}
+	\end{center}
+\end{fichacatalografica}
+% Fim ficha bibliografica
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dedicatória 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+% Texto de dedicatória do primeiro autor
+%\dedicatoriaautori{Dedicat\'{o}ria do autor 1}
+
+% Texto de dedicatória do segundo autor. Caso não tenha um segundo autor, este texto não 
+% será mostrado
+%\dedicatoriaautorii{Dedicatória do autor 2}
+
+% Texto de dedicatória do terceiro autor. Caso não tenha um segundo autor, este texto não 
+% será mostrado
+%\dedicatoriaautoriii{Dedicatória do autor 3}
+
+% Comando para criar a página de dedicatória
+%\dedicatoria
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Agradecimentos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texto de agradecimentos do primeiro autor
+\agradecimentosautori{
+	Em primeiro lugar a Deus, por me permitir a oportunidade de estar com vida e honrar seu nome por meio de minhas ações diárias.
+	
+	Ao meu filho sendo uma infinita motivação diária, sempre confiante em romper os meus limites imaginários com o intuito de atingir meus objetivos sem receios. "A engenharia é como a vida", digo ao meu filho, "é uma arte especial que permite descobrir caminhos nunca antes percorridos, com convicção de que sempre existe mais alguma coisa por fazer. Sendo assim, querido Juan José sempre estará em capacidade de superar seus próprios limites, suas próprias fronteiras geográficas e culturais, seus sonhos, amo a você na distancia" 
+	
+	Ao meu maravilhoso núcleo familiar: minha mãe Clara Inés, meu Pai Efrain e minha irmã Diana Andrea que sempre estiveram e estão ao meu lado, sem se importarem com as condições externas, me contribuindo continuamente ao fortalecimento, mesmo distante, dos laços familiares. Saúdo também à todos os membros de minha família que me apoiaram em meus sonhos.
+	
+	Agradeço carinhosamente à eterna professora de português, que sem ela não haveria condições de obter a realização desta etapa de minha vida. Sou muito grato à ela ter sempre acreditado em meu potencial, até quando eu duvidada de mim mesmo. Obrigado senhorita Carvalho Bonifácio por estar neste caminho de aprendizagem constante ao meu lado, sempre me protegendo, me contagiando com essa energia de esperança e felicidade.
+	
+	Aos colegas e amigos Diego Benavides e Luiz Eduardo, que ao longo desta decisão acadêmica nos tornamos maduros com as experiências de vida. Condições esta que nos são necessárias para conquistarmos qualquer meta e cumprir quaisquer sonhos. Reconhecendo a importância da disciplina e paixão.
+	
+	A todas as pessoas que de alguma maneira, direta e indiretamente, contribuíram para que este sonho pudesse hoje estar concluído, através de uma palavra, um abraço, uma caminhada noturna. Detalhes que marcam as vidas de pessoas que convivem na mesma realidade.
+	
+	Por último, mas não menos importante, ao professor Alberto Alvares pela oportunidade de levar este projeto até o final, pela paciência quando precisei recuperar o foco na minha estadia no Brasil. O mais importante foi ter aprendido com sua sabedoria que os objetivos só são atingidos com disciplina, sacrifício e objetividade.
+	
+	Ao CNPq pela bolsa de mestrado que me permitiu manter ao longo dos 24 meses de dedicação exclusiva. Aportando dinamicamente um grão de areia da literatura relacionada com minha paixão, a robótica. Ao PPMEC e especialmente ao professor Edson por me ter dado a oportunidade de fazer concretizar um ideal de vida.}
+% Texto de agradecimentos do segundo autor. Caso não tenha um segundo autor, este texto não 
+% será mostrado
+\agradecimentosautorii{}
+
+% Texto de agradecimentos do segundo autor. Caso não tenha um terceiro autor, este texto não 
+% será mostrado
+\agradecimentosautoriii{A inclus\~{a}o desta se\c{c}\~{a}o de agradecimentos \'{e} opcional e fica \'{a} crit\'{e}rio do(s) autor(es), que caso deseje(em) inclui-la dever\'{a}(ao) utilizar este espa\c{c}o, seguindo est\'{a} formata\c{c}\~{a}o.}
+
+% Comando para criar a página de agradecimentos
+\agradecimentos
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resumo: arquivo resumo.tex editável no Scientific Word
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{resumos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Listas de conteúdo, figuras e tabelas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sumario
+\listadefiguras
+\listadetabelas
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lista de simbolos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{simbolos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Corpo principal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+\setcounter{page}{1} \pagenumbering{arabic} \pagestyle{plain}
+
+
+
+% *** Introducao ***
+\include{cap_Introducao}
+
+% *** Revisao Bibliografica ***
+\include{cap_RevisaoBibliografica}
+
+% *** Metodologia Trabalho ***
+\include{cap_Metodologia}
+
+% *** Desenvolvimento ***
+\include{cap_Desenvolvimento}
+
+% *** Resultados Experimentais ***
+%\include{cap_Experimentos} %comparação UFMG-UnB
+
+% *** Conclusões
+\include{cap_Conclusoes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Referências bibliográficas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{abntex2-num} % use este estilo para ABNT numérico
+\bibliographystyle{abntex2-alf} % use este estilo para ABNT alfa-numérico
+\renewcommand{\bibname}{REFERÊNCIAS BIBLIOGRÁFICAS}
+\addcontentsline{toc}{chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}
+\bibliography{relatorio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Apêndices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\apendices
+\makeatletter % não retirar estes comandos
+\renewcommand{\@makechapterhead}[1]{%
+	{\parindent \z@ \raggedleft \setfontarial\bfseries 
+		\LARGE \thechapter. \space\space 
+		\uppercase{#1}\par
+		\vskip 40\p@
+	}
+}
+\makeatother
+
+
+% *** Apendice A: Arquivos Pick and Place ***
+%\include{apend_teach}
+%\refstepcounter{noApendice}
+
+% Acrescente mais apêndices conforme julgar necessário.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Anexos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\anexos
+%\makeatletter % não retirar estes comandos
+%\renewcommand{\@makechapterhead}[1]{%
+%  {\parindent \z@ \raggedleft \setfontarial\bfseries 
+%        \LARGE \thechapter. \space\space 
+%    \uppercase{#1}\par
+%    \vskip 40\p@
+%  }
+%}
+%\makeatother
+
+
+% *** Anexo I: Diagramas esquemáticos***
+%\include{anexo_Esquematicos}
+%\refstepcounter{noAnexo}
+
+% *** Anexo II: Descrição do CD ***
+%\include{anexo_CD}
+%\refstepcounter{noAnexo}
+
+%*** Anexo III: Diagrama elétrico controle ***
+%\include{diag_elec_ctrl}
+%\refstepcounter{noAnexo}
+
+% Acrescente mais anexos conforme julgar necessário.
+\end{document}
+
