@@ -23,18 +23,18 @@
 \contentsline {section}{\numberline {2.3}SimulaÃ§Ã£o NumÃ©rica de ReservatÃ³rios}{5}{section.2.3}
 \contentsline {section}{\numberline {2.4}Conceitos de Otimiza\c {c}\~{a}o}{5}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Defini\c {c}\~{o}es e Fatos B\'{a}sicos}{5}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{8}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{9}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Convexidade}{12}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{14}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{19}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{23}{subsection.2.4.7}
-\contentsline {chapter}{\numberline {3}Proposta de Metodologia para o \textit {Retrofitting} de Robôs Industriais}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introdução}{25}{section.3.1}
-\contentsline {chapter}{\numberline {4}Retrofitting do Robô ASEA IRB6-S2}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdução}{26}{section.4.1}
-\contentsline {chapter}{\numberline {5}Conclusões}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusões do Trabalho}{27}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sugestões para Trabalhos Futuros}{27}{section.5.2}
-\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{28}{section.5.2}
-\contentsline {chapter}{{APÊNDICES}}{29}{chapter*.13}
+\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{9}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{10}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Convexidade}{13}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{15}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{20}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{24}{subsection.2.4.7}
+\contentsline {chapter}{\numberline {3}Proposta de Metodologia para o \textit {Retrofitting} de Robôs Industriais}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introdução}{26}{section.3.1}
+\contentsline {chapter}{\numberline {4}Retrofitting do Robô ASEA IRB6-S2}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdução}{27}{section.4.1}
+\contentsline {chapter}{\numberline {5}Conclusões}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusões do Trabalho}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sugestões para Trabalhos Futuros}{28}{section.5.2}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{29}{section.5.2}
+\contentsline {chapter}{{APÊNDICES}}{30}{chapter*.13}
