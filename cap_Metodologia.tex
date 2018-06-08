@@ -1,7 +1,35 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
                       
-\chapter{Proposta de Metodologia para o \textit{Retrofitting} de Robôs Industriais} \label{CapMetodologia}
+\chapter{Construção do Algoritmo \textit{Smart Reservoir} com Utilização do MRST} \label{CapMetodologia}
 
 %[PROPOSTA DE METODOLOGIA PARA \textit{RETROFITTING} DE ROBÔS INDUSTRIAIS]
 \section{Introdução}
 
+\section{\textit{MATLAB Reservoir Simulation Toolbox}}
+O MRST --- \textit{MATLAB Reservoir Simulation Toolbox} --- é um conjunto de ferramentas programadas para utilização em conjunto com o \textit{software} MATLAB; trata-se de um conjunto de códigos e definições \textit{open-source} destinados à simulação numérica de reservatórios. Embora não seja primordialmente um simulador, o MRST oferece uma vasta quantidade de estruturas de dados e métodos computacionais de modo que o usuário possa combinar para gerar modelos e ferramentas de simulação em si. O MRST se encontra organizado em duas partes principais\footnote{Ver \cite{site:mrst}.}:
+\begin{itemize}
+\item Um módulo \textit{\textbf{core}}, em que estão presentes estruturas de dados e funcionalidades básicas;
+\item Vários módulos adicionais (\textbf{\textit{add-ons}}), oferecendo discretizações, modelos físicos, simuladores, \textit{solvers}, entre outros.
+\end{itemize}
+
+Algumas das principais funcionalidades oferecidas pelo MRST se encontram reunidas a seguir\footnote{Ver \cite{Lie2012}.}: 
+\begin{itemize}
+\item \textbf{\textit{Grids}:} São estruturas de dados básicas do MRST, com suporte para malhas geométricas básicas, como triangulares, tetraédricas, entre outras.
+\item \textbf{Entradas e Saídas:} O MRST possui suporte para entrada de modelos industriais prontos, parâmetros petroquímicos, modelos de fluidos, poços, condições de contorno, parâmetros de simulação, etc.
+\item \textbf{Parâmetros:} São estruturas de dados de parâmetros petroquímicos; o MRST possui interface para modelos de fluidos, rotinas para configurar e manipular condições iniciais e de contorno, poços, entre outros.
+\item \textbf{Unidades:} O MRST trabalha primariamente com o sistema SI; porém, o mesmo oferece suporte para outras unidades comumente usadas no campo (como o barril); a responsabilidade explícita pela conversão e consistência das unidades é do usuário, normalmente.
+\item \textbf{Estado do Reservatório:} O MRST dispõe de estruturas de dados que mostram o estado do reservatório durante a simulação; são mostrados os estados dos poços, pressões, fluxos de fluidos, saturações, entre outros.
+\item \textbf{Pós-processamento:} Além das ferramentas de simulação, o MRST possui várias funções de visualização dos resultados alcançados, dados das células e faces, entre outros.
+\item \textbf{\textit{Solvers}:} O MRST possui funções que solucionam problemas de fluxo e de transporte de massa, que podem ser combinadas conforme a necessidade.
+\item \textbf{Álgebra Linear:} O MRST se aproveita de funções lineares do MATLAB; contudo, outros tipos de \textit{solvers} podem ser utilizados, respeitando-se as convenções do MATLAB.
+\end{itemize}
+
+\section{Modelos de Reservatório Utilizados}
+Segundo Stags e Herbeck, um modelo de reservatório trata o reservatório real como um composto de vários segmentos individuais (normalmente denominados células), devido à matemática que rege o modelo. De forma simples, um modelo multicelular de reservatório simula a vazão de fluidos de um reservatório de óleo ou gás; embora não possam descrever exatamente o comportamento dos fluidos no ambiente estudado, os modelos de reservatórios produzem aproximações boas e válidas; além disso, os modelos são feitos para representar a vazão intercelular de fluidos em uma, duas ou até três dimensões. Cada célula, em um modelo de reservatório, possui informações próprias de propriedades do conjunto como tamanho, porosidade, permeabilidade, elevação, pressão e saturação dos fluidos presentes. Além disso, são necessários para um modelo os dados de cada poço presente, como localização, índice do poço, tipo do poço, vazões de produção/injeção, limites econômicos, de BHP, entre outros \cite{stags1971}.
+
+No presente trabalho, dentre os vários modelos de reservatório existentes na literatura, dois modelos foram selecionados para a aplicação do \textit{Smart Reservoir}. A escolha foi pautada principalmente pelo tamanho dos modelos, tendo em vista o equipamento disponível para a implementação e a simulação do algoritmo proposto. Além disso, são considerados modelos bifásicos, de apenas óleo e agua. Os modelos selecionados foram o \textit{Egg Model} e o SAIGUP (\textit{Sensistivity Analysis of the Impact of Geological Uncertainties on Production}), apresentados a seguir.
+\subsection{\textit{Egg Model}}
+\subsection{Modelo SAIGUP}
+\section{Função de Custo: NPV}
+
+\section{Algoritmo \textit{Smart Reservoir}}

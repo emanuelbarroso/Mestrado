@@ -10,6 +10,11 @@
 {AGUIRRE, L.~A. \emph{Introdução à identificação de sistemas: técnicas lineares
   e não lineares: teoria e aplicação}. Belo Horizonte, MG: Editora UFMG, 2015.}
 
+\bibitem[Eremin e Nazarova 2003]{eremin}
+\abntrefinfo{Eremin e Nazarova}{EREMIN; NAZAROVA}{2003}
+{EREMIN, N.; NAZAROVA, L. N. \emph{Enhanced Oil Recovery Methods}. [S.l.:
+  s.n.], 2003.}
+
 \bibitem[Guller 2010]{guller}
 \abntrefinfo{Guller}{GULLER}{2010}
 {GULLER, O. \emph{Foundations of Optimization}. New York: Springer Science \&
@@ -22,17 +27,42 @@ ISBN 978-0-387-68407-9.}
   elementos de análise convexa e de dualidade}. Rio de Janeiro, RJ: IMPA, 2005.
 ISBN 85-244-0238-5.}
 
+\bibitem[Latil 1980]{latil}
+\abntrefinfo{Latil}{LATIL}{1980}
+{LATIL, M. \emph{Enhanced Oil Recovery}. [S.l.]: Editions OPHRYS, 1980. 36~p.
+ISBN 9782710810506.}
+
+\bibitem[Lie et al. 2012]{Lie2012}
+\abntrefinfo{Lie et al.}{LIE et al.}{2012}
+{LIE, K.-A. et al. Open-source matlab implementation of consistent
+  discretisations on complex grids.
+\emph{Computational Geosciences}, v.~16, n.~2, p. 297--322, Mar 2012.
+ISSN 1573-1499.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-011-9244-4}.}
+
 \bibitem[Reklaitis 1983]{reklaitis}
 \abntrefinfo{Reklaitis}{REKLAITIS}{1983}
 {REKLAITIS, G.~V. \emph{Engineering Optimization: Methods and Applications}.
   New York: John Wiley, 1983.
 ISBN 0-471-05579-4.}
 
-\bibitem[Rosa, Carvalho e Xavier 2006]{engres}
-\abntrefinfo{Rosa, Carvalho e Xavier}{ROSA; CARVALHO; XAVIER}{2006}
-{ROSA, A.~J.; CARVALHO, R. de S.; XAVIER, J. A.~D. \emph{Engenharia de
-  Reservatórios de Petróleo}. Rio de Janeiro: Interciência: PETROBRAS, 2006.
+\bibitem[Rosa 2006]{engres}
+\abntrefinfo{Rosa}{ROSA}{2006}
+{ROSA, A.~J. \emph{Engenharia de Reservatórios de Petróleo}. Rio de Janeiro:
+  Interciência: PETROBRAS, 2006.
 ISBN 85-7193-135-6.}
+
+\bibitem[Sintef 2018]{site:mrst}
+\abntrefinfo{Sintef}{SINTEF}{2018}
+{SINTEF. \emph{MRST - MATLAB Reservoir Simulation Toolbox}. 2018.
+Acesso em: 01 de Junho de 2018.
+Dispon{\'\i}vel em: \url{https://www.sintef.no/projectweb/mrst/}.}
+
+\bibitem[Stags e Herbeck 1971]{stags1971}
+\abntrefinfo{Stags e Herbeck}{STAGS; HERBECK}{1971}
+{STAGS, H.~M.; HERBECK, E.~F. Reservoir simulation models an engineering
+  overview.
+Society of Petroleum Engineers, Dec 1971.}
 
 \bibitem[Thomas 2009]{thomas1}
 \abntrefinfo{Thomas}{THOMAS}{2009a}
@@ -46,10 +76,10 @@ ISBN 978-85-88639-31-7.}
   2009.
 ISBN 978-85-88639-36-2.}
 
-\bibitem[Thomas et al. 2004]{engpetro}
-\abntrefinfo{Thomas et al.}{THOMAS et al.}{2004}
-{THOMAS, J.~E. et al. \emph{Fundamentos de Engenharia de Petróleo}. 2. ed. Rio
-  de Janeiro: Interciência: PETROBRAS, 2004.
+\bibitem[Thomas 2004]{engpetro}
+\abntrefinfo{Thomas}{THOMAS}{2004}
+{THOMAS, J.~E. \emph{Fundamentos de Engenharia de Petróleo}. 2. ed. Rio de
+  Janeiro: Interciência: PETROBRAS, 2004.
 ISBN 85-7193-099-6.}
 
 \bibitem[Yang 2010]{yang}

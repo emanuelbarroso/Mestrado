@@ -18,23 +18,34 @@
 \contentsline {subsection}{\numberline {2.2.1}Conceito e Contextualiza√ß√£o da Recupera√ß√£o Secund√°ria}{2}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Classifica√ß√£o dos M√©todos de Recupera√ß√£o Secund√°ria}{5}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}M√©todos Convencionais}{5}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Efici√™ncia de Recupera√ß√£o}{5}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Aspectos Operacionais da Inje√ß√£o de √Ågua}{5}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Simula√ß√£o Num√©rica de Reservat√≥rios}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Conceitos de Otimiza\c {c}\~{a}o}{5}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Defini\c {c}\~{o}es e Fatos B\'{a}sicos}{5}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{9}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{10}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Convexidade}{13}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{15}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{20}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{24}{subsection.2.4.7}
-\contentsline {chapter}{\numberline {3}Proposta de Metodologia para o \textit {Retrofitting} de RobÙs Industriais}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}IntroduÁ„o}{26}{section.3.1}
-\contentsline {chapter}{\numberline {4}Retrofitting do RobÙ ASEA IRB6-S2}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}IntroduÁ„o}{27}{section.4.1}
-\contentsline {chapter}{\numberline {5}Conclusıes}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusıes do Trabalho}{28}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sugestıes para Trabalhos Futuros}{28}{section.5.2}
-\contentsline {chapter}{REFER NCIAS BIBLIOGR¡FICAS}{29}{section.5.2}
-\contentsline {chapter}{{AP NDICES}}{30}{chapter*.13}
+\contentsline {subsection}{\numberline {2.2.4}Esquemas de Inje√ß√£o}{6}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Esquemas baseados na Estrutura do Reservat√≥rio}{6}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Esquemas de Inje√ß√£o em Malha}{6}{subsubsection.2.2.4.2}
+\contentsline {subsection}{\numberline {2.2.5}Aspectos Operacionais da Inje√ß√£o de √Ågua}{11}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Simula√ß√£o Num√©rica de Reservat√≥rios}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}Conceitos de Otimiza\c {c}\~{a}o}{11}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Defini\c {c}\~{o}es e Fatos B\'{a}sicos}{11}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{15}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{16}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Convexidade}{19}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{20}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{25}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{29}{subsection.2.4.7}
+\contentsline {chapter}{\numberline {3}ConstruÁ„o do Algoritmo \textit {Smart Reservoir} com UtilizaÁ„o do MRST}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}IntroduÁ„o}{31}{section.3.1}
+\contentsline {section}{\numberline {3.2}\textit {MATLAB Reservoir Simulation Toolbox}}{31}{section.3.2}
+\contentsline {section}{\numberline {3.3}Modelos de ReservatÛrio Utilizados}{32}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\textit {Egg Model}}{33}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Modelo SAIGUP}{33}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}FunÁ„o de Custo: NPV}{33}{section.3.4}
+\contentsline {section}{\numberline {3.5}Algoritmo \textit {Smart Reservoir}}{33}{section.3.5}
+\contentsline {chapter}{\numberline {4}ExecuÁ„o e Resultados do Algoritmo \textit {Smart Reservoir}}{34}{chapter.4}
+\contentsline {section}{\numberline {4.1}IntroduÁ„o}{34}{section.4.1}
+\contentsline {section}{\numberline {4.2}ExecuÁ„o Utilizando o \textit {Egg Model}}{34}{section.4.2}
+\contentsline {section}{\numberline {4.3}ExecuÁ„o Utilizando o Modelo \textit {SAIGUP}}{34}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discuss„o dos Resultados}{34}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusıes}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusıes do Trabalho}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sugestıes para Trabalhos Futuros}{35}{section.5.2}
+\contentsline {chapter}{REFER NCIAS BIBLIOGR¡FICAS}{36}{section.5.2}
+\contentsline {chapter}{{AP NDICES}}{37}{chapter*.13}
