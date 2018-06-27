@@ -4,7 +4,7 @@
 \contentsline {chapter}{{LISTA DE FIGURAS}}{iv}{chapter*.3}
 \contentsline {chapter}{{LISTA DE TABELAS}}{v}{chapter*.4}
 \contentsline {chapter}{LISTA DE SÕMBOLOS}{vii}{chapter*.6}
-\contentsline {chapter}{LISTA DE ABREVIATURAS E ACROGRAMAS}{viii}{chapter*.11}
+\contentsline {chapter}{LISTA DE ABREVIATURAS E ACROGRAMAS}{ix}{chapter*.12}
 \contentsline {chapter}{\numberline {1}IntroduÁ„o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}ContextualizaÁ„o}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}DefiniÁ„o do Problema}{1}{section.1.2}
@@ -14,38 +14,48 @@
 \contentsline {section}{\numberline {1.4}ApresentaÁ„o do Documento}{1}{section.1.4}
 \contentsline {chapter}{\numberline {2}FundamentaÁ„o TeÛrica}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}IntroduÁ„o}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}M√©todos Convencionais de Recupera√ß√£o Secund√°ria}{2}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Conceito e Contextualiza√ß√£o da Recupera√ß√£o Secund√°ria}{2}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Classifica√ß√£o dos M√©todos de Recupera√ß√£o Secund√°ria}{5}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}M√©todos Convencionais}{5}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Esquemas de Inje√ß√£o}{6}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}Esquemas baseados na Estrutura do Reservat√≥rio}{6}{subsubsection.2.2.4.1}
-\contentsline {subsubsection}{\numberline {2.2.4.2}Esquemas de Inje√ß√£o em Malha}{6}{subsubsection.2.2.4.2}
-\contentsline {subsection}{\numberline {2.2.5}Aspectos Operacionais da Inje√ß√£o de √Ågua}{11}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Simula√ß√£o Num√©rica de Reservat√≥rios}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Conceitos de Otimiza\c {c}\~{a}o}{11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Defini\c {c}\~{o}es e Fatos B\'{a}sicos}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{15}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{16}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Convexidade}{19}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{20}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{25}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{29}{subsection.2.4.7}
-\contentsline {chapter}{\numberline {3}ConstruÁ„o do Algoritmo \textit {Smart Reservoir} com UtilizaÁ„o do MRST}{31}{chapter.3}
-\contentsline {section}{\numberline {3.1}IntroduÁ„o}{31}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {MATLAB Reservoir Simulation Toolbox}}{31}{section.3.2}
-\contentsline {section}{\numberline {3.3}Modelos de ReservatÛrio Utilizados}{32}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}\textit {Egg Model}}{33}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Modelo SAIGUP}{33}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}FunÁ„o de Custo: NPV}{33}{section.3.4}
-\contentsline {section}{\numberline {3.5}Algoritmo \textit {Smart Reservoir}}{33}{section.3.5}
-\contentsline {chapter}{\numberline {4}ExecuÁ„o e Resultados do Algoritmo \textit {Smart Reservoir}}{34}{chapter.4}
-\contentsline {section}{\numberline {4.1}IntroduÁ„o}{34}{section.4.1}
-\contentsline {section}{\numberline {4.2}ExecuÁ„o Utilizando o \textit {Egg Model}}{34}{section.4.2}
-\contentsline {section}{\numberline {4.3}ExecuÁ„o Utilizando o Modelo \textit {SAIGUP}}{34}{section.4.3}
-\contentsline {section}{\numberline {4.4}Discuss„o dos Resultados}{34}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclusıes}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusıes do Trabalho}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sugestıes para Trabalhos Futuros}{35}{section.5.2}
-\contentsline {chapter}{REFER NCIAS BIBLIOGR¡FICAS}{36}{section.5.2}
-\contentsline {chapter}{{AP NDICES}}{37}{chapter*.13}
+\contentsline {section}{\numberline {2.2}M\'{e}todos Convencionais de Recupera\c {c}\~{a}o Secund\'{a}ria}{2}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Conceito e Contextualiza\c {c}\~{a}o da Recupera\c {c}\~{a}o Secund\'{a}ria}{2}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Classifica\c {c}\~{a}o dos M\'{e}todos de Recupera\c {c}\~{a}o Secund\'{a}ria}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}M\'{e}todos Convencionais}{5}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Esquemas de Inje\c {c}\~{a}o}{6}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Esquemas baseados na Estrutura do Reservat\'{o}rio}{6}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Esquemas de Inje\c {c}\~{a}o em Malha}{6}{subsubsection.2.2.4.2}
+\contentsline {subsection}{\numberline {2.2.5}Aspectos Operacionais da Inje\c {c}\~{a}o de \'{A}gua}{10}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Fatores de Influ\^{e}ncia}{11}{subsubsection.2.2.5.1}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Componentes Principais de um Sistema de Inje\c {c}\~{a}o}{12}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.3}Controle e Acompanhamento}{14}{subsubsection.2.2.5.3}
+\contentsline {subsubsection}{\numberline {2.2.5.4}Principais Problemas}{15}{subsubsection.2.2.5.4}
+\contentsline {section}{\numberline {2.3}Simula√ß√£o Num√©rica de Reservat√≥rios}{16}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Leis F√≠sicas Consideradas}{16}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Fen√¥menos de Transporte}{18}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Equa√ß√µes de Estado}{18}{subsubsection.2.3.1.2}
+\contentsline {subsection}{\numberline {2.3.2}Tipos de Simuladores}{19}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Uso de Simuladores Num√©ricos para Estudos de Reservat√≥rios}{19}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Conceitos de Otimiza\c {c}\~{a}o}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Defini\c {c}\~{o}es e Fatos B\'{a}sicos}{19}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{23}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{24}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Convexidade}{27}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{29}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{34}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{38}{subsection.2.4.7}
+\contentsline {chapter}{\numberline {3}ConstruÁ„o do Algoritmo \textit {Smart Reservoir} com UtilizaÁ„o do MRST}{40}{chapter.3}
+\contentsline {section}{\numberline {3.1}IntroduÁ„o}{40}{section.3.1}
+\contentsline {section}{\numberline {3.2}\textit {MATLAB Reservoir Simulation Toolbox}}{40}{section.3.2}
+\contentsline {section}{\numberline {3.3}Modelos de ReservatÛrio Utilizados}{41}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\textit {Egg Model}}{42}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Modelo SAIGUP}{43}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}FunÁ„o de Custo: NPV}{43}{section.3.4}
+\contentsline {section}{\numberline {3.5}Algoritmo \textit {Smart Reservoir}}{45}{section.3.5}
+\contentsline {section}{\numberline {3.6}UtilizaÁ„o da ProgramaÁ„o Paralela}{45}{section.3.6}
+\contentsline {chapter}{\numberline {4}ExecuÁ„o e Resultados do Algoritmo \textit {Smart Reservoir}}{46}{chapter.4}
+\contentsline {section}{\numberline {4.1}IntroduÁ„o}{46}{section.4.1}
+\contentsline {section}{\numberline {4.2}ExecuÁ„o Utilizando o \textit {Egg Model}}{46}{section.4.2}
+\contentsline {section}{\numberline {4.3}ExecuÁ„o Utilizando o Modelo SAIGUP}{46}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discuss„o dos Resultados}{46}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusıes}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusıes do Trabalho}{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sugestıes para Trabalhos Futuros}{47}{section.5.2}
+\contentsline {chapter}{REFER NCIAS BIBLIOGR¡FICAS}{48}{section.5.2}
+\contentsline {chapter}{{AP NDICES}}{50}{chapter*.14}

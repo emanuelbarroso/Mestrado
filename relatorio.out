@@ -3,7 +3,7 @@
 \BOOKMARK [0][-]{chapter*.3}{LISTA DE FIGURAS}{}% 3
 \BOOKMARK [0][-]{chapter*.4}{LISTA DE TABELAS}{}% 4
 \BOOKMARK [0][-]{chapter*.6}{LISTA DE SÕMBOLOS}{}% 5
-\BOOKMARK [0][-]{chapter*.11}{LISTA DE ABREVIATURAS E ACROGRAMAS}{}% 6
+\BOOKMARK [0][-]{chapter*.12}{LISTA DE ABREVIATURAS E ACROGRAMAS}{}% 6
 \BOOKMARK [0][-]{chapter.1}{IntroduÁ„o}{}% 7
 \BOOKMARK [1][-]{section.1.1}{ContextualizaÁ„o}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.2}{DefiniÁ„o do Problema}{chapter.1}% 9
@@ -13,36 +13,40 @@
 \BOOKMARK [1][-]{section.1.4}{ApresentaÁ„o do Documento}{chapter.1}% 13
 \BOOKMARK [0][-]{chapter.2}{FundamentaÁ„o TeÛrica}{}% 14
 \BOOKMARK [1][-]{section.2.1}{IntroduÁ„o}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.2}{M√©todos Convencionais de Recupera√ß√£o Secund√°ria}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.2.1}{Conceito e Contextualiza√ß√£o da Recupera√ß√£o Secund√°ria}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.2}{Classifica√ß√£o dos M√©todos de Recupera√ß√£o Secund√°ria}{section.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.3}{M√©todos Convencionais}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.4}{Esquemas de Inje√ß√£o}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.5}{Aspectos Operacionais da Inje√ß√£o de √Ågua}{section.2.2}% 21
+\BOOKMARK [1][-]{section.2.2}{M\351todos Convencionais de Recupera\347\343o Secund\341ria}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{Conceito e Contextualiza\347\343o da Recupera\347\343o Secund\341ria}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{Classifica\347\343o dos M\351todos de Recupera\347\343o Secund\341ria}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{M\351todos Convencionais}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.4}{Esquemas de Inje\347\343o}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.5}{Aspectos Operacionais da Inje\347\343o de \301gua}{section.2.2}% 21
 \BOOKMARK [1][-]{section.2.3}{Simula√ß√£o Num√©rica de Reservat√≥rios}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.4}{Conceitos de Otimiza\347\343o}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.4.1}{Defini\347\365es e Fatos B\341sicos}{section.2.4}% 24
-\BOOKMARK [2][-]{subsection.2.4.2}{Diferenciabilidade de Fun\347\365es Escalares}{section.2.4}% 25
-\BOOKMARK [2][-]{subsection.2.4.3}{Diferenciabilidade de Fun\347\365es Multivari\341veis e Campos Vetoriais}{section.2.4}% 26
-\BOOKMARK [2][-]{subsection.2.4.4}{Convexidade}{section.2.4}% 27
-\BOOKMARK [2][-]{subsection.2.4.5}{Condi\347\365es de Otimalidade}{section.2.4}% 28
-\BOOKMARK [2][-]{subsection.2.4.6}{Principais Algoritmos de Otimiza\347\343o}{section.2.4}% 29
-\BOOKMARK [2][-]{subsection.2.4.7}{Tratamento de Problemas de Otimiza\347\343o}{section.2.4}% 30
-\BOOKMARK [0][-]{chapter.3}{ConstruÁ„o do Algoritmo Smart Reservoir com UtilizaÁ„o do MRST}{}% 31
-\BOOKMARK [1][-]{section.3.1}{IntroduÁ„o}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.2}{MATLAB Reservoir Simulation Toolbox}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.3}{Modelos de ReservatÛrio Utilizados}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.1}{Egg Model}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 36
-\BOOKMARK [1][-]{section.3.4}{FunÁ„o de Custo: NPV}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 38
-\BOOKMARK [0][-]{chapter.4}{ExecuÁ„o e Resultados do Algoritmo Smart Reservoir}{}% 39
-\BOOKMARK [1][-]{section.4.1}{IntroduÁ„o}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.2}{ExecuÁ„o Utilizando o Egg Model}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.3}{ExecuÁ„o Utilizando o Modelo SAIGUP}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.4}{Discuss„o dos Resultados}{chapter.4}% 43
-\BOOKMARK [0][-]{chapter.5}{Conclusıes}{}% 44
-\BOOKMARK [1][-]{section.5.1}{Conclusıes do Trabalho}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.2}{Sugestıes para Trabalhos Futuros}{chapter.5}% 46
-\BOOKMARK [0][-]{section.5.2}{REFER NCIAS BIBLIOGR¡FICAS}{}% 47
-\BOOKMARK [0][-]{chapter*.13}{AP NDICES}{}% 48
+\BOOKMARK [2][-]{subsection.2.3.1}{Leis F√≠sicas Consideradas}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.2}{Tipos de Simuladores}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.3}{Uso de Simuladores Num√©ricos para Estudos de Reservat√≥rios}{section.2.3}% 25
+\BOOKMARK [1][-]{section.2.4}{Conceitos de Otimiza\347\343o}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.4.1}{Defini\347\365es e Fatos B\341sicos}{section.2.4}% 27
+\BOOKMARK [2][-]{subsection.2.4.2}{Diferenciabilidade de Fun\347\365es Escalares}{section.2.4}% 28
+\BOOKMARK [2][-]{subsection.2.4.3}{Diferenciabilidade de Fun\347\365es Multivari\341veis e Campos Vetoriais}{section.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.4.4}{Convexidade}{section.2.4}% 30
+\BOOKMARK [2][-]{subsection.2.4.5}{Condi\347\365es de Otimalidade}{section.2.4}% 31
+\BOOKMARK [2][-]{subsection.2.4.6}{Principais Algoritmos de Otimiza\347\343o}{section.2.4}% 32
+\BOOKMARK [2][-]{subsection.2.4.7}{Tratamento de Problemas de Otimiza\347\343o}{section.2.4}% 33
+\BOOKMARK [0][-]{chapter.3}{ConstruÁ„o do Algoritmo Smart Reservoir com UtilizaÁ„o do MRST}{}% 34
+\BOOKMARK [1][-]{section.3.1}{IntroduÁ„o}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.2}{MATLAB Reservoir Simulation Toolbox}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.3}{Modelos de ReservatÛrio Utilizados}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.1}{Egg Model}{section.3.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 39
+\BOOKMARK [1][-]{section.3.4}{FunÁ„o de Custo: NPV}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.6}{UtilizaÁ„o da ProgramaÁ„o Paralela}{chapter.3}% 42
+\BOOKMARK [0][-]{chapter.4}{ExecuÁ„o e Resultados do Algoritmo Smart Reservoir}{}% 43
+\BOOKMARK [1][-]{section.4.1}{IntroduÁ„o}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.2}{ExecuÁ„o Utilizando o Egg Model}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.3}{ExecuÁ„o Utilizando o Modelo SAIGUP}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.4}{Discuss„o dos Resultados}{chapter.4}% 47
+\BOOKMARK [0][-]{chapter.5}{Conclusıes}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Conclusıes do Trabalho}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.2}{Sugestıes para Trabalhos Futuros}{chapter.5}% 50
+\BOOKMARK [0][-]{section.5.2}{REFER NCIAS BIBLIOGR¡FICAS}{}% 51
+\BOOKMARK [0][-]{chapter*.14}{AP NDICES}{}% 52

@@ -5,6 +5,8 @@
 %[PROPOSTA DE METODOLOGIA PARA \textit{RETROFITTING} DE ROBÔS INDUSTRIAIS]
 \section{Introdução}
 
+Este capítulo apresenta as ferramentas empregadas nesta dissertação, além da construção do algoritmo \textit{Smart Reservoir}. Inicialmente, é apresentada a \textit{toolbox} para simulação numérica de reservatórios no \textit{software} MATLAB, o MRST; além da \textit{toolbox}, são apresentados alguns dos modelos numéricos de reservatórios mais utilizados para testes na literatura, e que serão aproveitados para os testes com o algoritmo aqui proposto; como esse algoritmo é destinado a resolver um problema de otimização na produção de petróleo, é apresentada uma função de custo econômico que vai ser o objeto da busca pela solução desejada; esta função, denominada NPV, será apresentada e sua utilização discutida. Posteriormente, será feita uma construção do algoritmo \textit{Smart Reservoir}, desde sua fundamentação inicial até os passos que ele realiza em busca da solução do problema proposto; por fim, é discutido o uso de técnicas de programação paralela para se tentar incrementar o desempenho do \textit{Smart Reservoir}.
+
 \section{\textit{MATLAB Reservoir Simulation Toolbox}}
 O MRST --- \textit{MATLAB Reservoir Simulation Toolbox} --- é um conjunto de ferramentas programadas para utilização em conjunto com o \textit{software} MATLAB; trata-se de um conjunto de códigos e definições \textit{open-source} destinados à simulação numérica de reservatórios. Embora não seja primordialmente um simulador, o MRST oferece uma vasta quantidade de estruturas de dados e métodos computacionais de modo que o usuário possa combinar para gerar modelos e ferramentas de simulação em si. O MRST se encontra organizado em duas partes principais\footnote{Ver \cite{site:mrst}.}:
 \begin{itemize}
@@ -28,8 +30,91 @@ Algumas das principais funcionalidades oferecidas pelo MRST se encontram reunida
 Segundo Stags e Herbeck, um modelo de reservatório trata o reservatório real como um composto de vários segmentos individuais (normalmente denominados células), devido à matemática que rege o modelo. De forma simples, um modelo multicelular de reservatório simula a vazão de fluidos de um reservatório de óleo ou gás; embora não possam descrever exatamente o comportamento dos fluidos no ambiente estudado, os modelos de reservatórios produzem aproximações boas e válidas; além disso, os modelos são feitos para representar a vazão intercelular de fluidos em uma, duas ou até três dimensões. Cada célula, em um modelo de reservatório, possui informações próprias de propriedades do conjunto como tamanho, porosidade, permeabilidade, elevação, pressão e saturação dos fluidos presentes. Além disso, são necessários para um modelo os dados de cada poço presente, como localização, índice do poço, tipo do poço, vazões de produção/injeção, limites econômicos, de BHP, entre outros \cite{stags1971}.
 
 No presente trabalho, dentre os vários modelos de reservatório existentes na literatura, dois modelos foram selecionados para a aplicação do \textit{Smart Reservoir}. A escolha foi pautada principalmente pelo tamanho dos modelos, tendo em vista o equipamento disponível para a implementação e a simulação do algoritmo proposto. Além disso, são considerados modelos bifásicos, de apenas óleo e agua. Os modelos selecionados foram o \textit{Egg Model} e o SAIGUP (\textit{Sensistivity Analysis of the Impact of Geological Uncertainties on Production}), apresentados a seguir.
-\subsection{\textit{Egg Model}}
-\subsection{Modelo SAIGUP}
-\section{Função de Custo: NPV}
 
+\subsection{\textit{Egg Model}}
+Dos modelos selecionados para este estudo, o \textit{Egg Model} é o mais simples. De acordo com Jansen \textit{et al.}, o modelo foi desenvolvido como parte da tese de PHD de  Maarten Zandvliet and Gijs van Essen; a primeira referência do \textit{Egg Model} data de 2007, por  Zandvliet \textit{et al.}, contendo apenas uma realização determinística do modelo. Em 2009, Van Essen \textit{et al.} utilizam um conjunto de vários modelos \textit{Egg Model}. O modelo original ``estocástico'' consiste de 100 realizações de um reservatório canalizado na forma de campos de permeabilidade discreta modelados com $60 \times 60 \times 7 = 25.200$ células, das quais 18.553 são ativas, dando o formato de um ovo ao modelo, justificando seu nome \cite{eggM}. A Tabela \ref{tab:metodo_eggparam} mostra alguns parâmetros utilizados para o \textit{Egg Model}, enquanto que as Figuras \ref{fig:metodo_egg} e \ref{fig:metodo_eggtop} apresentam, respectivamente, um exemplo de realização do \textit{Egg Model} e uma visão de topo do mesmo obtida pelo MRST, destacando os poços existentes.
+
+\begin{table}[!ht]
+    \centering
+    \caption{Propriedades de rocha e fluidos do \textit{Egg Model} \cite{eggM}.}
+    %\resizebox{.45\textwidth}{!}{
+    \begin{tabular}{|c|l|c|}
+        \hline
+        \textbf{Símbolo} & \textbf{Variável} & \textbf{Valor} \\ \hline
+        $h$ & Altura da malha do modelo & $4 \: \mathrm{m}$ \\ \hline
+        $\Delta x, \Delta y$ & Comprimento/Largura da malha do modelo & $8 \: \mathrm{m}$ \\ \hline
+        $\varphi$ & Porosidade & $0.2$ \\ \hline
+        $c_o$ & Compressibilidade do óleo & $1.0 \times 10^{-10} \: \mathrm{Pa^{-1}}$ \\ \hline
+        $c_r$ & Compressibilidade da rocha & $0 \: \mathrm{Pa^{-1}}$ \\ \hline
+        $c_w$ & Compressibilidade da água & $1.0 \times 10^{-10} \: \mathrm{Pa^{-1}}$ \\ \hline
+        $\mu_o$ & Viscosidade dinâmica do óleo  & $5.0 \times 10^{-3}  \: \mathrm{Pa\,s}$ \\ \hline
+        $\mu_w$ & Viscosidade dinâmica da água & $1.0 \times 10^{-3} \: \mathrm{Pa\,s}$ \\ \hline
+        $k_{ro}^0$ & Permeabilidade relativa \textit{end-point} do óleo & $0.8$ \\ \hline
+        $k_{rw}^0$ & Permeabilidade relativa \textit{end-point} da água & $0.75$ \\ \hline
+        $n_o$ & Expoente de Corey do óleo & $4.0$ \\ \hline
+        $n_w$ & Expoente de Corey da água & $3.0$ \\ \hline
+        $s_{or}$ & Saturação do óleo residual & $0.1$ \\ \hline
+        $s_{wc}$ & Saturação da água conata & $0.2$ \\ \hline
+        $p_c$ & Pressão Capilar & $0.0 \: \mathrm{Pa}$ \\ \hline
+        $\breve{p_r}$ & Pressão de Reservatório inicial (camada de topo) & $40 \times 10^6 \: \mathrm{Pa}$ \\ \hline
+        $s_{w,0}$ & Saturação inicial da água & $0.1$ \\ \hline
+        $q_{w1}$ & Vazões de injeção de água, por poço & $79.5 \: \mathrm{m^3/day}$ \\ \hline
+        $p_{bh}$ & BHPs dos poços produtores & $39.5 \times 10^6  \: \mathrm{Pa}$ \\ \hline
+        $r_{well}$ & Raio do furo dos poços & $0.1 \: \mathrm{m}$ \\ \hline
+        $T$ & Tempo de simulação & $3600 \: \mathrm{days}$ \\ \hline
+    \end{tabular} %}
+    
+    \label{tab:metodo_eggparam}
+\end{table}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.5\textwidth]{figs/metodologia/metodo_egg}
+\caption{Exemplo de realização do \textit{Egg Model} \cite{eggM}.}\label{fig:metodo_egg}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.5\textwidth]{figs/metodologia/metodo_eggtop}
+\caption{Vista de topo do \textit{Egg Model}, evidenciando o posicionamento dos poços.}\label{fig:metodo_eggtop}
+\end{figure}
+
+\subsection{Modelo SAIGUP}
+O SAIGUP é, na realidade, um projeto concentrado em reservatórios na costa marítima. De acordo com Carter e Matthews, o projeto SAIGUP envolveu a criação de 400 modelos sedimentológicos que, ao serem acrescidos de falhas geológicas, geram aproximadamente 12000 reservatórios fragmentários sintéticos \cite{saigupCM}. 
+
+\section{Função de Custo: NPV}
+Como o presente estudo é um problema de otimização relacionado à produção de petróleo, e há o envolvimento de aspectos econômicos, é necessário se estabelecer uma função que seja objeto da otimização: a função objetivo. 
+
+Dos vários métodos de análise de rentabilidade e sucesso de inovações tecnológicas, um dos mais utilizados, provavelmente o mais popular e o mais sofisticado, segundo \v{Z}i\v{z}lavsk\'{y}, é o Valor de Rede Presente, conhecido como \textbf{NPV} (\textit{Net-Present Value}) \cite{ziz2014}. Segundo Gallo, para se avaliar a viabilidade de um projeto, deve-se estimar o quanto é esperado de lucro a partir de investimento, em valores atuais. O NPV é um método largamente utilizado pelos seguintes motivos \cite{SITE:NPV}:
+
+\begin{itemize}
+\item O NPV considera o \textit{valor temporal} do dinheiro, isto é, o quanto uma eventual movimentação financeira futura equivale nos dias atuais;
+\item O NPV provê um número concreto que os administradores financeiros podem utilizar facilmente para comparar um desembolso inicial com valor de retorno presente.
+\end{itemize}
+
+Porém, \v{Z}i\v{z}lavsk\'{y} destaca algumas limitações, muitas vezes subestimadas, do NPV como ferramenta de análise de oportunidades de inovação\footnote{Ver \cite{ziz2014}}:
+\begin{itemize}
+\item O fator de desconto em projetos de inovação deve ser composto de dois elementos: uma taxa livre de riscos que é normalmente considerada como a taxa de juros ofertada por laços governamentais de curto prazo, e uma taxa de risco \textit{premium} que considera os riscos identificados, sejam eles financeiros, técnicos ou comerciais, associados ao projeto específico.
+\item A definição de fluxo de caixa num horizonte de longo prazo --- o cálculo do NPV requer uma definição exata do fluxo de caixa a ser descontado para cada período de tempo considerado na avaliação; tal valor pode ser difícil, se não impossível, de ser determinado em projetos inovadores que possuam grande potencial a longo prazo, mas para os quais os administradores sejam impossibilitados de fazer uma análise adequada. Isso mostra que o NPV, aparentemente, discrimina injustificadamente
+projetos de longo prazo e mais arriscados.   
+\end{itemize}
+
+A questão a ser discutida agora é: como se calcula o NPV? Gallo cita que, por mais que não se calcule essa função na mão, é útil entender a matemática por trás dela; a Definição \ref{NPVdef} é um esboço matemático dos princípios que regem o NPV\footnote{Ver \cite{SITE:NPV}}.
+
+\begin{definition}\label{NPVdef}
+A função NPV pode ser representada em sua forma básica pela expressão
+\begin{equation}
+	NPV = \sum \frac{FC^{(n)}}{\left(1 + b\right)^n},
+\end{equation}
+em que $FC$ é o fluxo de caixa total no período de tempo $n$ e $b$ o fator de desconto.
+\end{definition}
+
+Dentre os projetos em que o NPV pode ser aplicado para análise a longo prazo, se situa a perspectiva econômica da produção de petróleo. Considerando a Definição \ref{NPVdef}, a variável fluxo de caixa pode ser entendida como uma relação entre a rentabilidade dos produtos obtidos, como petróleo e o gás natural, e os custos envolvidos com a produção e tratamento de materiais indesejáveis e com a adoção de métodos de recuperação secundária, como a injeção de água. Utilizando-se a abordagem proposta por Fonseca \textit{et al.}, o NPV pode ser calculado com a expressão
+\begin{equation}\label{NPVReservoir}
+	 NPV = \sum_{n=1}^{N_t} \Bigg\lbrace \frac{\Delta t_n}{(1+b)^{\frac{t_n}{365}}} \Bigg[ \sum_{j=1}^{N_P} \left(r_o \overline{q_{o,j}^{(n)}} - c_w \overline{q_{w,j}^{(n)}}\right) - \sum_{k=1}^{N_I} \left(c_{wi} \overline{q_{wi,k}^{(n)}} - c_{gi} \overline{q_{gi,k}^{(n)}}\right) \Bigg]\Bigg\rbrace,
+\end{equation} 
+em que $N_t$ é o número de passos de tempo do projeto; $N_P$ é o número de poços produtores e $N_I$, o número de poços injetores; $r_o$ é a rentabilidade do óleo (em $\$/STB$)\footnote{A unidade $STB$, conhecida como \textit{Stock Tank Barrel}, equivale a 5.61 pés cúbicos a $60°F$ de temperatura e 14.7 $psi$ de pressão.}, $c_w$ e $c_{wi}$ são, respectivamente, o custo de água produzida e injetada (em $\$/STB$) e $c_gi$ é o custo de gás injetado (em $\$/Mscf$)\footnote{$Mscf$: Milhares de pés cúbicos padrão, isto é, a $60°F$ de temperatura e 14.7 $psi$ de pressão.}; $t_n$ é a medida de tempo ao final de cada passo de simulação e $\Delta t_n$ é o comprimento do passo; $\overline{q_{o,j}^{(n)}}$ e $\overline{q_{w,j}^{(n)}}$ são, respectivamente, as vazões médias de água e óleo no poço produtor $j$ no $n$-ésimo passo de tempo; por fim, $\overline{q_{wi,k}^{(n)}}$ e $\overline{q_{gi,k}^{(n)}}$ representam as vazões médias de água e de gás injetados no poço injetor $k$ no $n$-ésimo passo de tempo --- todas as vazões médias são dadas na unidade $STB/$dia. Ainda se considera, para efeitos de simplificação em problemas de otimização envolvendo engenharia de reservatório e cálculo do NPV, que não há fator de desconto ($b = 0$) \cite{fonseca}. Por fim, como os modelos considerados para este trabalho adotam exclusivamente o método de recuperação secundária por injeção de água, considera-se também que não há vazão de gás injetado; portanto, tem-se que $\overline{q_{gi,k}^{(n)}} = 0,~\forall k,n$.
 \section{Algoritmo \textit{Smart Reservoir}}
+\subsubsection{Núcleo do Algoritmo}
+\subsubsection{Métodos Adicionais}
+\section{Utilização da Programação Paralela}

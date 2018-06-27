@@ -10,10 +10,33 @@
 {AGUIRRE, L.~A. \emph{Introdução à identificação de sistemas: técnicas lineares
   e não lineares: teoria e aplicação}. Belo Horizonte, MG: Editora UFMG, 2015.}
 
+\bibitem[Carter e Matthews 2008]{saigupCM}
+\abntrefinfo{Carter e Matthews}{CARTER; MATTHEWS}{2008}
+{CARTER, J.~N.; MATTHEWS, J.~D. Optimization of a reservoir development plan
+  using a parallel genetic algorithm.
+\emph{Petroleum Geoscience}, v.~14, p. 85--90, 2008.}
+
 \bibitem[Eremin e Nazarova 2003]{eremin}
 \abntrefinfo{Eremin e Nazarova}{EREMIN; NAZAROVA}{2003}
 {EREMIN, N.; NAZAROVA, L. N. \emph{Enhanced Oil Recovery Methods}. [S.l.:
   s.n.], 2003.}
+
+\bibitem[Fonseca et al. 2017]{fonseca}
+\abntrefinfo{Fonseca et al.}{FONSECA et al.}{2017}
+{FONSECA, R. R.-M. et al. A stochastic simplex approximate gradient {(StoSAG)}
+  for optimization under uncertainty.
+\emph{International Journal for Numerical Methods in Engineering}, v.~109,
+  n.~13, p. 1756--1776, 2017.
+ISSN 1097-0207.
+Nme.5342.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1002/nme.5342}.}
+
+\bibitem[Gallo 2014]{SITE:NPV}
+\abntrefinfo{Gallo}{GALLO}{2014}
+{GALLO, A. \emph{A Refresher on Net Present Value}. 2014.
+Accesso em: 14 de Junho de 2018.
+Dispon{\'\i}vel em:
+  \url{https://hbr.org/2014/11/a-refresher-on-net-present-value}.}
 
 \bibitem[Guller 2010]{guller}
 \abntrefinfo{Guller}{GULLER}{2010}
@@ -27,6 +50,13 @@ ISBN 978-0-387-68407-9.}
   elementos de análise convexa e de dualidade}. Rio de Janeiro, RJ: IMPA, 2005.
 ISBN 85-244-0238-5.}
 
+\bibitem[Jansen et al. 2014]{eggM}
+\abntrefinfo{Jansen et al.}{JANSEN et al.}{2014}
+{JANSEN, J.~D. et al. The egg model - a geological ensemble for reservoir
+  simulation.
+\emph{Geoscience Data Journal}, v.~1, n.~2, p. 192--195, 2014.
+ISSN 2049-6060.}
+
 \bibitem[Latil 1980]{latil}
 \abntrefinfo{Latil}{LATIL}{1980}
 {LATIL, M. \emph{Enhanced Oil Recovery}. [S.l.]: Editions OPHRYS, 1980. 36~p.
@@ -39,6 +69,12 @@ ISBN 9782710810506.}
 \emph{Computational Geosciences}, v.~16, n.~2, p. 297--322, Mar 2012.
 ISSN 1573-1499.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-011-9244-4}.}
+
+\bibitem[Peaceman 1977]{simres}
+\abntrefinfo{Peaceman}{PEACEMAN}{1977}
+{PEACEMAN, D.~W. \emph{Fundamentals of Numerical Reservoir Simulation}.
+  Amsterdam: Elsevier, 1977. v.~6.
+ISBN 0-444-41578-5.}
 
 \bibitem[Reklaitis 1983]{reklaitis}
 \abntrefinfo{Reklaitis}{REKLAITIS}{1983}
@@ -87,5 +123,16 @@ ISBN 85-7193-099-6.}
 {YANG, X.-S. \emph{Engineering optimization: an introduction with metaheuristic
   applications}. New York: Wiley, 2010.
 ISBN 978-0-470-58246-6.}
+
+\bibitem[{\v Z}i{\v z}lavsk{\'y} 2014]{ziz2014}
+\abntrefinfo{{\v Z}i{\v z}lavsk{\'y}}{{\v Z}I{\v Z}LAVSK{\'Y}}{2014}
+{{\v Z}I{\v Z}LAVSK{\'Y}, O. Net present value approach: Method for economic
+  assessment of innovation projects.
+\emph{Procedia - Social and Behavioral Sciences}, v.~156, p. 506 -- 512, 2014.
+ISSN 1877-0428.
+19th International Scientific Conference "Economics and Management 2014
+  (ICEM-2014)".
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S1877042814060509}.}
 
 \end{thebibliography}
