@@ -31,22 +31,26 @@
 \BOOKMARK [2][-]{subsection.2.4.5}{Condi\347\365es de Otimalidade}{section.2.4}% 31
 \BOOKMARK [2][-]{subsection.2.4.6}{Principais Algoritmos de Otimiza\347\343o}{section.2.4}% 32
 \BOOKMARK [2][-]{subsection.2.4.7}{Tratamento de Problemas de Otimiza\347\343o}{section.2.4}% 33
-\BOOKMARK [0][-]{chapter.3}{Construção do Algoritmo Smart Reservoir com Utilização do MRST}{}% 34
-\BOOKMARK [1][-]{section.3.1}{Introdução}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.2}{MATLAB Reservoir Simulation Toolbox}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.3}{Modelos de Reservatório Utilizados}{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.1}{Egg Model}{section.3.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 39
-\BOOKMARK [1][-]{section.3.4}{Função de Custo: NPV}{chapter.3}% 40
-\BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 41
-\BOOKMARK [1][-]{section.3.6}{Utilização da Programação Paralela}{chapter.3}% 42
-\BOOKMARK [0][-]{chapter.4}{Execução e Resultados do Algoritmo Smart Reservoir}{}% 43
-\BOOKMARK [1][-]{section.4.1}{Introdução}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.2}{Execução Utilizando o Egg Model}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.3}{Execução Utilizando o Modelo SAIGUP}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.4}{Discussão dos Resultados}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{Conclusões}{}% 48
-\BOOKMARK [1][-]{section.5.1}{Conclusões do Trabalho}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.2}{Sugestões para Trabalhos Futuros}{chapter.5}% 50
-\BOOKMARK [0][-]{section.5.2}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 51
-\BOOKMARK [0][-]{chapter*.14}{APÊNDICES}{}% 52
+\BOOKMARK [1][-]{section.2.5}{Otimização e Engenharia de Reservatório}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.5.1}{Contexto}{section.2.5}% 35
+\BOOKMARK [2][-]{subsection.2.5.2}{Algoritmos de Gradiente Descendente}{section.2.5}% 36
+\BOOKMARK [2][-]{subsection.2.5.3}{Algoritmos Meta-heurísticos}{section.2.5}% 37
+\BOOKMARK [0][-]{chapter.3}{Construção do Algoritmo Smart Reservoir com Utilização do MRST}{}% 38
+\BOOKMARK [1][-]{section.3.1}{Introdução}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.2}{MATLAB Reservoir Simulation Toolbox}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.3}{Modelos de Reservatório Utilizados}{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.1}{Egg Model}{section.3.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 43
+\BOOKMARK [1][-]{section.3.4}{Função de Custo: NPV}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.6}{Utilização da Programação Paralela}{chapter.3}% 46
+\BOOKMARK [0][-]{chapter.4}{Execução e Resultados do Algoritmo Smart Reservoir}{}% 47
+\BOOKMARK [1][-]{section.4.1}{Introdução}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.2}{Execução Utilizando o Egg Model}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.3}{Execução Utilizando o Modelo SAIGUP}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.4}{Discussão dos Resultados}{chapter.4}% 51
+\BOOKMARK [0][-]{chapter.5}{Conclusões}{}% 52
+\BOOKMARK [1][-]{section.5.1}{Conclusões do Trabalho}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{Sugestões para Trabalhos Futuros}{chapter.5}% 54
+\BOOKMARK [0][-]{section.5.2}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 55
+\BOOKMARK [0][-]{chapter*.14}{APÊNDICES}{}% 56

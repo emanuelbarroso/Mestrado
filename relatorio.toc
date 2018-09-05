@@ -1,4 +1,4 @@
-\select@language {brazilian}
+\babel@toc {brazilian}{}
 \contentsline {chapter}{RESUMO}{i}{chapter*.1}
 \contentsline {chapter}{ABSTRACT}{ii}{chapter*.2}
 \contentsline {chapter}{{LISTA DE FIGURAS}}{iv}{chapter*.3}
@@ -40,6 +40,10 @@
 \contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{29}{subsection.2.4.5}
 \contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{34}{subsection.2.4.6}
 \contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{38}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}Otimização e Engenharia de Reservatório}{39}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Contexto}{39}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Algoritmos de Gradiente Descendente}{39}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Algoritmos Meta-heurísticos}{39}{subsection.2.5.3}
 \contentsline {chapter}{\numberline {3}Construção do Algoritmo \textit {Smart Reservoir} com Utilização do MRST}{40}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introdução}{40}{section.3.1}
 \contentsline {section}{\numberline {3.2}\textit {MATLAB Reservoir Simulation Toolbox}}{40}{section.3.2}
@@ -48,6 +52,8 @@
 \contentsline {subsection}{\numberline {3.3.2}Modelo SAIGUP}{43}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Função de Custo: NPV}{43}{section.3.4}
 \contentsline {section}{\numberline {3.5}Algoritmo \textit {Smart Reservoir}}{45}{section.3.5}
+\contentsline {subsubsection}{\numberline {3.5.0.1}Núcleo do Algoritmo}{45}{subsubsection.3.5.0.1}
+\contentsline {subsubsection}{\numberline {3.5.0.2}Métodos Adicionais}{45}{subsubsection.3.5.0.2}
 \contentsline {section}{\numberline {3.6}Utilização da Programação Paralela}{45}{section.3.6}
 \contentsline {chapter}{\numberline {4}Execução e Resultados do Algoritmo \textit {Smart Reservoir}}{46}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introdução}{46}{section.4.1}
