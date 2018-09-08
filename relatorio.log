@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.3)  5 SEP 2018 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.3)  8 SEP 2018 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2187,20 +2187,20 @@ Package babel Info: Redefining portuges shorthand "|
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 13.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 13.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 \newpage
-             [1
+l.13 \newpage
+              [1
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 15.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 272.
@@ -2360,28 +2360,26 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 12.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 10.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 \item A
-            dicionar suplemento de energia secund\'{a}ria, artificialmente c...
-[2
+l.10 
+      [2
 
 
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 12.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining portuges shorthand "|
@@ -2393,7 +2391,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
- [4]
+
+[4]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 44.
 Package babel Info: Redefining portuges shorthand "|
@@ -2506,8 +2505,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 194.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 194.
-
-[12]
+ [12]
 <figs/revisao/revisao_injcomp.png, id=644, 324.21124pt x 250.9375pt>
 File: figs/revisao/revisao_injcomp.png Graphic file (type png)
 <use figs/revisao/revisao_injcomp.png>
@@ -2518,7 +2516,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 205.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 205.
- [13 <./figs/revisao/revisao_redis.png> <./figs/revisao/revisao_injcomp.png>]
+
+[13 <./figs/revisao/revisao_redis.png> <./figs/revisao/revisao_injcomp.png>]
 <figs/revisao/revisao_tst.png, id=662, 371.3875pt x 294.09875pt>
 File: figs/revisao/revisao_tst.png Graphic file (type png)
 <use figs/revisao/revisao_tst.png>
@@ -2528,7 +2527,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 221.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 221.
- [14 <./figs/revisao/revisao_tst.png>]) (./secRevisao_Simulacao.tex
+
+[14 <./figs/revisao/revisao_tst.png>]) (./secRevisao_Simulacao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
@@ -2575,7 +2575,12 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <10.95> not available
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 103.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 109.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 109.
+ [19]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 118.
 ) (./secRevisao_Otimizacao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
@@ -2585,59 +2590,59 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
- [19]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 59.
  [20]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 59.
  [21]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 94.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 94.
+ [22]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 142.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 142.
- [22]
+ [23]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 186.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 186.
- [23]
+ [24]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 193.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 218.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 218.
- [24]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 259.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 259.
  [25]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 259.
+
+[26]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 296.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 296.
-
-[26]
+ [27]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 306.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 335.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 335.
- [27]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 373.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 373.
  [28]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 373.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 373.
+ [29]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 375.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
@@ -2646,22 +2651,22 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 411.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 411.
- [29]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 461.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 461.
  [30]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 508.
+(babel)             in language  on input line 461.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 508.
+(babel)             in language  on input line 461.
  [31]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 508.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 508.
+ [32]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 557.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 557.
- [32]
+ [33]
 Overfull \hbox (4.75464pt too wide) in paragraph at lines 585--586
 []\T1/ptm/m/it/10.95 Seja $[]$ um mi-ni-mi-za-dor lo-cal do pro-blema
  []
@@ -2670,36 +2675,36 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 607.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 607.
-[33]
+[34]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 613.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 633.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 633.
- [34]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 668.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 668.
  [35]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 668.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 668.
+ [36]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 696.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 696.
- [36]
+ [37]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 712.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 715.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 715.
- [37])
+ [38])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 16.
- [38]
+ [39]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining portuges shorthand "|
@@ -2713,7 +2718,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 297.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 297.
- [39]
+ [40]
 \openout2 = `cap_Metodologia.aux'.
 
  (./cap_Metodologia.tex
@@ -2732,7 +2737,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
-[40
+[41
 
 
 
@@ -2743,18 +2748,18 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
- [41]
+ [42]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 34.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
-<figs/metodologia/metodo_egg.png, id=1137, 226.2051pt x 166.221pt>
+<figs/metodologia/metodo_egg.png, id=1147, 226.2051pt x 166.221pt>
 File: figs/metodologia/metodo_egg.png Graphic file (type png)
 <use figs/metodologia/metodo_egg.png>
 Package pdftex.def Info: figs/metodologia/metodo_egg.png  used on input line 72
 .
 (pdftex.def)             Requested size: 232.17459pt x 170.6084pt.
-<figs/metodologia/metodo_eggtop.png, id=1142, 421.575pt x 316.18124pt>
+<figs/metodologia/metodo_eggtop.png, id=1152, 421.575pt x 316.18124pt>
 File: figs/metodologia/metodo_eggtop.png Graphic file (type png)
 <use figs/metodologia/metodo_eggtop.png>
 Package pdftex.def Info: figs/metodologia/metodo_eggtop.png  used on input line
@@ -2766,14 +2771,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 84.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 84.
- [42]
+ [43]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
- [43 <./figs/metodologia/metodo_egg.png (PNG copy)> <./figs/metodologia/metodo_
+ [44 <./figs/metodologia/metodo_egg.png (PNG copy)> <./figs/metodologia/metodo_
 eggtop.png (PNG copy)>]
 Missing character: There is no ° in font cmr9!
 Missing character: There is no ° in font cmr9!
@@ -2781,7 +2786,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 117.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 117.
- [44]
+ [45]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 117.
 Package babel Info: Redefining portuges shorthand "|
@@ -2791,7 +2796,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 300.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 300.
- [45]
+ [46]
 \openout2 = `cap_Desenvolvimento.aux'.
 
  (./cap_Desenvolvimento.tex
@@ -2811,7 +2816,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 303.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 303.
- [46
+ [47
 
 
 
@@ -2831,7 +2836,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 309.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 309.
- [47
+ [48
 
 
 
@@ -2843,7 +2848,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
- [48
+ [49
 
 
 ])
@@ -2851,7 +2856,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 323.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 323.
- [49]
+ [50]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 323.
 \c@noApendice=\count345
@@ -2863,7 +2868,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 369.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 369.
- [50
+ [51
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
@@ -2881,15 +2886,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
  ) 
 Here is how much of TeX's memory you used:
- 24471 strings out of 492982
- 440409 string characters out of 6134897
+ 24474 strings out of 492982
+ 440442 string characters out of 6134897
  522984 words of memory out of 5000000
- 27220 multiletter control sequences out of 15000+600000
+ 27221 multiletter control sequences out of 15000+600000
  615930 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,13n,45p,10400b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.38} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.39} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.38} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.37} has been referenced but does not exis
 t, replaced by a fixed one
@@ -3022,10 +3030,10 @@ etic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on relatorio.pdf (64 pages, 1003032 bytes).
+Output written on relatorio.pdf (65 pages, 1008168 bytes).
 PDF statistics:
- 1370 PDF objects out of 1440 (max. 8388607)
- 1217 compressed objects within 13 object streams
- 363 named destinations out of 1000 (max. 500000)
+ 1380 PDF objects out of 1440 (max. 8388607)
+ 1226 compressed objects within 13 object streams
+ 365 named destinations out of 1000 (max. 500000)
  539 words of extra memory for PDF output out of 10000 (max. 10000000)
 

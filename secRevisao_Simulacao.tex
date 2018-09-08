@@ -101,5 +101,19 @@ onde $c_f$ é a compressibilidade efetiva efetiva da formação e $\phi$, sua po
 Além das leis até aqui citadas, cabe ressaltar que outras podem ser utilizadas em caso de simulações de fenômenos específicos, como injeção de vapor, injeção de polímeros, além de outros métodos empregados na produção de petróleo.
 
 \subsection{Tipos de Simuladores}
+Segundo Rosa, os simuladores de reservatórios podem ser classificados em função de três critérios básicos: o tratamento matemático utilizado, o número de dimensões consideradas e o número de fases admitidas. Em relação à matemática do simulador, os simuladores podem ser classificados em: 
+
+\begin{itemize}
+	\item \textbf{Modelo Beta ou volumétrico:} É também conhecido como \textit{black oil}; nesse modelo, são consideradas as funções de pressão e da temperatura do reservatório. Além disso, cada fase presente no reservatório (água, óleo e/ou gás) é admitida como constituída por apenas um componente, mesmo que, na prática, o óleo seja composto por vários hidrocarbonetos, além de impurezas.
+	\item \textbf{Modelo composicional:} Além de considerar a pressão e a temperatura do reservatório, também se admite as composições das diversas fases que estejam presentes no meio poroso. Ao contrário do \textit{black oil}, por exemplo, o óleo passa a ser tratado pelos seus vários hidrocarbonetos de que é composto, tais como $C_1$, $C_2$, $C_3$, etc. Porém, como o número de componentes no óleo é grande, alguns hidrocarbonetos são agrupados nos chamados \textit{pseudocomponentes}; a utilização dessa abordagem reduz o tempo computacional necessário ao modelo, uma vez que um tratamento mais rigoroso poderia tornar impraticável a simulação composicional.
+	\item \textbf{Modelo térmico:} É utilizado quando é necessário considerar os efeitos de variações térmica no interior do reservatório --- por exemplo, quando se estuda a aplicação de métodos térmicos de recuperação secundária, como injeção de vapor, injeção de água quente ou combustão \textit{in situ}. Como os modelos térmicos tratam situações complexas, eles são necessariamente composicionais.
+\end{itemize}
+
+Quanto ao número de dimensões, os simuladores são classificados de acordo com o número de dimensões nas quais se admite fluxo. Neste sentido, eles podem ser classificados em \textit{unidimensionais} (Figura ...), \textit{bidimensionais} (Figura ...) e \textit{tridimensionais} (Figura ...). Por fim, os simuladores numéricos podem ser classificados de acordo com o número de fases: \textit{monofásicos}, caso haja apenas uma fase (no caso de água, se trata de um aquífero); \textit{bifásicos}, quando há duas fases presentes (água e óleo, no caso de reservatórios de óleo, ou água e gás, nos reservatórios de gás); e \textit{trifásicos}, no caso da existência de três fases (água, óleo e gas)\footnote{A classificação dos modelos de simulação podem ser encontradas em \cite[pp. 517--519]{engres}}.
+
+%TODO : Insira as figuras AQUI!
+
+É importante que, ao se escolher um simulador numérico para se resolver problemas de engenharia de reservatório, se considere vários fatores, a saber: o tipo de estudo a ser feito, tipo e características do reservatório e dos fluidos presentes, quantidade e qualidade dos dados, o detalhamento necessário do estudo e os recursos computacionais disponíveis \cite[p. 519]{engres}. Por exemplo, é impraticável o uso de modelos composicionais em computadores cuja capacidade seja comparável a um computador pessoal de alto desempenho, devido à complexidade dos cálculos envolvidos. Por outro lado, por sua simplicidade, um modelo \textit{black oil} poderia ser considerado, respeitando-se ao máximo as características do reservatório estudado.
 
 \subsection{Uso de Simuladores Numéricos para Estudos de Reservatórios}
+
