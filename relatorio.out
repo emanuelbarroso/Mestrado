@@ -19,10 +19,10 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{M\351todos Convencionais}{section.2.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.4}{Esquemas de Inje\347\343o}{section.2.2}% 20
 \BOOKMARK [2][-]{subsection.2.2.5}{Aspectos Operacionais da Inje\347\343o de \301gua}{section.2.2}% 21
-\BOOKMARK [1][-]{section.2.3}{Simula√ß√£o Num√©rica de Reservat√≥rios}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.3.1}{Leis F√≠sicas Consideradas}{section.2.3}% 23
+\BOOKMARK [1][-]{section.2.3}{Simula\347\343o Num\351rica de Reservat\363rios}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.3.1}{Leis F\355sicas Consideradas}{section.2.3}% 23
 \BOOKMARK [2][-]{subsection.2.3.2}{Tipos de Simuladores}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.3}{Uso de Simuladores Num√©ricos para Estudos de Reservat√≥rios}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.3}{Uso de Simuladores Num\351ricos para Estudos de Reservat\363rios}{section.2.3}% 25
 \BOOKMARK [1][-]{section.2.4}{Conceitos de Otimiza\347\343o}{chapter.2}% 26
 \BOOKMARK [2][-]{subsection.2.4.1}{Defini\347\365es e Fatos B\341sicos}{section.2.4}% 27
 \BOOKMARK [2][-]{subsection.2.4.2}{Diferenciabilidade de Fun\347\365es Escalares}{section.2.4}% 28
@@ -31,10 +31,10 @@
 \BOOKMARK [2][-]{subsection.2.4.5}{Condi\347\365es de Otimalidade}{section.2.4}% 31
 \BOOKMARK [2][-]{subsection.2.4.6}{Principais Algoritmos de Otimiza\347\343o}{section.2.4}% 32
 \BOOKMARK [2][-]{subsection.2.4.7}{Tratamento de Problemas de Otimiza\347\343o}{section.2.4}% 33
-\BOOKMARK [1][-]{section.2.5}{OtimizaÁ„o e Engenharia de ReservatÛrio}{chapter.2}% 34
+\BOOKMARK [1][-]{section.2.5}{Otimiza√ß√£o e Engenharia de Reservat√≥rio}{chapter.2}% 34
 \BOOKMARK [2][-]{subsection.2.5.1}{Contexto}{section.2.5}% 35
 \BOOKMARK [2][-]{subsection.2.5.2}{Algoritmos de Gradiente Descendente}{section.2.5}% 36
-\BOOKMARK [2][-]{subsection.2.5.3}{Algoritmos Meta-heurÌsticos}{section.2.5}% 37
+\BOOKMARK [2][-]{subsection.2.5.3}{Algoritmos Meta-heur√≠sticos}{section.2.5}% 37
 \BOOKMARK [0][-]{chapter.3}{ConstruÁ„o do Algoritmo Smart Reservoir com UtilizaÁ„o do MRST}{}% 38
 \BOOKMARK [1][-]{section.3.1}{IntroduÁ„o}{chapter.3}% 39
 \BOOKMARK [1][-]{section.3.2}{MATLAB Reservoir Simulation Toolbox}{chapter.3}% 40

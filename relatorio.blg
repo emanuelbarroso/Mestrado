@@ -9,6 +9,8 @@ A level-1 auxiliary file: cap_Metodologia.aux
 A level-1 auxiliary file: cap_Desenvolvimento.aux
 A level-1 auxiliary file: cap_Conclusoes.aux
 The style file: abntex2-alf.bst
+A level-1 auxiliary file: cap_ApendiceEgg.aux
+A level-1 auxiliary file: cap_ApendiceSaigup.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -31,7 +33,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 21 entries,
             6714 wiz_defined-function locations,
-            1341 strings with 12450 characters,
+            1343 strings with 12491 characters,
 and the built_in function-call counts, 20171 in all, are:
 = -- 2034
 > -- 455

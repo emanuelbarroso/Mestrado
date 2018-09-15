@@ -635,11 +635,11 @@ Antes de se proceder \`{a} descri\c{c}\~{a}o dos principais algoritmos de otimiz
 Duas classes de problemas especiais devem ser mencionadas a respeito do poblema $\setP$:
 
 \begin{itemize}
-\item \textbf{Programa\c{c}\~{a}o Linear} Caso especial do problema $\setP$ quando a fun\c{c}\~{a}o objetivo \'{e} uma forma afim, isto \'{e},
+\item \textbf{Programa\c{c}\~{a}o Linear:} É um caso especial do problema $\setP$ quando a fun\c{c}\~{a}o objetivo \'{e} uma forma afim, isto \'{e},
 \begin{equation*}
 f(\mathbf{x}) = \mathbf{q}^T \mathbf{x} + c;
 \end{equation*}
-\item \textbf{Programa\c{c}\~{a}o Quadr\'{a}tica} Caso especial do problema $\setP$ quando a fun\c{c}\~{a}o objetivo \'{e} uma forma quadr\'{a}tica, isto \'{e},
+\item \textbf{Programa\c{c}\~{a}o Quadr\'{a}tica:} Caso em que a fun\c{c}\~{a}o objetivo de $\setP$ \'{e} uma forma quadr\'{a}tica, ou seja,
 \begin{equation*}
 f(\mathbf{x}) = \frac{1}{2}\mathbf{x}^T \mathbf{Hx} + \mathbf{q}^T \mathbf{x} + c,
 \end{equation*}
@@ -653,26 +653,26 @@ que \'{e} sempre sim\'{e}trica.
 Ressalta-se que esses casos especiais s\~{a}o facilmente resolvidos sob dadas condi\c{c}\~{o}es --- por exemplo, a mtriz $\mathbf{H}$ (ou $\tilde{\mathbf{H}}$) ser semidefinida positiva. Para outras classes de problemas, ser\~{a}o apresentados v\'{a}rios algoritmos. Tais algoritmos podem ser encontrados alguns em \cite{guller} e outros em \cite{yang}:
 
 \begin{itemize}
-\item \textbf{M\'{e}todo de Newton}: Assume que o problema $\setP$ \'{e} irrestrito e a fun\c{c}\~{a}o objetivo \'{e} continuamente diferenci\'{a}vel. Originalmente aplicado \`{a} solu\c{c}\~{a}o de equa\c{c}\~{o}es, o M\'{e}todo de Newton tamb\'{e}m pode ser aplicado em otimiza\c{c}\~{a}o no sentido de que ele \'{e} utilizado para resolver a condi\c{c}\~{a}o de otimalidade necess\'{a}ria de primeira ordem (ver Teorema \ref{theoCO1}). \'{E} um algoritmo iterativo cujos passos s\~{a}o dados por
+\item \textbf{M\'{e}todo de Newton:} Assume que o problema $\setP$ \'{e} irrestrito e a fun\c{c}\~{a}o objetivo \'{e} continuamente diferenci\'{a}vel. Originalmente aplicado \`{a} solu\c{c}\~{a}o de equa\c{c}\~{o}es, o M\'{e}todo de Newton tamb\'{e}m pode ser aplicado em otimiza\c{c}\~{a}o no sentido de que ele \'{e} utilizado para resolver a condi\c{c}\~{a}o de otimalidade necess\'{a}ria de primeira ordem (ver Teorema \ref{theoCO1}). \'{E} um algoritmo iterativo cujos passos s\~{a}o dados por
 \begin{equation}
 \mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} - H^{-1}(f(\mathbf{x}^{(n)}))f(\mathbf{x}^{(n)}),
 \end{equation}
 tomando-se um ponto vi\'{a}vel inicial $\mathbf{x}^{(0)}$. $H^{-1}$ \'{e} a matriz Hessiana inversa da fun\c{c}\~{a}o objetivo; uma dificuldade desse algoritmo reside no condicionamento num\'{e}rico resultante da aplica\c{c}\~{a}o de sucessivas invers\~{o}es dessa matriz, al\'{e}m do c\'{a}lculo dessas invers\~{o}es em si.
 
-\item \textbf{M\'{e}todo do Gradiente Descendente}: Busca obter o menor valor da fun\c{c}\~{a}o objetivo a partir de um ponto $\mathbf{x}^{(0)}$. Toma-se um passo $\alpha{(i)} > 0$ para cada itera\c{c}\~{a}o, com o cuidado de situ\'{a}-lo em casos que as itera\c{c}\~{o}es aproximem-se adequadamente do ponto desejado. Cada itera\c{c}\~{a}o \'{e} dada por
+\item \textbf{M\'{e}todo do Gradiente Descendente:} Busca obter o menor valor da fun\c{c}\~{a}o objetivo a partir de um ponto $\mathbf{x}^{(0)}$. Toma-se um passo $\alpha{(i)} > 0$ para cada itera\c{c}\~{a}o, com o cuidado de situ\'{a}-lo em casos que as itera\c{c}\~{o}es aproximem-se adequadamente do ponto desejado. Cada itera\c{c}\~{a}o \'{e} dada por
 \begin{equation*}
 \mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} - \alpha^{(n)}\norm{\nabla f(\mathbf{x}^{(n)})}_{2}^{2}.
 \end{equation*}
 
-\item \textbf{M\'{e}todo Simplex}: Utilizado em problemas de programa\c{c}\~{a}o linear, foi introduzido por George Dantzig em 1947. Funciona da seguinte forma: assume-se que os pontos extremos do problema s\~{a}o conhecidos, ou se determina esses pontos para se checar a exist\^{e}ncia de solu\c{c}\~{a}o vi\'{a}vel. Com esses pontos conhecidos, \'{e} trivial determinar o ponto de \'{o}timo utilizado rela\c{c}\~{o}es alg\'{e}bricas e a fun\c{c}\~{a}o objetivo. Se o teste de otimalidade falha, um ponto extremo adjacente \'{e} testado. O algoritmo para em caso de encontro de uma solu\c{c}\~{a}o vi\'{a}vel ou quando se trata de um problema ilimitado\footnote{Ver algoritmo detalhado em \cite{yang},pp 70-75.}.
+\item \textbf{M\'{e}todo Simplex:} Utilizado em problemas de programa\c{c}\~{a}o linear, foi introduzido por George Dantzig em 1947. Funciona da seguinte forma: assume-se que os pontos extremos do problema s\~{a}o conhecidos, ou se determina esses pontos para se checar a exist\^{e}ncia de solu\c{c}\~{a}o vi\'{a}vel. Com esses pontos conhecidos, \'{e} trivial determinar o ponto de \'{o}timo utilizado rela\c{c}\~{o}es alg\'{e}bricas e a fun\c{c}\~{a}o objetivo. Se o teste de otimalidade falha, um ponto extremo adjacente \'{e} testado. O algoritmo para em caso de encontro de uma solu\c{c}\~{a}o vi\'{a}vel ou quando se trata de um problema ilimitado\footnote{Ver algoritmo detalhado em \cite[pp. 70--75]{yang}.}.
 
-\item \textbf{M\'{e}todo de Penalidade}: Utilizado em problemas de forma geral, como \eqref{compProb2}. A ideia \'{e} definir uma fun\c{c}\~{a}o de penalidade a ser minimizada de maneira que o problema de otimiza\c{c}\~{a}o sobre ela seja irrestrito. Normalmente, essa fun\c{c}\~{a}o de penaliza\c{c}\~{a}o \'{e} dada por
+\item \textbf{M\'{e}todo de Penalidade:} Utilizado em problemas de forma geral, como \eqref{compProb2}. A ideia \'{e} definir uma fun\c{c}\~{a}o de penalidade a ser minimizada de maneira que o problema de otimiza\c{c}\~{a}o sobre ela seja irrestrito. Normalmente, essa fun\c{c}\~{a}o de penaliza\c{c}\~{a}o \'{e} dada por
 \begin{equation}
 \Pi(\mathbf{x},\mu_i,\nu_j) = f(\mathbf{x}) + \sum_{i=1}^{r} \mu_i g_i(\mathbf{x}) + \sum_{j=1}^{m} \nu_j h_j(\mathbf{x}),
 \end{equation} 
 em que $\mu_i \gg 1$ e $\nu_j \ge 0$ grandes o suficiente para se garantir uma boa qualidade da solu\c{c}\~{a}o a ser encontrada. Por\'{e}m, um m\'{e}todo mais geral para transformar um problema com restri\c{c}\~{o}es num problema irrestrito \'{e} utilizar ferramentas como as condi\c{c}\~{o}es FJ e KKT.
 
-\item \textbf{Algoritmo BFGS}: \'{E} um tipo de algoritmo quase-Newton utilizado na resolu\c{c}\~{a}o de problemas de otimiza\c{c}\~{a}o irrestritos com fun\c{c}\~{a}o objetivo n\~{a}o-linear. A ideia \'{e} aproximar a Hessiana da fun\c{c}\~{a}o por uma matriz $\mathbf{B}^{(n)}$. A ideia geral se resume em utilizar as equa\c{c}\~{o}es
+\item \textbf{Algoritmo BFGS:} \'{E} um tipo de algoritmo quase-Newton utilizado na resolu\c{c}\~{a}o de problemas de otimiza\c{c}\~{a}o irrestritos com fun\c{c}\~{a}o objetivo n\~{a}o-linear. A ideia \'{e} aproximar a Hessiana da fun\c{c}\~{a}o por uma matriz $\mathbf{B}^{(n)}$. A ideia geral se resume em utilizar as equa\c{c}\~{o}es
 \begin{equation*}
 \begin{array}{c}
 \mathbf{x}^{(k+1)} = \mathbf{x}^{(k)} + \beta^{(k)} \mathbf{s}^{(k)},\\
@@ -682,9 +682,9 @@ em que $\mu_i \gg 1$ e $\nu_j \ge 0$ grandes o suficiente para se garantir uma b
 \end{equation*}
 para iterar a matriz $\mathbf{B}$ de maneira a se buscar o \'{o}timo desejado.
 
-\item \textbf{Algoritmo Nelder-Mead}: Desenvolvido por J. A. Nelder e R. Mead em 1965, possui a ideia de se buscar a solu\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o por meio de opera\c{c}\~{o}es sobre figuras $n$-dimensionais conhecidas como \textit{simplex}. Um \textit{simplex} nada mais \'{e} do que uma generaliza\c{c}\~{a}o do tri\^{a}ngulo para todas dimensionais; ou seja, um simplex $n$-dimensional \'{e} definido pelo fecho convexo (o menor conjunto convexo contendo todos os pontos dados) de $n+1$ pontos distintos. Tal simplex pode ser refletido, expandido, contra\'{i}do ou reduzido de forma a conter, eventualmente, a solu\c{c}\~{a}o do problema. Este fato deu o apelido de ``Algoritmo da Ameba'' para este m\'{e}todo.
+\item \textbf{Algoritmo Nelder-Mead:} Desenvolvido por J. A. Nelder e R. Mead em 1965, possui a ideia de se buscar a solu\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o por meio de opera\c{c}\~{o}es sobre figuras $n$-dimensionais conhecidas como \textit{simplex}. Um \textit{simplex} nada mais \'{e} do que uma generaliza\c{c}\~{a}o do tri\^{a}ngulo para todas dimensionais; ou seja, um simplex $n$-dimensional \'{e} definido pelo fecho convexo (o menor conjunto convexo contendo todos os pontos dados) de $n+1$ pontos distintos. Tal simplex pode ser refletido, expandido, contra\'{i}do ou reduzido de forma a conter, eventualmente, a solu\c{c}\~{a}o do problema. Este fato deu o apelido de ``Algoritmo da Ameba'' para este m\'{e}todo.
 
-\item \textbf{Programa\c{c}\~{a}o Quadr\'{a}tica Sequencial (SQP)}: \'{E} outro m\'{e}todo bastante difundido na literatura. Consiste em utilizar sucessivas aplica\c{c}\~{o}es de Programa\c{c}\~{a}o Quadr\'{a}tica para se encontrar a solu\c{c}\~{a}o do problema original, considerando-se que a fun\c{c}\~{a}o objetivo pode ser aproximada por uma expans\~{a}o de Taylor de 2\textsuperscript{a} ordem. O problema a ser resolvido em cada itera\c{c}\~{a}o se torna
+\item \textbf{Programa\c{c}\~{a}o Quadr\'{a}tica Sequencial (SQP):} \'{E} outro m\'{e}todo bastante difundido na literatura. Consiste em utilizar sucessivas aplica\c{c}\~{o}es de Programa\c{c}\~{a}o Quadr\'{a}tica para se encontrar a solu\c{c}\~{a}o do problema original, considerando-se que a fun\c{c}\~{a}o objetivo pode ser aproximada por uma expans\~{a}o de Taylor de 2\textsuperscript{a} ordem. O problema a ser resolvido em cada itera\c{c}\~{a}o se torna
 \begin{equation}
 \begin{array}{ccc}
 \min \frac{1}{2}\mathbf{s}^{T}\nabla^2 \mathcal{L}(\mathbf{x}^{(k)})\mathbf{s} + \nabla f(\mathbf{x}^{(k)})^{T}\mathbf{s} + f(\mathbf{x}^{(k)})& \text{s. a.} &\\
@@ -698,14 +698,14 @@ em que $\nabla^2 \mathcal{L}(\mathbf{x}^{(k)})$ \'{e} a Hessiana do Lagrangiano 
 \end{equation} 
 Uma vez que \'{e} dispendioso calcular a Hessiana do Lagrangiano a cada itera\c{c}\~{a}o, uma alternativa \'{e} aproxim\'{a}-la utilizando uma aproxima\c{c}\~{a}o BFGS, j\'{a} discutida anteriormente. \'{E} de interesse que, a cada itera\c{c}\~{a}o, a fun\c{c}\~{a}o objetivo de $\setP^{*}$ tenha Hessiana semidefinida positiva, o que garante sua convexidade e exist\^{e}ncia de solu\c{c}\~{a}o para o problema de otimiza\c{c}\~{a}o a cada itera\c{c}\~{a}o.
 
-\item \textbf{Algoritmos meta-heur\'{i}sticos}: Como discutido anteriormente, s\~{a}o algoritmos de tentativa e erro que utilizam buscas aleat\'{o}rias, mas com uma predi\c{c}\~{a}o de passos inerente \`{a} estrutura do algoritmo para evitar o uso da chamada ``for\c{c}a bruta''. Normalmente, esses algoritmos se baseiam em fen\^{o}menos naturais, visto que j\'{a} foi observada a efici\^{e}ncia de fatos naturais em resultados considerados \'{o}timos. Alguns algoritmos nessa classe s\~{a}o\footnote{Todos os algoritmos se encontram em \cite{yang}, pp. 173-229.}:
-\subitem \textbf{Algoritmos Gen\'{e}ticos}: Se baseiam em princ\'{i}pios da gen\'{e}tica, notadamente a teoria da sele\c{c}\~{a}o natural de Charles Darwin;
-\subitem \textbf{\textit{Simulated Annealing}}: \'{E} baseado em uma mimetiza\c{c}\~{a}o do processo de recozimento de um material em que um metal resfria e \'{e} congelado em um estado cristalino de energia m\'{i}nima e maoir tamanho dos cristais de maneira a reduzir defeitos em estruturas met\'{a}licas;
-\subitem \textbf{Algoritmo das Formigas}: Simula o comportamento geral de uma col\^{o}nia de formigas na natureza. Particularmente, \'{e} uma analogia \`{a} comunica\c{c}\~{a}o desses animais por meio de ferom\^{o}nios, em casos de busca e encontro de comida, por exemplo;
-\subitem \textbf{Algoritmo das Abelhas}: Bem similar ao Algoritmo das Formigas, tomando-se por base col\^{o}nias de abelhas; al\'{e}m da an\'{a}lise de ferom\^{o}nios, h\'{a} a an\'{a}lise de ``dan\c{c}as sinalizadoras'' desses animais sinalizando alguns tipos de ocorr\^{e}ncias;
-\subitem \textbf{\textit{Particle Swarm} (PSO)}: Utiliza o comportamento de grandes grupos de animais como peixes e aves. \'{E} mais simples que algoritmos gen\'{e}ticos e os de abelhas e formigas por n\~{a}o utilizar no\c{c}\~{o}es como \textit{crossover} gen\'{e}tico ou ferom\^{o}nios; usa apenas randomiza\c{c}\~{a}o e comunica\c{c}\~{a}o geral entre os elementos considerados;
-\subitem \textbf{\textit{Harmony Search}}: Baseado na m\'{u}sica, e sua tentativa de se encontrar um estado de harmonia; a harmonia musical pode ser comparada ao \'{o}timo em um problema de otimiza\c{c}\~{a}o. Os passos podem ser entendidos como um refinamento do musicista;
-\subitem \textbf{Algoritmo dos Vaga-Lumes}: Assim como os Algoritmos das Formigas e das Abelhas, utiliza um comportamento animal como base de seus passos. Neste caso, utiliza o fato de que vaga-lumes usam sinais luminosos distintos para v\'{a}rias formas de comunica\c{c}\~{a}o, como busca de parceiros, encontro de presas e fuga de predadores.
+\item \textbf{Algoritmos meta-heur\'{i}sticos:} Como discutido anteriormente, s\~{a}o algoritmos de tentativa e erro que utilizam buscas aleat\'{o}rias, mas com uma predi\c{c}\~{a}o de passos inerente \`{a} estrutura do algoritmo para evitar o uso da chamada ``for\c{c}a bruta''. Normalmente, esses algoritmos se baseiam em fen\^{o}menos naturais, visto que j\'{a} foi observada a efici\^{e}ncia de fatos naturais em resultados considerados \'{o}timos. Alguns algoritmos nessa classe s\~{a}o\footnote{Todos os algoritmos se encontram em \cite{yang}, pp. 173-229.}:
+\subitem \textbf{Algoritmos Gen\'{e}ticos:} Se baseiam em princ\'{i}pios da gen\'{e}tica, notadamente a teoria da sele\c{c}\~{a}o natural de Charles Darwin;
+\subitem \textbf{\textit{Simulated Annealing}:} \'{E} baseado em uma mimetiza\c{c}\~{a}o do processo de recozimento de um material em que um metal resfria e \'{e} congelado em um estado cristalino de energia m\'{i}nima e maoir tamanho dos cristais de maneira a reduzir defeitos em estruturas met\'{a}licas;
+\subitem \textbf{Algoritmo das Formigas:} Simula o comportamento geral de uma col\^{o}nia de formigas na natureza. Particularmente, \'{e} uma analogia \`{a} comunica\c{c}\~{a}o desses animais por meio de ferom\^{o}nios, em casos de busca e encontro de comida, por exemplo;
+\subitem \textbf{Algoritmo das Abelhas:} Bem similar ao Algoritmo das Formigas, tomando-se por base col\^{o}nias de abelhas; al\'{e}m da an\'{a}lise de ferom\^{o}nios, h\'{a} a an\'{a}lise de ``dan\c{c}as sinalizadoras'' desses animais sinalizando alguns tipos de ocorr\^{e}ncias;
+\subitem \textbf{\textit{Particle Swarm} (PSO):} Utiliza o comportamento de grandes grupos de animais como peixes e aves. \'{E} mais simples que algoritmos gen\'{e}ticos e os de abelhas e formigas por n\~{a}o utilizar no\c{c}\~{o}es como \textit{crossover} gen\'{e}tico ou ferom\^{o}nios; usa apenas randomiza\c{c}\~{a}o e comunica\c{c}\~{a}o geral entre os elementos considerados;
+\subitem \textbf{\textit{Harmony Search}:} Baseado na m\'{u}sica, e sua tentativa de se encontrar um estado de harmonia; a harmonia musical pode ser comparada ao \'{o}timo em um problema de otimiza\c{c}\~{a}o. Os passos podem ser entendidos como um refinamento do musicista;
+\subitem \textbf{Algoritmo dos Vaga-Lumes:} Assim como os Algoritmos das Formigas e das Abelhas, utiliza um comportamento animal como base de seus passos. Neste caso, utiliza o fato de que vaga-lumes usam sinais luminosos distintos para v\'{a}rias formas de comunica\c{c}\~{a}o, como busca de parceiros, encontro de presas e fuga de predadores.
 
 \end{itemize}
 

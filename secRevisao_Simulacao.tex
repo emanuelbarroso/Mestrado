@@ -1,128 +1,151 @@
 %TCIDATA{LaTeXparent=0,0,cap_RevisaoBibliografica.tex}
 
-\section{Simulação Numérica de Reservatórios}
+\section{Simula\c{c}\~{a}o Num\'{e}rica de Reservat\'{o}rios}
 
-A simulação numérica de um reservatório é, segundo Peaceman, é o processo de inferência do comportamento do reservatório real dada a performance obtida de um modelo do mesmo, matemático ou físico (em escala laboratorial). Um modelo matemático de reservatório pode ser enxergado como um conjunto de equações diferenciais parciais, juntamente com as condições de contorno adequadas, que podem ser utilizadas para descrever satisfatoriamente os processos físicos importantes que ocorrem no sistema real.
+A simula\c{c}\~{a}o num\'{e}rica de um reservat\'{o}rio \'{e}, segundo Peaceman, \'{e} o processo de infer\^{e}ncia do comportamento do reservat\'{o}rio real dada a performance obtida de um modelo do mesmo, matem\'{a}tico ou f\'{i}sico (em escala laboratorial). Um modelo matem\'{a}tico de reservat\'{o}rio pode ser enxergado como um conjunto de equa\c{c}\~{o}es diferenciais parciais, juntamente com as condi\c{c}\~{o}es de contorno adequadas, que podem ser utilizadas para descrever satisfatoriamente os processos f\'{i}sicos importantes que ocorrem no sistema real.
 
-Os processos que ocorrem em um reservatório são basicamente transporte de fluidos e transferência de massa; até três fases imiscíveis (óleo, gás e água) fluem simultaneamente, enquanto que o transporte de massa se dá entre as fases (notadamente entre o óleo e o gás). A gravidade, a capilaridade e as forças viscosas são também importantes no processo de vazão dos fluidos \cite{simres}.
+Os processos que ocorrem em um reservat\'{o}rio s\~{a}o basicamente transporte de fluidos e transfer\^{e}ncia de massa; at\'{e} tr\^{e}s fases imisc\'{i}veis (\'{o}leo, g\'{a}s e \'{a}gua) fluem simultaneamente, enquanto que o transporte de massa se d\'{a} entre as fases (notadamente entre o \'{o}leo e o g\'{a}s). A gravidade, a capilaridade e as for\c{c}as viscosas s\~{a}o tamb\'{e}m importantes no processo de vaz\~{a}o dos fluidos \cite{simres}.
 
-Segundo Rosa, a primeira etapa de uma simulação numérica é formular o problema físico a ser representado matematicamente; em seguida são feitas suposições e simplificações compatíveis com o grau de sofisticação esperado do modelo, levando-se à formulação das equações matemáticas que descrevem o problema desejado, considerando-se as hipóteses adotadas. O passo seguinte é a resolução das equações e análise da solução obtida; posteriormente, a validade do simulador é verificada através da calibração com uma solução existente --- por exemplo, comparam-se os resultados obtidos do simulador numérico com soluções analíticas, resultados reais ou com resultados obtidos de modelos físicos de laboratório (dados experimentais). Caso o simulador seja considerado válido, o mesmo estará pronto para ser utilizado na simulação do fenômeno desejado; caso contrário, volta-se para um novo ciclo em que são revistas as hipóteses adotadas ou até a conceituação do modelo físico \cite[p. 520]{engres}. A Figura \ref{fig:rev_simuesq} esquematiza um desenvolvimento básico de um simulador numérico qualquer, enquanto que a Figura \ref{fig:rev_simuex} mostra uma comparação de resultados entre diferentes simuladores existentes, exemplificando o uso da calibração com soluções já obtidas para se validar um simulador de reservatório. 
+Segundo Rosa, a primeira etapa de uma simula\c{c}\~{a}o num\'{e}rica \'{e} formular o problema f\'{i}sico a ser representado matematicamente; em seguida s\~{a}o feitas suposi\c{c}\~{o}es e simplifica\c{c}\~{o}es compat\'{i}veis com o grau de sofistica\c{c}\~{a}o esperado do modelo, levando-se \`{a} formula\c{c}\~{a}o das equa\c{c}\~{o}es matem\'{a}ticas que descrevem o problema desejado, considerando-se as hip\'{o}teses adotadas. O passo seguinte \'{e} a resolu\c{c}\~{a}o das equa\c{c}\~{o}es e an\'{a}lise da solu\c{c}\~{a}o obtida; posteriormente, a validade do simulador \'{e} verificada atrav\'{e}s da calibra\c{c}\~{a}o com uma solu\c{c}\~{a}o existente --- por exemplo, comparam-se os resultados obtidos do simulador num\'{e}rico com solu\c{c}\~{o}es anal\'{i}ticas, resultados reais ou com resultados obtidos de modelos f\'{i}sicos de laborat\'{o}rio (dados experimentais). Caso o simulador seja considerado v\'{a}lido, o mesmo estar\'{a} pronto para ser utilizado na simula\c{c}\~{a}o do fen\^{o}meno desejado; caso contr\'{a}rio, volta-se para um novo ciclo em que s\~{a}o revistas as hip\'{o}teses adotadas ou at\'{e} a conceitua\c{c}\~{a}o do modelo f\'{i}sico \cite[p. 520]{engres}. A Figura \ref{fig:rev_simuesq} esquematiza um desenvolvimento b\'{a}sico de um simulador num\'{e}rico qualquer, enquanto que a Figura \ref{fig:rev_simuex} mostra uma compara\c{c}\~{a}o de resultados entre diferentes simuladores existentes, exemplificando o uso da calibra\c{c}\~{a}o com solu\c{c}\~{o}es j\'{a} obtidas para se validar um simulador de reservat\'{o}rio. 
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=.75\textwidth]{figs/revisao/revisao_simuesq.png}
-\caption{Esquema básico de desenvolvimento de um simulador numérico de reservatório \cite[p. 519]{engres}.}\label{fig:rev_simuesq}
+\caption{Esquema b\'{a}sico de desenvolvimento de um simulador num\'{e}rico de reservat\'{o}rio \cite[p. 519]{engres}.}\label{fig:rev_simuesq}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=.75\textwidth]{figs/revisao/revisao_simuex.png}
-\caption{Exemplo de comparação de dados entre simuladores de vazão de água e de óleo de um modelo \cite{eggM}.}\label{fig:rev_simuex}
+\caption{Exemplo de compara\c{c}\~{a}o de dados entre simuladores de vaz\~{a}o de \'{a}gua e de \'{o}leo de um modelo \cite{eggM}.}\label{fig:rev_simuex}
 \end{figure}
 
-\subsection{Leis Físicas Consideradas}
+\subsection{Leis F\'{i}sicas Consideradas}
 
-No caso de um simulador de reservatórios, as seguintes leis físicas básicas normalmente são consideradas, dependendo do tipo de simulador\footnote{Ver \cite[p. 520]{engres}}:
+No caso de um simulador de reservat\'{o}rios, as seguintes leis f\'{i}sicas b\'{a}sicas normalmente s\~{a}o consideradas, dependendo do tipo de simulador\footnote{Ver \cite[p. 520]{engres}}:
 
 \begin{itemize}
-\item Lei da conservação de massa;
-\item Lei da conservação de energia;
-\item Lei da conservação de \textit{``momentum''} (Segunda Lei de Newton):
+\item Lei da conserva\c{c}\~{a}o de massa;
+\item Lei da conserva\c{c}\~{a}o de energia;
+\item Lei da conserva\c{c}\~{a}o de \textit{``momentum''} (Segunda Lei de Newton):
 \begin{equation}
 \sum F = \frac{\partial M}{\partial t},
 \end{equation}
-onde $F$ representa uma força e $M = mv$ o \textit{``momentum''}, com $m$ sendo a massa e $v$ a velocidade.
+onde $F$ representa uma for\c{c}a e $M = mv$ o \textit{``momentum''}, com $m$ sendo a massa e $v$ a velocidade.
 \end{itemize}
 
-Além das leis básicas da física, faz-se necessário o uso de várias leis, dependendo do simulador, que governam o comportamento dos fluidos envolvidos e a propriedade do reservatório estudado, apresentadas nas subseções a seguir\footnote{Os teoremas apresentados se encontram em \cite[pp. 520-522]{engres}}. Combinado-se as equações correspondentes às leis básicas, obtém-se uma equação diferencial parcial que rege o comportamento das variáveis dependentes em função das variáveis independentes e dos parâmetros do sistema. Como normalmente a equação obtida é não-linear, ela é, consequentemente, é resolvida por métodos númericos; daí a nomenclatura \textit{simulação numérica de reservatórios}.
+Al\'{e}m das leis b\'{a}sicas da f\'{i}sica, faz-se necess\'{a}rio o uso de v\'{a}rias leis, dependendo do simulador, que governam o comportamento dos fluidos envolvidos e a propriedade do reservat\'{o}rio estudado, apresentadas nas subse\c{c}\~{o}es a seguir\footnote{Os teoremas apresentados se encontram em \cite[pp. 520-522]{engres}}. Combinado-se as equa\c{c}\~{o}es correspondentes \`{a}s leis b\'{a}sicas, obt\'{e}m-se uma equa\c{c}\~{a}o diferencial parcial que rege o comportamento das vari\'{a}veis dependentes em fun\c{c}\~{a}o das vari\'{a}veis independentes e dos par\^{a}metros do sistema. Como normalmente a equa\c{c}\~{a}o obtida \'{e} n\~{a}o-linear, ela \'{e}, consequentemente, \'{e} resolvida por m\'{e}todos n\'{u}mericos; da\'{i} a nomenclatura \textit{simula\c{c}\~{a}o num\'{e}rica de reservat\'{o}rios}.
 
-\subsubsection{Fenômenos de Transporte}
+\subsubsection{Fen\^{o}menos de Transporte}
 
 \begin{theorem}[Lei de Darcy]
-Na Lei de Darcy, ou lei do fluxo ``laminar'' ou Darcyano, a velocidade do fluxo viscoso de um fluido em meio poroso é dada por
+Na Lei de Darcy, ou lei do fluxo ``laminar'' ou Darcyano, a velocidade do fluxo viscoso de um fluido em meio poroso \'{e} dada por
 \begin{equation}
 	v_s = -\frac{k_s}{\mu} \frac{\partial\Phi}{\partial s},
 \end{equation}
-onde $k$ é a permeabilidade efetiva do meio ao fluido considerado, $\mu$ é a viscosidade do fluido, $\Phi$ é o potencial de fluxo e $s$ é a trajetória de fluxo.
+onde $k$ \'{e} a permeabilidade efetiva do meio ao fluido considerado, $\mu$ \'{e} a viscosidade do fluido, $\Phi$ \'{e} o potencial de fluxo e $s$ \'{e} a trajet\'{o}ria de fluxo.
 \end{theorem}
 
 \begin{theorem}[Lei de Forchheimer]
-Também conhecida como lei do fluxo ``turbulento'' ou não-Darcyano, é utilizada para fluxos turbulentos, notadamente de gás; o gradiente de pressão é dado por
+Tamb\'{e}m conhecida como lei do fluxo ``turbulento'' ou n\~{a}o-Darcyano, \'{e} utilizada para fluxos turbulentos, notadamente de g\'{a}s; o gradiente de press\~{a}o \'{e} dado por
 \begin{equation}
 	-\frac{dp}{ds} = \frac{\mu}{k_s}v_s - \beta\rho v_s^2,
 \end{equation}
-onde $\rho$ é a massa específica do fluido e $\beta$ é o coeficiente de resistência inercial ou de fluxo não-Darcyano. 
+onde $\rho$ \'{e} a massa espec\'{i}fica do fluido e $\beta$ \'{e} o coeficiente de resist\^{e}ncia inercial ou de fluxo n\~{a}o-Darcyano. 
 \end{theorem}
 
 \begin{theorem}[Lei de Fourier]
-Durante um fenômeno de transporte de calor por condução, o fluxo de calor é dado por
+Durante um fen\^{o}meno de transporte de calor por condu\c{c}\~{a}o, o fluxo de calor \'{e} dado por
 \begin{equation}
 	q_s = -k'\frac{\partial T}{\partial s},
 \end{equation}
-em que $k'$ é a condutividade térmica do meio e $T$ é a temperatura.
+em que $k'$ \'{e} a condutividade t\'{e}rmica do meio e $T$ \'{e} a temperatura.
 \end{theorem}
 
-\begin{theorem}[Convecção]
-O fluxo de calor no caso de tranporte por convecção é dado por
+\begin{theorem}[Convec\c{c}\~{a}o]
+O fluxo de calor no caso de tranporte por convec\c{c}\~{a}o \'{e} dado por
 \begin{equation}
 	q_s = c_p v_s (T - T_0),
 \end{equation}
-onde $c_p$ é a capacidade calorífica do fluido à pressão constante, $v$ a velocidade do fluido e $T_0$ uma temperatura de referência.
+onde $c_p$ \'{e} a capacidade calor\'{i}fica do fluido \`{a} press\~{a}o constante, $v$ a velocidade do fluido e $T_0$ uma temperatura de refer\^{e}ncia.
 \end{theorem}
 
-\subsubsection{Equações de Estado}
-As principais equações de estado envolvidas na simulação do comportamento de um reservatório de petróleo são as que lidam com fluidos (líquidos ou gasosos) e rochas porosas. No caso de fluidos líquidos, tem-se a seguinte definição:
+\subsubsection{Equa\c{c}\~{o}es de Estado}
+As principais equa\c{c}\~{o}es de estado envolvidas na simula\c{c}\~{a}o do comportamento de um reservat\'{o}rio de petr\'{o}leo s\~{a}o as que lidam com fluidos (l\'{i}quidos ou gasosos) e rochas porosas. No caso de fluidos l\'{i}quidos, tem-se a seguinte defini\c{c}\~{a}o:
 
 \begin{definition}
-A compressibilidade isotérmica de um fluido é dada por
+A compressibilidade isot\'{e}rmica de um fluido \'{e} dada por
 \begin{equation}
 	c = -\frac{1}{V}\frac{\partial V}{\partial p} = \frac{1}{\rho}\frac{\partial \rho}{\partial p},
 \end{equation}
-em que $V$ é o volume, $p$ é a pressão e $\rho$ é a massa específica do fluido. Há algumas relações especiais para situações particulares:
+em que $V$ \'{e} o volume, $p$ \'{e} a press\~{a}o e $\rho$ \'{e} a massa espec\'{i}fica do fluido. H\'{a} algumas rela\c{c}\~{o}es especiais para situa\c{c}\~{o}es particulares:
 \begin{itemize}
-\item Líquidos de compressibilidade constante: $\rho = \rho_0 e^{c(p-p_0)}$.
-\item Líquidos de compressibilidade constante e pequena: $\rho = \rho_0 \left[1+c\left(p-p_0\right)\right]$.
+\item L\'{i}quidos de compressibilidade constante: $\rho = \rho_0 e^{c(p-p_0)}$.
+\item L\'{i}quidos de compressibilidade constante e pequena: $\rho = \rho_0 \left[1+c\left(p-p_0\right)\right]$.
 \end{itemize}
 \end{definition}
 
-Quando se trata de estudar o estado de um gás, se aplica a lei dos gases:
+Quando se trata de estudar o estado de um g\'{a}s, se aplica a lei dos gases:
 \begin{equation}\label{eq:gaslaw}
 	\rho = \frac{pM}{ZRT}.
 \end{equation}
 
-A Equação \eqref{eq:gaslaw} pode ser aplicada tanto no caso de um gás real quanto de um gaś ideal; nela, $\rho$ é a massa específica do gás, $p$ é a pressão, $M$ é a massa molecular, $R$ é a constante universal dos gases, $T$ é a temperatura e $Z$ é o fator de compressibilidade do gás; no caso de um gás ideal, tem-se $Z = 1$.
+A Equa\c{c}\~{a}o \eqref{eq:gaslaw} pode ser aplicada tanto no caso de um g\'{a}s real quanto de um gaś ideal; nela, $\rho$ \'{e} a massa espec\'{i}fica do g\'{a}s, $p$ \'{e} a press\~{a}o, $M$ \'{e} a massa molecular, $R$ \'{e} a constante universal dos gases, $T$ \'{e} a temperatura e $Z$ \'{e} o fator de compressibilidade do g\'{a}s; no caso de um g\'{a}s ideal, tem-se $Z = 1$.
 
-Por fim, para se representar o comportamento da rocha, utiliza-se a equação da chamada compressibilidade efetiva:
+Por fim, para se representar o comportamento da rocha, utiliza-se a equa\c{c}\~{a}o da chamada compressibilidade efetiva:
 \begin{equation}
 	c_f = \frac{1}{\phi} \frac{\partial\phi}{\partial p},
 \end{equation}
-onde $c_f$ é a compressibilidade efetiva efetiva da formação e $\phi$, sua porosidade.
+onde $c_f$ \'{e} a compressibilidade efetiva efetiva da forma\c{c}\~{a}o e $\phi$, sua porosidade.
 
-Além das leis até aqui citadas, cabe ressaltar que outras podem ser utilizadas em caso de simulações de fenômenos específicos, como injeção de vapor, injeção de polímeros, além de outros métodos empregados na produção de petróleo.
+Al\'{e}m das leis at\'{e} aqui citadas, cabe ressaltar que outras podem ser utilizadas em caso de simula\c{c}\~{o}es de fen\^{o}menos espec\'{i}ficos, como inje\c{c}\~{a}o de vapor, inje\c{c}\~{a}o de pol\'{i}meros, al\'{e}m de outros m\'{e}todos empregados na produ\c{c}\~{a}o de petr\'{o}leo.
 
 \subsection{Tipos de Simuladores}
-Segundo Rosa, os simuladores de reservatórios podem ser classificados em função de três critérios básicos: o tratamento matemático utilizado, o número de dimensões consideradas e o número de fases admitidas. Em relação à matemática do simulador, os simuladores podem ser classificados em: 
+Segundo Rosa, os simuladores de reservat\'{o}rios podem ser classificados em fun\c{c}\~{a}o de tr\^{e}s crit\'{e}rios b\'{a}sicos: o tratamento matem\'{a}tico utilizado, o n\'{u}mero de dimens\~{o}es consideradas e o n\'{u}mero de fases admitidas. Em rela\c{c}\~{a}o \`{a} matem\'{a}tica do simulador, os simuladores podem ser classificados em: 
 
 \begin{itemize}
-	\item \textbf{Modelo Beta ou volumétrico:} É também conhecido como \textit{black oil}; nesse modelo, são consideradas as funções de pressão e da temperatura do reservatório. Além disso, cada fase presente no reservatório (água, óleo e/ou gás) é admitida como constituída por apenas um componente, mesmo que, na prática, o óleo seja composto por vários hidrocarbonetos, além de impurezas.
-	\item \textbf{Modelo composicional:} Além de considerar a pressão e a temperatura do reservatório, também se admite as composições das diversas fases que estejam presentes no meio poroso. Ao contrário do \textit{black oil}, por exemplo, o óleo passa a ser tratado pelos seus vários hidrocarbonetos de que é composto, tais como $C_1$, $C_2$, $C_3$, etc. Porém, como o número de componentes no óleo é grande, alguns hidrocarbonetos são agrupados nos chamados \textit{pseudocomponentes}; a utilização dessa abordagem reduz o tempo computacional necessário ao modelo, uma vez que um tratamento mais rigoroso poderia tornar impraticável a simulação composicional.
-	\item \textbf{Modelo térmico:} É utilizado quando é necessário considerar os efeitos de variações térmica no interior do reservatório --- por exemplo, quando se estuda a aplicação de métodos térmicos de recuperação secundária, como injeção de vapor, injeção de água quente ou combustão \textit{in situ}. Como os modelos térmicos tratam situações complexas, eles são necessariamente composicionais.
+	\item \textbf{Modelo Beta ou volum\'{e}trico:} \'{e} tamb\'{e}m conhecido como \textit{black oil}; nesse modelo, s\~{a}o consideradas as fun\c{c}\~{o}es de press\~{a}o e da temperatura do reservat\'{o}rio. Al\'{e}m disso, cada fase presente no reservat\'{o}rio (\'{a}gua, \'{o}leo e/ou g\'{a}s) \'{e} admitida como constitu\'{i}da por apenas um componente, mesmo que, na pr\'{a}tica, o \'{o}leo seja composto por v\'{a}rios hidrocarbonetos, al\'{e}m de impurezas.
+	\item \textbf{Modelo composicional:} Al\'{e}m de considerar a press\~{a}o e a temperatura do reservat\'{o}rio, tamb\'{e}m se admite as composi\c{c}\~{o}es das diversas fases que estejam presentes no meio poroso. Ao contr\'{a}rio do \textit{black oil}, por exemplo, o \'{o}leo passa a ser tratado pelos seus v\'{a}rios hidrocarbonetos de que \'{e} composto, tais como $C_1$, $C_2$, $C_3$, etc. Por\'{e}m, como o n\'{u}mero de componentes no \'{o}leo \'{e} grande, alguns hidrocarbonetos s\~{a}o agrupados nos chamados \textit{pseudocomponentes}; a utiliza\c{c}\~{a}o dessa abordagem reduz o tempo computacional necess\'{a}rio ao modelo, uma vez que um tratamento mais rigoroso poderia tornar impratic\'{a}vel a simula\c{c}\~{a}o composicional.
+	\item \textbf{Modelo t\'{e}rmico:} \'{e} utilizado quando \'{e} necess\'{a}rio considerar os efeitos de varia\c{c}\~{o}es t\'{e}rmica no interior do reservat\'{o}rio --- por exemplo, quando se estuda a aplica\c{c}\~{a}o de m\'{e}todos t\'{e}rmicos de recupera\c{c}\~{a}o secund\'{a}ria, como inje\c{c}\~{a}o de vapor, inje\c{c}\~{a}o de \'{a}gua quente ou combust\~{a}o \textit{in situ}. Como os modelos t\'{e}rmicos tratam situa\c{c}\~{o}es complexas, eles s\~{a}o necessariamente composicionais.
 \end{itemize}
 
-Quanto ao número de dimensões, os simuladores são classificados de acordo com o número de dimensões nas quais se admite fluxo. Neste sentido, eles podem ser classificados em \textit{unidimensionais} (Figura ...), \textit{bidimensionais} (Figura ...) e \textit{tridimensionais} (Figura ...). Por fim, os simuladores numéricos podem ser classificados de acordo com o número de fases: \textit{monofásicos}, caso haja apenas uma fase (no caso de água, se trata de um aquífero); \textit{bifásicos}, quando há duas fases presentes (água e óleo, no caso de reservatórios de óleo, ou água e gás, nos reservatórios de gás); e \textit{trifásicos}, no caso da existência de três fases (água, óleo e gas)\footnote{A classificação dos modelos de simulação podem ser encontradas em \cite[pp. 517--519]{engres}}.
+Quanto ao n\'{u}mero de dimens\~{o}es, os simuladores s\~{a}o classificados de acordo com o n\'{u}mero de dimens\~{o}es nas quais se admite fluxo. Neste sentido, eles podem ser classificados em \textit{unidimensionais} (Figura ...), \textit{bidimensionais} (Figura ...) e \textit{tridimensionais} (Figura ...). Por fim, os simuladores num\'{e}ricos podem ser classificados de acordo com o n\'{u}mero de fases: \textit{monof\'{a}sicos}, caso haja apenas uma fase (no caso de \'{a}gua, se trata de um aqu\'{i}fero); \textit{bif\'{a}sicos}, quando h\'{a} duas fases presentes (\'{a}gua e \'{o}leo, no caso de reservat\'{o}rios de \'{o}leo, ou \'{a}gua e g\'{a}s, nos reservat\'{o}rios de g\'{a}s); e \textit{trif\'{a}sicos}, no caso da exist\^{e}ncia de tr\^{e}s fases (\'{a}gua, \'{o}leo e gas)\footnote{A classifica\c{c}\~{a}o dos modelos de simula\c{c}\~{a}o podem ser encontradas em \cite[pp. 517--519]{engres}}.
 
 %TODO : Insira as figuras AQUI!
 
-É importante que, ao se escolher um simulador numérico para se resolver problemas de engenharia de reservatório, se considere vários fatores, a saber: o tipo de estudo a ser feito, tipo e características do reservatório e dos fluidos presentes, quantidade e qualidade dos dados, o detalhamento necessário do estudo e os recursos computacionais disponíveis \cite[p. 519]{engres}. Por exemplo, é impraticável o uso de modelos composicionais em computadores cuja capacidade seja comparável a um computador pessoal de alto desempenho, devido à complexidade dos cálculos envolvidos. Por outro lado, por sua simplicidade, um modelo \textit{black oil} poderia ser considerado, respeitando-se ao máximo as características do reservatório estudado.
+\'{e} importante que, ao se escolher um simulador num\'{e}rico para se resolver problemas de engenharia de reservat\'{o}rio, se considere v\'{a}rios fatores, a saber: o tipo de estudo a ser feito, tipo e caracter\'{i}sticas do reservat\'{o}rio e dos fluidos presentes, quantidade e qualidade dos dados, o detalhamento necess\'{a}rio do estudo e os recursos computacionais dispon\'{i}veis \cite[p. 519]{engres}. Por exemplo, \'{e} impratic\'{a}vel o uso de modelos composicionais em computadores cuja capacidade seja compar\'{a}vel a um computador pessoal de alto desempenho, devido \`{a} complexidade dos c\'{a}lculos envolvidos. Por outro lado, por sua simplicidade, um modelo \textit{black oil} poderia ser considerado, respeitando-se ao m\'{a}ximo as caracter\'{i}sticas do reservat\'{o}rio estudado.
 
-\subsection{Uso de Simuladores Numéricos para Estudos de Reservatórios}
+\subsection{Uso de Simuladores Num\'{e}ricos para Estudos de Reservat\'{o}rios}
 
-O uso de simuladores numéricos torna possível analisar o comportamento de um reservatório ao longo do tempo, dado um esquema de produção. Dessa forma, pode-se obter, por exemplo, as condições ótimas de produção, além de se determinar como a injeção de diferentes tipos de fluidos ou outros métodos de EOR afetam o sistema simulado, determinar o efeito da localização dos poços na recuperação de óleo e/ou gás e analisar a influência de diferentes vazões de produção e/ou injeção. O simulador obtém seus resultados de informações de natureza geológica, propriedades da rocha e dos fluidos presentes no meio poroso, históricos de produção (vazões e/ou produções acumuladas de óleo e água) e de pressão, e outras informações a respeito dos poços de petróleo, assim como as características de completação \cite[pp. 522--523]{engres}. A Figura \ref{fig:revisao_simsec1} ilustra a aplicação de simuladores numéricos para engenharia de reservatórios.
+O uso de simuladores num\'{e}ricos torna poss\'{i}vel analisar o comportamento de um reservat\'{o}rio ao longo do tempo, dado um esquema de produ\c{c}\~{a}o. Dessa forma, pode-se obter, por exemplo, as condi\c{c}\~{o}es \'{o}timas de produ\c{c}\~{a}o, al\'{e}m de se determinar como a inje\c{c}\~{a}o de diferentes tipos de fluidos ou outros m\'{e}todos de EOR afetam o sistema simulado, determinar o efeito da localiza\c{c}\~{a}o dos po\c{c}os na recupera\c{c}\~{a}o de \'{o}leo e/ou g\'{a}s e analisar a influ\^{e}ncia de diferentes vaz\~{o}es de produ\c{c}\~{a}o e/ou inje\c{c}\~{a}o. O simulador obt\'{e}m seus resultados de informa\c{c}\~{o}es de natureza geol\'{o}gica, propriedades da rocha e dos fluidos presentes no meio poroso, hist\'{o}ricos de produ\c{c}\~{a}o (vaz\~{o}es e/ou produ\c{c}\~{o}es acumuladas de \'{o}leo e \'{a}gua) e de press\~{a}o, e outras informa\c{c}\~{o}es a respeito dos po\c{c}os de petr\'{o}leo, assim como as caracter\'{i}sticas de completa\c{c}\~{a}o \cite[pp. 522--523]{engres}. A Figura \ref{fig:revisao_simsec1} ilustra a aplica\c{c}\~{a}o de simuladores num\'{e}ricos para engenharia de reservat\'{o}rios.
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=.6\textwidth]{figs/revisao/revisao_simsec1}
-	\caption{Aplicação de simuladores numéricos em reservatórios \cite[p. 522]{engres}}
+	\includegraphics[width=.75\textwidth]{figs/revisao/revisao_simsec1}
+	\caption{Aplica\c{c}\~{a}o de simuladores num\'{e}ricos em reservat\'{o}rios \cite[p. 522]{engres}}
 	\label{fig:revisao_simsec1}
 \end{figure}  
 
+As etapas normalmente seguidas durante a simula\c{c}\~{a}o num\'{e}rica de um reservat\'{o}rio s\~{a}o \footnote{Ver \cite[pp. 523--524]{engres}.}:
+
+\begin{enumerate}
+\item \textbf{Coleta e prepara\c{c}\~{a}o dos dados:} \'{e} a fase de armazenamento e interpreta\c{c}\~{a}o de todos os dados cab\'{i}veis ao problema, sejam eles geol\'{o}gicos, propriedades da rocha e dos fluidos, entre outros. Quanto maiores a quantidade e a qualidade desses dados, mais confi\'{a}vel ser\'{a} a simula\c{c}\~{a}o.
+\item \textbf{Prepara\c{c}\~{a}o do modelo num\'{e}rico:} Ocorre logo ap\'{o}s a tomada dos dados. Inicialmente, \'{e} feito o \textit{lan\c{c}amento do} grid \textit{ou malha}, onde \'{e} constru\'{i}da uma malha para se transpor as informa\c{c}\~{o}es necess\'{a}rias para o modelo. Logo, \'{e} feita a divis\~{a}o do reservat\'{o}rio em v\'{a}rias c\'{e}lulas, cada uma funcionando como um reservat\'{o}rio menor, conforme mostra a Figura \ref{fig:revisao_simsec3}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.5\textwidth]{figs/revisao/revisao_simsec3}
+	\caption{Malha utilizada na simula\c{c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite[p. 524]{engres}}
+	\label{fig:revisao_simsec3}
+\end{figure}
+\item \textbf{Ajuste de hist\'{o}rico:} O objetivo desta etapa \'{e} calibrar o modelo num\'{e}rico com o reservat\'{o}rio real a partir dos melhores dados dispon\'{i}veis referentes aos hist\'{o}ricos de produ\c{c}\~{a}o e de press\~{a}o. O ajuste de hist\'{o}rico \'{e} um c\'{a}lculo do comportamento passado do reservat\'{o}rio e a consequente compara\c{c}\~{a}o com o hist\'{o}rico do campo ou do mesmo reservat\'{o}rio. Se a concord\^{a}ncia n\~{a}o \'{e} satisfat\'{o}ria, s\~{a}o necess\'{a}rios ajustes nos dados at\'{e} se obter resultados adequados. De todo modo, a import\^{a}ncia de se obter um bom ajuste de hist\'{o}rico reside no fato de que o modelo poder\'{a} ser utilizado para se efetuar previs\~{o}es confi\'{a}veis em rela\c{c}\~{a}o ao seu comportamento futuro.
+\item \textbf{Extrapola\c{c}\~{a}o:} Uma vez que o ajuste de hist\'{o}rico \'{e} realizado, procede-se \`{a} fase de extrapola\c{c}\~{a}o, isto \'{e}, a previs\~{a}o de comportamento futuro do modelo. Podem ser impostas vaz\~{o}es e press\~{o}es para todos os po\c{c}os, condi\c{c}\~{o}es dessas vaz\~{o}es, entre outros. Essa etapa permite avaliar v\'{a}rios esquemas de produ\c{c}\~{a}o, e seus resultados podem ser utilizados em avalia\c{c}\~{o}es econ\^{o}micas, tornando poss\'{i}vel decidir pelo esquema \'{o}timo de produ\c{c}\~{a}o.
+\end{enumerate}
+
+Todas as etapas de simula\c{c}\~{a}o num\'{e}rica de reservat\'{o}rios est\~{a}o resumidos na Figura \ref{fig:revisao_simsec2}.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=.75\textwidth]{figs/revisao/revisao_simsec2}
+	\caption{Etapas da simula\c{c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite[p. 523]{engres}}
+	\label{fig:revisao_simsec2}
+\end{figure}
