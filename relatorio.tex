@@ -18,7 +18,8 @@
 \usepackage[T1]{fontenc}
 %\usepackage[utf8]{inputenc}
 \usepackage{epsfig}
-\usepackage{subfigure}
+%\usepackage{subfigure}
+\usepackage{subcaption}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -331,7 +332,11 @@
 }
 \makeatother
 
+\include{cap_ApendiceEgg}
+\refstepcounter{noApendice}
 
+\include{cap_ApendiceSaigup}
+\refstepcounter{noApendice}
 % *** Apendice A: Arquivos Pick and Place ***
 %\include{apend_teach}
 %\refstepcounter{noApendice}
