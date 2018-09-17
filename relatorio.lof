@@ -23,39 +23,40 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Aplica\c {c}\~{a}o de simuladores num\'{e}ricos em reservat\'{o}rios \cite [p. 522]{engres}\relax }}{21}{figure.2.16}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Malha utilizada na simula\c {c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite [p. 524]{engres}\relax }}{21}{figure.2.17}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Etapas da simula\c {c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite [p. 523]{engres}\relax }}{22}{figure.2.18}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemplo de algoritmo de gradiente descendente aplicado para NPV \cite {asheim88}\relax }}{43}{figure.2.19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de realização do \textit {Egg Model} \cite {eggM}.\relax }}{46}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Vista de topo do \textit {Egg Model}, evidenciando o posicionamento dos poços.\relax }}{46}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de realização do \textit {Egg Model} \cite {eggM}.\relax }}{47}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Vista de topo do \textit {Egg Model}, evidenciando o posicionamento dos poços.\relax }}{47}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 1\relax }}{51}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 1 \relax }}{51}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 2\relax }}{52}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 2 \relax }}{52}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 3\relax }}{53}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 3 \relax }}{53}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 5\relax }}{54}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 5 \relax }}{54}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Controle de pressão do SAIGUP de longo prazo\relax }}{56}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces NPVs resultantes do SAIGUP de longo prazo \relax }}{56}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Controle de pressão do SAIGUP de curto prazo\relax }}{57}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces NPVs resultantes do SAIGUP de curto prazo \relax }}{57}{figure.4.12}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{62}{figure.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{62}{figure.A.2}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{63}{figure.B.1}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{63}{figure.B.2}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{64}{figure.C.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{64}{figure.C.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 1\relax }}{52}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 1 \relax }}{52}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 2\relax }}{53}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 2 \relax }}{53}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 3\relax }}{54}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 3 \relax }}{54}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 5\relax }}{55}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 5 \relax }}{55}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Controle de pressão do SAIGUP de longo prazo\relax }}{57}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces NPVs resultantes do SAIGUP de longo prazo \relax }}{57}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Controle de pressão do SAIGUP de curto prazo\relax }}{58}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces NPVs resultantes do SAIGUP de curto prazo \relax }}{58}{figure.4.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{66}{figure.E.1}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{66}{figure.E.2}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{64}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{64}{figure.A.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{67}{figure.F.1}
-\contentsline {figure}{\numberline {F.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{67}{figure.F.2}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{65}{figure.B.1}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{65}{figure.B.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{68}{figure.G.1}
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{68}{figure.G.2}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{66}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{66}{figure.C.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{68}{figure.E.1}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{68}{figure.E.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{69}{figure.F.1}
+\contentsline {figure}{\numberline {F.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{69}{figure.F.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{70}{figure.G.1}
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{70}{figure.G.2}

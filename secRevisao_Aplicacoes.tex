@@ -1,4 +1,23 @@
 \section{Otimização e Engenharia de Reservatório}
 \subsection{Contexto}
+Na engenharia de reservatórios, os pesquisadores buscam métodos visando à melhoria das condições e resultados produtivos dos reservatórios existentes. Atualmente, estima-se que até 60\% de óleo podem ser recuperados a partir do emprego de técnicas de EOR \footnote{Informação disponível em <http://energy.gov/fe/science-innovation/oil-gas-research/enhanced-oil-recovery>. Acesso em: 17 de Setembro de 2018}. De acordo com Udy \textit{et al.}, métodos de EOR e de injeção de água são utilizados, a depender das propriedades e do estado de produção do reservatório, de maneira a se encontrar condições ótimas de produção de óleo ou de NPV \cite{udyEOR}.
+
+Geralmente, os engenheiros de reservatório e de produção buscam encontrar alocações de recursos de produção por meio de simulações computacionais baseadas na estratégia de tentativa e erro; contudo, tal abordagem reduz a probabilidade de se encontrar as condições ótimas de produção, uma vez que poucos cenários são considerados. Além disso, como é inviável a obtenção de uma grande quantidade de simulações, os resultados conduzem a condições não otimizadas e redução da produção total. Além das limitações computacionais, outros desafios se tornam presentes na otimização da produção de petróleo, a saber: a falta de dados históricos adequados para a calibração do modelo matemático, as discrepâncias presentes nos parâmetros físicos, a imprevisibilidade dos preços do óleo e do gás, entre outros\footnote{Ver \cite{udyEOR}}.
+
+No esforço de se encontrar as melhores condições de operação de reservatórios, foram feitas tentativas de se desenvolver simuladores que conseguissem obter os melhores esquemas de produção, combinando simulações de reservatório com algoritmos de busca linear; entretanto, simuladores baseados em diferenças finitas possuem uma multitude de variáveis e relações que não se integram facilmente aos métodos numéricos de otimização. A chave para o método proposto é se obter uma diferenciação total do simulador, assim tornando-se possível a computação eficiente e precisa de buscas de gradiente direcional \cite{asheim88}. 
+
+No campo da engenharia de reservatório, são utilizados tanto algoritmos de gradiente descendente quanto meta-heurísticos na resolução de problemas de otimização. Serão analisadas duas classes de problemas envolvendo reservatórios: maximização da produção de óleo e do NPV, e posicionamento de poços.
+\nocite{EOR:Intro}
+
+
 \subsection{Algoritmos de Gradiente Descendente}
+O uso de algoritmos de gradiente descendente está bastante difundido na engenharia de reservatórios, em particular em situações em que se busca otimizar a produção e o NPV. Fonseca \textit{et al.}, por exemplo, utiliza variações estocásticas do algoritmo simplex, de maneira a se lidar com as incertezas de simulação e, assim, buscar o resultado ótimo, comparando a solução proposta com algoritmos de otimização robusta \cite{fonseca}; Asheim descreve um algoritmo utilizando busca linear em conjunto com as condições KKT, calculando sucessivamente o NPV durante o algoritmo, ilustrado pela Figura \ref{fig:asheim1} \cite{asheim88}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.5\textwidth]{figs/revisao/revisao_asheim1}
+	\caption{Exemplo de algoritmo de gradiente descendente aplicado para NPV \cite{asheim88}\label{fig:asheim1}}
+\end{figure}
+
 \subsection{Algoritmos Meta-heurísticos}
+Além dos algoritmos de gradiente descendente, os métodos meta-heurísticos de otimização estão bem difundidos na literatura, no que diz respeito à resolução tanto de problemas de obtenção de condições ótimas de produção quanto de posicionamento inteligente de poços.

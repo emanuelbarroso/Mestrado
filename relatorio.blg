@@ -26,49 +26,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--campo year vazio ou faltando em EOR:Intro
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 21 entries,
+You've used 24 entries,
             6714 wiz_defined-function locations,
-            1343 strings with 12491 characters,
-and the built_in function-call counts, 20171 in all, are:
-= -- 2034
-> -- 455
-< -- 263
-+ -- 451
-- -- 141
-* -- 1256
-:= -- 2684
-add.period$ -- 88
-call.type$ -- 21
-change.case$ -- 173
-chr.to.int$ -- 47
-cite$ -- 20
-duplicate$ -- 1530
-empty$ -- 1269
-format.name$ -- 670
-if$ -- 4462
+            1359 strings with 13116 characters,
+and the built_in function-call counts, 23025 in all, are:
+= -- 2349
+> -- 512
+< -- 300
++ -- 524
+- -- 158
+* -- 1430
+:= -- 3049
+add.period$ -- 98
+call.type$ -- 24
+change.case$ -- 201
+chr.to.int$ -- 53
+cite$ -- 24
+duplicate$ -- 1722
+empty$ -- 1424
+format.name$ -- 754
+if$ -- 5121
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 385
-newline$ -- 117
-num.names$ -- 100
-pop$ -- 485
+missing$ -- 434
+newline$ -- 133
+num.names$ -- 110
+pop$ -- 548
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 84
 quote$ -- 0
-skip$ -- 1560
+skip$ -- 1849
 stack$ -- 1
-substring$ -- 784
-swap$ -- 617
-text.length$ -- 19
+substring$ -- 882
+swap$ -- 683
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 137
+type$ -- 9
+warning$ -- 1
+while$ -- 152
 width$ -- 0
-write$ -- 327
+write$ -- 372
+(There was 1 warning)

@@ -173,7 +173,7 @@ No caso do SAIGUP, foram feitas duas classes de simulações, considerando dois va
 	Saturação inicial de água & $0.0$ \\ \hline
 	Taxa de variação, constante $k_\delta$ & $1$\\ \hline
 	Taxa de variação, constante $\kappa$ & $10^{-5}$\\ \hline
-	Taxa de variação, constante $h$ & $10^{-23}$\\ \hline
+	Taxa de variação, constante $h$ & $10^{-3}$\\ \hline
 \end{tabular}
 \end{table}
 
@@ -226,4 +226,14 @@ A segunda simulação envolvendo o SAIGUP foi a simulação de curto prazo. Quase to
 \end{figure}
 
 \section{Discussão dos Resultados}
+A primeira análise da execução do \textit{Smart Reservoir} leva em conta um modelo mais simples, o \textit{Egg Model}, no qual foi possível realizar várias simulações, de maneira a evidenciar a construção e os testes de taxas de variação de pressão na solução proposta. 
 
+
+
+Após a análise e discussão dos resultados obtidos com o \textit{Egg Model}, considera-se agora os resultados utilizando o SAIGUP. O modelo disponível para o estudo possui uma quantidade de poços produtores inferior à dos modelos comumente utilizados na literatura --- ... e ... utilizam, por exemplo, oito poços produtores\footnote{Ver ... e ...}, enquanto que o modelo disponível possui apenas cinco. O número reduzido de produtores resulta em um período de produção extendido e em uma produção de óleo menor que a possível, considerando que, inicialmente, apenas a fase óleo está presente no reservatório, conforme dados da Tabela \ref{tab:SAIGUPparams}. 
+
+Analisando-se os controles de pressão obtidos (Figuras \ref{fig:lSAIGUPBHP} e \ref{fig:sSAIGUPBHP}), nota-se que, a exemplo do \textit{Egg Model}, os poços produtores encontram-se inicialmente abertos; a tendência é que, ao longo do tempo, a pressão nos poços aumente, devido à presenção da frente de água nos mesmos; logo após esse aumento no BHP, os poços passam a produzir mais água do que óleo, razão pela qual, depois de determinado tempo, a pressão nos produtores começa a cair, possibilitando uma maior produção de fluidos e, consequentemente, um maior aproveitamento de óleo do reservatório. No caso do SAIGUP de curto prazo, o efeito da queda final de pressão é observado apenas no produtor 4 (os outros poços não chegam à fase de queda de pressão quando é detectado NPV negativo), enquanto que no de longo prazo o comportamento esperado, tanto a subida inicial quanto a queda de pressão, pode ser observado em todos os poços.
+
+Analisando-se as curvas de vazão de óleo e água das simulações efetuadas com o SAIGUP, presentes nos Apêndices \ref{apn:lSAIGUP} e \ref{apn:sSAIGUP}, nota-se que o comportamento dos gráficos é suave, com um decaimento próximo ao exponencial no caso das vazões de óleo; entretanto, como há uma fase do \textit{Smart Reservoir} em que há um corte na vazão dos poços injetores, nota-se que esse fato se reflete nos resultados de vazão obtidos, principalmente nas curvas de vazão de água.
+
+Em termos de NPV e tempo de explotação, em ambos os casos do SAIGUP o NPV resultante pode ser considerado equivalente nas situações normal e com a implementação do \textit{Smart Reservoir}; no entanto, percebe-se uma drástica redução no tempo total de simulação em ambos os casos: para aproximadamente 37.5\% do tempo original para o caso de curto prazo e para menos de 35\% do tempo original no caso de longo prazo, confirmando, assim, o cumprimento da ideia central da solução proposta.
