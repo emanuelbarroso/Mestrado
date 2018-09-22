@@ -261,9 +261,9 @@ Ao se fazer a análise dos resultados obtidos com a implementação do \textit{Smar
 	\caption{Resultados de NPV e tempo para as simulações envolvendo o \textit{Egg Model}\label{tab:EggAnalysis}}
 \begin{tabular}{|c|c|c|}
 	\hline
-	\textbf{Simulação} & \textbf{NPV }$\mathbf{(\times10^6\text{ USD})}$ & Passos de tempo (90 dias) \\ \hline
+	\textbf{Simulação} & \textbf{NPV }$\mathbf{(\times10^6\text{ USD})}$ & \textbf{Passos de tempo (90 dias)} \\ \hline
 	Normal & 41.07 & 17 \\ \hline
-	Literatura & & 40 \\ \hline
+	Literatura & 44.35 & 40 \\ \hline
 	\textit{Smart}, fase 1 & 41.11 & 16 \\ \hline
 	\textit{Smart}, fase 2 & 41.14 & 17 \\ \hline
 	\textit{Smart}, fase 3 & 41.43 & 17 \\ \hline
@@ -272,10 +272,35 @@ Ao se fazer a análise dos resultados obtidos com a implementação do \textit{Smar
 \end{tabular}
 \end{table}
 
+Analisando-se a Tabela \ref{tab:EggAnalysis}, pode-se afirmar que há uma progressão nos valores de NPV à medida em que se prossegue com os ajustes na taxa de variação das pressões e se adiciona passos extras ao \textit{Smart Reservoir}. Na sua implementação mais simples, sem a janela de predição, há uma sensível melhoria do NPV, mas muito pequena para considerar a utilização do algoritmo. A adição da janela de precisão, por si só, também contribui, porém a variação é também insuficiente para justificar o uso do algoritmo.
+
+O ganho com NPV passa a ser notado na fase 3 da simulação, em que a taxa de variação das pressões é elevada em relação às fases anteriores; isto foi feito de modo a se testar os limites de estabilidade numérica do algoritmo. Na fase 4, já se considera a taxa variável dependente da saturação; o NPV resultante é consideravelmente maior do que nas fases anteriores, chegando próximo aos patamares desejados\footnote{Esse patamar é o resultado simulado do algoritmo ssStoSAG, proposto em \cite{fonseca}.}; contudo, a fase 4 é incompleta no sentido de que não há o fator de correção numérica, fato esse que, em determinados casos, contribui para inconsistências no cálculo do NPV modificado. A adição desse fator, aliada a uma nova elevação das taxas de variação de pressão, contribui para um incremento ainda maior do NPV, como pode ser visto observando-se o resultado da fase 5. 
+
+Ao final das simulações, não somente se obteve um NPV equivalente ao encontrado utilizando-se o algoritmo proposto por Fonseca \textit{et al.}, como também foi possível reduzir o tempo de simulação para 40\% do original. Essa redução se faz interessante se for feita a consideração de que, em situações reais, o NPV é afetado por um fator de desconto ao longo do tempo\footnote{Ver \cite{ziz2014}}. Além da vantagem de se reduzir o tempo em termos de análise econômica, tem o fato de que os custos computacionais são significativamente reduzidos; uma simulação de \textit{Smart Reservoir} com o \textit{Egg Model}, na fase 5, é equivalente, em termos computacionais, a 15 simulações normais, cada uma durando 4 anos. Para se ter uma ideia da magnitude dessa economia de custo computacional, Fonseca \textit{et al.} obtêm seu valor de NPV após 4000 simulações \cite{fonseca}; portanto, o uso do \textit{Smart Reservoir} representou uma economia de custo de mais de 95\%, mantendo um NPV próximo à meta e reduzindo o tempo de produção.
+
+No tocante ao comportamento das pressões nos poços, percebe-se que eles seguem um comportamento em comum: inicialmente abertos, eles tendem a aumentar suas pressões, aproximando-se da pressão de reservatório, à medida em que a frente de água os alcança; a partir de determinado momento, como a produção de água se torna muito grande, o esforço é direcionado no sentido de se tentar obter o máximo de óleo possível; consequentemente, os poços têm sua pressão reduzida. Esse efeito, no caso do \textit{Egg Model utilizado}, é mais pronunciado no poço produtor 2, tendo em vista que o mesmo se encontra numa região de permeabilidade maior que a dos demais. Além disso, nota-se que a tendência do poço produtor 1, antes de seguir o comportamento normal dos outros poços, é a de inicialmente diminuir sua pressão, aumentando a vazão dos líquidos que o mesmo produz; isso se deve ao fato de que, como o poço 1 é o que se encontra mais longe dos injetores que o cercam, a frente de água demora mais para alcançá-lo, permitindo uma recuperação maior de óleo no começo da produção.
+
+Em termos de vazão de água e de óleo nos poços produtores do \textit{Egg Model}, percebe-se que, mesmo as curvas obtidas com o \textit{Smart Reservoir} não sendo suaves, elas seguem o comportamento da simulação sem otimização. A tendência é de uma produção maior de fluidos em cada poço, à exceção do poço 2, cujas pressões se aproximam mais da pressão de reservatório. Nota-se também uma queda na produção de água próximo ao final da simulação, evidenciando a redução da injeção forçada pelo \textit{Smart Reservoir} por motivos de insuficiência de NPV para cobrir os custos com a injeção de água.
+
 Após a análise e discussão dos resultados obtidos com o \textit{Egg Model}, considera-se agora os resultados utilizando o SAIGUP. O modelo disponível para o estudo possui uma quantidade de poços produtores inferior à dos modelos comumente utilizados na literatura --- Carter e Grema \textit{et al.} utilizam, por exemplo, oito poços produtores\footnote{Ver \cite{saigupCM} e \cite{grema2017optimization}}, enquanto que o modelo disponível possui apenas cinco. O número reduzido de produtores resulta em um período de produção extendido e em uma produção de óleo menor que a possível, considerando que, inicialmente, apenas a fase óleo está presente no reservatório, conforme dados da Tabela \ref{tab:SAIGUPparams}. 
+
+Em termos de NPV e tempo de explotação, em ambos os casos do SAIGUP o NPV resultante pode ser considerado equivalente nas situações normal e com a implementação do \textit{Smart Reservoir}; no entanto, percebe-se uma drástica redução no tempo total de simulação em ambos os casos: para aproximadamente 37.5\% do tempo original para o caso de curto prazo e para menos de 35\% do tempo original no caso de longo prazo, confirmando, assim, o cumprimento da ideia central da solução proposta. A Tabela \ref{tab:SAIGUPAnalysis}. apresenta os resultados obtidos com o SAIGUP. Além da economia de tempo e a obtenção do NPV semelhante ao desejado, percebe-se que, particularmente no SAIGUP de longo prazo, a simulação com o \textit{Smart Reservoir} equivale a uma simulação normal de 4 anos e meio.
+
+\begin{table}[!ht]
+	\centering
+	\caption{Resultados obtidos com o SAIGUP\label{tab:SAIGUPAnalysis}}
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	\textbf{Simulação} & \textbf{NPV }$\mathbf{(\times10^9\text{ USD})}$ & \textbf{Passos de tempo} & \textbf{Comprimento do passo} \\ \hline
+	Normal, curto prazo & 3.58 & 40 & 90 dias \\ \hline
+	\textit{Smart}, curto prazo & 3.52 & 15 & 90 dias \\ \hline
+	Normal, longo prazo & 3.64 & 127 & 1 ano \\ \hline
+	\textit{Smart}, longo prazo & 3.63 & 39 & 1 ano \\ \hline
+\end{tabular}
+\end{table}
 
 Analisando-se os controles de pressão obtidos (Figuras \ref{fig:lSAIGUPBHP} e \ref{fig:sSAIGUPBHP}), nota-se que, a exemplo do \textit{Egg Model}, os poços produtores encontram-se inicialmente abertos; a tendência é que, ao longo do tempo, a pressão nos poços aumente, devido à presenção da frente de água nos mesmos; logo após esse aumento no BHP, os poços passam a produzir mais água do que óleo, razão pela qual, depois de determinado tempo, a pressão nos produtores começa a cair, possibilitando uma maior produção de fluidos e, consequentemente, um maior aproveitamento de óleo do reservatório. No caso do SAIGUP de curto prazo, o efeito da queda final de pressão é observado apenas no produtor 4 (os outros poços não chegam à fase de queda de pressão quando é detectado NPV negativo), enquanto que no de longo prazo o comportamento esperado, tanto a subida inicial quanto a queda de pressão, pode ser observado em todos os poços.
 
 Analisando-se as curvas de vazão de óleo e água das simulações efetuadas com o SAIGUP, presentes nos Apêndices \ref{apn:lSAIGUP} e \ref{apn:sSAIGUP}, nota-se que o comportamento dos gráficos é suave, com um decaimento próximo ao exponencial no caso das vazões de óleo; entretanto, como há uma fase do \textit{Smart Reservoir} em que há um corte na vazão dos poços injetores, nota-se que esse fato se reflete nos resultados de vazão obtidos, principalmente nas curvas de vazão de água.
 
-Em termos de NPV e tempo de explotação, em ambos os casos do SAIGUP o NPV resultante pode ser considerado equivalente nas situações normal e com a implementação do \textit{Smart Reservoir}; no entanto, percebe-se uma drástica redução no tempo total de simulação em ambos os casos: para aproximadamente 37.5\% do tempo original para o caso de curto prazo e para menos de 35\% do tempo original no caso de longo prazo, confirmando, assim, o cumprimento da ideia central da solução proposta.
+
