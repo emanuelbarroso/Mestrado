@@ -33,6 +33,12 @@ Acesso em 17 de Setembro de 2018.}
 {EREMIN, N.; NAZAROVA, L. N. \emph{Enhanced Oil Recovery Methods}. [S.l.:
   s.n.], 2003.}
 
+\bibitem[Essen et al. 2009]{SPE:RWO}
+\abntrefinfo{Essen et al.}{ESSEN et al.}{2009}
+{ESSEN, G.~M. van et al. Robust waterflooding optimization of multiple
+  geological scenarios.
+\emph{SPE Journal}, v.~14, n.~1, p. 202--210, 2009.}
+
 \bibitem[Fonseca et al. 2017]{fonseca}
 \abntrefinfo{Fonseca et al.}{FONSECA et al.}{2017}
 {FONSECA, R. R.-M. et al. A stochastic simplex approximate gradient {(StoSAG)}
@@ -49,6 +55,13 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1002/nme.5342}.}
 Accesso em: 14 de Junho de 2018.
 Dispon{\'\i}vel em:
   \url{https://hbr.org/2014/11/a-refresher-on-net-present-value}.}
+
+\bibitem[Grema et al. 2017]{grema2017optimization}
+\abntrefinfo{Grema et al.}{GREMA et al.}{2017}
+{GREMA, A. et al. Optimization and non-linear identification of reservoir water
+  flooding process.
+\emph{Arid Zone Journal of Engineering, Technology and Environment}, v.~13,
+  n.~5, p. 610--619, 2017.}
 
 \bibitem[Guller 2010]{guller}
 \abntrefinfo{Guller}{GULLER}{2010}
@@ -81,6 +94,14 @@ ISBN 9782710810506.}
 \emph{Computational Geosciences}, v.~16, n.~2, p. 297--322, Mar 2012.
 ISSN 1573-1499.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-011-9244-4}.}
+
+\bibitem[Manzocchi et al. 2008]{manzocchi2008sensitivity}
+\abntrefinfo{Manzocchi et al.}{MANZOCCHI et al.}{2008}
+{MANZOCCHI, T. et al. Sensitivity of the impact of geological uncertainty on
+  production from faulted and unfaulted shallow-marine oil reservoirs:
+  objectives and methods.
+\emph{Petroleum Geoscience}, Geological Society of London, v.~14, n.~1, p.
+  3--15, 2008.}
 
 \bibitem[Peaceman 1977]{simres}
 \abntrefinfo{Peaceman}{PEACEMAN}{1977}
@@ -143,6 +164,16 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.3390/pr5030034}.}
 {YANG, X.-S. \emph{Engineering optimization: an introduction with metaheuristic
   applications}. New York: Wiley, 2010.
 ISBN 978-0-470-58246-6.}
+
+\bibitem[Zandvliet et al. 2007]{ZANDVLIET2007186}
+\abntrefinfo{Zandvliet et al.}{ZANDVLIET et al.}{2007}
+{ZANDVLIET, M. et al. Bang-bang control and singular arcs in reservoir
+  flooding.
+\emph{Journal of Petroleum Science and Engineering}, v.~58, n.~1, p. 186 --
+  200, 2007.
+ISSN 0920-4105.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920410507000101}.}
 
 \bibitem[{\v Z}i{\v z}lavsk{\'y} 2014]{ziz2014}
 \abntrefinfo{{\v Z}i{\v z}lavsk{\'y}}{{\v Z}I{\v Z}LAVSK{\'Y}}{2014}

@@ -43,21 +43,24 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 43
 \BOOKMARK [1][-]{section.3.4}{Função de Custo: NPV}{chapter.3}% 44
 \BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 45
-\BOOKMARK [1][-]{section.3.6}{Utilização da Programação Paralela}{chapter.3}% 46
-\BOOKMARK [0][-]{chapter.4}{Execução e Resultados do Algoritmo Smart Reservoir}{}% 47
-\BOOKMARK [1][-]{section.4.1}{Introdução}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.2}{Execução Utilizando o Egg Model}{chapter.4}% 49
-\BOOKMARK [1][-]{section.4.3}{Execução Utilizando o Modelo SAIGUP}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.4}{Discussão dos Resultados}{chapter.4}% 51
-\BOOKMARK [0][-]{chapter.5}{Conclusões}{}% 52
-\BOOKMARK [1][-]{section.5.1}{Conclusões do Trabalho}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.2}{Sugestões para Trabalhos Futuros}{chapter.5}% 54
-\BOOKMARK [0][-]{section.5.2}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 55
-\BOOKMARK [0][-]{chapter*.14}{APÊNDICES}{}% 56
-\BOOKMARK [0][-]{appendix.A}{Simula\347\365es dos Po\347os no Egg Model, Fase 1}{}% 57
-\BOOKMARK [0][-]{appendix.B}{Simula\347\365es dos Po\347os no Egg Model, Fase 2}{}% 58
-\BOOKMARK [0][-]{appendix.C}{Simula\347\365es dos Po\347os no Egg Model, Fase 3}{}% 59
-\BOOKMARK [0][-]{appendix.D}{Simula\347\365es dos Po\347os no Egg Model, Fase 4}{}% 60
-\BOOKMARK [0][-]{appendix.E}{Simula\347\365es dos Po\347os no Egg Model, Fase 5}{}% 61
-\BOOKMARK [0][-]{appendix.F}{Simula\347\365es dos Po\347os no SAIGUP de Curto Prazo}{}% 62
-\BOOKMARK [0][-]{appendix.G}{Simula\347\365es dos Po\347os no SAIGUP de Longo Prazo}{}% 63
+\BOOKMARK [2][-]{subsection.3.5.1}{A Função NPV Modificada}{section.3.5}% 46
+\BOOKMARK [2][-]{subsection.3.5.2}{Núcleo do Algoritmo}{section.3.5}% 47
+\BOOKMARK [2][-]{subsection.3.5.3}{Métodos Adicionais}{section.3.5}% 48
+\BOOKMARK [1][-]{section.3.6}{O Smart Reservoir e a Programação Paralela}{chapter.3}% 49
+\BOOKMARK [0][-]{chapter.4}{Execução e Resultados do Algoritmo Smart Reservoir}{}% 50
+\BOOKMARK [1][-]{section.4.1}{Introdução}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.2}{Execução Utilizando o Egg Model}{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.3}{Execução Utilizando o Modelo SAIGUP}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.4}{Discussão dos Resultados}{chapter.4}% 54
+\BOOKMARK [0][-]{chapter.5}{Conclusões}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Conclusões do Trabalho}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.2}{Sugestões para Trabalhos Futuros}{chapter.5}% 57
+\BOOKMARK [0][-]{Item.43}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 58
+\BOOKMARK [0][-]{chapter*.14}{APÊNDICES}{}% 59
+\BOOKMARK [0][-]{appendix.A}{Simula\347\365es dos Po\347os no Egg Model, Fase 1}{}% 60
+\BOOKMARK [0][-]{appendix.B}{Simula\347\365es dos Po\347os no Egg Model, Fase 2}{}% 61
+\BOOKMARK [0][-]{appendix.C}{Simula\347\365es dos Po\347os no Egg Model, Fase 3}{}% 62
+\BOOKMARK [0][-]{appendix.D}{Simula\347\365es dos Po\347os no Egg Model, Fase 4}{}% 63
+\BOOKMARK [0][-]{appendix.E}{Simula\347\365es dos Po\347os no Egg Model, Fase 5}{}% 64
+\BOOKMARK [0][-]{appendix.F}{Simula\347\365es dos Po\347os no SAIGUP de Curto Prazo}{}% 65
+\BOOKMARK [0][-]{appendix.G}{Simula\347\365es dos Po\347os no SAIGUP de Longo Prazo}{}% 66
