@@ -22,6 +22,12 @@ SPE European Petroleum Conference, Londres, Reino Unido, 1988.}
   using a parallel genetic algorithm.
 \emph{Petroleum Geoscience}, v.~14, p. 85--90, 2008.}
 
+\bibitem[Christie 1996]{upscaling}
+\abntrefinfo{Christie}{CHRISTIE}{1996}
+{CHRISTIE, M.~A. Upscaling for reservoir simulation.
+\emph{Journal of Petroleum Technology}, Society of Petroleum Engineers, v.~48,
+  1996.}
+
 \bibitem[Enhanced Oil Recovery]{EOR:Intro}
 \abntrefinfo{Enhanced\ldots}{ENHANCED\ldots}{}
 {ENHANCED Oil Recovery.
@@ -48,6 +54,11 @@ Acesso em 17 de Setembro de 2018.}
 ISSN 1097-0207.
 Nme.5342.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1002/nme.5342}.}
+
+\bibitem[Fortaleza 2012]{eugenioSmart}
+\abntrefinfo{Fortaleza}{FORTALEZA}{2012}
+{FORTALEZA, E. \emph{Controle Avançado para Gestão de Reservatórios de
+  Petróleo}. 2012.}
 
 \bibitem[Gallo 2014]{SITE:NPV}
 \abntrefinfo{Gallo}{GALLO}{2014}
@@ -158,6 +169,14 @@ ISBN 85-7193-099-6.}
   algorithms.
 \emph{Processes}, v.~5, n.~3, 2017.
 Dispon{\'\i}vel em: \url{https://doi.org/10.3390/pr5030034}.}
+
+\bibitem[Welch 1982]{npDef}
+\abntrefinfo{Welch}{WELCH}{1982}
+{WELCH, W.~J. Algorithmic complexity: three np- hard problems in computational
+  statistics.
+\emph{Journal of Statistical Computation and Simulation}, Taylor {\&} Francis,
+  v.~15, n.~1, p. 17--25, 1982.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1080/00949658208810560}.}
 
 \bibitem[Yang 2010]{yang}
 \abntrefinfo{Yang}{YANG}{2010}

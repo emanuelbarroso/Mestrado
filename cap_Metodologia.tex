@@ -83,7 +83,22 @@ Dos modelos selecionados para este estudo, o \textit{Egg Model} é o mais simples
 \subsection{Modelo SAIGUP}
 O SAIGUP é, na realidade, um projeto concentrado em reservatórios na costa marítima. De acordo com Carter e Matthews, o projeto SAIGUP envolveu a criação de 400 modelos sedimentológicos que, ao serem acrescidos de falhas geológicas, geram aproximadamente 12000 reservatórios fragmentários sintéticos \cite{saigupCM}. 
 
-A história do estudo do SAIGUP está diretamente relacionada com os esforços da União Europeia em reduzir o tempo de produção do primeiro óleo e melhorar a eficiência de recuperação de hidrocarbonetos em geral, destacam Manzocchi \textit{et al.}; \cite{manzocchi2008sensitivity}
+A história do estudo do SAIGUP está diretamente relacionada com os esforços da União Europeia em reduzir o tempo de produção do primeiro óleo e melhorar a eficiência de recuperação de hidrocarbonetos em geral, destacam Manzocchi \textit{et al.}; os principais objetivos do projeto são\footnote{Ver \cite{manzocchi2008sensitivity}.}:
+
+\begin{enumerate}
+	\item Quantificar as influências da sedimentologia, estrutura e \textit{upscaling}\footnote{Mais detalhes sobre \textit{upscaling} podem ser encontrados em \cite{upscaling}.} em incertezas na estimativa de produção de reservatórios com diferentes propriedades 
+	sedimentológicas e estruturais;
+	\item Definir medidas, geologicamente relevantes, de heterogeneidade estáticas e dinâmicas de maneira a se obter melhores previsões de produção;
+	\item Validar conclusões utilizando dados de produção e reservatórios reais.
+\end{enumerate}
+
+O modelo SAIGUP utilizado para esta pesquisa, assim como descrito no MRST, é um modelo \textit{corner-point} constituído por 78720 células nesta realização específica; possui falhas, células inativas, componentes desconectados, porém nenhuma erosão (\textit{pinch-outs}). Tal modelo se situa em uma malha cartesiana cujas dimensões são $40 \times 120 \times 20$ metros; possui 10 poços, sendo 5 injetores, completados nas 12 camadas mais baixas, e 5 produtores, completados nas 14 camadas mais altas. A Figura \ref{fig:metodo_saigup} ilustra o modelo SAIGUP utilizado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.75\textwidth]{figs/metodologia/metodo_saigup}
+	\caption{Modelo SAIGUP.}\label{fig:metodo_saigup}
+\end{figure}
 
 \section{Função de Custo: NPV}
 Como o presente estudo é um problema de otimização relacionado à produção de petróleo, e há o envolvimento de aspectos econômicos, é necessário se estabelecer uma função que seja objeto da otimização: a função objetivo. 
@@ -119,6 +134,94 @@ Dentre os projetos em que o NPV pode ser aplicado para análise a longo prazo, se
 em que $N_t$ é o número de passos de tempo do projeto; $N_P$ é o número de poços produtores e $N_I$, o número de poços injetores; $r_o$ é a rentabilidade do óleo (em $\$/STB$)\footnote{A unidade $STB$, conhecida como \textit{Stock Tank Barrel}, equivale a 5.61 pés cúbicos a $60°F$ de temperatura e 14.7 $psi$ de pressão.}, $c_w$ e $c_{wi}$ são, respectivamente, o custo de água produzida e injetada (em $\$/STB$) e $c_gi$ é o custo de gás injetado (em $\$/Mscf$)\footnote{$Mscf$: Milhares de pés cúbicos padrão, isto é, a $60°F$ de temperatura e 14.7 $psi$ de pressão.}; $t_n$ é a medida de tempo ao final de cada passo de simulação e $\Delta t_n$ é o comprimento do passo; $\overline{q_{o,j}^{(n)}}$ e $\overline{q_{w,j}^{(n)}}$ são, respectivamente, as vazões médias de água e óleo no poço produtor $j$ no $n$-ésimo passo de tempo; por fim, $\overline{q_{wi,k}^{(n)}}$ e $\overline{q_{gi,k}^{(n)}}$ representam as vazões médias de água e de gás injetados no poço injetor $k$ no $n$-ésimo passo de tempo --- todas as vazões médias são dadas na unidade $STB/$dia. Ainda se considera, para efeitos de simplificação em problemas de otimização envolvendo engenharia de reservatório e cálculo do NPV, que não há fator de desconto ($b = 0$) \cite{fonseca}. Por fim, como os modelos considerados para este trabalho adotam exclusivamente o método de recuperação secundária por injeção de água, considera-se também que não há vazão de gás injetado; portanto, tem-se que $\overline{q_{gi,k}^{(n)}} = 0,~\forall k,n$.
 \section{Algoritmo \textit{Smart Reservoir}}
 \subsection{A Função NPV Modificada}
+A ideia inicial considerada na concepção do \textit{Smart Reservoir} é incluir parâmetros do reservatório no cálculo do NPV, assim avaliando-se diferentes estratégias de produção a cada momento sem que haja uma simulação inteira da vida do reservatório; em outras palavras, a estratégia de produção ótima é desenvolvida a cada passo de tempo avaliando-se o balanço entre o rendimento e a degradação do reservatório para cada estratégia de médio prazo.
+
+De maneira a alcançar esse objetivo, faz-se necessária uma modificação na definição do NPV. Primeiramente, adotando-se as considerações anteriores de que não há fator de desconto, os custos relativos ao gás podem ser desprezados, uma vez que o algoritmo será testado em modelos \textit{black-oil} contendo apenas água e óleo e o fato de que o problema é contínuo no tempo, a Equação \eqref{NPVReservoir} pode ser reescrita como
+\begin{equation}\label{NPVCont}
+NPV=\int_{t0}^{tf} \left[ \sum_{j=1}^{N_P} \left(r_o q_{o,j} - c_w q_{w,j}\right) - \sum_{k=1}^{N_I} \left(c_{wi} q_{wi,k}\right) \right]dt.
+\end{equation}
+
+Antes de se continuar com o trato da função objetivo, faz-se necessária uma simplificação, separando-se o NPV global em uma componente por poço produtor; desta forma, o fluxo de caixa pode ser escrito, a partir das Equações \ref{NPVdef} e \ref{NPVCont}, como
+\begin{equation}\label{eq:cashFlow}
+C_F(t) = \sum_{j=1}^{N_P} \left(r_o q(t)_{o,j} - c_w q(t)_{w,j}\right) - \sum_{k=1}^{N_I} \left(c_{wi}q(t)_{wi,k}\right).
+\end{equation}
+O fluxo de caixa ainda pode ser separado para cada poço produtor; utilizando-se os mesmos como índices, a Equação \eqref{eq:cashFlow} pode ser reescrita, para cada poço produtor $P$, como
+
+\begin{equation}\label{eq:wellCashFlow}
+C_F(t,P) = \left(r_o q(t)_{o,P} - c_w q(t)_{w,P}\right) - \sum_{k=1}^{N_I} \left(c_{wi} q(t)_{wi,k}\right).
+\end{equation}
+
+Devido ao fato de que as zonas de drenagem de cada poço produtor possuem interseções pequenas entre si, pode-se considerar os comportamentos dinâmicos de cada produtor fracamente conectados aos demais. Portanto, pode-se escrever o NPV para cada poço $P$ como se segue:
+
+\begin{equation}\label{eq:WellNPVDef}
+NPV(t,P) = \int_{t_0}^{t_n} C_F(t,P)dt.
+\end{equation}
+
+O problema de se obter o melhor NPV a cada passo de tempo pode ser visto como uma questão de se controlar cada poço individualmente de maneira que seu NPV --- como define a Equação \eqref{eq:WellNPVDef} --- seja maximizado; entretanto, tal função objetivo pode ser reescrita para que haja um melhor uso dos parâmetros do reservatório, assim fazendo-se uma melhor avaliação da estratégia de produção a cada passo de tempo. Uma forma de se fazer isso é por meio da mudança da variável de integração; ao invés de se utilizar o tempo, passa-se a considerar a saturação na vizinhança dos poços, já que ela pode ser obtida facilmente por meio das vazões de óleo e água. Portanto, ao invés de se utilizar a Equação \eqref{eq:WellNPVDef}, a função objetivo utilizada para se determinar o controle de cada poço produtor passa a ser
+
+\begin{equation}\label{eq:ModWellNPVDef}
+\widetilde{NPV}(s,P) = \int_{s_0}^{s_f} \frac{C_F(s,P)}{ds/dt}ds,
+\end{equation}
+em que $ds/dt$ é a variação temporal da saturação no poço $P$. Esta integral possui contornos mais identificáveis, visto que a saturação inicial é conhecida e o final do intervalo é a menor saturação de óleo viável para se produzir. Sendo assim, a Equação \eqref{eq:ModWellNPVDef} é a função a ser testada em cada poço, com vistas de se obter a melhor estratégia de produção durante a vida útil do reservatório.
+
 \subsection{Núcleo do Algoritmo}
+O problema de se encontrar a melhor estratégia de controle em cada poço de maneira a se obter o melhor NPV possível durante uma simulação de reservatório não é trivial; trata-se de um problema de complexidade no mínimo exponencial, podendo ser classificado como um problema NP-completo\footnote{Maiores detalhes sobre problemas NP podem ser encontrados em \cite{npDef}.}.
+
+Além das dificuldades computacionais de se encontrar um esquema ótimo de produção para um dado reservatório, há as dificuldades matemáticas; é inviável tentar se obter, por exemplo, as zonas de convexidade de uma função como o NPV considerando um reservatório, uma vez que suas variáveis dependentes se comportam de acordo com relações matemáticas não tão triviais, como a lei de Darcy. Como não se pode fazer nenhuma afirmação sobre a convexidade da função objetivo, não se pode aplicar o Teorema \ref{theoMinConv} nem as condições KKT para se realizar a otimização desejada. Tendo-se ainda o fato de que o NPV não é uma função facilmente diferenciável, e não se pode afirmar, com certeza, que ela é Gâteaux ou Fréchet diferenciável, de acordo com os conceitos da Seção \ref{subsec:otimconcepts}, não é trivial utilizar métodos de gradiente descendente nessa situação.
+
+A ideia da solução proposta é fazer avaliações de diferentes estratégias de produção a médio prazo, a cada passo de tempo; contudo, não é prudente tentar considerar todas os valores possíveis para o controle dos poços, fazendo-se a técnica da ``força bruta''; tal alternativa é inviável computacionalmente. Ao invés de se fazer uma busca exaustiva da melhor configuração dos poços, pode-se escolher, de um conjunto finito de estratégias, uma que produza o melhor resultado, em termos de NPV, em determinado passo de tempo; essa estratégia escolhida se torna o ponto de partida para outro conjunto finito de estratégias a serem testadas no próximo passo, repetindo-se esse algoritmo durante a vida útil do reservatório. A Figura \ref{fig:searchStrategies} ilustra o comportamento de cada forma de busca de soluções até aqui descrita.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}[b]{.45\textwidth}
+		\includegraphics[width=\textwidth]{figs/metodologia/metodo_buscaE}
+		\caption{Busca exaustiva}
+		\label{bruteSearch}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{.45\textwidth}
+		\includegraphics[width=\textwidth]{figs/metodologia/metodo_buscaA}
+		\caption{Busca alternativa}
+		\label{altSearch}
+	\end{subfigure}
+\caption{Estratégias de busca de solução \cite{eugenioSmart}.}
+\label{fig:searchStrategies}
+\end{figure}
+
+Pode-se entender o \textit{Smart Reservoir} como um algoritmo de busca de caminho ótimo de controle dos poços produtores; tal controle é dado pela variação de pressão em cada poço. A cada passo de tempo, são examinadas algumas possibilidades de pressão de todos os poços produtores, calculando-se o NPV modificado de cada situação examinada. O conjunto de pressões que resulta no melhor resultado da função objetivo é então usado como base para a geração do próximo conjunto de possibilidades de controle, a ser avaliado no próximo instante de tempo --- a Figura \ref{altSearch}. Após cada passo do algoritmo, é calculado, então, o NPV segundo a Equação \eqref{NPVReservoir}, que é salvo. A condição de parada do \textit{Smart Reservoir} está diretamente relacionada ao NPV; caso se detecte que, em determinado tempo, o NPV se tornou negativo, isto é, passa-se a ocorrer prejuízos na produção, o algoritmo é interrompido.
+
+A escolha de possibilidades de controle para os poços produtores, por meio de suas pressões, segue um padrão específico: a partir da condição inicial, cada uma das estratégias de controle a ser testada é obtida a partir de uma variação nas pressões de cada poço utilizando-se uma taxa específica de variação, chamada $\delta_W$. Assumindo-se que cada conjunto de possibilidades tenha $n_{bhp}$ vetores de pressão dos poços, e $\mathbf{p_W^{(n)}}$ o estado de controle dos poços no n-ésimo passo de tempo, o conjunto de pressões a serem testadas no próximo instante é dado por
+\begin{equation}\label{eq:pp1}
+	\mathbf{p_W^{(n+1)}} = \mathbf{p_W^{(n)}} \pm N\delta_W,
+\end{equation}
+em que $N$ é um número inteiro que pode ser obtido utilizando-se a relação
+\begin{equation}
+	N = \left \lfloor \frac{n_{bhp}+1}{2} \right \rfloor - i,~~i = 1,\ldots,n_{bhp}.
+\end{equation}
+No caso especial da primeira iteração, em que se deseja prioritariamente abrir os poços, isto é, diminuir sua pressão de maneira que se aumente a vazão de fluidos do reservatório --- no início, a saturação do óleo é maior; portanto, aumentando-se a vazão dos poços, aumenta-se a produção dos hidrocarbonetos, o que é desejável ---, o cálculo das pressões se dá da seguinte forma:
+
+\begin{equation}\label{eq:pp2}
+\mathbf{p_W^{(1)}} = \mathbf{p_W^{(0)}} - i\delta_W,~~i = 0,\ldots,n_{bhp}-1.	
+\end{equation}
+
+
+Por fim, analisando-se as entradas e as saídas do \textit{Smart Reservoir}, conclui-se que as entradas consistem primariamente dos parâmetros do reservatório e o estado inicial das pressões em cada poço, além da formulação da taxa de variação. As saídas de interesse são o NPV total estimado utilizando-se a Equação \eqref{NPVReservoir}, o número de passos de tempo em que a produção se manteve viável e uma matriz contendo todas as pressões de cada poço obtidas durante o algoritmo. O \textit{Smart Reservoir}, em resumo, pode ser escrito da seguinte forma:
+
+\begin{enumerate}
+	\item Inicialize o reservatório e as pressões de cada poço;
+	\item Estabeleça $n_{bhp}$ vetores de pressão, conforme as Equações \eqref{eq:pp1} e \eqref{eq:pp2};
+	\item Para cada vetor de pressão obtido, simule o reservatório e calcule o NPV modificado com a Equação \eqref{eq:ModWellNPVDef} para cada poço;
+	\item Atualize as pressões de cada poço com aquelas que resultaram nos melhores valores do NPV modificado;
+	\item Salve as pressões obtidas em uma matriz de controle;
+	\item Simule novamente o reservatório, utilizando as pressões ótimas obtidas, e avalie o NPV normal por meio da Equação \eqref{NPVReservoir};
+	\item Atualize as taxas de variação, se necessário, e as condições iniciais do reservatório para a próxima simulação;
+	\item Se o NPV normal for positivo, incremente o passo de tempo e volte ao Passo 2; caso contrário, prosseguir com o próximo Passo;
+	\item Obter a soma cumulativa de todos os NPVs normais positivos;
+	\item Salve o NPV total, o número de passos de tempo e a matriz de controle;
+	\item Fim do algoritmo.
+\end{enumerate}
+
+Da maneira como está definido, percebe-se que o \textit{Smart Reservoir} é puramente baseado em avaliações de NPV por meio das pressões dos poços. Porém, esse algoritmo pode ser melhorado, adicionando-se outras considerações diretamente relacionadas ao desempenho do reservatório e a existência de situações que podem levar a inconsistências numéricas. Alguns adendos já considerados nesta pesquisa são apresentados na Seção a seguir.
+
 \subsection{Métodos Adicionais}
 \section{O \textit{Smart Reservoir} e a Programação Paralela}
