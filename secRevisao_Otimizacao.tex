@@ -159,7 +159,7 @@ A maioria dos algoritmos de otimiza\c{c}\~{a}o e conceitos associados empregam c
 
 Inicialmente, ser\~{a}o apresentados conceitos de continuidade e diferencia\c{c}\~{a}o b\'{a}sicos para uma fun\c{c}\~{a}o escalar (monovari\'{a}vel), isto \'{e}, $f: D \to \mathbb{R},~D \subset \mathbb{R}$.
 
-\begin{definition}\footnote{Ver \cite{thomas1}, p. 120} \label {scalarCont} 
+\begin{definition}\footnote{Ver \cite[p. 120]{thomas1}.} \label {scalarCont} 
 Uma fun\c{c}\~{a}o escalar $f(x)$ \'{e} considerada cont\'{i}nua em um ponto $c \in \mathbb{R}$ se:
 \begin{enumerate}[label=(\alph*)]
 \item $f$ \'{e} definida em $c$ ($\exists f(c)$);
@@ -185,7 +185,7 @@ Vale ressaltar que a derivada possui algumas propriedades elementares, mostradas
 \item $(f \pm g)' = f' \pm g'$;
 \item $(fg)' = fg' + f'g$;
 \item $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$;
-\item \textit{(Regra da Cadeia)} $(f \circ g)' \equiv f'(g) = f'(g)g' \equiv (f' \circ g)g'$ \footnote{Uma prova dessa regra se encontra em \cite{thomas1}, p. 246}
+\item \textit{(Regra da Cadeia)} $(f \circ g)' \equiv f'(g) = f'(g)g' \equiv (f' \circ g)g'$ \footnote{Uma prova dessa regra se encontra em \cite[p. 246]{thomas1}.}
 \end{enumerate}
 
 Em cursos introdut\'{o}rios de c\'{a}lculo, geralmente s\~{a}o apresentados conceitos relativos a testes de sinais de derivadas de uma fun\c{c}\~{a}o $f(x)$ qualquer de maneira a se encontrar pontos especiais, os \textit{pontos cr\'{i}ticos} ou \textit{estacion\'{a}ros} e sua natureza. Ser\'{a} visto nas Se\c{c}\~{o}es seguintes que esse estudo no fundo \'{e} uma aplica\c{c}\~{a}o espec\'{i}fica das condi\c{c}\~{o}es de otimalidade em problemas sem restri\c{c}\~{a}o; a seguir, os conceitos de continuidade e diferencia\c{c}\~{a}o ser\~{a}o extendidos de forma a abranger fun\c{c}\~{o}es de v\'{a}rias vari\'{a}veis e tamb\'{e}m fun\c{c}\~{o}es multiobjetivo, ou campos vetoriais.
@@ -202,9 +202,9 @@ Uma aplica\c{c}\~{a}o $f(\mathbf{x}): A \to B,~ A \subset \mathbb{R}^{n}$ \'{e} 
 Uma aplica\c{c}\~{a}o $\mathbf{F}(\mathbf{x}): A \to B,~ A \subset \mathbb{R}^{n}$ \'{e} denominada campo vetorial (ou fun\c{c}\~{a}o multiobjetivo) se seu contradom\'{i}nio \'{e} subconjunto de um espa\c{c}o euclidiano de dimens\~{a}o $m > 1$, isto \'{e}, $B \subset \mathbb{R}^{m}$.
 \end{definition}
 
-O conceito de continuidade, nesses casos, pode ser visto como uma extens\~{a}o da Defini\c{c}\~{a}o \ref{scalarCont}\footnote{Ver \cite{thomas2}, p. 301}; por\'{e}m, o conceito de diferenciabilidade deve ser largamente extendido, pois agora, ao contr\'{a}rio do caso escalar, o n\'{u}mero de dire\c{c}\~{o}es poss\'{i}veis \'{e} infinito. Em casos em que essas dire\c{c}\~{o}es correspondem aos vetores da base can\^{o}nica do espa\c{c}o do dom\'{i}nio ($\mathbf{e_i} = (0,...,1,...,0)$ com o elemento n\~{a}o-nulo na $i$-\'{e}sima posi\c{c}\~{a}o), as derivadas de uma fun\c{c}\~{a}o vetorial nessas dire\c{c}\~{o}es s\~{a}o conhecidas como \textit{derivadas parciais}.
+O conceito de continuidade, nesses casos, pode ser visto como uma extens\~{a}o da Defini\c{c}\~{a}o \ref{scalarCont}\footnote{Ver \cite[p. 301]{thomas2}.}; por\'{e}m, o conceito de diferenciabilidade deve ser largamente extendido, pois agora, ao contr\'{a}rio do caso escalar, o n\'{u}mero de dire\c{c}\~{o}es poss\'{i}veis \'{e} infinito. Em casos em que essas dire\c{c}\~{o}es correspondem aos vetores da base can\^{o}nica do espa\c{c}o do dom\'{i}nio ($\mathbf{e_i} = (0,...,1,...,0)$ com o elemento n\~{a}o-nulo na $i$-\'{e}sima posi\c{c}\~{a}o), as derivadas de uma fun\c{c}\~{a}o vetorial nessas dire\c{c}\~{o}es s\~{a}o conhecidas como \textit{derivadas parciais}.
 
-\begin{definition}\footnote{Adaptado de \cite{thomas2}, p. 308}
+\begin{definition}\footnote{Adaptado de \cite[p. 308]{thomas2}.}
 Dizemos que a \textit{derivada parcial} de $f(\mathbf{x})$ em rela\c{c}\~{a}o \`{a} componente $x_i$ \'{e} equivalente ao limite
 \begin{equation}
 \frac{\partial}{\partial x_i}f(\mathbf{x}) \equiv \frac{\partial f}{\partial x} \equiv f_{x_i}(\mathbf{x}) = \lim_{h \to 0} \frac{f(x_1,...,x_i + h,...,x_n)-f(\mathbf{x})}{h},
@@ -244,14 +244,14 @@ Com isso, permite-se concluir que a no\c{c}\~{a}o de derivada direcional \'{e} u
 
 Antes de se prosseguir com a an\'{a}lise de diferencia\c{c}\~{a}o de fun\c{c}\~{o}es multivari\'{a}veis e campos vetoriais, faz-se necess\'{a}rio apresentar uma nota\c{c}\~{a}o que ser\'{a} utilizada posteriormente, a \textit{nota\c{c}\~{a}o de Landau (``o'' pequeno)}:
 
-\begin{definition}[Nota\c{c}\~{a}o de Landau]\footnote{Ver \cite{guller}, p. 6}
+\begin{definition}[Nota\c{c}\~{a}o de Landau]\footnote{Ver \cite[p. 6]{guller}}
 Segundo a nota\c{c}\~{a}o de Landau, um vetor pode ser chamado $o(\mathbf{h}) \in \mathbb{R}^{n}$ se
 \begin{equation*}
 \lim_{\mathbf{h} \to \mathbf{0}} \frac{\norm{o(\mathbf{h})}}{\norm{\mathbf{h}}} = 0.
 \end{equation*}
 \end{definition}
 
-\begin{definition}\label{gateauxDef}\footnote{\textit{Ibid.}}
+\begin{definition}\label{gateauxDef}\footnote{\textit{Ibid., p. 6.}}
 Uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$ \'{e} dita \textit{G\^{a}teaux diferenci\'{a}vel} em $\mathbf{x} \in U$ se a derivada direcional $f'(\mathbf{x};\mathbf{d})$ existe para toda dire\c{c}\~{a}o $\mathbf{d} \in \mathbb{R}^{n}$ e \'{e} uma fun\c{c}\~{a}o linear de $\mathbf{d}$.
 \end{definition}
 
@@ -260,7 +260,7 @@ Pela defin\c{c}\~{a}o de diferenciabilidade de G\^{a}teaux e utilizando a defini
 f'(\mathbf{x};\mathbf{d}) = f'(\mathbf{x};\sum_{i=1}^{n}d_i\mathbf{e_i}) = \sum_{i=1}^{n} d_i f'(\mathbf{x};\mathbf{e_i}) = \sum_{i = 1}^{n} d_i \frac{\partial f}{\partial x_i} = \left\langle \mathbf{d},\nabla f \right\rangle = \mathbf{d}^T \nabla f.
 \end{equation}
 
-\begin{definition}\label{frechetDef}\footnote{\textit{Ibid.}}
+\begin{definition}\label{frechetDef}\footnote{\textit{Ibid., p.6}}
 Uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$ \'{e} dita \textit{Fr\'{e}chet diferenci\'{a}vel} em $\mathbf{x} \in U$ se existe uma fun\c{c}\~{a}o linear $\ell: \mathbb{R}^{n} \to \mathbb{R},~\ell(\mathbf{x}) = \mathbf{l}^T\mathbf{x}$, tal que
 \begin{equation*}
 \lim_{\norm{\mathbf{h}} \to 0} \frac{f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) - \mathbf{l}^T\mathbf{h}}{\norm{\mathbf{h}}} = 0.
@@ -283,7 +283,7 @@ Claramente, de acordo com a Equa\c{c}\~{a}o \ref{gateauxCalc}, o segundo termo \
 
 A segunda derivada de uma fun\c{c}\~{a}o multivari\'{a}vel requer aten\c{c}\~{a}o especial: uma vez que a primeira derivada, ou gradiente, \'{e} um vetor, a segunda derivada de uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$ \'{e} uma matriz quadrada de ordem $n$. Essa matriz \'{e} conhecida como \textit{Hessiana}.
 
-\begin{definition}\footnote{Adaptado de \cite{yang}, p. 51}
+\begin{definition}\footnote{Adaptado de \cite[p. 51]{yang}.}
 A segunda derivada de uma fun\c{c}\~{a}o $f: U \subseteq \mathbb{R}^{n} \to \mathbb{R}$, tamb\'{e}m conhecida como Hessiana de $f$, \'{e} dada por
 \begin{equation}
 H(f) \equiv \nabla^2 f \equiv f''(\mathbf{x}) = [h_{ij}],~h_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}.
@@ -292,9 +292,9 @@ H(f) \equiv \nabla^2 f \equiv f''(\mathbf{x}) = [h_{ij}],~h_{ij} = \frac{\partia
 
 Um fato interessante sobre a Hessiana \'{e} que, se as segundas derivadas parciais de $f$ existem e s\~{a}o cont\'{i}nuas, tem-se que $\frac{\partial^2 f}{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i}$; neste caso, temos que $H(f) = H^{T}(f)$, ou seja, tem-se $H(f)$ sim\'{e}trica. Este fato \'{e} largamente utilizado em alguns algoritmos de otimiza\c{c}\~{a}o, particularmente em problemas de programa\c{c}\~{a}o quadr\'{a}tica.
 
-Todos os conceitos vistos at\'{e} aqui para fun\c{c}\~{o}es $f: \mathbb{R}^{n} \to \mathbb{R}$ podem ser tamb\'{e}m aplicados a campos vetoriais $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$. Os conceitos de diferenciabilidade segundo G\^{a}teaux e Fr\'{e}chet s\~{a}o an\'{a}logos aos presentes nas Defini\c{c}\~{o}es \ref{gateauxDef} e \ref{frechetDef} \footnote{Ver \cite{guller}, pp. 8-9}. Guller ainda afirma que, se um campo $\mathbf{F}(\mathbf{x})$ \'{e} G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}vel em $\mathbf{x}$, ent\~{a}o suas fun\c{c}\~{o}es componentes $f_i(\mathbf{x})$ s\~{a}o G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}veis em $\mathbf{x}$. A mudan\c{c}a aqui \'{e} o c\'{a}lculo da derivada de $\mathbf{F}$, agora uma matriz.
+Todos os conceitos vistos at\'{e} aqui para fun\c{c}\~{o}es $f: \mathbb{R}^{n} \to \mathbb{R}$ podem ser tamb\'{e}m aplicados a campos vetoriais $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$. Os conceitos de diferenciabilidade segundo G\^{a}teaux e Fr\'{e}chet s\~{a}o an\'{a}logos aos presentes nas Defini\c{c}\~{o}es \ref{gateauxDef} e \ref{frechetDef} \footnote{Ver \cite[pp. 8-9]{guller}.}. Guller ainda afirma que, se um campo $\mathbf{F}(\mathbf{x})$ \'{e} G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}vel em $\mathbf{x}$, ent\~{a}o suas fun\c{c}\~{o}es componentes $f_i(\mathbf{x})$ s\~{a}o G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}veis em $\mathbf{x}$. A mudan\c{c}a aqui \'{e} o c\'{a}lculo da derivada de $\mathbf{F}$, agora uma matriz.
 
-\begin{definition}\footnote{Adaptado de \cite{guller}, p. 9}
+\begin{definition}\footnote{Adaptado de \cite[p. 9]{guller}.}
 Dado um campo vetorial $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$, sua derivada, denominada Jacobiana de $\mathbf{F}$, \'{e} dada por
 \begin{equation}
 J(\mathbf{F}) = \left[ \frac{\partial f_i}{\partial x_j} \right].
@@ -312,7 +312,7 @@ Um conjunto $D \subset \eucR{n}$ \'{e} dito convexo se, para quaisquer $\mathbf{
 
 O ponto $\alpha\mathbf{x} + (1-\alpha)\mathbf{y},~\alpha \in [0,1]$, \'{e} conhecido como a \textit{combina\c{c}\~{a}o convexa} de $\mathbf{x}$ e $\mathbf{y}$, com par\^{a}metro $\alpha$.
 
-Em termos de convexidade de uma fun\c{c}\~{a}o, as defini\c{c}\~{o}es a seguir s\~{a}o adptadas de Izmailov e Solodov\footnote{Ver \cite{izmailov}, pp. 66-70}. Sup\~{o}e-se, para todas as defini\c{c}\~{o}es, que o conjunto $D \subset \eucR{n}$ presente nelas \'{e} convexo.
+Em termos de convexidade de uma fun\c{c}\~{a}o, as defini\c{c}\~{o}es a seguir s\~{a}o adaptadas de Izmailov e Solodov\footnote{Ver \cite[pp. 66-70]{izmailov}.}. Sup\~{o}e-se, para todas as defini\c{c}\~{o}es, que o conjunto $D \subset \eucR{n}$ presente nelas \'{e} convexo.
 
 \begin{definition}\label{convDef}
 Uma fun\c{c}\~{a}o $f: D \to \setR$ \'{e} convexa em $D$ se, para quaisquer $\mathbf{x} \in D,~\mathbf{y} \in D$ e $\alpha \in [0,1]$, tem-se
@@ -345,7 +345,7 @@ Uma fun\c{c}\~{a}o $f: D \to \setR$ \'{e} c\^{o}ncava em $D$ se $-f$ for convexa
 O problema de otimiza\c{c}\~{a}o \eqref{basicProb} \'{e} um problema de minimiza\c{c}\~{a}o convexo quando $D$ \'{e} um conjunto convexo e $f$ \'{e} uma fun\c{c}\~{a}o convexa.
 \end{definition}
 
-Uma vez que a fun\c{c}\~{a}o e o conjunto de restri\c{c}\~{o}es s\~{a}o convexos, resolver um problema de otimiza\c{c}\~{a}o torna-se menos tortuoso; encontrar um minimizador \'{e} garantido. A import\^{a}ncia desse fato pode ser vista no teorema a seguir, retirado de Izmailov e Solodov \footnote{\textit{Ibid.}, p. 69. Ver prova em \textit{Ibid.}, pp. 69-70.}.
+Uma vez que a fun\c{c}\~{a}o e o conjunto de restri\c{c}\~{o}es s\~{a}o convexos, resolver um problema de otimiza\c{c}\~{a}o torna-se menos tortuoso; encontrar um minimizador \'{e} garantido. A import\^{a}ncia desse fato pode ser vista no teorema a seguir, retirado de Izmailov e Solodov \footnote{Ver \cite[p. 69]{izmailov}. Ver prova em \cite[pp. 69-70]{izmailov}.}.
 
 \begin{theorem}[Teorema de minimiza\c{c}\~{a}o convexa]\label{theoMinConv}
 Todo minimizador local de um problema convexo \'{e} um minimizador global, e o conjunto de minimizadores \'{e} convexo. Al\'{e}m disso, se a fun\c{c}\~{a}o objetivo for estritamente convexa, s\'{o} h\'{a} no m\'{a}ximo um minimizador.
@@ -355,15 +355,15 @@ Uma vez que resolver um problema de maximiza\c{c}\~{a}o \'{e} an\'{a}logo a reso
 
 Tentar determinar a convexidade de uma fun\c{c}\~{a}o por meio da Defini\c{c}\~{a}o \ref{convDef} pode-se tornar um trabalho \'{a}rduo; Yang apresenta uma alternativa para se determinar a convexidade de uma fun\c{c}\~{a}o, dada a seguir.
 
-\begin{theorem}\footnote{Adaptado de \cite{yang}, pp. 56-57.}
+\begin{theorem}\footnote{Adaptado de \cite[pp. 56-57]{yang}.}
 Uma fun\c{c}\~{a}o $f: D \subset \eucR{n} \to \setR$ \'{e} convexa se sua matriz Hessiana \'{e} semidefinida positiva em todos os pontos de $D$.
 \end{theorem}
 
-Guller destaca, por\'{e}m, que o teorema acima \'{e} v\'{a}lido apenas se a fun\c{c}\~{a}o $f$ \'{e} duas vezes Fr\'{e}chet diferenci\'{a}vel; al\'{e}m disso, afirma que, se a Hessiana \'{e} definida positiva, a fun\c{c}\~{a}o $f$ \'{e} estritamente convexa\footnote{Ver Teorema 4.28 em \cite{guller}, p. 99.}.
+Guller destaca, por\'{e}m, que o teorema acima \'{e} v\'{a}lido apenas se a fun\c{c}\~{a}o $f$ \'{e} duas vezes Fr\'{e}chet diferenci\'{a}vel; al\'{e}m disso, afirma que, se a Hessiana \'{e} definida positiva, a fun\c{c}\~{a}o $f$ \'{e} estritamente convexa\footnote{Ver Teorema 4.28 em \cite[p. 99]{guller}.}.
 
 Um outro resultado importante obtido com an\'{a}lise convexa se refere aos conceitos de diferenciabilidade de G\^{a}teaux e Fr\'{e}chet. O teorema a seguir destaca essa rela\c{c}\~{a}o.
 
-\begin{theorem}\footnote{Ver escrita original e prova em \cite{guller}, p. 101.}
+\begin{theorem}\footnote{Ver escrita original e prova em \cite[p. 101]{guller}.}
 Seja $C \subset \eucR{n}$ convexo com interior n\~{a}o-vazio ($int(C) \ne \emptyset$) e $f: C \to \setR$ uma fun\c{c}\~{a}o convexa. Se todas as derivadas parciais de $f$ existem para um ponto $\mathbf{x}$ no interior de $C$, $f$ \'{e} Fr\'{e}chet diferenci\'{a}vel em $\mathbf{x}$. Mais ainda, se $f$ \'{e} G\^{a}teaux diferenci\'{a}vel em $\mathbf{x}$, $f$ \'{e} Fr\'{e}chet diferenci\'{a}vel em $\mathbf{x}$.
 \end{theorem}
 
@@ -390,14 +390,14 @@ Analogamente, um problema de maximiza\c{c}\~{a}o irrestrita pode ser escrito com
 
 Um fato importante sobre a exist\^{e}ncia de um minimizador global de um problema pode ser mostrado pelo teorema a seguir:
 
-\begin{theorem}[Teorema de Weierstrass]\footnote{Ver teorema e prova em \cite{guller}, p. 33}
+\begin{theorem}[Teorema de Weierstrass]\footnote{Ver teorema e prova em \cite[p. 33]{guller}.}
 Seja $f: K \to \setR$ uma fun\c{c}\~{a}o cont\'{i}nua e $K$ um espa\c{c}o de medida compacto. Logo, existe um ponto $\mathbf{\bar{x}} \in K$ que \'{e} minimizador global de $f$ em $K$, isto \'{e},
 \begin{equation*}
 f(\mathbf{\bar{x}}) \le f(\mathbf{x}),~\forall \mathbf{x} \in K.
 \end{equation*} 
 \end{theorem}
 
-As condi\c{c}\~{o}es de otimalidade a serem apresentadas a seguir s\~{a}o relevantes para o problema irrestrito \eqref{unconstProb}\footnote{Essas condi\c{c}\~{o}es, juntamente com suas provas, se encontram em \cite{guller}, pp. 35-39.}:
+As condi\c{c}\~{o}es de otimalidade a serem apresentadas a seguir s\~{a}o relevantes para o problema irrestrito \eqref{unconstProb}\footnote{Essas condi\c{c}\~{o}es, juntamente com suas provas, se encontram em \cite[pp. 35-39]{guller}.}:
 
 \begin{theorem}[Condi\c{c}\~{a}o Necess\'{a}ria de Primeira Ordem]\label{theoCO1}
 Seja uma fun\c{c}\~{a}o $f: U \to \setR$ G\^{a}teaux diferenci\'{a}vel em um conjunto aberto $U \subseteq \eucR{n}$. Um m\'{i}nimo local \'{e} tamb\'{e}m ponto cr\'{i}tico de $f$, ou seja, 
@@ -558,7 +558,7 @@ Uma das qualifica\c{c}\~{o}es de restri\c{c}\~{o}es mais antigas e conhecidas \'
 Seja o problema $\setP$ em \eqref{compProb}, com as restri\c{c}\~{o}es de desigualdade convexas, as restri\c{c}\~{o}es de desigualdade afins e um minimizador local $\critP{x}$. Se existe um ponto vi\'{a}vel $\mathbf{x}_0$ tal que $g_i(\mathbf{x}_0) <0,~i \in \indexSet{\critP{x}}$, ent\~{a}o as condi\c{c}\~{o}es KKT s\~{a}o satisfeitas em $\critP{x}$.
 \end{corollary}
 
-Todas as condi\c{c}\~{o}es apresentadas at\'{e} aqui s\~{a}o condi\c{c}\~{o}es de otimalidade de primeira ordem para o problema \eqref{compProb}\footnote{Mais detalhes e provas dessas condi\c{c}\~{o}es se encontram em \cite{guller}, pp. 211-220.}. A seguir, ser\~{a}o apresentadas as condi\c{c}\~{o}es de segunda ordem para \eqref{compProb}. 
+Todas as condi\c{c}\~{o}es apresentadas at\'{e} aqui s\~{a}o condi\c{c}\~{o}es de otimalidade de primeira ordem para o problema \eqref{compProb}\footnote{Mais detalhes e provas dessas condi\c{c}\~{o}es se encontram em \cite[pp. 211-220]{guller}.}. A seguir, ser\~{a}o apresentadas as condi\c{c}\~{o}es de segunda ordem para \eqref{compProb}. 
 
 Primeiramente, denota-se por $\nabla_{\mathbf{x}}^2 \mathcal{L}(\bar{\mathbf{x}},\mathbf{\lambda},\mathbf{\mu})$ a Hessiana do Lagrangiano em rela\c{c}\~{a}o a $\mathbf{x}$ do problema $\setP$:
 \begin{equation*}
@@ -608,7 +608,7 @@ Seja $\critP{x}$ um minimizador local do problema $\setP$ satisfazendo as condi\
 ent\~{a}o $\critP{x}$ \'{e} minimizador local estrito de $\setP$.
 \end{corollary}
 
-As condi\c{c}\~{o}es de otimalidade at\'{e} aqui apresentadas foram al\'{e}m daquelas para problemas irrestritos; agora, al\'{e}m de procurar minimizar a fun\c{c}\~{a}o objetivo, deve-se ter cuidado com as restri\c{c}\~{o}es. Nota-se que \'{e} conveniente que essas restri\c{c}\~{o}es sejam de natureza espec\'{i}fica, de maneira a tornar o problema $\setP$ vi\'{a}vel em termos de resolu\c{c}\~{a}o\footnote{Todas as condi\c{c}\~{o}es at\'{e} aqui e suas provas se encontram em \cite{guller}, pp. 230-235.}.
+As condi\c{c}\~{o}es de otimalidade at\'{e} aqui apresentadas foram al\'{e}m daquelas para problemas irrestritos; agora, al\'{e}m de procurar minimizar a fun\c{c}\~{a}o objetivo, deve-se ter cuidado com as restri\c{c}\~{o}es. Nota-se que \'{e} conveniente que essas restri\c{c}\~{o}es sejam de natureza espec\'{i}fica, de maneira a tornar o problema $\setP$ vi\'{a}vel em termos de resolu\c{c}\~{a}o\footnote{Todas as condi\c{c}\~{o}es at\'{e} aqui e suas provas se encontram em \cite[pp. 230-235]{guller}.}.
 
 \subsection{Principais Algoritmos de Otimiza\c{c}\~{a}o}
 O prop\'{o}sito desta Se\c{c}\~{a}o \'{e} oferecer uma vis\~{a}o geral dos principais algoritmos de otimiza\c{c}\~{a}o vistos na literatura; uma an\'{a}lise detalhada dos mesmos \'{e} excessiva do ponto de vista deste relat\'{o}rio de estudo dirigido; tal an\'{a}lise demanda at\'{e} v\'{a}rias produ\c{c}\~{o}es liter\'{a}rias, conforme destaca Yang \cite{yang}.
@@ -635,7 +635,7 @@ Antes de se proceder \`{a} descri\c{c}\~{a}o dos principais algoritmos de otimiz
 Duas classes de problemas especiais devem ser mencionadas a respeito do poblema $\setP$:
 
 \begin{itemize}
-\item \textbf{Programa\c{c}\~{a}o Linear:} É um caso especial do problema $\setP$ quando a fun\c{c}\~{a}o objetivo \'{e} uma forma afim, isto \'{e},
+\item \textbf{Programa\c{c}\~{a}o Linear:} \'{E} um caso especial do problema $\setP$ quando a fun\c{c}\~{a}o objetivo \'{e} uma forma afim, isto \'{e},
 \begin{equation*}
 f(\mathbf{x}) = \mathbf{q}^T \mathbf{x} + c;
 \end{equation*}
@@ -698,7 +698,7 @@ em que $\nabla^2 \mathcal{L}(\mathbf{x}^{(k)})$ \'{e} a Hessiana do Lagrangiano 
 \end{equation} 
 Uma vez que \'{e} dispendioso calcular a Hessiana do Lagrangiano a cada itera\c{c}\~{a}o, uma alternativa \'{e} aproxim\'{a}-la utilizando uma aproxima\c{c}\~{a}o BFGS, j\'{a} discutida anteriormente. \'{E} de interesse que, a cada itera\c{c}\~{a}o, a fun\c{c}\~{a}o objetivo de $\setP^{*}$ tenha Hessiana semidefinida positiva, o que garante sua convexidade e exist\^{e}ncia de solu\c{c}\~{a}o para o problema de otimiza\c{c}\~{a}o a cada itera\c{c}\~{a}o.
 
-\item \textbf{Algoritmos meta-heur\'{i}sticos:} Como discutido anteriormente, s\~{a}o algoritmos de tentativa e erro que utilizam buscas aleat\'{o}rias, mas com uma predi\c{c}\~{a}o de passos inerente \`{a} estrutura do algoritmo para evitar o uso da chamada ``for\c{c}a bruta''. Normalmente, esses algoritmos se baseiam em fen\^{o}menos naturais, visto que j\'{a} foi observada a efici\^{e}ncia de fatos naturais em resultados considerados \'{o}timos. Alguns algoritmos nessa classe s\~{a}o\footnote{Todos os algoritmos se encontram em \cite{yang}, pp. 173-229.}:
+\item \textbf{Algoritmos meta-heur\'{i}sticos:} Como discutido anteriormente, s\~{a}o algoritmos de tentativa e erro que utilizam buscas aleat\'{o}rias, mas com uma predi\c{c}\~{a}o de passos inerente \`{a} estrutura do algoritmo para evitar o uso da chamada ``for\c{c}a bruta''. Normalmente, esses algoritmos se baseiam em fen\^{o}menos naturais, visto que j\'{a} foi observada a efici\^{e}ncia de fatos naturais em resultados considerados \'{o}timos. Alguns algoritmos nessa classe s\~{a}o\footnote{Todos os algoritmos se encontram em \cite[pp. 173-229]{yang}.}:
 \subitem \textbf{Algoritmos Gen\'{e}ticos:} Se baseiam em princ\'{i}pios da gen\'{e}tica, notadamente a teoria da sele\c{c}\~{a}o natural de Charles Darwin;
 \subitem \textbf{\textit{Simulated Annealing}:} \'{E} baseado em uma mimetiza\c{c}\~{a}o do processo de recozimento de um material em que um metal resfria e \'{e} congelado em um estado cristalino de energia m\'{i}nima e maoir tamanho dos cristais de maneira a reduzir defeitos em estruturas met\'{a}licas;
 \subitem \textbf{Algoritmo das Formigas:} Simula o comportamento geral de uma col\^{o}nia de formigas na natureza. Particularmente, \'{e} uma analogia \`{a} comunica\c{c}\~{a}o desses animais por meio de ferom\^{o}nios, em casos de busca e encontro de comida, por exemplo;

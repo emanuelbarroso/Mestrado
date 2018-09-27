@@ -164,7 +164,7 @@ O problema de se obter o melhor NPV a cada passo de tempo pode ser visto como um
 \end{equation}
 em que $ds/dt$ é a variação temporal da saturação no poço $P$. Esta integral possui contornos mais identificáveis, visto que a saturação inicial é conhecida e o final do intervalo é a menor saturação de óleo viável para se produzir. Sendo assim, a Equação \eqref{eq:ModWellNPVDef} é a função a ser testada em cada poço, com vistas de se obter a melhor estratégia de produção durante a vida útil do reservatório.
 
-\subsection{Núcleo do Algoritmo}
+\subsection{Núcleo do Algoritmo}\label{subsec:SR}
 O problema de se encontrar a melhor estratégia de controle em cada poço de maneira a se obter o melhor NPV possível durante uma simulação de reservatório não é trivial; trata-se de um problema de complexidade no mínimo exponencial, podendo ser classificado como um problema NP-completo\footnote{Maiores detalhes sobre problemas NP podem ser encontrados em \cite{npDef}.}.
 
 Além das dificuldades computacionais de se encontrar um esquema ótimo de produção para um dado reservatório, há as dificuldades matemáticas; é inviável tentar se obter, por exemplo, as zonas de convexidade de uma função como o NPV considerando um reservatório, uma vez que suas variáveis dependentes se comportam de acordo com relações matemáticas não tão triviais, como a lei de Darcy. Como não se pode fazer nenhuma afirmação sobre a convexidade da função objetivo, não se pode aplicar o Teorema \ref{theoMinConv} nem as condições KKT para se realizar a otimização desejada. Tendo-se ainda o fato de que o NPV não é uma função facilmente diferenciável, e não se pode afirmar, com certeza, que ela é Gâteaux ou Fréchet diferenciável, de acordo com os conceitos da Seção \ref{subsec:otimconcepts}, não é trivial utilizar métodos de gradiente descendente nessa situação.
@@ -195,7 +195,7 @@ A escolha de possibilidades de controle para os poços produtores, por meio de su
 	\mathbf{p_W^{(n+1)}} = \mathbf{p_W^{(n)}} \pm N\delta_W,
 \end{equation}
 em que $N$ é um número inteiro que pode ser obtido utilizando-se a relação
-\begin{equation}
+\begin{equation}\label{eq:pN}
 	N = \left \lfloor \frac{n_{bhp}+1}{2} \right \rfloor - i,~~i = 1,\ldots,n_{bhp}.
 \end{equation}
 No caso especial da primeira iteração, em que se deseja prioritariamente abrir os poços, isto é, diminuir sua pressão de maneira que se aumente a vazão de fluidos do reservatório --- no início, a saturação do óleo é maior; portanto, aumentando-se a vazão dos poços, aumenta-se a produção dos hidrocarbonetos, o que é desejável ---, o cálculo das pressões se dá da seguinte forma:
@@ -224,4 +224,35 @@ Por fim, analisando-se as entradas e as saídas do \textit{Smart Reservoir}, conc
 Da maneira como está definido, percebe-se que o \textit{Smart Reservoir} é puramente baseado em avaliações de NPV por meio das pressões dos poços. Porém, esse algoritmo pode ser melhorado, adicionando-se outras considerações diretamente relacionadas ao desempenho do reservatório e a existência de situações que podem levar a inconsistências numéricas. Alguns adendos já considerados nesta pesquisa são apresentados na Seção a seguir.
 
 \subsection{Métodos Adicionais}
+Uma consideração que o \textit{Smart Reservoir} não toma, \textit{a priori}, é o comportamento dos poços injetores; contudo, é importante ressaltar que os mesmos são um fator significativo no cálculo do fluxo de caixa.
+
+Até o momento, o \textit{Smart Reservoir} apenas examina as pressões nos poços produtores; porém, a partir de um determinado instante na produção, o NPV normal calculado passa a ser inferior ao custo de injeção de água; neste caso, um primeiro adendo ao algoritmo mostrado na Seção \ref{subsec:SR} seria a redução das vazões de injeção de água quando as mesmas se tornam superiores ao valor do NPV normal calculado. Essa redução pode ser dada, por exemplo, de duas formas:
+\begin{itemize}
+	\item \textbf{Constante: } A partir do momento em que se detecta o alto custo de injeção, as vazões são ajustadas para valores menores que os originais;
+	\item \textbf{Variável: } A redução é feita segundo a relação $q_{wi,I}^{(n+1)} = cq_{wi,I}^{(n)},~0 < c < 1$, para cada injetor $I$.
+\end{itemize}
+
+O segundo passo adicionado ao \textit{Smart Reservoir} foi o uso de \textit{janelas de predição}: no passo de exame das pressões nos produtores, foi considerada, ao invés de uma janela de tempo apenas, a existência de uma segunda janela para cálculo do NPV modificado, em que as pressões consideradas são da forma $\mathbf{p_W^{(n+1)}} = \mathbf{p_W^{(n)}} \pm 2N\delta_W,$ em que $N$ é definido pela Equação \eqref{eq:pN}; no caso da primeira iteração, as pressões escolhidas para a janela de predição são calculadas pela relação $\mathbf{p_W^{(1)}} = \mathbf{p_W^{(0)}} - 2i\delta_W,~~i = 0,\ldots,n_{bhp}-1$. A premissa do uso da janela de predição é a do \textit{Smart Reservoir}, no momento em que calcula o NPV modificado, tentar prever, em um passo a frente, qual o melhor caminho de pressões para os poços produtores deve ser feito; essa ideia é baseada, em uma abordagem simples, em um Modelo de Controle Preditivo (MPC) com uma janela de predição de dois passos\footnote{Detalhes sobre o MPC podem ser encontrados em \cite{garcia1989model}}.
+
+A última adição ao \textit{Smart Reservoir} a ser discutida está relacionada ao próprio cálculo do NPV Modificado; a Equação \eqref{eq:ModWellNPVDef} possui um comportamento numericamente indesejável quando a variação de saturação é muito pequena ou nula --- a depender das limitações da representação de dados no simulador, por exemplo, o NPV modificado resultante pode ser considerado infinito para algumas variações de saturação. Para evitar que isso ocorra, um valor positivo $b$ pode ser adicionado à variação de saturação, para que se garanta que o NPV modificado assuma um valor finito. A Equação \eqref{eq:ModWellNPVDef}, portanto, pode ser redefinida como
+
+\begin{equation}\label{eq:ModWellNPVDef2}
+\widetilde{NPV}(s,P) = \int_{s_0}^{s_f} \frac{C_F(s,P)}{\dot{s} + b}ds,
+\end{equation}
+em que $\dot{s}$ é a variação temporal da saturação e $b$ é calculado pela relação
+
+\begin{equation}
+b = \frac{b_{\%}}{100\%-b_{\%}},
+\end{equation}
+com $b_{\%}$ sendo denominado o \textit{fator de correção numérica}. Valores pequenos e não nulos de $b_{\%}$, como inferiores a $5\%$, são suficientes para se estabilizar numericamente a Equação \eqref{eq:ModWellNPVDef2}; caso valores grandes sejam utilizados, o fator de correção numérica acaba dominando a variação de saturação no cálculo do NPV modificado.
+
+Outros adendos podem ser feitos ao \textit{Smart Reservoir}; contudo, no âmbito dessa pesquisa, apenas os adicionais citados acima foram incluídos no algoritmo. Uma sugestão para trabalhos futuros é a implementação de novas abordagens a serem adicionadas ao algoritmo proposto com vistas à economia de custos computacionais, redução de custos de produção e redução no tempo de explotação.
+
 \section{O \textit{Smart Reservoir} e a Programação Paralela}
+Examinando-se o algoritmo proposto na Seção \ref{subsec:SR}, infere-se que, em determinado momento, o \textit{Smart Reservoir} executa o mesmo conjunto de instruções para diferentes dados de entrada, particularmente no Passo 3. Esse tipo de situação sugere que partes do \textit{Smart Reservoir} podem ser executados de forma \textit{paralela}, isto é, com a separação dos cálculos entre vários processadores, ou grupos de \textit{threads}.
+
+Uma primeira análise a ser feita no \textit{Smart Reservoir} envolve justamente a simulação de todas as possibilidades de controle e o consequente cálculo do NPV modificado; esta operação pode ser separada em vários processadoes, cada um contendo a simulação de uma possibilidade de pressão. Como cada processador executa sua simulação de forma independente, o Passo 3 do algoritmo proposto na Seção \ref{subsec:SR} pode ser classificado como um MIMD (\textit{Multiple Instruction, Multiple Data}) assíncrono; mais além, como em todos os grupos de \textit{threads} é executado o mesmo conjunto de instruções, o passo estudado do \textit{Smart Reservoir} pode ser ainda classificado como SPMD (\textit{Single Program, Multiple Data}) \cite{spmd}.
+
+A ideia de se paralelizar partes do \textit{Smart Reservoir} tem a ver com a tentativa de manter sua eficiência sem que seja necessário aumentar o tamanho do problema; Pacheco destaca que, caso isso seja possível, o algoritmo é classificado como \textit{fortemente escalável} \cite{pachecoP}. Não obstante, na prática, o tempo de execução considerado para se classificar o problema de acordo com critérios de escalabilidade não leva em conta as peculiaridades numéricas envolvendo a simulação, particularmente no MRST, com o modelo \textit{black oil}; não é incomum ocorrer, em determinados processadores, atrasos de tempo devido ao ajuste de resolução das equações governantes do reservatório devido às inconsistências detectadas durante o cálculo, além das dificuldades de convergência das soluções.
+
+Quanto ao número de processadores envolvidos na parte paralelizável do \textit{Smart Reservoir}, essa quantia pode ser atrelada ao número de possibilidades de controles para os produtores $n_{bhp}$; nesse caso, seriam empregados $n_{bhp}$ grupos de \textit{threads}. Uma outra consideração a ser feita é a preferência por valores ímpares de $n_{bhp}$, considerando-se as Equações \eqref{eq:pp1} e \eqref{eq:pN}. Por fim, vale salientar que o valor máximo admitido para $n_{bhp}$ é diretamente relacionado com a capacidade computacional do equipamento no qual o \textit{Smart Reservoir} é executado; enquanto que, em computadores pessoais, o valor de $n_{bhp}$ não passa de 3, em máquinas mais potentes admitem-se valores maiores, superiores a 5. No âmbito desta pesquisa, a máquina utilizada suporta um $n_{bhp}$ máximo de 7; esse valor é, pois, fixado para todas as simulações realizadas adiante.

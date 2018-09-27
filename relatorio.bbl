@@ -10,6 +10,12 @@
 {AGUIRRE, L.~A. \emph{Introdução à identificação de sistemas: técnicas lineares
   e não lineares: teoria e aplicação}. Belo Horizonte, MG: Editora UFMG, 2015.}
 
+\bibitem[Asadollahi e N{\ae}vdal 2009]{SPE:WFO}
+\abntrefinfo{Asadollahi e N{\ae}vdal}{ASADOLLAHI; N{\AE}VDAL}{2009}
+{ASADOLLAHI, M.; N{\AE}VDAL, G. Waterflooding optimization using gradient based
+  methods.
+\emph{SPE Journal}, 2009.}
+
 \bibitem[Asheim 1988]{asheim88}
 \abntrefinfo{Asheim}{ASHEIM}{1988}
 {ASHEIM, H. Maximization of water sweep efficiency by controlling production
@@ -67,6 +73,12 @@ Accesso em: 14 de Junho de 2018.
 Dispon{\'\i}vel em:
   \url{https://hbr.org/2014/11/a-refresher-on-net-present-value}.}
 
+\bibitem[Garcia, Prett e Morari 1989]{garcia1989model}
+\abntrefinfo{Garcia, Prett e Morari}{GARCIA; PRETT; MORARI}{1989}
+{GARCIA, C.~E.; PRETT, D.~M.; MORARI, M. Model predictive control: theory and
+  practice?a survey.
+\emph{Automatica}, Elsevier, v.~25, n.~3, p. 335--348, 1989.}
+
 \bibitem[Grema et al. 2017]{grema2017optimization}
 \abntrefinfo{Grema et al.}{GREMA et al.}{2017}
 {GREMA, A. et al. Optimization and non-linear identification of reservoir water
@@ -106,6 +118,31 @@ ISBN 9782710810506.}
 ISSN 1573-1499.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-011-9244-4}.}
 
+\bibitem[Liu e Reynolds 2016]{GEO:LIU}
+\abntrefinfo{Liu e Reynolds}{LIU; REYNOLDS}{2016}
+{LIU, X.; REYNOLDS, A. Gradient-based multi-objective optimization with
+  applications to waterflooding optimization.
+\emph{Computational Geosciences}, v.~20, n.~3, p. 677--693, 2016.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-015-9523-6}.}
+
+\bibitem[Lorentzen, Shafieirad e N{\ae}vdal 2009]{lorentzen2009sqp}
+\abntrefinfo{Lorentzen, Shafieirad e N{\ae}vdal}{LORENTZEN; SHAFIEIRAD;
+  N{\AE}VDAL}{2009}
+{LORENTZEN, R.~J.; SHAFIEIRAD, A.; N{\AE}VDAL, G. Closed loop reservoir
+  management using the ensemble kalman filter and sequential quadratic
+  programming. In:  SOCIETY OF PETROLEUM ENGINEERS. \emph{SPE Reservoir
+  Simulation Symposium}. [S.l.], 2009.}
+
+\bibitem[Mamghaderi e Pourafshary 2013]{MAMGHADERI2013107}
+\abntrefinfo{Mamghaderi e Pourafshary}{MAMGHADERI; POURAFSHARY}{2013}
+{MAMGHADERI, A.; POURAFSHARY, P. Water flooding performance prediction in
+  layered reservoirs using improved capacitance-resistive model.
+\emph{Journal of Petroleum Science and Engineering}, v.~108, p. 107 -- 117,
+  2013.
+ISSN 0920-4105.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920410513001678}.}
+
 \bibitem[Manzocchi et al. 2008]{manzocchi2008sensitivity}
 \abntrefinfo{Manzocchi et al.}{MANZOCCHI et al.}{2008}
 {MANZOCCHI, T. et al. Sensitivity of the impact of geological uncertainty on
@@ -113,6 +150,19 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-011-9244-4}.}
   objectives and methods.
 \emph{Petroleum Geoscience}, Geological Society of London, v.~14, n.~1, p.
   3--15, 2008.}
+
+\bibitem[Nichols, Siegel e Dietz 1993]{spmd}
+\abntrefinfo{Nichols, Siegel e Dietz}{NICHOLS; SIEGEL; DIETZ}{1993}
+{NICHOLS, M.~A.; SIEGEL, H.~J.; DIETZ, H.~G. Data management and control-flow
+  aspects of an {SIMD/SPMD} parallel language/compiler.
+\emph{IEEE Transactions on Parallel and Distributed Systems}, v.~4, n.~2, p.
+  222--234, Feb 1993.
+ISSN 1045-9219.}
+
+\bibitem[Pacheco 2011]{pachecoP}
+\abntrefinfo{Pacheco}{PACHECO}{2011}
+{PACHECO, P.~S. \emph{An Introduction to Parallel Programming}. Burlington,
+  Massachusetts: Morgan Kaufmann, 2011.}
 
 \bibitem[Peaceman 1977]{simres}
 \abntrefinfo{Peaceman}{PEACEMAN}{1977}
@@ -131,6 +181,23 @@ ISBN 0-471-05579-4.}
 {ROSA, A.~J. \emph{Engenharia de Reservatórios de Petróleo}. Rio de Janeiro:
   Interciência: PETROBRAS, 2006.
 ISBN 85-7193-135-6.}
+
+\bibitem[Sarma e Chen 2008]{sarmaChen}
+\abntrefinfo{Sarma e Chen}{SARMA; CHEN}{2008}
+{SARMA, P.; CHEN, W.~H. Efficient well placement optimization with
+  gradient-based algorithms and adjoint models. In:  SOCIETY OF PETROLEUM
+  ENGINEERS. \emph{Intelligent Energy Conference and Exhibition}. [S.l.],
+  2008.}
+
+\bibitem[Sayarpour et al. 2009]{SAYARPOUR2009227}
+\abntrefinfo{Sayarpour et al.}{SAYARPOUR et al.}{2009}
+{SAYARPOUR, M. et al. The use of capacitance?resistance models for rapid
+  estimation of waterflood performance and optimization.
+\emph{Journal of Petroleum Science and Engineering}, v.~69, n.~3, p. 227 --
+  238, 2009.
+ISSN 0920-4105.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920410509002046}.}
 
 \bibitem[Sintef 2018]{site:mrst}
 \abntrefinfo{Sintef}{SINTEF}{2018}
