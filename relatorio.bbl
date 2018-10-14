@@ -5,6 +5,18 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Afshari, Aminshahidy e Pishvaie 2011]{AFSHARI2011664}
+\abntrefinfo{Afshari, Aminshahidy e Pishvaie}{AFSHARI; AMINSHAHIDY;
+  PISHVAIE}{2011}
+{AFSHARI, S.; AMINSHAHIDY, B.; PISHVAIE, M.~R. Application of an improved
+  harmony search algorithm in well placement optimization using streamline
+  simulation.
+\emph{Journal of Petroleum Science and Engineering}, v.~78, n.~3, p. 664 --
+  678, 2011.
+ISSN 0920-4105.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920410511001999}.}
+
 \bibitem[Aguirre 2015]{aguirre}
 \abntrefinfo{Aguirre}{AGUIRRE}{2015}
 {AGUIRRE, L.~A. \emph{Introdução à identificação de sistemas: técnicas lineares
@@ -22,6 +34,49 @@
   and injection rates.
 SPE European Petroleum Conference, Londres, Reino Unido, 1988.}
 
+\bibitem[Atashpaz-Gargari e Lucas 2007]{ICAdef}
+\abntrefinfo{Atashpaz-Gargari e Lucas}{ATASHPAZ-GARGARI; LUCAS}{2007}
+{ATASHPAZ-GARGARI, E.; LUCAS, C. Imperialist competitive algorithm: An
+  algorithm for optimization inspired by imperialistic competition. In:
+  \emph{2007 IEEE Congress on Evolutionary Computation}. [S.l.: s.n.], 2007. p.
+  4661--4667.
+ISSN 1089-778X.}
+
+\bibitem[Bangerth et al. 2006]{Bangerth2006}
+\abntrefinfo{Bangerth et al.}{BANGERTH et al.}{2006}
+{BANGERTH, W. et al. On optimization algorithms for the reservoir oil well
+  placement problem.
+\emph{Computational Geosciences}, v.~10, n.~3, p. 303--319, Sep 2006.
+ISSN 1573-1499.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-006-9025-7}.}
+
+\bibitem[Beckner e Song 1995]{beckner}
+\abntrefinfo{Beckner e Song}{BECKNER; SONG}{1995}
+{BECKNER, B.; SONG, X. \emph{Field Development Planning Using Simulated
+  Annealing-Optimal Economic Well Scheduling and Placement}.
+Dallas, EUA, 1995.}
+
+\bibitem[Breitenbach 1991]{breitenbach1991}
+\abntrefinfo{Breitenbach}{BREITENBACH}{1991}
+{BREITENBACH, E.~A. Reservoir simulation: State of the art.
+\emph{Journal of Petroleum Technology}, Society of Petroleum Engineers, v.~43,
+  n.~9, p. 1033--1036, 1991.}
+
+\bibitem[Brosche 1974]{brosche1974}
+\abntrefinfo{Brosche}{BROSCHE}{1974}
+{BROSCHE, H. The arab oil embargo and united states pressure against chile:
+  Economic and political coercion and the charter of the united nations.
+\emph{Journal of International Law}, v.~7, n.~1, 1974.
+Dispon{\'\i}vel em:
+  \url{https://scholarlycommons.law.case.edu/jil/vol7/iss1/2/}.}
+
+\bibitem[Bukhamsin, Farshi e Aziz 2010]{bukhamsin}
+\abntrefinfo{Bukhamsin, Farshi e Aziz}{BUKHAMSIN; FARSHI; AZIZ}{2010}
+{BUKHAMSIN, A.~Y.; FARSHI, M.~M.; AZIZ, K. Optimization of multilateral well
+  design and location in a real field using a continuous genetic algorithm. In:
+   SOCIETY OF PETROLEUM ENGINEERS. \emph{SPE/DGS Saudi Arabia Section Technical
+  Symposium and Exhibition}. Al-Khobar, Arábia Saudita, 2010.}
+
 \bibitem[Carter e Matthews 2008]{saigupCM}
 \abntrefinfo{Carter e Matthews}{CARTER; MATTHEWS}{2008}
 {CARTER, J.~N.; MATTHEWS, J.~D. Optimization of a reservoir development plan
@@ -33,6 +88,43 @@ SPE European Petroleum Conference, Londres, Reino Unido, 1988.}
 {CHRISTIE, M.~A. Upscaling for reservoir simulation.
 \emph{Journal of Petroleum Technology}, Society of Petroleum Engineers, v.~48,
   1996.}
+
+\bibitem[Coats 1982]{coats1982}
+\abntrefinfo{Coats}{COATS}{1982}
+{COATS, K. Reservoir simulation: State of the art.
+\emph{Journal of Petroleum Technology}, Society of Petroleum Engineers, v.~34,
+  n.~8, p. 1633--1642, 1982.}
+
+\bibitem[Dake 1978]{dake}
+\abntrefinfo{Dake}{DAKE}{1978}
+{DAKE, L.~P. \emph{Fundamentals of Reservoir Engineering}. Amsterdam, Holanda:
+  ELSEVIER, 1978.
+ISBN 0-444-41830-X.}
+
+\bibitem[Ding et al. 2014]{Ding2014}
+\abntrefinfo{Ding et al.}{DING et al.}{2014}
+{DING, S. et al. Optimization of well placement by combination of a modified
+  particle swarm optimization algorithm and quality map method.
+\emph{Computational Geosciences}, v.~18, n.~5, p. 747--762, Oct 2014.
+ISSN 1573-1499.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-014-9422-2}.}
+
+\bibitem[Dossary e Nasrabadi 2016]{ALDOSSARY2016237}
+\abntrefinfo{Dossary e Nasrabadi}{DOSSARY; NASRABADI}{2016}
+{DOSSARY, M. A.~A.; NASRABADI, H. Well placement optimization using imperialist
+  competitive algorithm.
+\emph{Journal of Petroleum Science and Engineering}, v.~147, p. 237 -- 248,
+  2016.
+ISSN 0920-4105.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920410516302376}.}
+
+\bibitem[Emerick et al. 2009]{emerick}
+\abntrefinfo{Emerick et al.}{EMERICK et al.}{2009}
+{EMERICK, A.~A. et al. Well placement optimization using a genetic algorithm
+  with nonlinear constraints. In:  SOCIETY OF PETROLEUM ENGINEERS. \emph{SPE
+  Reservoir Simulation Symposium, 2-4 February, The Woodlands, Texas}. EUA,
+  2009.}
 
 \bibitem[Enhanced Oil Recovery]{EOR:Intro}
 \abntrefinfo{Enhanced\ldots}{ENHANCED\ldots}{}
@@ -50,6 +142,23 @@ Acesso em 17 de Setembro de 2018.}
 {ESSEN, G.~M. van et al. Robust waterflooding optimization of multiple
   geological scenarios.
 \emph{SPE Journal}, v.~14, n.~1, p. 202--210, 2009.}
+
+\bibitem[Farshi 2008]{farshi}
+\abntrefinfo{Farshi}{FARSHI}{2008}
+{FARSHI, M.~M.
+\emph{Improving Genetic Algorithms for Optimum Well Placement}.
+Disserta\c{c}\~{a}o (Mestrado) --- Stanford University, Stanford, EUA, 2008.}
+
+\bibitem[Filho, Perestrelo e Molina-Palma 2015]{AZEVEDOFILHO2015}
+\abntrefinfo{Filho, Perestrelo e Molina-Palma}{FILHO; PERESTRELO;
+  MOLINA-PALMA}{2015}
+{FILHO, E.~T. A.; PERESTRELO, M.; MOLINA-PALMA, M.~A. {As descobertas do
+  pré-sal e os desafios competitivos da indústria brasileira do setor de
+  petróleo e gás: uma abordagem prospectiva}.
+\emph{{CIDADES, Comunidades e Territórios}}, scielopt, p. 85 -- 98, 12 2015.
+ISSN 2182-3030.
+Dispon{\'\i}vel em:
+  \url{http://www.scielo.mec.pt/scielo.php?script=sci\_arttext&pid=S2182-30302015000200008&nrm=iso}.}
 
 \bibitem[Fonseca et al. 2017]{fonseca}
 \abntrefinfo{Fonseca et al.}{FONSECA et al.}{2017}
@@ -92,6 +201,12 @@ Dispon{\'\i}vel em:
   Business Media, 2010.
 ISBN 978-0-387-68407-9.}
 
+\bibitem[Heimsund 2005]{heimsund2005}
+\abntrefinfo{Heimsund}{HEIMSUND}{2005}
+{HEIMSUND, B.-O.
+\emph{Mathematical and Numerical Methods for Reservoir Fluid Flow Simulation}.
+Tese (Doutorado) --- University of Bergen, Bergen, Noruega, 2005.}
+
 \bibitem[Izmailov e Solodov 2005]{izmailov}
 \abntrefinfo{Izmailov e Solodov}{IZMAILOV; SOLODOV}{2005}
 {IZMAILOV, A.; SOLODOV, M. \emph{Otimização volume 1. Condições de otimalidade,
@@ -104,6 +219,13 @@ ISBN 85-244-0238-5.}
   simulation.
 \emph{Geoscience Data Journal}, v.~1, n.~2, p. 192--195, 2014.
 ISSN 2049-6060.}
+
+\bibitem[Khan et al. 2013]{khanSA}
+\abntrefinfo{Khan et al.}{KHAN et al.}{2013}
+{KHAN, H. et al. Multi-objectives constrained waterflood optimization in tight
+  carbonates. In:  SOCIETY OF PETROLEUM ENGINEERS. \emph{SPE Reservoir
+  Characterization and Simulation Conference and Exhibition}. Abu Dhabi, EAU,
+  2013.}
 
 \bibitem[Latil 1980]{latil}
 \abntrefinfo{Latil}{LATIL}{1980}
@@ -133,6 +255,13 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-015-9523-6}.}
   programming. In:  SOCIETY OF PETROLEUM ENGINEERS. \emph{SPE Reservoir
   Simulation Symposium}. [S.l.], 2009.}
 
+\bibitem[Lucia et al. 2013]{luciaetal}
+\abntrefinfo{Lucia et al.}{LUCIA et al.}{2013}
+{LUCIA, A. et al. Fully compositional and thermal reservoir simulations
+  efficiently compare {EOR} techniques. In:  \emph{Society of Petroleum
+  Engineers Unconventional Resource Conference}. Calgary, Alberta, Canadá:
+  [s.n.], 2013. p. 4661--4667.}
+
 \bibitem[Mamghaderi e Pourafshary 2013]{MAMGHADERI2013107}
 \abntrefinfo{Mamghaderi e Pourafshary}{MAMGHADERI; POURAFSHARY}{2013}
 {MAMGHADERI, A.; POURAFSHARY, P. Water flooding performance prediction in
@@ -151,6 +280,33 @@ Dispon{\'\i}vel em:
 \emph{Petroleum Geoscience}, Geological Society of London, v.~14, n.~1, p.
   3--15, 2008.}
 
+\bibitem[Montes, Bartolome e Udias 2001]{montesETAL}
+\abntrefinfo{Montes, Bartolome e Udias}{MONTES; BARTOLOME; UDIAS}{2001}
+{MONTES, G.; BARTOLOME, P.; UDIAS, A.~L. The use of genetic algorithms in well
+  placement optimization. In:  SOCIETY OF PETROLEUM ENGINEERS. \emph{SPE Latin
+  American and Caribbean Petroleum Engineering Conference}. Buenos Aires,
+  Argentina, 2001.}
+
+\bibitem[Naderi e Khamehchi 2017]{NADERI201747}
+\abntrefinfo{Naderi e Khamehchi}{NADERI; KHAMEHCHI}{2017a}
+{NADERI, M.; KHAMEHCHI, E. Application of doe and metaheuristic bat algorithm
+  for well placement and individual well controls optimization.
+\emph{Journal of Natural Gas Science and Engineering}, v.~46, p. 47 -- 58,
+  2017.
+ISSN 1875-5100.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S1875510017302883}.}
+
+\bibitem[Naderi e Khamehchi 2017]{NADERI2017348}
+\abntrefinfo{Naderi e Khamehchi}{NADERI; KHAMEHCHI}{2017b}
+{NADERI, M.; KHAMEHCHI, E. Well placement optimization using metaheuristic bat
+  algorithm.
+\emph{Journal of Petroleum Science and Engineering}, v.~150, p. 348 -- 354,
+  2017.
+ISSN 0920-4105.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920410516313559}.}
+
 \bibitem[Nichols, Siegel e Dietz 1993]{spmd}
 \abntrefinfo{Nichols, Siegel e Dietz}{NICHOLS; SIEGEL; DIETZ}{1993}
 {NICHOLS, M.~A.; SIEGEL, H.~J.; DIETZ, H.~G. Data management and control-flow
@@ -159,10 +315,34 @@ Dispon{\'\i}vel em:
   222--234, Feb 1993.
 ISSN 1045-9219.}
 
+\bibitem[Nwankwor, Nagar e Reid 2013]{Nwankwor2013}
+\abntrefinfo{Nwankwor, Nagar e Reid}{NWANKWOR; NAGAR; REID}{2013}
+{NWANKWOR, E.; NAGAR, A.~K.; REID, D.~C. Hybrid differential evolution and
+  particle swarm optimization for optimal well placement.
+\emph{Computational Geosciences}, v.~17, n.~2, p. 249--268, Apr 2013.
+ISSN 1573-1499.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-012-9328-9}.}
+
+\bibitem[Onwunalu e Durlofsky 2010]{Onwunalu2010}
+\abntrefinfo{Onwunalu e Durlofsky}{ONWUNALU; DURLOFSKY}{2010}
+{ONWUNALU, J.~E.; DURLOFSKY, L.~J. Application of a particle swarm optimization
+  algorithm for determining optimum well location and type.
+\emph{Computational Geosciences}, v.~14, n.~1, p. 183--198, Jan 2010.
+ISSN 1573-1499.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-009-9142-1}.}
+
 \bibitem[Pacheco 2011]{pachecoP}
 \abntrefinfo{Pacheco}{PACHECO}{2011}
 {PACHECO, P.~S. \emph{An Introduction to Parallel Programming}. Burlington,
   Massachusetts: Morgan Kaufmann, 2011.}
+
+\bibitem[Parashar et al. 2004]{parashar}
+\abntrefinfo{Parashar et al.}{PARASHAR et al.}{2004}
+{PARASHAR, M. et al. Application of grid-enabled technologies for solving
+  optimization problems in data-driven reservoir studies. In:  BUBAK, M. et al.
+  (Ed.). \emph{Computational Science - ICCS 2004}. Berlin, Heidelberg: Springer
+  Berlin Heidelberg, 2004. p. 805--812.
+ISBN 978-3-540-24688-6.}
 
 \bibitem[Peaceman 1977]{simres}
 \abntrefinfo{Peaceman}{PEACEMAN}{1977}
@@ -182,6 +362,17 @@ ISBN 0-471-05579-4.}
   Interciência: PETROBRAS, 2006.
 ISBN 85-7193-135-6.}
 
+\bibitem[Safarzadeh, Motealleh e Moghadasi 2015]{Safarzadeh2015}
+\abntrefinfo{Safarzadeh, Motealleh e Moghadasi}{SAFARZADEH; MOTEALLEH;
+  MOGHADASI}{2015}
+{SAFARZADEH, M.~A.; MOTEALLEH, M.; MOGHADASI, J. A novel, streamline-based
+  injection efficiency enhancement method using multi-objective genetic
+  algorithm.
+\emph{Journal of Petroleum Exploration and Production Technology}, v.~5, n.~1,
+  p. 73--80, Mar 2015.
+ISSN 2190-0566.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s13202-014-0116-z}.}
+
 \bibitem[Sarma e Chen 2008]{sarmaChen}
 \abntrefinfo{Sarma e Chen}{SARMA; CHEN}{2008}
 {SARMA, P.; CHEN, W.~H. Efficient well placement optimization with
@@ -199,11 +390,26 @@ ISSN 0920-4105.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S0920410509002046}.}
 
+\bibitem[Siavashi e Yazdani 2018]{siavashiPSO}
+\abntrefinfo{Siavashi e Yazdani}{SIAVASHI; YAZDANI}{2018}
+{SIAVASHI, M.; YAZDANI, M. A comparative study of genetic and particle swarm
+  optimization algorithms and their hybrid method in water flooding
+  optimization.
+\emph{Journal of Energy Resources Technology}, v.~140, 2018.}
+
 \bibitem[Sintef 2018]{site:mrst}
 \abntrefinfo{Sintef}{SINTEF}{2018}
 {SINTEF. \emph{MRST - MATLAB Reservoir Simulation Toolbox}. 2018.
 Acesso em: 01 de Junho de 2018.
 Dispon{\'\i}vel em: \url{https://www.sintef.no/projectweb/mrst/}.}
+
+\bibitem[Sorek et al. 2017]{Sorek2017}
+\abntrefinfo{Sorek et al.}{SOREK et al.}{2017}
+{SOREK, N. et al. Dimensionality reduction for production optimization using
+  polynomial approximations.
+\emph{Computational Geosciences}, v.~21, n.~2, p. 247--266, Apr 2017.
+ISSN 1573-1499.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-016-9610-3}.}
 
 \bibitem[Stags e Herbeck 1971]{stags1971}
 \abntrefinfo{Stags e Herbeck}{STAGS; HERBECK}{1971}
@@ -245,11 +451,29 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.3390/pr5030034}.}
   v.~15, n.~1, p. 17--25, 1982.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1080/00949658208810560}.}
 
+\bibitem[Yang, Zhang e Gu 2003]{YANG200369}
+\abntrefinfo{Yang, Zhang e Gu}{YANG; ZHANG; GU}{2003}
+{YANG, D.; ZHANG, Q.; GU, Y. Integrated optimization and control of the
+  production-injection operation systems for hydrocarbon reservoirs.
+\emph{Journal of Petroleum Science and Engineering}, v.~37, n.~1, p. 69 -- 81,
+  2003.
+ISSN 0920-4105.
+Heavy Oil Recovery: Special issue dedicated to Professor S.M. Farouq Ali on his
+  65th birthday.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S092041050200311X}.}
+
 \bibitem[Yang 2010]{yang}
 \abntrefinfo{Yang}{YANG}{2010}
 {YANG, X.-S. \emph{Engineering optimization: an introduction with metaheuristic
   applications}. New York: Wiley, 2010.
 ISBN 978-0-470-58246-6.}
+
+\bibitem[Young 1983]{young1983}
+\abntrefinfo{Young}{YOUNG}{1983}
+{YOUNG, L. A generalized compositional approach for reservoir simulation.
+\emph{Society of Petroleum Engineers Journal}, Society of Petroleum Engineers,
+  v.~23, n.~5, p. 727--742, 1983.}
 
 \bibitem[Zandvliet et al. 2007]{ZANDVLIET2007186}
 \abntrefinfo{Zandvliet et al.}{ZANDVLIET et al.}{2007}
@@ -260,6 +484,14 @@ ISBN 978-0-470-58246-6.}
 ISSN 0920-4105.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S0920410507000101}.}
+
+\bibitem[Zaydullin et al. 2014]{ZAYDULLIN201451}
+\abntrefinfo{Zaydullin et al.}{ZAYDULLIN et al.}{2014}
+{ZAYDULLIN, R. et al. Fully compositional and thermal reservoir simulation.
+\emph{Computers {\&} Chemical Engineering}, v.~63, p. 51 -- 65, 2014.
+ISSN 0098-1354.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0098135413003864}.}
 
 \bibitem[{\v Z}i{\v z}lavsk{\'y} 2014]{ziz2014}
 \abntrefinfo{{\v Z}i{\v z}lavsk{\'y}}{{\v Z}I{\v Z}LAVSK{\'Y}}{2014}

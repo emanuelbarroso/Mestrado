@@ -5,64 +5,65 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Inje\c {c}\~{a}o perif\'{e}rica \cite [p. 565]{engres}.\relax }}{8}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Inje\c {c}\~{a}o no topo \cite [p. 566]{engres}.\relax }}{8}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Inje\c {c}\~{a}o na base \cite [p. 566]{engres}.\relax }}{9}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Inje\c {c}\~{a}o em linha direta \cite [p. 567]{engres}.\relax }}{9}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Inje\c {c}\~{a}o em linhas esconsas \cite [p. 567]{engres}.\relax }}{10}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Malha \textit {five-spot} \cite [p. 568]{engres}.\relax }}{10}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Malha \textit {seven-spot} \cite [p. 568]{engres}.\relax }}{10}{figure.2.7}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Malha \textit {nine-spot} \cite [p. 568]{engres}.\relax }}{11}{figure.2.8}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Malha inversa \textit {seven-spot} \cite [p. 569]{engres}.\relax }}{11}{figure.2.9}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Malha inversa \textit {nine-spot} \cite [p. 569]{engres}.\relax }}{12}{figure.2.10}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Esquemas de redes de distribui\c {c}\~{a}o \cite [p. 657]{engres}.\relax }}{14}{figure.2.11}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Tipos de completa\c {c}\~{a}o de po\c {c}os de inje\c {c}\~{a}o de \'{a}gua \cite [p. 658]{engres}.\relax }}{14}{figure.2.12}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Teste \textit {step rate} \cite [p. 660]{engres}.\relax }}{15}{figure.2.13}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Esquema b\'{a}sico de desenvolvimento de um simulador num\'{e}rico de reservat\'{o}rio \cite [p. 519]{engres}.\relax }}{18}{figure.2.14}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemplo de compara\c {c}\~{a}o de dados entre simuladores de vaz\~{a}o de \'{a}gua e de \'{o}leo de um modelo \cite {eggM}.\relax }}{18}{figure.2.15}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Aplica\c {c}\~{a}o de simuladores num\'{e}ricos em reservat\'{o}rios \cite [p. 522]{engres}\relax }}{22}{figure.2.16}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Malha utilizada na simula\c {c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite [p. 524]{engres}\relax }}{22}{figure.2.17}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Etapas da simula\c {c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite [p. 523]{engres}\relax }}{23}{figure.2.18}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemplo de algoritmo de gradiente descendente aplicado para NPV \cite {asheim88}\relax }}{44}{figure.2.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Inje\c {c}\~{a}o perif\'{e}rica \cite [p. 565]{engres}.\relax }}{9}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Inje\c {c}\~{a}o no topo \cite [p. 566]{engres}.\relax }}{9}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Inje\c {c}\~{a}o na base \cite [p. 566]{engres}.\relax }}{10}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Inje\c {c}\~{a}o em linha direta \cite [p. 567]{engres}.\relax }}{10}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Inje\c {c}\~{a}o em linhas esconsas \cite [p. 567]{engres}.\relax }}{11}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Malha \textit {five-spot} \cite [p. 568]{engres}.\relax }}{11}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Malha \textit {seven-spot} \cite [p. 568]{engres}.\relax }}{11}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Malha \textit {nine-spot} \cite [p. 568]{engres}.\relax }}{12}{figure.2.8}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Malha inversa \textit {seven-spot} \cite [p. 569]{engres}.\relax }}{12}{figure.2.9}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Malha inversa \textit {nine-spot} \cite [p. 569]{engres}.\relax }}{13}{figure.2.10}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Esquemas de redes de distribui\c {c}\~{a}o \cite [p. 657]{engres}.\relax }}{15}{figure.2.11}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Tipos de completa\c {c}\~{a}o de po\c {c}os de inje\c {c}\~{a}o de \'{a}gua \cite [p. 658]{engres}.\relax }}{15}{figure.2.12}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Teste \textit {step rate} \cite [p. 660]{engres}.\relax }}{16}{figure.2.13}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Esquema b\'{a}sico de desenvolvimento de um simulador num\'{e}rico de reservat\'{o}rio \cite [p. 519]{engres}.\relax }}{19}{figure.2.14}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemplo de compara\c {c}\~{a}o de dados entre simuladores de vaz\~{a}o de \'{a}gua e de \'{o}leo de um modelo \cite {eggM}.\relax }}{19}{figure.2.15}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Classifica\c {c}\~{a}o dos simuladores por dimens\~{a}o \cite {coats1982} \relax }}{25}{figure.2.16}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Aplica\c {c}\~{a}o de simuladores num\'{e}ricos em reservat\'{o}rios \cite [p. 522]{engres}\relax }}{26}{figure.2.17}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Malha utilizada na simula\c {c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite [p. 524]{engres}\relax }}{26}{figure.2.18}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Etapas da simula\c {c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite [p. 523]{engres}\relax }}{27}{figure.2.19}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Exemplo de algoritmo de gradiente descendente aplicado para NPV \cite {asheim88}\relax }}{48}{figure.2.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de realização do \textit {Egg Model} \cite {eggM}.\relax }}{48}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Vista de topo do \textit {Egg Model}, evidenciando o posicionamento dos poços.\relax }}{49}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Modelo SAIGUP.\relax }}{50}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Estratégias de busca de solução \cite {eugenioSmart}.\relax }}{54}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de realização do \textit {Egg Model} \cite {eggM}.\relax }}{53}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Vista de topo do \textit {Egg Model}, evidenciando o posicionamento dos poços.\relax }}{54}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Modelo SAIGUP.\relax }}{55}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Estratégias de busca de solução \cite {eugenioSmart}.\relax }}{59}{figure.3.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 1\relax }}{61}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 1 \relax }}{61}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 2\relax }}{62}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 2 \relax }}{62}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 3\relax }}{63}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 3 \relax }}{63}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 4\relax }}{64}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 4 \relax }}{64}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 5\relax }}{65}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 5 \relax }}{65}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Controle de pressão do SAIGUP de longo prazo\relax }}{67}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces NPVs resultantes do SAIGUP de longo prazo \relax }}{67}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Controle de pressão do SAIGUP de curto prazo\relax }}{68}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces NPVs resultantes do SAIGUP de curto prazo \relax }}{68}{figure.4.14}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 1\relax }}{66}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 1 \relax }}{66}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 2\relax }}{67}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 2 \relax }}{67}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 3\relax }}{68}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 3 \relax }}{68}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 4\relax }}{69}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 4 \relax }}{69}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Controle de pressão do \textit {Egg Model}, fase 5\relax }}{70}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces NPVs resultantes do \textit {Egg Model}, fase 5 \relax }}{70}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Controle de pressão do SAIGUP de longo prazo\relax }}{72}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces NPVs resultantes do SAIGUP de longo prazo \relax }}{72}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Controle de pressão do SAIGUP de curto prazo\relax }}{73}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces NPVs resultantes do SAIGUP de curto prazo \relax }}{73}{figure.4.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{78}{figure.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{78}{figure.A.2}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{85}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 1\relax }}{85}{figure.A.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{79}{figure.B.1}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{79}{figure.B.2}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{86}{figure.B.1}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 2\relax }}{86}{figure.B.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{80}{figure.C.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{80}{figure.C.2}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{87}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 3\relax }}{87}{figure.C.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 4\relax }}{81}{figure.D.1}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 4\relax }}{81}{figure.D.2}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 4\relax }}{88}{figure.D.1}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 4\relax }}{88}{figure.D.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{82}{figure.E.1}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{82}{figure.E.2}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{89}{figure.E.1}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do Egg Model, simula\c {c}\~{a}o 5\relax }}{89}{figure.E.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{83}{figure.F.1}
-\contentsline {figure}{\numberline {F.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{83}{figure.F.2}
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{90}{figure.F.1}
+\contentsline {figure}{\numberline {F.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, curto prazo\relax }}{90}{figure.F.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{84}{figure.G.1}
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{84}{figure.G.2}
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Vaz\~{o}es de \'{o}leo nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{91}{figure.G.1}
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Vaz\~{o}es de \'{a}gua nos po\c {c}os produtores do SAIGUP, longo prazo\relax }}{91}{figure.G.2}
