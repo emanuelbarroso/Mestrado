@@ -14,61 +14,61 @@
 \contentsline {section}{\numberline {2.2}M\'{e}todos Convencionais de Recupera\c {c}\~{a}o Secund\'{a}ria}{4}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Conceito e Contextualiza\c {c}\~{a}o da Recupera\c {c}\~{a}o Secund\'{a}ria}{4}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Classifica\c {c}\~{a}o dos M\'{e}todos de Recupera\c {c}\~{a}o Secund\'{a}ria}{7}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}M\'{e}todos Convencionais}{7}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Esquemas de Inje\c {c}\~{a}o}{8}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}Esquemas baseados na Estrutura do Reservat\'{o}rio}{8}{subsubsection.2.2.4.1}
-\contentsline {subsubsection}{\numberline {2.2.4.2}Esquemas de Inje\c {c}\~{a}o em Malha}{8}{subsubsection.2.2.4.2}
-\contentsline {subsection}{\numberline {2.2.5}Aspectos Operacionais da Inje\c {c}\~{a}o de \'{A}gua}{12}{subsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.5.1}Fatores de Influ\^{e}ncia}{13}{subsubsection.2.2.5.1}
-\contentsline {subsubsection}{\numberline {2.2.5.2}Componentes Principais de um Sistema de Inje\c {c}\~{a}o}{14}{subsubsection.2.2.5.2}
-\contentsline {subsubsection}{\numberline {2.2.5.3}Controle e Acompanhamento}{16}{subsubsection.2.2.5.3}
-\contentsline {subsubsection}{\numberline {2.2.5.4}Principais Problemas}{17}{subsubsection.2.2.5.4}
-\contentsline {section}{\numberline {2.3}Simula\c {c}\~{a}o Num\'{e}rica de Reservat\'{o}rios}{18}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Vis\~{a}o Geral}{18}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Hist\'{o}ria da Simula\c {c}\~{a}o de Reservat\'{o}rios}{19}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Leis F\'{i}sicas Consideradas}{21}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Fen\^{o}menos de Transporte}{22}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Equa\c {c}\~{o}es de Estado}{23}{subsubsection.2.3.3.2}
-\contentsline {subsection}{\numberline {2.3.4}Tipos de Simuladores}{23}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Uso de Simuladores Num\'{e}ricos para Estudos de Reservat\'{o}rios}{25}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Conceitos de Otimiza\c {c}\~{a}o}{27}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Defini\c {c}\~{o}es e Fatos B\'{a}sicos}{27}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{31}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{32}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Convexidade}{35}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{37}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{42}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{46}{subsection.2.4.7}
-\contentsline {section}{\numberline {2.5}Otimiza\c {c}\~{a}o e Engenharia de Reservat\'{o}rio}{47}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Contexto}{47}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Algoritmos de Gradiente Descendente}{48}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Algoritmos Meta-heur\'{i}sticos}{49}{subsection.2.5.3}
-\contentsline {chapter}{\numberline {3}Construção do Algoritmo \textit {Smart Reservoir} com Utilização do MRST}{52}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introdução}{52}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {MATLAB Reservoir Simulation Toolbox}}{52}{section.3.2}
-\contentsline {section}{\numberline {3.3}Modelos de Reservatório Utilizados}{53}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}\textit {Egg Model}}{54}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Modelo SAIGUP}{56}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Função de Custo: NPV}{57}{section.3.4}
-\contentsline {section}{\numberline {3.5}Algoritmo \textit {Smart Reservoir}}{58}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}A Função NPV Modificada}{58}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Núcleo do Algoritmo}{59}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Métodos Adicionais}{62}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}O \textit {Smart Reservoir} e a Programação Paralela}{63}{section.3.6}
-\contentsline {chapter}{\numberline {4}Execução e Resultados do Algoritmo \textit {Smart Reservoir}}{65}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdução}{65}{section.4.1}
-\contentsline {section}{\numberline {4.2}Execução Utilizando o \textit {Egg Model}}{65}{section.4.2}
-\contentsline {section}{\numberline {4.3}Execução Utilizando o Modelo SAIGUP}{72}{section.4.3}
-\contentsline {section}{\numberline {4.4}Discussão dos Resultados}{74}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclusões}{78}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusões do Trabalho}{78}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sugestões para Trabalhos Futuros}{79}{section.5.2}
-\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{80}{Item.57}
-\contentsline {chapter}{{APÊNDICES}}{85}{chapter*.14}
-\contentsline {chapter}{\numberline {A}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 1}{86}{appendix.A}
-\contentsline {chapter}{\numberline {B}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 2}{87}{appendix.B}
-\contentsline {chapter}{\numberline {C}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 3}{88}{appendix.C}
-\contentsline {chapter}{\numberline {D}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 4}{89}{appendix.D}
-\contentsline {chapter}{\numberline {E}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 5}{90}{appendix.E}
-\contentsline {chapter}{\numberline {F}Simula\c {c}\~{o}es dos Po\c {c}os no SAIGUP de Curto Prazo}{91}{appendix.F}
-\contentsline {chapter}{\numberline {G}Simula\c {c}\~{o}es dos Po\c {c}os no SAIGUP de Longo Prazo}{92}{appendix.G}
+\contentsline {subsection}{\numberline {2.2.3}M\'{e}todos Convencionais}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Esquemas de Inje\c {c}\~{a}o}{9}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Esquemas baseados na Estrutura do Reservat\'{o}rio}{9}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Esquemas de Inje\c {c}\~{a}o em Malha}{9}{subsubsection.2.2.4.2}
+\contentsline {subsection}{\numberline {2.2.5}Aspectos Operacionais da Inje\c {c}\~{a}o de \'{A}gua}{14}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Fatores de Influ\^{e}ncia}{14}{subsubsection.2.2.5.1}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Componentes Principais de um Sistema de Inje\c {c}\~{a}o}{15}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.3}Controle e Acompanhamento}{17}{subsubsection.2.2.5.3}
+\contentsline {subsubsection}{\numberline {2.2.5.4}Principais Problemas}{18}{subsubsection.2.2.5.4}
+\contentsline {section}{\numberline {2.3}Simula\c {c}\~{a}o Num\'{e}rica de Reservat\'{o}rios}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Vis\~{a}o Geral}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Hist\'{o}ria da Simula\c {c}\~{a}o de Reservat\'{o}rios}{21}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Leis F\'{i}sicas Consideradas}{22}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Fen\^{o}menos de Transporte}{24}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}Equa\c {c}\~{o}es de Estado}{24}{subsubsection.2.3.3.2}
+\contentsline {subsection}{\numberline {2.3.4}Tipos de Simuladores}{25}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Uso de Simuladores Num\'{e}ricos para Estudos de Reservat\'{o}rios}{26}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Conceitos de Otimiza\c {c}\~{a}o}{29}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Defini\c {c}\~{o}es e Fatos B\'{a}sicos}{29}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Diferenciabilidade de Fun\c {c}\~{o}es Escalares}{33}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Diferenciabilidade de Fun\c {c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}{34}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Convexidade}{37}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Condi\c {c}\~{o}es de Otimalidade}{38}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Principais Algoritmos de Otimiza\c {c}\~{a}o}{44}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Tratamento de Problemas de Otimiza\c {c}\~{a}o}{47}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}Otimiza\c {c}\~{a}o e Engenharia de Reservat\'{o}rio}{49}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Contexto}{49}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Algoritmos de Gradiente Descendente}{49}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Algoritmos Meta-heur\'{i}sticos}{51}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Construção do Algoritmo \textit {Smart Reservoir} com Utilização do MRST}{53}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introdução}{53}{section.3.1}
+\contentsline {section}{\numberline {3.2}\textit {MATLAB Reservoir Simulation Toolbox}}{53}{section.3.2}
+\contentsline {section}{\numberline {3.3}Modelos de Reservatório Utilizados}{54}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\textit {Egg Model}}{55}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Modelo SAIGUP}{57}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Função de Custo: NPV}{58}{section.3.4}
+\contentsline {section}{\numberline {3.5}Algoritmo \textit {Smart Reservoir}}{59}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}A Função NPV Modificada}{59}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Núcleo do Algoritmo}{60}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Métodos Adicionais}{63}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}O \textit {Smart Reservoir} e a Programação Paralela}{64}{section.3.6}
+\contentsline {chapter}{\numberline {4}Execução e Resultados do Algoritmo \textit {Smart Reservoir}}{66}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdução}{66}{section.4.1}
+\contentsline {section}{\numberline {4.2}Execução Utilizando o \textit {Egg Model}}{66}{section.4.2}
+\contentsline {section}{\numberline {4.3}Execução Utilizando o Modelo SAIGUP}{73}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discussão dos Resultados}{75}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusões}{79}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusões do Trabalho}{79}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sugestões para Trabalhos Futuros}{80}{section.5.2}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{81}{Item.57}
+\contentsline {chapter}{{APÊNDICES}}{87}{chapter*.14}
+\contentsline {chapter}{\numberline {A}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 1}{88}{appendix.A}
+\contentsline {chapter}{\numberline {B}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 2}{89}{appendix.B}
+\contentsline {chapter}{\numberline {C}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 3}{90}{appendix.C}
+\contentsline {chapter}{\numberline {D}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 4}{91}{appendix.D}
+\contentsline {chapter}{\numberline {E}Simula\c {c}\~{o}es dos Po\c {c}os no Egg Model, Fase 5}{92}{appendix.E}
+\contentsline {chapter}{\numberline {F}Simula\c {c}\~{o}es dos Po\c {c}os no SAIGUP de Curto Prazo}{93}{appendix.F}
+\contentsline {chapter}{\numberline {G}Simula\c {c}\~{o}es dos Po\c {c}os no SAIGUP de Longo Prazo}{94}{appendix.G}

@@ -5,6 +5,14 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Adeniyi, Nwalor e Ako 2008]{adeniyi2008}
+\abntrefinfo{Adeniyi, Nwalor e Ako}{ADENIYI; NWALOR; AKO}{2008}
+{ADENIYI, O.~D.; NWALOR, J.~U.; AKO, C.~T. A review on waterflooding problems
+  in nigeria's crude oil production.
+\emph{Journal of Dispersion Science and Technology}, Taylor {\&} Francis,
+  v.~29, n.~3, p. 362--365, 2008.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1080/01932690701716101}.}
+
 \bibitem[Afshari, Aminshahidy e Pishvaie 2011]{AFSHARI2011664}
 \abntrefinfo{Afshari, Aminshahidy e Pishvaie}{AFSHARI; AMINSHAHIDY;
   PISHVAIE}{2011}
@@ -21,6 +29,20 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Aguirre}{AGUIRRE}{2015}
 {AGUIRRE, L.~A. \emph{Introdução à identificação de sistemas: técnicas lineares
   e não lineares: teoria e aplicação}. Belo Horizonte, MG: Editora UFMG, 2015.}
+
+\bibitem[Alotaibi 2011]{alotaibi}
+\abntrefinfo{Alotaibi}{ALOTAIBI}{2011}
+{ALOTAIBI, M. B.~S.
+\emph{Waterflood and Enhanced Recovery Studies Using Saline Water and Dilute
+  Surfactants in Carbonate Reservoirs}.
+Tese (Doutorado) --- Texas A{\&}M University, College Station, Texas, EUA,
+  2011.}
+
+\bibitem[Alvarado e Manrique 2010]{alvarado2010}
+\abntrefinfo{Alvarado e Manrique}{ALVARADO; MANRIQUE}{2010}
+{ALVARADO, V.; MANRIQUE, E. Enhanced oil recovery: An update review.
+\emph{Energies}, v.~3, n.~9, p. 1529--1575, 2010.
+Dispon{\'\i}vel em: \url{https://doi.org/10.3390/en3091529}.}
 
 \bibitem[Asadollahi e N{\ae}vdal 2009]{SPE:WFO}
 \abntrefinfo{Asadollahi e N{\ae}vdal}{ASADOLLAHI; N{\AE}VDAL}{2009}
@@ -207,6 +229,13 @@ Dispon{\'\i}vel em:
   Business Media, 2010.
 ISBN 978-0-387-68407-9.}
 
+\bibitem[Haynes et al. 1976]{oil1976}
+\abntrefinfo{Haynes et al.}{HAYNES et al.}{1976}
+{HAYNES, H.~J. et al. \emph{An analysis of the Potential for Enhanced Oil
+  Recovery from known fields from United States-- 1976 to 2000}.
+[S.l.], 1976. Acesso em: 15 de Outubro de 2018. Dispon{\'\i}vel em:
+  \url{https://www.npc.org/reports/1976-Enhanced\_Oil\_Recovery.pdf}.}
+
 \bibitem[Heimsund 2005]{heimsund2005}
 \abntrefinfo{Heimsund}{HEIMSUND}{2005}
 {HEIMSUND, B.-O.
@@ -245,6 +274,12 @@ ISBN 9782710810506.}
 \emph{Computational Geosciences}, v.~16, n.~2, p. 297--322, Mar 2012.
 ISSN 1573-1499.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-011-9244-4}.}
+
+\bibitem[Ling et al. 2014]{ling2014}
+\abntrefinfo{Ling et al.}{LING et al.}{2014}
+{LING, K. et al. A review of enhanced oil recovery methods applied in williston
+  basin. In:  \emph{Unconventional Resources Technology Conference}. Denver,
+  Colorado, EUA: Unconventional Resources Technology, 2014.}
 
 \bibitem[Liu e Reynolds 2016]{GEO:LIU}
 \abntrefinfo{Liu e Reynolds}{LIU; REYNOLDS}{2016}
