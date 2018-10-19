@@ -55,7 +55,7 @@ Em cada fase, a cada iteração, são analisadas paralelamente 7 diferentes possibi
 
 Em cada fase considerada no estudo do \textit{Smart Reservoir} utilizando o \textit{Egg Model}, foram realizadas três simulações: uma padrão, sem nenhum algoritmo implementado (denominada CI --- \textit{constant injection}); utilizando as configurações dos poços injetores proposta por Fonseca \textit{et al.}\footnote{Os dados foram tomados do algoritmo que produziu os melhores resultados econômicos, o ssStoSAG \cite{fonseca}}; e uma simulação utilizando o \textit{Smart Reservoir}, que também pode ser chamado de \textit{Smart CI}, referenciando-se o fato de que, em condições normais, as vazões de injeção de água serão mantidas constantes.
 
-A fase 1 do estudo com o \textit{Egg Model} consistiu de uma simulação em que a janela temporal onde são feitas as comparações entre as possibilidades de controle é simples, isto é, cada janela é de um passo apenas. É considerada a fase do ponto de partida da construção do \textit{Smart Reservoir}. A Figura \ref{fig:eggBHP1} ilustra o controle de pressão obtido, enquanto que a Figura \ref{fig:eggNPV1} mostra, respectivamente, as curvas de NPV de cada uma das simulações consideradas e um destaque dessas curvas no tempo total de produção do reservatório sob uso do \textit{Smart Reservoir}. Os resultados referentes às vazões de água e óleo em cada poço produtor se encontram no Apêndice \ref{apn:egg1}.
+A fase 1 do estudo com o \textit{Egg Model} consistiu de uma simulação em que a janela temporal onde são feitas as comparações entre as possibilidades de controle é simples, isto é, cada janela é de um passo apenas. É considerada a fase do ponto de partida da construção do \textit{Smart Reservoir}. A Figura \ref{fig:eggBHP1} ilustra o controle de pressão obtido, enquanto que a Figura \ref{fig:eggVPL1} mostra, respectivamente, as curvas de VPL de cada uma das simulações consideradas e um destaque dessas curvas no tempo total de produção do reservatório sob uso do \textit{Smart Reservoir}. Os resultados referentes às vazões de água e óleo em cada poço produtor se encontram no Apêndice \ref{apn:egg1}.
 
 \begin{figure}[H]
 	\centering
@@ -68,18 +68,18 @@ A fase 1 do estudo com o \textit{Egg Model} consistiu de uma simulação em que a 
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim1/EGG_CumulativeNPV}
 		\caption{Visão inteira}
-		\label{fig:eggNPV1Int}
+		\label{fig:eggVPL1Int}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim1/EGG_CumulativeNPVZoom}
 		\caption{Visão destacada}
-		\label{fig:eggNPV1Zoom}
+		\label{fig:eggVPL1Zoom}
 	\end{subfigure}
-	\caption{NPVs resultantes do \textit{Egg Model}, fase 1 \label{fig:eggNPV1}}
+	\caption{VPLs resultantes do \textit{Egg Model}, fase 1 \label{fig:eggVPL1}}
 \end{figure}
 
-A fase 2 das simulações propostas para o \textit{Egg Model} tomou por base as mesmas constantes de cálculo da taxa de variação presentes na fase 1; porém, foi considerada uma janela de tempo dupla, ou seja, a janela de predição. O controle de pressões resultante é representado na Figura \ref{fig:eggBHP2}, enquanto que as curvas de NPV obtidas são apresentadas na Figura \ref{fig:eggNPV2}. Os resultados das vazões de água e óleo em cada poço produtor se encontram no Apêndice \ref{apn:egg2}.
+A fase 2 das simulações propostas para o \textit{Egg Model} tomou por base as mesmas constantes de cálculo da taxa de variação presentes na fase 1; porém, foi considerada uma janela de tempo dupla, ou seja, a janela de predição. O controle de pressões resultante é representado na Figura \ref{fig:eggBHP2}, enquanto que as curvas de VPL obtidas são apresentadas na Figura \ref{fig:eggVPL2}. Os resultados das vazões de água e óleo em cada poço produtor se encontram no Apêndice \ref{apn:egg2}.
 
 \begin{figure}[H]
 	\centering
@@ -92,18 +92,18 @@ A fase 2 das simulações propostas para o \textit{Egg Model} tomou por base as me
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim2/EGG_CumulativeNPV}
 		\caption{Visão inteira}
-		\label{fig:eggNPV2Int}
+		\label{fig:eggVPL2Int}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim2/EGG_CumulativeNPVZoom}
 		\caption{Visão destacada}
-		\label{fig:eggNPV2Zoom}
+		\label{fig:eggVPL2Zoom}
 	\end{subfigure}
-	\caption{NPVs resultantes do \textit{Egg Model}, fase 2 \label{fig:eggNPV2}}
+	\caption{VPLs resultantes do \textit{Egg Model}, fase 2 \label{fig:eggVPL2}}
 \end{figure}
 
-A fase 3 pode ser considerada uma fase de ajuste da taxa de variação em relação à fase 2; foi testado o limite de ajuste dos valores de $\delta_W$, mantido constante, que permitem uma simulação sem a presença de erros numéricos. As Figuras \ref{fig:eggBHP3} e \ref{fig:eggNPV3} mostram, respectivamente, o controle de pressões e as curvas de NPV desta fase. As vazões de água e óleo em cada poço produtor são apresentadas no Apêndice \ref{apn:egg3}.
+A fase 3 pode ser considerada uma fase de ajuste da taxa de variação em relação à fase 2; foi testado o limite de ajuste dos valores de $\delta_W$, mantido constante, que permitem uma simulação sem a presença de erros numéricos. As Figuras \ref{fig:eggBHP3} e \ref{fig:eggVPL3} mostram, respectivamente, o controle de pressões e as curvas de VPL desta fase. As vazões de água e óleo em cada poço produtor são apresentadas no Apêndice \ref{apn:egg3}.
 
 \begin{figure}[H]
 	\centering
@@ -116,18 +116,18 @@ A fase 3 pode ser considerada uma fase de ajuste da taxa de variação em relação 
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim3/EGG_CumulativeNPV}
 		\caption{Visão inteira}
-		\label{fig:eggNPV3Int}
+		\label{fig:eggVPL3Int}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim3/EGG_CumulativeNPVZoom}
 		\caption{Visão destacada}
-		\label{fig:eggNPV3Zoom}
+		\label{fig:eggVPL3Zoom}
 	\end{subfigure}
-	\caption{NPVs resultantes do \textit{Egg Model}, fase 3 \label{fig:eggNPV3}}
+	\caption{VPLs resultantes do \textit{Egg Model}, fase 3 \label{fig:eggVPL3}}
 \end{figure}
 
-Feitas as simulações considerando taxas de variação de pressão constantes, procedeu-se às simulações em que tais taxas passam a depender da saturação. A fase 4 é a primeira simulação neste sentido, em que há agora um peso sobre a variação de saturação a cada passo de tempo. O controle de pressões resultante é mostrado na Figura \ref{fig:eggBHP4}, enquanto que as curvas de NPV obtidas são ilustradas na Figura \ref{fig:eggNPV4}. Os resultados referentes às vazões de água e óleo em cada poço produtor se encontram no Apêndice \ref{apn:egg4}.
+Feitas as simulações considerando taxas de variação de pressão constantes, procedeu-se às simulações em que tais taxas passam a depender da saturação. A fase 4 é a primeira simulação neste sentido, em que há agora um peso sobre a variação de saturação a cada passo de tempo. O controle de pressões resultante é mostrado na Figura \ref{fig:eggBHP4}, enquanto que as curvas de VPL obtidas são ilustradas na Figura \ref{fig:eggVPL4}. Os resultados referentes às vazões de água e óleo em cada poço produtor se encontram no Apêndice \ref{apn:egg4}.
 
 \begin{figure}[H]
 	\centering
@@ -140,18 +140,18 @@ Feitas as simulações considerando taxas de variação de pressão constantes, proce
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim4/EGG_CumulativeNPV}
 		\caption{Visão inteira}
-		\label{fig:eggNPV4Int}
+		\label{fig:eggVPL4Int}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim4/EGG_CumulativeNPVZoom}
 		\caption{Visão destacada}
-		\label{fig:eggNPV4Zoom}
+		\label{fig:eggVPL4Zoom}
 	\end{subfigure}
-	\caption{NPVs resultantes do \textit{Egg Model}, fase 4 \label{fig:eggNPV4}}
+	\caption{VPLs resultantes do \textit{Egg Model}, fase 4 \label{fig:eggVPL4}}
 \end{figure}
 
-Por fim, a fase 5 do \textit{Egg Model} consiste na simulação completa, com janela de predição, taxas de variação de pressão dependentes da saturação dos poços e a adição do fator percentual de correção numérica $b_{\%} = 4\%$. Os resultados de controle de pressão e as curvas de NPV são apresentados, respectivamente, nas Figuras \ref{fig:eggBHP5} e \ref{fig:eggNPV5}. O Apêndice \ref{apn:egg5} contém os resultados das vazões de óleo e água em cada poço produtor.
+Por fim, a fase 5 do \textit{Egg Model} consiste na simulação completa, com janela de predição, taxas de variação de pressão dependentes da saturação dos poços e a adição do fator percentual de correção numérica $b_{\%} = 4\%$. Os resultados de controle de pressão e as curvas de VPL são apresentados, respectivamente, nas Figuras \ref{fig:eggBHP5} e \ref{fig:eggVPL5}. O Apêndice \ref{apn:egg5} contém os resultados das vazões de óleo e água em cada poço produtor.
 
 \begin{figure}[H]
 	\centering
@@ -164,21 +164,21 @@ Por fim, a fase 5 do \textit{Egg Model} consiste na simulação completa, com jane
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim5/EGG_CumulativeNPV}
 		\caption{Visão inteira}
-		\label{fig:eggNPV5Int}
+		\label{fig:eggVPL5Int}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosEgg/imgsim5/EGG_CumulativeNPVZoom}
 		\caption{Visão destacada}
-		\label{fig:eggNPV5Zoom}
+		\label{fig:eggVPL5Zoom}
 	\end{subfigure}
-	\caption{NPVs resultantes do \textit{Egg Model}, fase 5 \label{fig:eggNPV5}}
+	\caption{VPLs resultantes do \textit{Egg Model}, fase 5 \label{fig:eggVPL5}}
 \end{figure}
 
 Nota-se que, observando-se o comportamento dos resultados de cada fase considerada, há um senso de progressão do \textit{Smart Reservoir} à medida em que passos complementares são adicionados ao mesmo. Todas as simulações foram realizadas no MRST versão 2018a, considerando-se que o tipo do simulador é o \textit{black oil}; além disso, cada passo de tempo, em todas as simulações do \textit{Egg Model}, foi de 90 dias.
 
 \section{Execução Utilizando o Modelo SAIGUP}
-Enquanto o \textit{Egg Model} foi utilizado nas simulações preliminares do \textit{Smart Reservoir}, evidenciando a construção do algoritmo, o SAIGUP foi utilizado para se obter resultados em um modelo de reservatório mais complexo e mais próximo de reservatórios reais. Ao contrário das simulações já tomadas, não se dispõe de resultados na literatura de NPVs para a configuração de poços do modelo SAIGUP utilizado; portanto, o NPV resultante será obtido apenas das simulações com a presença ou não do \textit{Smart Reservoir}. A obtenção da taxa de variação das pressões é feita utilizando-se a Equação \eqref{eq:resultDelta}, com as mesmas condições iniciais apresentadas nas simulações do \textit{Egg Model}. Além disso, todas as simulações do SAIGUP contaram com o fator de correção numérica $b_{\%} = 1\%$.
+Enquanto o \textit{Egg Model} foi utilizado nas simulações preliminares do \textit{Smart Reservoir}, evidenciando a construção do algoritmo, o SAIGUP foi utilizado para se obter resultados em um modelo de reservatório mais complexo e mais próximo de reservatórios reais. Ao contrário das simulações já tomadas, não se dispõe de resultados na literatura de VPLs para a configuração de poços do modelo SAIGUP utilizado; portanto, o VPL resultante será obtido apenas das simulações com a presença ou não do \textit{Smart Reservoir}. A obtenção da taxa de variação das pressões é feita utilizando-se a Equação \eqref{eq:resultDelta}, com as mesmas condições iniciais apresentadas nas simulações do \textit{Egg Model}. Além disso, todas as simulações do SAIGUP contaram com o fator de correção numérica $b_{\%} = 1\%$.
 
 No caso do SAIGUP, foram feitas duas classes de simulações, considerando dois valores constantes de injeção distintos: na primeira simulação, denominada \textit{SAIGUP de longo prazo}, foi considerado um valor de injeção menor, tal que o tempo total de produção seja considerável; na segunda simulação, o \textit{SAIGUP de curto prazo}, as vazões de injeção foram aumentadas, de maneira a se obter um tempo de simulação mais compatível com a situação de um reservatório real. A Tabela \ref{tab:SAIGUPparams} mostra os parâmetros das simulações efetuadas, juntamente com as constantes das taxas de variação de pressão.
 
@@ -199,7 +199,7 @@ No caso do SAIGUP, foram feitas duas classes de simulações, considerando dois va
 \end{tabular}
 \end{table}
 
-A primeira simulação, a de longo prazo, teve como tempo de simulação total 127 anos, sem a adição de qualquer algoritmo. Nota-se que é um tempo considerado muito grande para se operar um reservatório, visto que a rentabilidade do negócio tende a diminuir com o tempo, segundo a própria definição do NPV. Portanto, o uso do \textit{Smart Reservoir} é significativamente interessante neste caso, tendo em vista o objetivo principal de se acelerar a produção. Da mesma forma como foi procedido com o \textit{Egg Model}, foram consideradas, a cada passo de tempo, 7 possibilidades de pressão para os poços. Além disso, foi considerada também a janela de predição, de 2 passos normais. A Figura \ref{fig:lSAIGUPBHP} apresenta o controle de pressões resultante, enquanto que a Figura \ref{fig:lSAIGUPNPV} mostra as curvas de NPV, em visão integral e destacada, respectivamente. Por fim, os dados de vazão de óleo e água obtidos, para cada poço produtor, se encontram no Apêndice \ref{apn:lSAIGUP}. No caso do SAIGUP de longo prazo, cada passo de tempo considerado é de 1 ano.
+A primeira simulação, a de longo prazo, teve como tempo de simulação total 127 anos, sem a adição de qualquer algoritmo. Nota-se que é um tempo considerado muito grande para se operar um reservatório, visto que a rentabilidade do negócio tende a diminuir com o tempo, segundo a própria definição do VPL. Portanto, o uso do \textit{Smart Reservoir} é significativamente interessante neste caso, tendo em vista o objetivo principal de se acelerar a produção. Da mesma forma como foi procedido com o \textit{Egg Model}, foram consideradas, a cada passo de tempo, 7 possibilidades de pressão para os poços. Além disso, foi considerada também a janela de predição, de 2 passos normais. A Figura \ref{fig:lSAIGUPBHP} apresenta o controle de pressões resultante, enquanto que a Figura \ref{fig:lSAIGUPVPL} mostra as curvas de VPL, em visão integral e destacada, respectivamente. Por fim, os dados de vazão de óleo e água obtidos, para cada poço produtor, se encontram no Apêndice \ref{apn:lSAIGUP}. No caso do SAIGUP de longo prazo, cada passo de tempo considerado é de 1 ano.
 
 \begin{figure}[H]
 	\centering
@@ -212,18 +212,18 @@ A primeira simulação, a de longo prazo, teve como tempo de simulação total 127 a
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPV}
 		\caption{Visão inteira}
-		\label{fig:lSAIGUPNPVInt}
+		\label{fig:lSAIGUPVPLInt}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPVZoom}
 		\caption{Visão destacada}
-		\label{fig:lSAIGUPNPVZoom}
+		\label{fig:lSAIGUPVPLZoom}
 	\end{subfigure}
-	\caption{NPVs resultantes do SAIGUP de longo prazo \label{fig:lSAIGUPNPV}}
+	\caption{VPLs resultantes do SAIGUP de longo prazo \label{fig:lSAIGUPVPL}}
 \end{figure}
 
-A segunda simulação envolvendo o SAIGUP foi a simulação de curto prazo. Quase todos os parâmetros foram mantidos, excetuando-se as vazões de injeção para os injetores, que foram aumentadas, e o comprimento de cada passo de tempo, que é de 90 dias, como no \textit{Egg Model}. A ideia de se aumentar as vazões de injeção foi de encurtar a vida útil do reservatório, considerando tempos de produção factíveis para situações reais. As Figuras \ref{fig:sSAIGUPBHP} e \ref{fig:sSAIGUPNPV} mostram, respectivamente, os controles de pressão e as curvas de NPV ao final da simulação. Os resultados de vazão se encontram no Apêndice \ref{apn:sSAIGUP}.
+A segunda simulação envolvendo o SAIGUP foi a simulação de curto prazo. Quase todos os parâmetros foram mantidos, excetuando-se as vazões de injeção para os injetores, que foram aumentadas, e o comprimento de cada passo de tempo, que é de 90 dias, como no \textit{Egg Model}. A ideia de se aumentar as vazões de injeção foi de encurtar a vida útil do reservatório, considerando tempos de produção factíveis para situações reais. As Figuras \ref{fig:sSAIGUPBHP} e \ref{fig:sSAIGUPVPL} mostram, respectivamente, os controles de pressão e as curvas de VPL ao final da simulação. Os resultados de vazão se encontram no Apêndice \ref{apn:sSAIGUP}.
 
 \begin{figure}[H]
 	\centering
@@ -236,32 +236,32 @@ A segunda simulação envolvendo o SAIGUP foi a simulação de curto prazo. Quase to
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPV}
 		\caption{Visão inteira}
-		\label{fig:sSAIGUPNPVInt}
+		\label{fig:sSAIGUPVPLInt}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{.45\textwidth}
 		\includegraphics[width=\textwidth]{figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPVZoom}
 		\caption{Visão destacada}
-		\label{fig:sSAIGUPNPVZoom}
+		\label{fig:sSAIGUPVPLZoom}
 	\end{subfigure}
-	\caption{NPVs resultantes do SAIGUP de curto prazo \label{fig:sSAIGUPNPV}}
+	\caption{VPLs resultantes do SAIGUP de curto prazo \label{fig:sSAIGUPVPL}}
 \end{figure}
 
 \section{Discussão dos Resultados}
 A primeira análise da execução do \textit{Smart Reservoir} leva em conta um modelo mais simples, o \textit{Egg Model}, no qual foi possível realizar várias simulações, de maneira a evidenciar a construção e os testes de taxas de variação de pressão na solução proposta. 
 
-A ideia central de se dividir os testes do \textit{Egg Model} em cinco fases foi não só de mostrar a evolução de como o \textit{Smart Reservoir} foi construído, e quais adendos foram feitos ao longo do problema; um outro motivo do número de simulações feitas com o \textit{Egg Model} foi, através de testes sobre a taxa de variação das pressões, sobretudo sobre sua ordem de grandeza, testar a estabilidade até onde o algoritmo continuava estável numericamente antes de se progredir com os adicionais, como a taxa dependente da saturação dos poços e o fator de correção numérica; este último sendo um importante fator adicionado à função NPV modificada, de maneira a evitar inconsistências quando a variação de saturação em dado poço produtor tende a zero.
+A ideia central de se dividir os testes do \textit{Egg Model} em cinco fases foi não só de mostrar a evolução de como o \textit{Smart Reservoir} foi construído, e quais adendos foram feitos ao longo do problema; um outro motivo do número de simulações feitas com o \textit{Egg Model} foi, através de testes sobre a taxa de variação das pressões, sobretudo sobre sua ordem de grandeza, testar a estabilidade até onde o algoritmo continuava estável numericamente antes de se progredir com os adicionais, como a taxa dependente da saturação dos poços e o fator de correção numérica; este último sendo um importante fator adicionado à função VPL modificada, de maneira a evitar inconsistências quando a variação de saturação em dado poço produtor tende a zero.
 
-Ao se fazer a análise dos resultados obtidos com a implementação do \textit{Smart Reservoir}, duas variáveis importantes foram consideradas: o NPV e o número de passos de tempo até que o NPV passe a decrescer (o ponto de parada do algoritmo). No caso do NPV, foi feita uma análise quantitativa, isto é, o quanto foi gerado ao final de cada fase, comparando-o com o que foi encontrado na literatura e com o gerado sem nenhum algoritmo de otimização. Em termos de tempo de simulação, foi considerado o quanto ele foi reduzido, na implementação do \textit{Smart Reservoir} em todas as fases propostas, em relação aos 40 passos utilizados por Fonseca \textit{et al}\footnote{Ver \cite{fonseca}}. A Tabela \ref{tab:EggAnalysis} faz um comparativo das variáveis citadas entre cada fase do \textit{Smart Reservoir}, o modelo sem algoritmo de otimização e a solução encontrada na literatura.
+Ao se fazer a análise dos resultados obtidos com a implementação do \textit{Smart Reservoir}, duas variáveis importantes foram consideradas: o VPL e o número de passos de tempo até que o VPL passe a decrescer (o ponto de parada do algoritmo). No caso do VPL, foi feita uma análise quantitativa, isto é, o quanto foi gerado ao final de cada fase, comparando-o com o que foi encontrado na literatura e com o gerado sem nenhum algoritmo de otimização. Em termos de tempo de simulação, foi considerado o quanto ele foi reduzido, na implementação do \textit{Smart Reservoir} em todas as fases propostas, em relação aos 40 passos utilizados por Fonseca \textit{et al}\footnote{Ver \cite{fonseca}}. A Tabela \ref{tab:EggAnalysis} faz um comparativo das variáveis citadas entre cada fase do \textit{Smart Reservoir}, o modelo sem algoritmo de otimização e a solução encontrada na literatura.
 
 %TODO tabela
 
 \begin{table}[H]
 	\centering
-	\caption{Resultados de NPV e tempo para as simulações envolvendo o \textit{Egg Model}\label{tab:EggAnalysis}}
+	\caption{Resultados de VPL e tempo para as simulações envolvendo o \textit{Egg Model}\label{tab:EggAnalysis}}
 \begin{tabular}{|c|c|c|}
 	\hline
-	\textbf{Simulação} & \textbf{NPV }$\mathbf{(\times10^6\text{ USD})}$ & \textbf{Passos de tempo (90 dias)} \\ \hline
+	\textbf{Simulação} & \textbf{VPL }$\mathbf{(\times10^6\text{ USD})}$ & \textbf{Passos de tempo (90 dias)} \\ \hline
 	Normal & 41.07 & 17 \\ \hline
 	Literatura & 44.35 & 40 \\ \hline
 	\textit{Smart}, fase 1 & 41.11 & 16 \\ \hline
@@ -272,26 +272,26 @@ Ao se fazer a análise dos resultados obtidos com a implementação do \textit{Smar
 \end{tabular}
 \end{table}
 
-Analisando-se a Tabela \ref{tab:EggAnalysis}, pode-se afirmar que há uma progressão nos valores de NPV à medida em que se prossegue com os ajustes na taxa de variação das pressões e se adiciona passos extras ao \textit{Smart Reservoir}. Na sua implementação mais simples, sem a janela de predição, há uma sensível melhoria do NPV, mas muito pequena para considerar a utilização do algoritmo. A adição da janela de precisão, por si só, também contribui, porém a variação é também insuficiente para justificar o uso do algoritmo.
+Analisando-se a Tabela \ref{tab:EggAnalysis}, pode-se afirmar que há uma progressão nos valores de VPL à medida em que se prossegue com os ajustes na taxa de variação das pressões e se adiciona passos extras ao \textit{Smart Reservoir}. Na sua implementação mais simples, sem a janela de predição, há uma sensível melhoria do VPL, mas muito pequena para considerar a utilização do algoritmo. A adição da janela de precisão, por si só, também contribui, porém a variação é também insuficiente para justificar o uso do algoritmo.
 
-O ganho com NPV passa a ser notado na fase 3 da simulação, em que a taxa de variação das pressões é elevada em relação às fases anteriores; isto foi feito de modo a se testar os limites de estabilidade numérica do algoritmo. Na fase 4, já se considera a taxa variável dependente da saturação; o NPV resultante é consideravelmente maior do que nas fases anteriores, chegando próximo aos patamares desejados\footnote{Esse patamar é o resultado simulado do algoritmo ssStoSAG, proposto em \cite{fonseca}.}; contudo, a fase 4 é incompleta no sentido de que não há o fator de correção numérica, fato esse que, em determinados casos, contribui para inconsistências no cálculo do NPV modificado. A adição desse fator, aliada a uma nova elevação das taxas de variação de pressão, contribui para um incremento ainda maior do NPV, como pode ser visto observando-se o resultado da fase 5. 
+O ganho com VPL passa a ser notado na fase 3 da simulação, em que a taxa de variação das pressões é elevada em relação às fases anteriores; isto foi feito de modo a se testar os limites de estabilidade numérica do algoritmo. Na fase 4, já se considera a taxa variável dependente da saturação; o VPL resultante é consideravelmente maior do que nas fases anteriores, chegando próximo aos patamares desejados\footnote{Esse patamar é o resultado simulado do algoritmo ssStoSAG, proposto em \cite{fonseca}.}; contudo, a fase 4 é incompleta no sentido de que não há o fator de correção numérica, fato esse que, em determinados casos, contribui para inconsistências no cálculo do VPL modificado. A adição desse fator, aliada a uma nova elevação das taxas de variação de pressão, contribui para um incremento ainda maior do VPL, como pode ser visto observando-se o resultado da fase 5. 
 
-Ao final das simulações, não somente se obteve um NPV equivalente ao encontrado utilizando-se o algoritmo proposto por Fonseca \textit{et al.}, como também foi possível reduzir o tempo de simulação para 40\% do original. Essa redução se faz interessante se for feita a consideração de que, em situações reais, o NPV é afetado por um fator de desconto ao longo do tempo\footnote{Ver \cite{ziz2014}}. Além da vantagem de se reduzir o tempo em termos de análise econômica, tem o fato de que os custos computacionais são significativamente reduzidos; uma simulação de \textit{Smart Reservoir} com o \textit{Egg Model}, na fase 5, é equivalente, em termos computacionais, a 15 simulações normais, cada uma durando 4 anos. Para se ter uma ideia da magnitude dessa economia de custo computacional, Fonseca \textit{et al.} obtêm seu valor de NPV após 4000 simulações \cite{fonseca}; portanto, o uso do \textit{Smart Reservoir} representou uma economia de custo de mais de 95\%, mantendo um NPV próximo à meta e reduzindo o tempo de produção.
+Ao final das simulações, não somente se obteve um VPL equivalente ao encontrado utilizando-se o algoritmo proposto por Fonseca \textit{et al.}, como também foi possível reduzir o tempo de simulação para 40\% do original. Essa redução se faz interessante se for feita a consideração de que, em situações reais, o VPL é afetado por um fator de desconto ao longo do tempo\footnote{Ver \cite{ziz2014}}. Além da vantagem de se reduzir o tempo em termos de análise econômica, tem o fato de que os custos computacionais são significativamente reduzidos; uma simulação de \textit{Smart Reservoir} com o \textit{Egg Model}, na fase 5, é equivalente, em termos computacionais, a 15 simulações normais, cada uma durando 4 anos. Para se ter uma ideia da magnitude dessa economia de custo computacional, Fonseca \textit{et al.} obtêm seu valor de VPL após 4000 simulações \cite{fonseca}; portanto, o uso do \textit{Smart Reservoir} representou uma economia de custo de mais de 95\%, mantendo um VPL próximo à meta e reduzindo o tempo de produção.
 
 No tocante ao comportamento das pressões nos poços, percebe-se que eles seguem um comportamento em comum: inicialmente abertos, eles tendem a aumentar suas pressões, aproximando-se da pressão de reservatório, à medida em que a frente de água os alcança; a partir de determinado momento, como a produção de água se torna muito grande, o esforço é direcionado no sentido de se tentar obter o máximo de óleo possível; consequentemente, os poços têm sua pressão reduzida. Esse efeito, no caso do \textit{Egg Model utilizado}, é mais pronunciado no poço produtor 2, tendo em vista que o mesmo se encontra numa região de permeabilidade maior que a dos demais. Além disso, nota-se que a tendência do poço produtor 1, antes de seguir o comportamento normal dos outros poços, é a de inicialmente diminuir sua pressão, aumentando a vazão dos líquidos que o mesmo produz; isso se deve ao fato de que, como o poço 1 é o que se encontra mais longe dos injetores que o cercam, a frente de água demora mais para alcançá-lo, permitindo uma recuperação maior de óleo no começo da produção.
 
-Em termos de vazão de água e de óleo nos poços produtores do \textit{Egg Model}, percebe-se que, mesmo as curvas obtidas com o \textit{Smart Reservoir} não sendo suaves, elas seguem o comportamento da simulação sem otimização. A tendência é de uma produção maior de fluidos em cada poço, à exceção do poço 2, cujas pressões se aproximam mais da pressão de reservatório. Nota-se também uma queda na produção de água próximo ao final da simulação, evidenciando a redução da injeção forçada pelo \textit{Smart Reservoir} por motivos de insuficiência de NPV para cobrir os custos com a injeção de água.
+Em termos de vazão de água e de óleo nos poços produtores do \textit{Egg Model}, percebe-se que, mesmo as curvas obtidas com o \textit{Smart Reservoir} não sendo suaves, elas seguem o comportamento da simulação sem otimização. A tendência é de uma produção maior de fluidos em cada poço, à exceção do poço 2, cujas pressões se aproximam mais da pressão de reservatório. Nota-se também uma queda na produção de água próximo ao final da simulação, evidenciando a redução da injeção forçada pelo \textit{Smart Reservoir} por motivos de insuficiência de VPL para cobrir os custos com a injeção de água.
 
 Após a análise e discussão dos resultados obtidos com o \textit{Egg Model}, considera-se agora os resultados utilizando o SAIGUP. O modelo disponível para o estudo possui uma quantidade de poços produtores inferior à dos modelos comumente utilizados na literatura --- Carter e Grema \textit{et al.} utilizam, por exemplo, oito poços produtores\footnote{Ver \cite{saigupCM} e \cite{grema2017optimization}}, enquanto que o modelo disponível possui apenas cinco. O número reduzido de produtores resulta em um período de produção extendido e em uma produção de óleo menor que a possível, considerando que, inicialmente, apenas a fase óleo está presente no reservatório, conforme dados da Tabela \ref{tab:SAIGUPparams}. 
 
-Em termos de NPV e tempo de explotação, em ambos os casos do SAIGUP o NPV resultante pode ser considerado equivalente nas situações normal e com a implementação do \textit{Smart Reservoir}; no entanto, percebe-se uma drástica redução no tempo total de simulação em ambos os casos: para aproximadamente 37.5\% do tempo original para o caso de curto prazo e para menos de 35\% do tempo original no caso de longo prazo, confirmando, assim, o cumprimento da ideia central da solução proposta. A Tabela \ref{tab:SAIGUPAnalysis}. apresenta os resultados obtidos com o SAIGUP. Além da economia de tempo e a obtenção do NPV semelhante ao desejado, percebe-se que, particularmente no SAIGUP de longo prazo, a simulação com o \textit{Smart Reservoir} equivale a uma simulação normal de 4 anos e meio.
+Em termos de VPL e tempo de explotação, em ambos os casos do SAIGUP o VPL resultante pode ser considerado equivalente nas situações normal e com a implementação do \textit{Smart Reservoir}; no entanto, percebe-se uma drástica redução no tempo total de simulação em ambos os casos: para aproximadamente 37.5\% do tempo original para o caso de curto prazo e para menos de 35\% do tempo original no caso de longo prazo, confirmando, assim, o cumprimento da ideia central da solução proposta. A Tabela \ref{tab:SAIGUPAnalysis}. apresenta os resultados obtidos com o SAIGUP. Além da economia de tempo e a obtenção do VPL semelhante ao desejado, percebe-se que, particularmente no SAIGUP de longo prazo, a simulação com o \textit{Smart Reservoir} equivale a uma simulação normal de 4 anos e meio.
 
 \begin{table}[!ht]
 	\centering
 	\caption{Resultados obtidos com o SAIGUP\label{tab:SAIGUPAnalysis}}
 \begin{tabular}{|c|c|c|c|}
 	\hline
-	\textbf{Simulação} & \textbf{NPV }$\mathbf{(\times10^9\text{ USD})}$ & \textbf{Passos de tempo} & \textbf{Comprimento do passo} \\ \hline
+	\textbf{Simulação} & \textbf{VPL }$\mathbf{(\times10^9\text{ USD})}$ & \textbf{Passos de tempo} & \textbf{Comprimento do passo} \\ \hline
 	Normal, curto prazo & 3.58 & 40 & 90 dias \\ \hline
 	\textit{Smart}, curto prazo & 3.52 & 15 & 90 dias \\ \hline
 	Normal, longo prazo & 3.64 & 127 & 1 ano \\ \hline
@@ -299,7 +299,7 @@ Em termos de NPV e tempo de explotação, em ambos os casos do SAIGUP o NPV result
 \end{tabular}
 \end{table}
 
-Analisando-se os controles de pressão obtidos (Figuras \ref{fig:lSAIGUPBHP} e \ref{fig:sSAIGUPBHP}), nota-se que, a exemplo do \textit{Egg Model}, os poços produtores encontram-se inicialmente abertos; a tendência é que, ao longo do tempo, a pressão nos poços aumente, devido à presenção da frente de água nos mesmos; logo após esse aumento no BHP, os poços passam a produzir mais água do que óleo, razão pela qual, depois de determinado tempo, a pressão nos produtores começa a cair, possibilitando uma maior produção de fluidos e, consequentemente, um maior aproveitamento de óleo do reservatório. No caso do SAIGUP de curto prazo, o efeito da queda final de pressão é observado apenas no produtor 4 (os outros poços não chegam à fase de queda de pressão quando é detectado NPV negativo), enquanto que no de longo prazo o comportamento esperado, tanto a subida inicial quanto a queda de pressão, pode ser observado em todos os poços.
+Analisando-se os controles de pressão obtidos (Figuras \ref{fig:lSAIGUPBHP} e \ref{fig:sSAIGUPBHP}), nota-se que, a exemplo do \textit{Egg Model}, os poços produtores encontram-se inicialmente abertos; a tendência é que, ao longo do tempo, a pressão nos poços aumente, devido à presenção da frente de água nos mesmos; logo após esse aumento no BHP, os poços passam a produzir mais água do que óleo, razão pela qual, depois de determinado tempo, a pressão nos produtores começa a cair, possibilitando uma maior produção de fluidos e, consequentemente, um maior aproveitamento de óleo do reservatório. No caso do SAIGUP de curto prazo, o efeito da queda final de pressão é observado apenas no produtor 4 (os outros poços não chegam à fase de queda de pressão quando é detectado VPL negativo), enquanto que no de longo prazo o comportamento esperado, tanto a subida inicial quanto a queda de pressão, pode ser observado em todos os poços.
 
 Analisando-se as curvas de vazão de óleo e água das simulações efetuadas com o SAIGUP, presentes nos Apêndices \ref{apn:lSAIGUP} e \ref{apn:sSAIGUP}, nota-se que o comportamento dos gráficos é suave, com um decaimento próximo ao exponencial no caso das vazões de óleo; entretanto, como há uma fase do \textit{Smart Reservoir} em que há um corte na vazão dos poços injetores, nota-se que esse fato se reflete nos resultados de vazão obtidos, principalmente nas curvas de vazão de água.
 

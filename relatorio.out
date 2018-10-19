@@ -40,9 +40,9 @@
 \BOOKMARK [1][-]{section.3.3}{Modelos de Reservatório Utilizados}{chapter.3}% 40
 \BOOKMARK [2][-]{subsection.3.3.1}{Egg Model}{section.3.3}% 41
 \BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 42
-\BOOKMARK [1][-]{section.3.4}{Função de Custo: NPV}{chapter.3}% 43
+\BOOKMARK [1][-]{section.3.4}{Função de Custo: VPL}{chapter.3}% 43
 \BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.5.1}{A Função NPV Modificada}{section.3.5}% 45
+\BOOKMARK [2][-]{subsection.3.5.1}{A Função VPL Modificada}{section.3.5}% 45
 \BOOKMARK [2][-]{subsection.3.5.2}{Núcleo do Algoritmo}{section.3.5}% 46
 \BOOKMARK [2][-]{subsection.3.5.3}{Métodos Adicionais}{section.3.5}% 47
 \BOOKMARK [1][-]{section.3.6}{O Smart Reservoir e a Programação Paralela}{chapter.3}% 48
@@ -54,7 +54,7 @@
 \BOOKMARK [0][-]{chapter.5}{Conclusões}{}% 54
 \BOOKMARK [1][-]{section.5.1}{Conclusões do Trabalho}{chapter.5}% 55
 \BOOKMARK [1][-]{section.5.2}{Sugestões para Trabalhos Futuros}{chapter.5}% 56
-\BOOKMARK [0][-]{Item.57}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 57
+\BOOKMARK [0][-]{Item.59}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 57
 \BOOKMARK [0][-]{chapter*.14}{APÊNDICES}{}% 58
 \BOOKMARK [0][-]{appendix.A}{Simula\347\365es dos Po\347os no Egg Model, Fase 1}{}% 59
 \BOOKMARK [0][-]{appendix.B}{Simula\347\365es dos Po\347os no Egg Model, Fase 2}{}% 60

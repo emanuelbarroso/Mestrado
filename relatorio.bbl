@@ -177,6 +177,13 @@ ISBN 978-0-7506-7933-6.}
 \emph{Improving Genetic Algorithms for Optimum Well Placement}.
 Disserta\c{c}\~{a}o (Mestrado) --- Stanford University, Stanford, EUA, 2008.}
 
+\bibitem[Feng et al. 2015]{feng2015}
+\abntrefinfo{Feng et al.}{FENG et al.}{2015}
+{FENG, Y. et al. A successful peripheral water injection in a weak-edge aquifer
+  oilfield, oriente basin, ecuador. In:  \emph{SOCIETY OF PETROLEUM ENGINEERS}.
+  Quito, Equador: SPE Latin American and Caribbean Petroleum Engineering
+  Conference, 2015.}
+
 \bibitem[Filho, Perestrelo e Molina-Palma 2015]{AZEVEDOFILHO2015}
 \abntrefinfo{Filho, Perestrelo e Molina-Palma}{FILHO; PERESTRELO;
   MOLINA-PALMA}{2015}
@@ -385,6 +392,17 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-009-9142-1}.}
 {PACHECO, P.~S. \emph{An Introduction to Parallel Programming}. Burlington,
   Massachusetts: Morgan Kaufmann, 2011.}
 
+\bibitem[Palsson et al. 2003]{PALSSON2003333}
+\abntrefinfo{Palsson et al.}{PALSSON et al.}{2003}
+{PALSSON, B. et al. The water injection process: A technical and economic
+  integrated approach.
+\emph{Chemical Engineering Research and Design}, v.~81, n.~3, p. 333 -- 341,
+  2003.
+ISSN 0263-8762.
+Oil and Natural Gas Production.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0263876203723168}.}
+
 \bibitem[Parashar et al. 2004]{parashar}
 \abntrefinfo{Parashar et al.}{PARASHAR et al.}{2004}
 {PARASHAR, M. et al. Application of grid-enabled technologies for solving
@@ -392,6 +410,16 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-009-9142-1}.}
   (Ed.). \emph{Computational Science - ICCS 2004}. Berlin, Heidelberg: Springer
   Berlin Heidelberg, 2004. p. 805--812.
 ISBN 978-3-540-24688-6.}
+
+\bibitem[Patacchini 2017]{PATACCHINI2017720}
+\abntrefinfo{Patacchini}{PATACCHINI}{2017}
+{PATACCHINI, L. Peripheral water injection efficiency for material balance
+  applications.
+\emph{Journal of Petroleum Science and Engineering}, v.~149, p. 720 -- 739,
+  2017.
+ISSN 0920-4105.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920410516307252}.}
 
 \bibitem[Peaceman 1977]{simres}
 \abntrefinfo{Peaceman}{PEACEMAN}{1977}
@@ -446,6 +474,12 @@ Dispon{\'\i}vel em:
   optimization.
 \emph{Journal of Energy Resources Technology}, v.~140, 2018.}
 
+\bibitem[Singh e Kiel 1982]{singh1982}
+\abntrefinfo{Singh e Kiel}{SINGH; KIEL}{1982}
+{SINGH, S.~P.; KIEL, O.~G. Waterflood design (pattern, rate, and timing). In:
+  \emph{SOCIETY OF PETROLEUM ENGINEERS}. Beijing, China: International
+  Petroleum Exhibition and Technical Symposium, 1982.}
+
 \bibitem[Sintef 2018]{site:mrst}
 \abntrefinfo{Sintef}{SINTEF}{2018}
 {SINTEF. \emph{MRST - MATLAB Reservoir Simulation Toolbox}. 2018.
@@ -465,6 +499,18 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10596-016-9610-3}.}
 {STAGS, H.~M.; HERBECK, E.~F. Reservoir simulation models an engineering
   overview.
 Society of Petroleum Engineers, Dec 1971.}
+
+\bibitem[Stephens 1960]{stephens1960}
+\abntrefinfo{Stephens}{STEPHENS}{1960}
+{STEPHENS, F. Peripheral and line-drive water-injection projects.
+\emph{Journal of Petroleum Technology}, Society of Petroleum Engineers, v.~12,
+  n.~12, p. 16--19, 1960.}
+
+\bibitem[Talash 1988]{talash1988}
+\abntrefinfo{Talash}{TALASH}{1988}
+{TALASH, A. An overview of waterflood surveillance and monitoring.
+\emph{Journal of Petroleum Technology}, Society of Petroleum Engineers, v.~40,
+  n.~12, p. 1539--1543, 1988.}
 
 \bibitem[Thomas 2009]{thomas1}
 \abntrefinfo{Thomas}{THOMAS}{2009a}
@@ -524,6 +570,12 @@ ISBN 978-0-470-58246-6.}
 \emph{Society of Petroleum Engineers Journal}, Society of Petroleum Engineers,
   v.~23, n.~5, p. 727--742, 1983.}
 
+\bibitem[Zakirov et al. 2012]{zakirov2012}
+\abntrefinfo{Zakirov et al.}{ZAKIROV et al.}{2012}
+{ZAKIROV, I.~S. et al. Water injection patterns optimization approach on
+  high-viscous oil in russkoye field. In:  \emph{SOCIETY OF PETROLEUM
+  ENGINEERS}. Calgary, Alberta, Canadá: SPE Heavy Oil Conference Canada, 2012.}
+
 \bibitem[Zandvliet et al. 2007]{ZANDVLIET2007186}
 \abntrefinfo{Zandvliet et al.}{ZANDVLIET et al.}{2007}
 {ZANDVLIET, M. et al. Bang-bang control and singular arcs in reservoir
@@ -541,6 +593,13 @@ Dispon{\'\i}vel em:
 ISSN 0098-1354.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S0098135413003864}.}
+
+\bibitem[Zhou, Hou e Li 2016]{zhou2016}
+\abntrefinfo{Zhou, Hou e Li}{ZHOU; HOU; LI}{2016}
+{ZHOU, K.; HOU, J.; LI, X. The effect of well patterns on surfactant/polymer
+  flooding.
+\emph{International Journal of Energy and Power Engineering}, Science
+  Publishing Group, v.~5, n.~6, p. 189--195, 2016.}
 
 \bibitem[{\v Z}i{\v z}lavsk{\'y} 2014]{ziz2014}
 \abntrefinfo{{\v Z}i{\v z}lavsk{\'y}}{{\v Z}I{\v Z}LAVSK{\'Y}}{2014}
