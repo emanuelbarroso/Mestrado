@@ -1,57 +1,57 @@
-\contentsline {theorem}{{Teorema}{2.3.3.{1}}{Lei de Darcy}}{26}{theorem.2.3.3.1}
-\contentsline {theorem}{{Teorema}{2.3.3.{2}}{Lei de Forchheimer}}{26}{theorem.2.3.3.2}
-\contentsline {theorem}{{Teorema}{2.3.3.{3}}{Lei de Fourier}}{26}{theorem.2.3.3.3}
-\contentsline {theorem}{{Teorema}{2.3.3.{4}}{Convec\c {c}\~{a}o}}{26}{theorem.2.3.3.4}
-\contentsline {definition}{{Definição}{2.3.3.{5}}{}}{26}{theorem.2.3.3.5}
-\contentsline {definition}{{Definição}{2.4.1.{1}}{}}{31}{theorem.2.4.1.1}
-\contentsline {definition}{{Definição}{2.4.1.{2}}{}}{31}{theorem.2.4.1.2}
-\contentsline {definition}{{Definição}{2.4.1.{3}}{}}{31}{theorem.2.4.1.3}
-\contentsline {definition}{{Definição}{2.4.1.{4}}{}}{32}{theorem.2.4.1.4}
-\contentsline {definition}{{Definição}{2.4.1.{5}}{}}{32}{theorem.2.4.1.5}
-\contentsline {definition}{{Definição}{2.4.1.{6}}{}}{32}{theorem.2.4.1.6}
-\contentsline {definition}{{Definição}{2.4.1.{7}}{}}{33}{theorem.2.4.1.7}
-\contentsline {definition}{{Definição}{2.4.1.{8}}{}}{33}{theorem.2.4.1.8}
-\contentsline {definition}{{Definição}{2.4.1.{9}}{}}{33}{theorem.2.4.1.9}
-\contentsline {definition}{{Definição}{2.4.1.{10}}{}}{34}{theorem.2.4.1.10}
-\contentsline {definition}{{Definição}{2.4.1.{11}}{}}{35}{theorem.2.4.1.11}
-\contentsline {definition}{{Definição}{2.4.2.{1}}{}}{35}{theorem.2.4.2.1}
-\contentsline {definition}{{Definição}{2.4.2.{2}}{}}{35}{theorem.2.4.2.2}
-\contentsline {definition}{{Definição}{2.4.3.{1}}{}}{36}{theorem.2.4.3.1}
-\contentsline {definition}{{Definição}{2.4.3.{2}}{}}{36}{theorem.2.4.3.2}
-\contentsline {definition}{{Definição}{2.4.3.{3}}{}}{36}{theorem.2.4.3.3}
-\contentsline {definition}{{Definição}{2.4.3.{4}}{}}{37}{theorem.2.4.3.4}
-\contentsline {definition}{{Definição}{2.4.3.{5}}{Nota\c {c}\~{a}o de Landau}}{37}{theorem.2.4.3.5}
-\contentsline {definition}{{Definição}{2.4.3.{6}}{}}{37}{theorem.2.4.3.6}
-\contentsline {definition}{{Definição}{2.4.3.{7}}{}}{37}{theorem.2.4.3.7}
-\contentsline {definition}{{Definição}{2.4.3.{8}}{}}{38}{theorem.2.4.3.8}
-\contentsline {definition}{{Definição}{2.4.3.{9}}{}}{38}{theorem.2.4.3.9}
-\contentsline {definition}{{Definição}{2.4.4.{1}}{}}{39}{theorem.2.4.4.1}
-\contentsline {definition}{{Definição}{2.4.4.{2}}{}}{39}{theorem.2.4.4.2}
-\contentsline {definition}{{Definição}{2.4.4.{3}}{}}{39}{theorem.2.4.4.3}
-\contentsline {definition}{{Definição}{2.4.4.{4}}{}}{39}{theorem.2.4.4.4}
-\contentsline {definition}{{Definição}{2.4.4.{5}}{}}{39}{theorem.2.4.4.5}
-\contentsline {definition}{{Definição}{2.4.4.{6}}{}}{39}{theorem.2.4.4.6}
-\contentsline {theorem}{{Teorema}{2.4.4.{7}}{Teorema de minimiza\c {c}\~{a}o convexa}}{40}{theorem.2.4.4.7}
-\contentsline {theorem}{{Teorema}{2.4.4.{8}}{}}{40}{theorem.2.4.4.8}
-\contentsline {theorem}{{Teorema}{2.4.4.{9}}{}}{40}{theorem.2.4.4.9}
-\contentsline {definition}{{Definição}{2.4.5.{1}}{}}{41}{theorem.2.4.5.1}
-\contentsline {theorem}{{Teorema}{2.4.5.{2}}{Teorema de Weierstrass}}{41}{theorem.2.4.5.2}
-\contentsline {theorem}{{Teorema}{2.4.5.{3}}{Condi\c {c}\~{a}o Necess\'{a}ria de Primeira Ordem}}{41}{theorem.2.4.5.3}
-\contentsline {corollary}{{Corolário}{2.4.5.{4}}{}}{41}{theorem.2.4.5.4}
-\contentsline {theorem}{{Teorema}{2.4.5.{5}}{Condi\c {c}\~{a}o Necess\'{a}ria de Segunda Ordem}}{41}{theorem.2.4.5.5}
-\contentsline {theorem}{{Teorema}{2.4.5.{6}}{Condi\c {c}\~{o}es Suficientes de Segunda Ordem}}{41}{theorem.2.4.5.6}
-\contentsline {definition}{{Definição}{2.4.5.{7}}{}}{42}{theorem.2.4.5.7}
-\contentsline {definition}{{Definição}{2.4.5.{8}}{}}{42}{theorem.2.4.5.8}
-\contentsline {definition}{{Definição}{2.4.5.{9}}{}}{42}{theorem.2.4.5.9}
-\contentsline {definition}{{Definição}{2.4.5.{10}}{}}{42}{theorem.2.4.5.10}
-\contentsline {theorem}{{Teorema}{2.4.5.{11}}{Condi\c {c}\~{o}es de Fritz-John}}{43}{theorem.2.4.5.11}
-\contentsline {theorem}{{Teorema}{2.4.5.{12}}{Condi\c {c}\~{o}es Suficientes de Primeira Ordem}}{43}{theorem.2.4.5.12}
-\contentsline {corollary}{{Corolário}{2.4.5.{13}}{Condi\c {c}\~{o}es de Karush-Kuhn-Tucker}}{43}{theorem.2.4.5.13}
-\contentsline {theorem}{{Teorema}{2.4.5.{14}}{}}{44}{theorem.2.4.5.14}
-\contentsline {corollary}{{Corolário}{2.4.5.{15}}{Restri\c {c}\~{o}es Lineares e C\^{o}ncavas}}{44}{theorem.2.4.5.15}
-\contentsline {theorem}{{Teorema}{2.4.5.{16}}{Mangasarian-Fromovitz}}{44}{theorem.2.4.5.16}
-\contentsline {corollary}{{Corolário}{2.4.5.{17}}{Slater}}{44}{theorem.2.4.5.17}
-\contentsline {theorem}{{Teorema}{2.4.5.{18}}{Condi\c {c}\~{o}es Necess\'{a}rias de Segunda Ordem}}{45}{theorem.2.4.5.18}
-\contentsline {theorem}{{Teorema}{2.4.5.{19}}{Condi\c {c}\~{o}es Suficientes de Segunda Ordem}}{45}{theorem.2.4.5.19}
-\contentsline {corollary}{{Corolário}{2.4.5.{20}}{}}{45}{theorem.2.4.5.20}
-\contentsline {definition}{{Definição}{3.4.0.{1}}{}}{60}{theorem.3.4.0.1}
+\contentsline {theorem}{{Teorema}{2.3.3.{1}}{Lei de Darcy}}{23}{theorem.2.3.3.1}
+\contentsline {theorem}{{Teorema}{2.3.3.{2}}{Lei de Forchheimer}}{23}{theorem.2.3.3.2}
+\contentsline {theorem}{{Teorema}{2.3.3.{3}}{Lei de Fourier}}{23}{theorem.2.3.3.3}
+\contentsline {theorem}{{Teorema}{2.3.3.{4}}{Convec\c {c}\~{a}o}}{23}{theorem.2.3.3.4}
+\contentsline {definition}{{Definição}{2.3.3.{5}}{}}{24}{theorem.2.3.3.5}
+\contentsline {definition}{{Definição}{2.4.1.{1}}{}}{29}{theorem.2.4.1.1}
+\contentsline {definition}{{Definição}{2.4.1.{2}}{}}{29}{theorem.2.4.1.2}
+\contentsline {definition}{{Definição}{2.4.1.{3}}{}}{29}{theorem.2.4.1.3}
+\contentsline {definition}{{Definição}{2.4.1.{4}}{}}{29}{theorem.2.4.1.4}
+\contentsline {definition}{{Definição}{2.4.1.{5}}{}}{29}{theorem.2.4.1.5}
+\contentsline {definition}{{Definição}{2.4.1.{6}}{}}{30}{theorem.2.4.1.6}
+\contentsline {definition}{{Definição}{2.4.1.{7}}{}}{30}{theorem.2.4.1.7}
+\contentsline {definition}{{Definição}{2.4.1.{8}}{}}{30}{theorem.2.4.1.8}
+\contentsline {definition}{{Definição}{2.4.1.{9}}{}}{31}{theorem.2.4.1.9}
+\contentsline {definition}{{Definição}{2.4.1.{10}}{}}{32}{theorem.2.4.1.10}
+\contentsline {definition}{{Definição}{2.4.1.{11}}{}}{32}{theorem.2.4.1.11}
+\contentsline {definition}{{Definição}{2.4.2.{1}}{}}{32}{theorem.2.4.2.1}
+\contentsline {definition}{{Definição}{2.4.2.{2}}{}}{33}{theorem.2.4.2.2}
+\contentsline {definition}{{Definição}{2.4.3.{1}}{}}{33}{theorem.2.4.3.1}
+\contentsline {definition}{{Definição}{2.4.3.{2}}{}}{33}{theorem.2.4.3.2}
+\contentsline {definition}{{Definição}{2.4.3.{3}}{}}{34}{theorem.2.4.3.3}
+\contentsline {definition}{{Definição}{2.4.3.{4}}{}}{34}{theorem.2.4.3.4}
+\contentsline {definition}{{Definição}{2.4.3.{5}}{Nota\c {c}\~{a}o de Landau}}{35}{theorem.2.4.3.5}
+\contentsline {definition}{{Definição}{2.4.3.{6}}{}}{35}{theorem.2.4.3.6}
+\contentsline {definition}{{Definição}{2.4.3.{7}}{}}{35}{theorem.2.4.3.7}
+\contentsline {definition}{{Definição}{2.4.3.{8}}{}}{35}{theorem.2.4.3.8}
+\contentsline {definition}{{Definição}{2.4.3.{9}}{}}{36}{theorem.2.4.3.9}
+\contentsline {definition}{{Definição}{2.4.4.{1}}{}}{36}{theorem.2.4.4.1}
+\contentsline {definition}{{Definição}{2.4.4.{2}}{}}{37}{theorem.2.4.4.2}
+\contentsline {definition}{{Definição}{2.4.4.{3}}{}}{37}{theorem.2.4.4.3}
+\contentsline {definition}{{Definição}{2.4.4.{4}}{}}{37}{theorem.2.4.4.4}
+\contentsline {definition}{{Definição}{2.4.4.{5}}{}}{37}{theorem.2.4.4.5}
+\contentsline {definition}{{Definição}{2.4.4.{6}}{}}{37}{theorem.2.4.4.6}
+\contentsline {theorem}{{Teorema}{2.4.4.{7}}{Teorema de minimiza\c {c}\~{a}o convexa}}{37}{theorem.2.4.4.7}
+\contentsline {theorem}{{Teorema}{2.4.4.{8}}{}}{37}{theorem.2.4.4.8}
+\contentsline {theorem}{{Teorema}{2.4.4.{9}}{}}{38}{theorem.2.4.4.9}
+\contentsline {definition}{{Definição}{2.4.5.{1}}{}}{38}{theorem.2.4.5.1}
+\contentsline {theorem}{{Teorema}{2.4.5.{2}}{Teorema de Weierstrass}}{38}{theorem.2.4.5.2}
+\contentsline {theorem}{{Teorema}{2.4.5.{3}}{Condi\c {c}\~{a}o Necess\'{a}ria de Primeira Ordem}}{39}{theorem.2.4.5.3}
+\contentsline {corollary}{{Corolário}{2.4.5.{4}}{}}{39}{theorem.2.4.5.4}
+\contentsline {theorem}{{Teorema}{2.4.5.{5}}{Condi\c {c}\~{a}o Necess\'{a}ria de Segunda Ordem}}{39}{theorem.2.4.5.5}
+\contentsline {theorem}{{Teorema}{2.4.5.{6}}{Condi\c {c}\~{o}es Suficientes de Segunda Ordem}}{39}{theorem.2.4.5.6}
+\contentsline {definition}{{Definição}{2.4.5.{7}}{}}{39}{theorem.2.4.5.7}
+\contentsline {definition}{{Definição}{2.4.5.{8}}{}}{40}{theorem.2.4.5.8}
+\contentsline {definition}{{Definição}{2.4.5.{9}}{}}{40}{theorem.2.4.5.9}
+\contentsline {definition}{{Definição}{2.4.5.{10}}{}}{40}{theorem.2.4.5.10}
+\contentsline {theorem}{{Teorema}{2.4.5.{11}}{Condi\c {c}\~{o}es de Fritz-John}}{40}{theorem.2.4.5.11}
+\contentsline {theorem}{{Teorema}{2.4.5.{12}}{Condi\c {c}\~{o}es Suficientes de Primeira Ordem}}{41}{theorem.2.4.5.12}
+\contentsline {corollary}{{Corolário}{2.4.5.{13}}{Condi\c {c}\~{o}es de Karush-Kuhn-Tucker}}{41}{theorem.2.4.5.13}
+\contentsline {theorem}{{Teorema}{2.4.5.{14}}{}}{41}{theorem.2.4.5.14}
+\contentsline {corollary}{{Corolário}{2.4.5.{15}}{Restri\c {c}\~{o}es Lineares e C\^{o}ncavas}}{41}{theorem.2.4.5.15}
+\contentsline {theorem}{{Teorema}{2.4.5.{16}}{Mangasarian-Fromovitz}}{42}{theorem.2.4.5.16}
+\contentsline {corollary}{{Corolário}{2.4.5.{17}}{Slater}}{42}{theorem.2.4.5.17}
+\contentsline {theorem}{{Teorema}{2.4.5.{18}}{Condi\c {c}\~{o}es Necess\'{a}rias de Segunda Ordem}}{42}{theorem.2.4.5.18}
+\contentsline {theorem}{{Teorema}{2.4.5.{19}}{Condi\c {c}\~{o}es Suficientes de Segunda Ordem}}{42}{theorem.2.4.5.19}
+\contentsline {corollary}{{Corolário}{2.4.5.{20}}{}}{43}{theorem.2.4.5.20}
+\contentsline {definition}{{Definição}{3.4.0.{1}}{}}{58}{theorem.3.4.0.1}

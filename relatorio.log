@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  19 OCT 2018 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  22 OCT 2018 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2416,7 +2416,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 49.
  [7]
-<figs/revisao/revisao_recmethods.png, id=714, 417.56pt x 456.70625pt>
+<figs/revisao/revisao_recmethods.png, id=686, 417.56pt x 456.70625pt>
 File: figs/revisao/revisao_recmethods.png Graphic file (type png)
 <use figs/revisao/revisao_recmethods.png>
 Package pdftex.def Info: figs/revisao/revisao_recmethods.png  used on input lin
@@ -2436,412 +2436,358 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 71.
  [9]
-<figs/revisao/revisao_injper.png, id=760, 460.72125pt x 424.58624pt>
-File: figs/revisao/revisao_injper.png Graphic file (type png)
-<use figs/revisao/revisao_injper.png>
-Package pdftex.def Info: figs/revisao/revisao_injper.png  used on input line 74
-.
-(pdftex.def)             Requested size: 278.61234pt x 256.75562pt.
-<figs/revisao/revisao_injtop.png, id=769, 385.44pt x 421.575pt>
-File: figs/revisao/revisao_injtop.png Graphic file (type png)
-<use figs/revisao/revisao_injtop.png>
-Package pdftex.def Info: figs/revisao/revisao_injtop.png  used on input line 84
-.
-(pdftex.def)             Requested size: 278.61234pt x 304.73024pt.
-<figs/revisao/revisao_injbas.png, id=774, 309.155pt x 255.95625pt>
-File: figs/revisao/revisao_injbas.png Graphic file (type png)
-<use figs/revisao/revisao_injbas.png>
-Package pdftex.def Info: figs/revisao/revisao_injbas.png  used on input line 91
-.
-(pdftex.def)             Requested size: 278.61234pt x 230.69046pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 100.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 100.
- [10 <./figs/revisao/revisao_injper.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 102.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 102.
- [11 <./figs/revisao/revisao_injtop.png> <./figs/revisao/revisao_injbas.png>]
-<figs/revisao/revisao_injld.png, id=796, 303.1325pt x 191.71625pt>
+<figs/revisao/revisao_injld.png, id=738, 303.1325pt x 191.71625pt>
 File: figs/revisao/revisao_injld.png Graphic file (type png)
 <use figs/revisao/revisao_injld.png>
-Package pdftex.def Info: figs/revisao/revisao_injld.png  used on input line 105
-.
+Package pdftex.def Info: figs/revisao/revisao_injld.png  used on input line 85.
+
 (pdftex.def)             Requested size: 278.61234pt x 176.21141pt.
-<figs/revisao/revisao_injle.png, id=801, 306.14375pt x 190.7125pt>
+<figs/revisao/revisao_injle.png, id=743, 306.14375pt x 190.7125pt>
 File: figs/revisao/revisao_injle.png Graphic file (type png)
 <use figs/revisao/revisao_injle.png>
-Package pdftex.def Info: figs/revisao/revisao_injle.png  used on input line 112
-.
+Package pdftex.def Info: figs/revisao/revisao_injle.png  used on input line 92.
+
 (pdftex.def)             Requested size: 278.61234pt x 173.57191pt.
-<figs/revisao/revisao_inj5s.png, id=809, 302.12875pt x 215.80624pt>
-File: figs/revisao/revisao_inj5s.png Graphic file (type png)
-<use figs/revisao/revisao_inj5s.png>
-Package pdftex.def Info: figs/revisao/revisao_inj5s.png  used on input line 126
-.
-(pdftex.def)             Requested size: 278.61234pt x 199.00845pt.
-<figs/revisao/revisao_inj7s.png, id=814, 314.17375pt x 192.72pt>
-File: figs/revisao/revisao_inj7s.png Graphic file (type png)
-<use figs/revisao/revisao_inj7s.png>
-Package pdftex.def Info: figs/revisao/revisao_inj7s.png  used on input line 133
-.
-(pdftex.def)             Requested size: 278.61234pt x 170.91446pt.
-<figs/revisao/revisao_inj9s.png, id=819, 303.1325pt x 209.78375pt>
-File: figs/revisao/revisao_inj9s.png Graphic file (type png)
-<use figs/revisao/revisao_inj9s.png>
-Package pdftex.def Info: figs/revisao/revisao_inj9s.png  used on input line 140
-.
-(pdftex.def)             Requested size: 278.61234pt x 192.8177pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
- [12 <./figs/revisao/revisao_injld.png> <./figs/revisao/revisao_injle.png>]
-
-LaTeX Warning: Text page 13 contains only floats.
-
+(babel)             in language  on input line 102.
+ [10]
+<figs/revisao/revisao_injmalhas.png, id=760, 619.31375pt x 503.8825pt>
+File: figs/revisao/revisao_injmalhas.png Graphic file (type png)
+<use figs/revisao/revisao_injmalhas.png>
+Package pdftex.def Info: figs/revisao/revisao_injmalhas.png  used on input line
+ 108.
+(pdftex.def)             Requested size: 325.043pt x 264.4654pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
-[13 <./figs/revisao/revisao_inj5s.png> <./figs/revisao/revisao_inj7s.png> <./fi
-gs/revisao/revisao_inj9s.png>]
-<figs/revisao/revisao_inj7i.png, id=840, 305.14pt x 187.70125pt>
-File: figs/revisao/revisao_inj7i.png Graphic file (type png)
-<use figs/revisao/revisao_inj7i.png>
-Package pdftex.def Info: figs/revisao/revisao_inj7i.png  used on input line 149
-.
-(pdftex.def)             Requested size: 278.61234pt x 171.3898pt.
-<figs/revisao/revisao_inj9i.png, id=845, 282.05376pt x 204.765pt>
-File: figs/revisao/revisao_inj9i.png Graphic file (type png)
-<use figs/revisao/revisao_inj9i.png>
-Package pdftex.def Info: figs/revisao/revisao_inj9i.png  used on input line 156
-.
-(pdftex.def)             Requested size: 278.61234pt x 202.28053pt.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 182.
+(babel)             in language  on input line 137.
+ [11 <./figs/revisao/revisao_injld.png> <./figs/revisao/revisao_injle.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 185.
- [14 <./figs/revisao/revisao_inj7i.png> <./figs/revisao/revisao_inj9i.png>]
+(babel)             in language  on input line 141.
+ [12 <./figs/revisao/revisao_injmalhas.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 159.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 197.
- [15]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 218.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 218.
- [16]
-<figs/revisao/revisao_redis.png, id=899, 363.3575pt x 302.12875pt>
+(babel)             in language  on input line 159.
+ [13]
+<figs/revisao/revisao_redis.png, id=809, 363.3575pt x 302.12875pt>
 File: figs/revisao/revisao_redis.png Graphic file (type png)
 <use figs/revisao/revisao_redis.png>
-Package pdftex.def Info: figs/revisao/revisao_redis.png  used on input line 227
+Package pdftex.def Info: figs/revisao/revisao_redis.png  used on input line 179
 .
 (pdftex.def)             Requested size: 278.61234pt x 231.67172pt.
-<figs/revisao/revisao_injcomp.png, id=905, 324.21124pt x 250.9375pt>
+<figs/revisao/revisao_injcomp.png, id=815, 324.21124pt x 250.9375pt>
 File: figs/revisao/revisao_injcomp.png Graphic file (type png)
 <use figs/revisao/revisao_injcomp.png>
-Package pdftex.def Info: figs/revisao/revisao_injcomp.png  used on input line 2
-35.
+Package pdftex.def Info: figs/revisao/revisao_injcomp.png  used on input line 1
+87.
 (pdftex.def)             Requested size: 278.61234pt x 215.65652pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 241.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 241.
- [17 <./figs/revisao/revisao_redis.png>]
+(babel)             in language  on input line 193.
+ [14]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 257.
-
-[18 <./figs/revisao/revisao_injcomp.png>]
-<figs/revisao/revisao_tst.png, id=932, 371.3875pt x 294.09875pt>
+(babel)             in language  on input line 198.
+ [15 <./figs/revisao/revisao_redis.png> <./figs/revisao/revisao_injcomp.png>]
+<figs/revisao/revisao_tst.png, id=847, 371.3875pt x 294.09875pt>
 File: figs/revisao/revisao_tst.png Graphic file (type png)
 <use figs/revisao/revisao_tst.png>
-Package pdftex.def Info: figs/revisao/revisao_tst.png  used on input line 263.
+Package pdftex.def Info: figs/revisao/revisao_tst.png  used on input line 215.
 (pdftex.def)             Requested size: 278.61234pt x 220.63634pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
- [19 <./figs/revisao/revisao_tst.png>]
+(babel)             in language  on input line 225.
+ [16]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 233.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 286.
-[20]) (./secRevisao_Simulacao.tex
+(babel)             in language  on input line 233.
+
+[17 <./figs/revisao/revisao_tst.png>]) (./secRevisao_Simulacao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 6.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 8.
- [21]
-<figs/revisao/revisao_simuesq.png, id=990, 490.83376pt x 235.88126pt>
+(babel)             in language  on input line 6.
+ [18]
+<figs/revisao/revisao_simuesq.png, id=905, 490.83376pt x 235.88126pt>
 File: figs/revisao/revisao_simuesq.png Graphic file (type png)
 <use figs/revisao/revisao_simuesq.png>
 Package pdftex.def Info: figs/revisao/revisao_simuesq.png  used on input line 1
 3.
 (pdftex.def)             Requested size: 348.26189pt x 167.36888pt.
-<figs/revisao/revisao_simuex.png, id=995, 816.04875pt x 643.40375pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 16.
+
+[19]
+<figs/revisao/revisao_simuex.png, id=916, 816.04875pt x 643.40375pt>
 File: figs/revisao/revisao_simuex.png Graphic file (type png)
 <use figs/revisao/revisao_simuex.png>
 Package pdftex.def Info: figs/revisao/revisao_simuex.png  used on input line 19
 .
 (pdftex.def)             Requested size: 348.26189pt x 274.58672pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
- [22 <./figs/revisao/revisao_simuesq.png>]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 27.
- [23 <./figs/revisao/revisao_simuex.png>]
+(babel)             in language  on input line 25.
+ [20 <./figs/revisao/revisao_simuesq.png> <./figs/revisao/revisao_simuex.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 32.
+ [21]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 40.
- [24]
+(babel)             in language  on input line 65.
+ [22]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 69.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 73.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 73.
- [25]
+
 Overfull \hbox (16.72435pt too wide) in paragraph at lines 78--79
 []\T1/ptm/m/it/10.95 Também co-nhe-cida como lei do fluxo ``tur-bu-lento'' ou n
 ão-Darcyano,
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 103.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 103.
+[23]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 105.
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
-[26]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 131.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 137.
- [27]
-<figs/revisao/revisao_DIM.png, id=1094, 365.365pt x 455.7025pt>
+(babel)             in language  on input line 136.
+ [24]
+<figs/revisao/revisao_DIM.png, id=1009, 365.365pt x 455.7025pt>
 File: figs/revisao/revisao_DIM.png Graphic file (type png)
 <use figs/revisao/revisao_DIM.png>
 Package pdftex.def Info: figs/revisao/revisao_DIM.png  used on input line 144.
 (pdftex.def)             Requested size: 278.61234pt x 347.51262pt.
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 149.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 149.
+ [25]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 150.
-<figs/revisao/revisao_simsec1.png, id=1104, 455.45157pt x 349.305pt>
+<figs/revisao/revisao_simsec1.png, id=1028, 455.45157pt x 349.305pt>
 File: figs/revisao/revisao_simsec1.png Graphic file (type png)
 <use figs/revisao/revisao_simsec1.png>
 Package pdftex.def Info: figs/revisao/revisao_simsec1.png  used on input line 1
 56.
 (pdftex.def)             Requested size: 348.26189pt x 267.10019pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 159.
- [28]
-<figs/revisao/revisao_simsec3.png, id=1127, 259.7203pt x 186.6975pt>
+(babel)             in language  on input line 164.
+ [26 <./figs/revisao/revisao_DIM.png>]
+<figs/revisao/revisao_simsec3.png, id=1048, 259.7203pt x 186.6975pt>
 File: figs/revisao/revisao_simsec3.png Graphic file (type png)
 <use figs/revisao/revisao_simsec3.png>
 Package pdftex.def Info: figs/revisao/revisao_simsec3.png  used on input line 1
 68.
 (pdftex.def)             Requested size: 232.17459pt x 166.89522pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
- [29 <./figs/revisao/revisao_DIM.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 173.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 173.
- [30 <./figs/revisao/revisao_simsec1.png> <./figs/revisao/revisao_simsec3.png>]
-<figs/revisao/revisao_simsec2.png, id=1158, 511.15968pt x 218.31563pt>
+(babel)             in language  on input line 172.
+ [27 <./figs/revisao/revisao_simsec1.png>]
+<figs/revisao/revisao_simsec2.png, id=1071, 511.15968pt x 218.31563pt>
 File: figs/revisao/revisao_simsec2.png Graphic file (type png)
 <use figs/revisao/revisao_simsec2.png>
 Package pdftex.def Info: figs/revisao/revisao_simsec2.png  used on input line 1
 80.
 (pdftex.def)             Requested size: 348.26189pt x 148.74246pt.
-)
-(./secRevisao_Otimizacao.tex
+) (./secRevisao_Otimizacao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 20.
- [31 <./figs/revisao/revisao_simsec2.png>]
+(babel)             in language  on input line 9.
+ [28 <./figs/revisao/revisao_simsec3.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 63.
- [32]
+(babel)             in language  on input line 45.
+ [29 <./figs/revisao/revisao_simsec2.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 99.
-
-[33]
+(babel)             in language  on input line 84.
+ [30]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
- [34]
+(babel)             in language  on input line 126.
+ [31]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
- [35]
+(babel)             in language  on input line 177.
+ [32]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 193.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
- [36]
+(babel)             in language  on input line 207.
+ [33]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 246.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 267.
- [37]
+(babel)             in language  on input line 246.
+ [34]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 290.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
- [38]
+(babel)             in language  on input line 290.
+
+[35]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 306.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 349.
- [39]
+(babel)             in language  on input line 317.
+ [36]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 364.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 364.
+ [37]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 375.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 401.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 378.
- [40]
+(babel)             in language  on input line 401.
+ [38]
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
 put line 410.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 434.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 434.
+(babel)             in language  on input line 451.
+ [39]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 498.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 498.
+ [40]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 544.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 544.
  [41]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 475.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 475.
- [42]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 524.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 524.
- [43]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 572.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 572.
- [44]
 Overfull \hbox (4.75464pt too wide) in paragraph at lines 585--586
 []\T1/ptm/m/it/10.95 Seja $[]$ um mi-ni-mi-za-dor lo-cal do pro-blema
  []
 
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 596.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 596.
+[42]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 613.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 615.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 615.
-[45]
+(babel)             in language  on input line 621.
+ [43]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 645.
+(babel)             in language  on input line 663.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 645.
+(babel)             in language  on input line 663.
+ [44]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 688.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 688.
+ [45]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 708.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 708.
  [46]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 672.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 672.
- [47]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 701.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 701.
- [48]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 712.
+) (./secRevisao_Aplicacoes.tex
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 718.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 718.
- [49]) (./secRevisao_Aplicacoes.tex
+(babel)             in language  on input line 1.
+ [47]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 4.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 4.
- [50]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 13.
-<figs/revisao/revisao_asheim1.png, id=1538, 303.1325pt x 453.695pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+ [48]
+<figs/revisao/revisao_asheim1.png, id=1460, 303.1325pt x 453.695pt>
 File: figs/revisao/revisao_asheim1.png Graphic file (type png)
 <use figs/revisao/revisao_asheim1.png>
 Package pdftex.def Info: figs/revisao/revisao_asheim1.png  used on input line 1
 8.
 (pdftex.def)             Requested size: 232.17459pt x 347.49783pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 21.
- [51]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
- [52 <./figs/revisao/revisao_asheim1.png>]
+(babel)             in language  on input line 23.
+ [49 <./figs/revisao/revisao_asheim1.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
- [53]))
+(babel)             in language  on input line 35.
+ [50]))
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 289.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 289.
+ [51]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 289.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 289.
- [54]
+ [52]
 \openout2 = `cap_Metodologia.aux'.
 
  (./cap_Metodologia.tex
@@ -2858,7 +2804,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
-[55
+[53
 
 
 
@@ -2869,18 +2815,18 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
- [56]
+ [54]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 34.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
-<figs/metodologia/metodo_egg.png, id=1716, 226.2051pt x 166.221pt>
+<figs/metodologia/metodo_egg.png, id=1636, 226.2051pt x 166.221pt>
 File: figs/metodologia/metodo_egg.png Graphic file (type png)
 <use figs/metodologia/metodo_egg.png>
 Package pdftex.def Info: figs/metodologia/metodo_egg.png  used on input line 39
 .
 (pdftex.def)             Requested size: 348.26189pt x 255.93036pt.
-<figs/metodologia/metodo_eggtop.png, id=1721, 421.575pt x 316.18124pt>
+<figs/metodologia/metodo_eggtop.png, id=1641, 421.575pt x 316.18124pt>
 File: figs/metodologia/metodo_eggtop.png Graphic file (type png)
 <use figs/metodologia/metodo_eggtop.png>
 Package pdftex.def Info: figs/metodologia/metodo_eggtop.png  used on input line
@@ -2892,16 +2838,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
- [57 <./figs/metodologia/metodo_egg.png (PNG copy)>]
+ [55 <./figs/metodologia/metodo_egg.png (PNG copy)>]
 
-LaTeX Warning: Text page 58 contains only floats.
+LaTeX Warning: Text page 56 contains only floats.
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 85.
-[58 <./figs/metodologia/metodo_eggtop.png (PNG copy)>]
-<figs/metodologia/metodo_saigup.png, id=1747, 467.49657pt x 327.47343pt>
+[56 <./figs/metodologia/metodo_eggtop.png (PNG copy)>]
+<figs/metodologia/metodo_saigup.png, id=1667, 467.49657pt x 327.47343pt>
 File: figs/metodologia/metodo_saigup.png Graphic file (type png)
 <use figs/metodologia/metodo_saigup.png>
 Package pdftex.def Info: figs/metodologia/metodo_saigup.png  used on input line
@@ -2913,12 +2859,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 105.
- [59 <./figs/metodologia/metodo_saigup.png>]
+ [57 <./figs/metodologia/metodo_saigup.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 131.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 131.
- [60]
+ [58]
 Missing character: There is no ° in font cmr9!
 Missing character: There is no ° in font cmr9!
 Package babel Info: Redefining portuges shorthand "|
@@ -2929,21 +2875,21 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 145.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 145.
- [61]
+ [59]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 167.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 171.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 171.
- [62]
-<figs/metodologia/metodo_buscaE.png, id=1820, 311.1625pt x 295.1025pt>
+ [60]
+<figs/metodologia/metodo_buscaE.png, id=1740, 311.1625pt x 295.1025pt>
 File: figs/metodologia/metodo_buscaE.png Graphic file (type png)
 <use figs/metodologia/metodo_buscaE.png>
 Package pdftex.def Info: figs/metodologia/metodo_buscaE.png  used on input line
  177.
 (pdftex.def)             Requested size: 208.9557pt x 198.17242pt.
-<figs/metodologia/metodo_buscaA.png, id=1821, 317.185pt x 240.9pt>
+<figs/metodologia/metodo_buscaA.png, id=1741, 317.185pt x 240.9pt>
 File: figs/metodologia/metodo_buscaA.png Graphic file (type png)
 <use figs/metodologia/metodo_buscaA.png>
 Package pdftex.def Info: figs/metodologia/metodo_buscaA.png  used on input line
@@ -2953,20 +2899,20 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 194.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 194.
- [63 <./figs/metodologia/metodo_buscaE.png> <./figs/metodologia/metodo_buscaA.p
+ [61 <./figs/metodologia/metodo_buscaE.png> <./figs/metodologia/metodo_buscaA.p
 ng>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 220.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 220.
- [64]
+ [62]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 226.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 241.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 241.
- [65]
+ [63]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 251.
 )
@@ -2974,12 +2920,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
- [66]
+ [64]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
- [67]
+ [65]
 \openout2 = `cap_Desenvolvimento.aux'.
 
 
@@ -2995,12 +2941,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
-[68
+[66
 
 
 
 ]
-<figs/resultadosEgg/imgsim1/EGG_SmartControl.png, id=1909, 421.575pt x 316.0608
+<figs/resultadosEgg/imgsim1/EGG_SmartControl.png, id=1829, 421.575pt x 316.0608
 pt>
 File: figs/resultadosEgg/imgsim1/EGG_SmartControl.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim1/EGG_SmartControl.png>
@@ -3011,15 +2957,15 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
- [69]
-<figs/resultadosEgg/imgsim1/EGG_CumulativeNPV.png, id=1917, 421.575pt x 316.060
+ [67]
+<figs/resultadosEgg/imgsim1/EGG_CumulativeNPV.png, id=1836, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim1/EGG_CumulativeNPV.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim1/EGG_CumulativeNPV.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_CumulativeNPV.png  used
  on input line 69.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim1/EGG_CumulativeNPVZoom.png, id=1918, 421.575pt x 316
+<figs/resultadosEgg/imgsim1/EGG_CumulativeNPVZoom.png, id=1837, 421.575pt x 316
 .0608pt>
 File: figs/resultadosEgg/imgsim1/EGG_CumulativeNPVZoom.png Graphic file (type p
 ng)
@@ -3027,7 +2973,7 @@ ng)
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_CumulativeNPVZoom.png  
 used on input line 75.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim2/EGG_SmartControl.png, id=1922, 421.575pt x 316.0608
+<figs/resultadosEgg/imgsim2/EGG_SmartControl.png, id=1841, 421.575pt x 316.0608
 pt>
 File: figs/resultadosEgg/imgsim2/EGG_SmartControl.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim2/EGG_SmartControl.png>
@@ -3038,17 +2984,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
- [70 <./figs/resultadosEgg/imgsim1/EGG_SmartControl.png (PNG copy)> <./figs/res
+ [68 <./figs/resultadosEgg/imgsim1/EGG_SmartControl.png (PNG copy)> <./figs/res
 ultadosEgg/imgsim1/EGG_CumulativeNPV.png (PNG copy)> <./figs/resultadosEgg/imgs
 im1/EGG_CumulativeNPVZoom.png (PNG copy)>]
-<figs/resultadosEgg/imgsim2/EGG_CumulativeNPV.png, id=1929, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim2/EGG_CumulativeNPV.png, id=1848, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim2/EGG_CumulativeNPV.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim2/EGG_CumulativeNPV.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_CumulativeNPV.png  used
  on input line 93.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim2/EGG_CumulativeNPVZoom.png, id=1930, 421.575pt x 316
+<figs/resultadosEgg/imgsim2/EGG_CumulativeNPVZoom.png, id=1849, 421.575pt x 316
 .0608pt>
 File: figs/resultadosEgg/imgsim2/EGG_CumulativeNPVZoom.png Graphic file (type p
 ng)
@@ -3056,7 +3002,7 @@ ng)
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_CumulativeNPVZoom.png  
 used on input line 99.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim3/EGG_SmartControl.png, id=1934, 421.575pt x 316.0608
+<figs/resultadosEgg/imgsim3/EGG_SmartControl.png, id=1853, 421.575pt x 316.0608
 pt>
 File: figs/resultadosEgg/imgsim3/EGG_SmartControl.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim3/EGG_SmartControl.png>
@@ -3067,17 +3013,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
- [71 <./figs/resultadosEgg/imgsim2/EGG_SmartControl.png (PNG copy)> <./figs/res
+ [69 <./figs/resultadosEgg/imgsim2/EGG_SmartControl.png (PNG copy)> <./figs/res
 ultadosEgg/imgsim2/EGG_CumulativeNPV.png (PNG copy)> <./figs/resultadosEgg/imgs
 im2/EGG_CumulativeNPVZoom.png (PNG copy)>]
-<figs/resultadosEgg/imgsim3/EGG_CumulativeNPV.png, id=1941, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim3/EGG_CumulativeNPV.png, id=1861, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim3/EGG_CumulativeNPV.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim3/EGG_CumulativeNPV.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_CumulativeNPV.png  used
  on input line 117.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim3/EGG_CumulativeNPVZoom.png, id=1942, 421.575pt x 316
+<figs/resultadosEgg/imgsim3/EGG_CumulativeNPVZoom.png, id=1862, 421.575pt x 316
 .0608pt>
 File: figs/resultadosEgg/imgsim3/EGG_CumulativeNPVZoom.png Graphic file (type p
 ng)
@@ -3085,7 +3031,7 @@ ng)
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_CumulativeNPVZoom.png  
 used on input line 123.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim4/EGG_SmartControl.png, id=1946, 421.575pt x 316.0608
+<figs/resultadosEgg/imgsim4/EGG_SmartControl.png, id=1866, 421.575pt x 316.0608
 pt>
 File: figs/resultadosEgg/imgsim4/EGG_SmartControl.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim4/EGG_SmartControl.png>
@@ -3096,17 +3042,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
- [72 <./figs/resultadosEgg/imgsim3/EGG_SmartControl.png (PNG copy)> <./figs/res
+ [70 <./figs/resultadosEgg/imgsim3/EGG_SmartControl.png (PNG copy)> <./figs/res
 ultadosEgg/imgsim3/EGG_CumulativeNPV.png (PNG copy)> <./figs/resultadosEgg/imgs
 im3/EGG_CumulativeNPVZoom.png (PNG copy)>]
-<figs/resultadosEgg/imgsim4/EGG_CumulativeNPV.png, id=1953, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim4/EGG_CumulativeNPV.png, id=1874, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim4/EGG_CumulativeNPV.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim4/EGG_CumulativeNPV.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_CumulativeNPV.png  used
  on input line 141.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim4/EGG_CumulativeNPVZoom.png, id=1954, 421.575pt x 316
+<figs/resultadosEgg/imgsim4/EGG_CumulativeNPVZoom.png, id=1875, 421.575pt x 316
 .0608pt>
 File: figs/resultadosEgg/imgsim4/EGG_CumulativeNPVZoom.png Graphic file (type p
 ng)
@@ -3114,7 +3060,7 @@ ng)
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_CumulativeNPVZoom.png  
 used on input line 147.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosEgg/imgsim5/EGG_SmartControl.png, id=1958, 575.14874pt x 476.53
+<figs/resultadosEgg/imgsim5/EGG_SmartControl.png, id=1879, 575.14874pt x 476.53
 032pt>
 File: figs/resultadosEgg/imgsim5/EGG_SmartControl.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim5/EGG_SmartControl.png>
@@ -3125,17 +3071,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 161.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 161.
- [73 <./figs/resultadosEgg/imgsim4/EGG_SmartControl.png (PNG copy)> <./figs/res
+ [71 <./figs/resultadosEgg/imgsim4/EGG_SmartControl.png (PNG copy)> <./figs/res
 ultadosEgg/imgsim4/EGG_CumulativeNPV.png (PNG copy)> <./figs/resultadosEgg/imgs
 im4/EGG_CumulativeNPVZoom.png (PNG copy)>]
-<figs/resultadosEgg/imgsim5/EGG_CumulativeNPV.png, id=1965, 595.47469pt x 504.3
+<figs/resultadosEgg/imgsim5/EGG_CumulativeNPV.png, id=1886, 595.47469pt x 504.3
 8437pt>
 File: figs/resultadosEgg/imgsim5/EGG_CumulativeNPV.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim5/EGG_CumulativeNPV.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_CumulativeNPV.png  used
  on input line 165.
 (pdftex.def)             Requested size: 208.9557pt x 176.99124pt.
-<figs/resultadosEgg/imgsim5/EGG_CumulativeNPVZoom.png, id=1966, 591.71063pt x 5
+<figs/resultadosEgg/imgsim5/EGG_CumulativeNPVZoom.png, id=1887, 591.71063pt x 5
 06.6428pt>
 File: figs/resultadosEgg/imgsim5/EGG_CumulativeNPVZoom.png Graphic file (type p
 ng)
@@ -3149,10 +3095,10 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 182.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 182.
- [74 <./figs/resultadosEgg/imgsim5/EGG_SmartControl.png> <./figs/resultadosEgg/
+ [72 <./figs/resultadosEgg/imgsim5/EGG_SmartControl.png> <./figs/resultadosEgg/
 imgsim5/EGG_CumulativeNPV.png> <./figs/resultadosEgg/imgsim5/EGG_CumulativeNPVZ
 oom.png>]
-<figs/resultadosLSAIGUP/LSAIGUP_SmartControl.png, id=1978, 511.9125pt x 297.360
+<figs/resultadosLSAIGUP/LSAIGUP_SmartControl.png, id=1899, 511.9125pt x 297.360
 93pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_SmartControl.png Graphic file (type png)
 <use figs/resultadosLSAIGUP/LSAIGUP_SmartControl.png>
@@ -3163,15 +3109,15 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 209.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 209.
- [75]
-<figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPV.png, id=1984, 421.575pt x 316.060
+ [73]
+<figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPV.png, id=1904, 421.575pt x 316.060
 8pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPV.png Graphic file (type png)
 <use figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPV.png>
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPV.png  used
  on input line 213.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPVZoom.png, id=1985, 421.575pt x 316
+<figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPVZoom.png, id=1905, 421.575pt x 316
 .0608pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPVZoom.png Graphic file (type p
 ng)
@@ -3179,7 +3125,7 @@ ng)
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_CumulativeNPVZoom.png  
 used on input line 219.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosSSAIGUP/SSAIGUP_SmartControl.png, id=1989, 421.575pt x 316.0608
+<figs/resultadosSSAIGUP/SSAIGUP_SmartControl.png, id=1909, 421.575pt x 316.0608
 pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_SmartControl.png Graphic file (type png)
 <use figs/resultadosSSAIGUP/SSAIGUP_SmartControl.png>
@@ -3190,17 +3136,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 233.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 233.
- [76 <./figs/resultadosLSAIGUP/LSAIGUP_SmartControl.png (PNG copy)> <./figs/res
+ [74 <./figs/resultadosLSAIGUP/LSAIGUP_SmartControl.png (PNG copy)> <./figs/res
 ultadosLSAIGUP/LSAIGUP_CumulativeNPV.png (PNG copy)> <./figs/resultadosLSAIGUP/
 LSAIGUP_CumulativeNPVZoom.png (PNG copy)>]
-<figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPV.png, id=1996, 421.575pt x 316.060
+<figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPV.png, id=1916, 421.575pt x 316.060
 8pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPV.png Graphic file (type png)
 <use figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPV.png>
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPV.png  used
  on input line 237.
 (pdftex.def)             Requested size: 208.9557pt x 156.66035pt.
-<figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPVZoom.png, id=1997, 421.575pt x 316
+<figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPVZoom.png, id=1917, 421.575pt x 316
 .0608pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_CumulativeNPVZoom.png Graphic file (type p
 ng)
@@ -3215,24 +3161,24 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 254.
 
-[77 <./figs/resultadosSSAIGUP/SSAIGUP_SmartControl.png (PNG copy)> <./figs/resu
+[75 <./figs/resultadosSSAIGUP/SSAIGUP_SmartControl.png (PNG copy)> <./figs/resu
 ltadosSSAIGUP/SSAIGUP_CumulativeNPV.png (PNG copy)> <./figs/resultadosSSAIGUP/S
 SAIGUP_CumulativeNPVZoom.png (PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 280.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 280.
+ [76]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 303.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 303.
+ [77])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 295.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 295.
  [78]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 303.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 303.
- [79])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 295.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 295.
- [80]
 \openout2 = `cap_Conclusoes.aux'.
 
  (./cap_Conclusoes.tex
@@ -3247,7 +3193,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
-[81
+[79
 
 
 
@@ -3256,7 +3202,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 301.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 301.
- [82]
+ [80]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 309.
  (./relatorio.bbl
@@ -3264,7 +3210,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 102.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 102.
- [83
+ [81
 
 
 ]
@@ -3272,27 +3218,27 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 220.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 220.
+ [82]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 331.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 331.
+ [83]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 452.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 452.
  [84]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 331.
+(babel)             in language  on input line 561.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 331.
- [85]
+(babel)             in language  on input line 561.
+ [85])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 452.
+(babel)             in language  on input line 315.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 452.
+(babel)             in language  on input line 315.
  [86]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 561.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 561.
- [87])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 315.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 315.
- [88]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 315.
 \c@noApendice=\count350
@@ -3300,7 +3246,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 326.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 326.
- [89
+ [87
 
 ]
 \openout2 = `cap_ApendiceEgg.aux'.
@@ -3312,35 +3258,35 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
-<figs/resultadosEgg/imgsim1/EGG_OilWell1_Zoom.png, id=2125, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim1/EGG_OilWell1_Zoom.png, id=2046, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim1/EGG_OilWell1_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim1/EGG_OilWell1_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_OilWell1_Zoom.png  used
  on input line 7.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim1/EGG_OilWell2_Zoom.png, id=2126, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim1/EGG_OilWell2_Zoom.png, id=2047, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim1/EGG_OilWell2_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim1/EGG_OilWell2_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_OilWell2_Zoom.png  used
  on input line 13.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim1/EGG_OilWell3_Zoom.png, id=2127, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim1/EGG_OilWell3_Zoom.png, id=2048, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim1/EGG_OilWell3_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim1/EGG_OilWell3_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_OilWell3_Zoom.png  used
  on input line 19.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim1/EGG_OilWell4_Zoom.png, id=2128, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim1/EGG_OilWell4_Zoom.png, id=2049, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim1/EGG_OilWell4_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim1/EGG_OilWell4_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_OilWell4_Zoom.png  used
  on input line 25.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim1/EGG_WaterWell1_Zoom.png, id=2129, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim1/EGG_WaterWell1_Zoom.png, id=2050, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim1/EGG_WaterWell1_Zoom.png Graphic file (type png
 )
@@ -3348,7 +3294,7 @@ File: figs/resultadosEgg/imgsim1/EGG_WaterWell1_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_WaterWell1_Zoom.png  us
 ed on input line 36.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim1/EGG_WaterWell2_Zoom.png, id=2130, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim1/EGG_WaterWell2_Zoom.png, id=2051, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim1/EGG_WaterWell2_Zoom.png Graphic file (type png
 )
@@ -3356,7 +3302,7 @@ File: figs/resultadosEgg/imgsim1/EGG_WaterWell2_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_WaterWell2_Zoom.png  us
 ed on input line 42.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim1/EGG_WaterWell3_Zoom.png, id=2131, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim1/EGG_WaterWell3_Zoom.png, id=2052, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim1/EGG_WaterWell3_Zoom.png Graphic file (type png
 )
@@ -3364,7 +3310,7 @@ File: figs/resultadosEgg/imgsim1/EGG_WaterWell3_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim1/EGG_WaterWell3_Zoom.png  us
 ed on input line 48.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim1/EGG_WaterWell4_Zoom.png, id=2132, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim1/EGG_WaterWell4_Zoom.png, id=2053, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim1/EGG_WaterWell4_Zoom.png Graphic file (type png
 )
@@ -3376,7 +3322,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
-[90
+[88
 
 
  <./figs/resultadosEgg/imgsim1/EGG_OilWell1_Zoom.png (PNG copy)> <./figs/result
@@ -3389,35 +3335,35 @@ gg/imgsim1/EGG_WaterWell4_Zoom.png (PNG copy)>]
 APENDICE B.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
-<figs/resultadosEgg/imgsim2/EGG_OilWell1_Zoom.png, id=2147, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim2/EGG_OilWell1_Zoom.png, id=2067, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim2/EGG_OilWell1_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim2/EGG_OilWell1_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_OilWell1_Zoom.png  used
  on input line 68.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim2/EGG_OilWell2_Zoom.png, id=2148, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim2/EGG_OilWell2_Zoom.png, id=2068, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim2/EGG_OilWell2_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim2/EGG_OilWell2_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_OilWell2_Zoom.png  used
  on input line 74.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim2/EGG_OilWell3_Zoom.png, id=2149, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim2/EGG_OilWell3_Zoom.png, id=2069, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim2/EGG_OilWell3_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim2/EGG_OilWell3_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_OilWell3_Zoom.png  used
  on input line 80.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim2/EGG_OilWell4_Zoom.png, id=2150, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim2/EGG_OilWell4_Zoom.png, id=2070, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim2/EGG_OilWell4_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim2/EGG_OilWell4_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_OilWell4_Zoom.png  used
  on input line 86.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim2/EGG_WaterWell1_Zoom.png, id=2151, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim2/EGG_WaterWell1_Zoom.png, id=2071, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim2/EGG_WaterWell1_Zoom.png Graphic file (type png
 )
@@ -3425,7 +3371,7 @@ File: figs/resultadosEgg/imgsim2/EGG_WaterWell1_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_WaterWell1_Zoom.png  us
 ed on input line 97.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim2/EGG_WaterWell2_Zoom.png, id=2152, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim2/EGG_WaterWell2_Zoom.png, id=2072, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim2/EGG_WaterWell2_Zoom.png Graphic file (type png
 )
@@ -3433,7 +3379,7 @@ File: figs/resultadosEgg/imgsim2/EGG_WaterWell2_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_WaterWell2_Zoom.png  us
 ed on input line 103.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim2/EGG_WaterWell3_Zoom.png, id=2153, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim2/EGG_WaterWell3_Zoom.png, id=2073, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim2/EGG_WaterWell3_Zoom.png Graphic file (type png
 )
@@ -3441,7 +3387,7 @@ File: figs/resultadosEgg/imgsim2/EGG_WaterWell3_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim2/EGG_WaterWell3_Zoom.png  us
 ed on input line 109.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim2/EGG_WaterWell4_Zoom.png, id=2154, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim2/EGG_WaterWell4_Zoom.png, id=2074, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim2/EGG_WaterWell4_Zoom.png Graphic file (type png
 )
@@ -3453,7 +3399,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 124.
-[91
+[89
 
  <./figs/resultadosEgg/imgsim2/EGG_OilWell1_Zoom.png (PNG copy)> <./figs/result
 adosEgg/imgsim2/EGG_OilWell2_Zoom.png (PNG copy)> <./figs/resultadosEgg/imgsim2
@@ -3465,35 +3411,35 @@ gg/imgsim2/EGG_WaterWell4_Zoom.png (PNG copy)>]
 APENDICE C.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 124.
-<figs/resultadosEgg/imgsim3/EGG_OilWell1_Zoom.png, id=2168, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim3/EGG_OilWell1_Zoom.png, id=2088, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim3/EGG_OilWell1_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim3/EGG_OilWell1_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_OilWell1_Zoom.png  used
  on input line 129.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim3/EGG_OilWell2_Zoom.png, id=2169, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim3/EGG_OilWell2_Zoom.png, id=2089, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim3/EGG_OilWell2_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim3/EGG_OilWell2_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_OilWell2_Zoom.png  used
  on input line 135.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim3/EGG_OilWell3_Zoom.png, id=2170, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim3/EGG_OilWell3_Zoom.png, id=2090, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim3/EGG_OilWell3_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim3/EGG_OilWell3_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_OilWell3_Zoom.png  used
  on input line 141.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim3/EGG_OilWell4_Zoom.png, id=2171, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim3/EGG_OilWell4_Zoom.png, id=2091, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim3/EGG_OilWell4_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim3/EGG_OilWell4_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_OilWell4_Zoom.png  used
  on input line 147.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim3/EGG_WaterWell1_Zoom.png, id=2172, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim3/EGG_WaterWell1_Zoom.png, id=2092, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim3/EGG_WaterWell1_Zoom.png Graphic file (type png
 )
@@ -3501,7 +3447,7 @@ File: figs/resultadosEgg/imgsim3/EGG_WaterWell1_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_WaterWell1_Zoom.png  us
 ed on input line 158.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim3/EGG_WaterWell2_Zoom.png, id=2173, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim3/EGG_WaterWell2_Zoom.png, id=2093, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim3/EGG_WaterWell2_Zoom.png Graphic file (type png
 )
@@ -3509,7 +3455,7 @@ File: figs/resultadosEgg/imgsim3/EGG_WaterWell2_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_WaterWell2_Zoom.png  us
 ed on input line 164.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim3/EGG_WaterWell3_Zoom.png, id=2174, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim3/EGG_WaterWell3_Zoom.png, id=2094, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim3/EGG_WaterWell3_Zoom.png Graphic file (type png
 )
@@ -3517,7 +3463,7 @@ File: figs/resultadosEgg/imgsim3/EGG_WaterWell3_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim3/EGG_WaterWell3_Zoom.png  us
 ed on input line 170.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim3/EGG_WaterWell4_Zoom.png, id=2175, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim3/EGG_WaterWell4_Zoom.png, id=2095, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim3/EGG_WaterWell4_Zoom.png Graphic file (type png
 )
@@ -3529,7 +3475,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 185.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 185.
-[92
+[90
 
  <./figs/resultadosEgg/imgsim3/EGG_OilWell1_Zoom.png (PNG copy)> <./figs/result
 adosEgg/imgsim3/EGG_OilWell2_Zoom.png (PNG copy)> <./figs/resultadosEgg/imgsim3
@@ -3541,35 +3487,35 @@ gg/imgsim3/EGG_WaterWell4_Zoom.png (PNG copy)>]
 APENDICE D.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 185.
-<figs/resultadosEgg/imgsim4/EGG_OilWell1_Zoom.png, id=2189, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim4/EGG_OilWell1_Zoom.png, id=2109, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim4/EGG_OilWell1_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim4/EGG_OilWell1_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_OilWell1_Zoom.png  used
  on input line 190.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim4/EGG_OilWell2_Zoom.png, id=2190, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim4/EGG_OilWell2_Zoom.png, id=2110, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim4/EGG_OilWell2_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim4/EGG_OilWell2_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_OilWell2_Zoom.png  used
  on input line 196.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim4/EGG_OilWell3_Zoom.png, id=2191, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim4/EGG_OilWell3_Zoom.png, id=2111, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim4/EGG_OilWell3_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim4/EGG_OilWell3_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_OilWell3_Zoom.png  used
  on input line 202.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim4/EGG_OilWell4_Zoom.png, id=2192, 421.575pt x 316.060
+<figs/resultadosEgg/imgsim4/EGG_OilWell4_Zoom.png, id=2112, 421.575pt x 316.060
 8pt>
 File: figs/resultadosEgg/imgsim4/EGG_OilWell4_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim4/EGG_OilWell4_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_OilWell4_Zoom.png  used
  on input line 208.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim4/EGG_WaterWell1_Zoom.png, id=2193, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim4/EGG_WaterWell1_Zoom.png, id=2113, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim4/EGG_WaterWell1_Zoom.png Graphic file (type png
 )
@@ -3577,7 +3523,7 @@ File: figs/resultadosEgg/imgsim4/EGG_WaterWell1_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_WaterWell1_Zoom.png  us
 ed on input line 219.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim4/EGG_WaterWell2_Zoom.png, id=2194, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim4/EGG_WaterWell2_Zoom.png, id=2114, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim4/EGG_WaterWell2_Zoom.png Graphic file (type png
 )
@@ -3585,7 +3531,7 @@ File: figs/resultadosEgg/imgsim4/EGG_WaterWell2_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_WaterWell2_Zoom.png  us
 ed on input line 225.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim4/EGG_WaterWell3_Zoom.png, id=2195, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim4/EGG_WaterWell3_Zoom.png, id=2115, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim4/EGG_WaterWell3_Zoom.png Graphic file (type png
 )
@@ -3593,7 +3539,7 @@ File: figs/resultadosEgg/imgsim4/EGG_WaterWell3_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim4/EGG_WaterWell3_Zoom.png  us
 ed on input line 231.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosEgg/imgsim4/EGG_WaterWell4_Zoom.png, id=2196, 421.575pt x 316.0
+<figs/resultadosEgg/imgsim4/EGG_WaterWell4_Zoom.png, id=2116, 421.575pt x 316.0
 608pt>
 File: figs/resultadosEgg/imgsim4/EGG_WaterWell4_Zoom.png Graphic file (type png
 )
@@ -3605,7 +3551,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 246.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 246.
-[93
+[91
 
  <./figs/resultadosEgg/imgsim4/EGG_OilWell1_Zoom.png (PNG copy)> <./figs/result
 adosEgg/imgsim4/EGG_OilWell2_Zoom.png (PNG copy)> <./figs/resultadosEgg/imgsim4
@@ -3617,35 +3563,35 @@ gg/imgsim4/EGG_WaterWell4_Zoom.png (PNG copy)>]
 APENDICE E.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 246.
-<figs/resultadosEgg/imgsim5/EGG_OilWell1_Zoom.png, id=2211, 421.575pt x 316.181
+<figs/resultadosEgg/imgsim5/EGG_OilWell1_Zoom.png, id=2131, 421.575pt x 316.181
 24pt>
 File: figs/resultadosEgg/imgsim5/EGG_OilWell1_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim5/EGG_OilWell1_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_OilWell1_Zoom.png  used
  on input line 251.
 (pdftex.def)             Requested size: 139.30617pt x 104.48004pt.
-<figs/resultadosEgg/imgsim5/EGG_OilWell2_Zoom.png, id=2212, 429.2838pt x 338.70
+<figs/resultadosEgg/imgsim5/EGG_OilWell2_Zoom.png, id=2132, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosEgg/imgsim5/EGG_OilWell2_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim5/EGG_OilWell2_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_OilWell2_Zoom.png  used
  on input line 257.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosEgg/imgsim5/EGG_OilWell3_Zoom.png, id=2213, 429.2838pt x 338.70
+<figs/resultadosEgg/imgsim5/EGG_OilWell3_Zoom.png, id=2133, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosEgg/imgsim5/EGG_OilWell3_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim5/EGG_OilWell3_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_OilWell3_Zoom.png  used
  on input line 263.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosEgg/imgsim5/EGG_OilWell4_Zoom.png, id=2214, 429.2838pt x 338.70
+<figs/resultadosEgg/imgsim5/EGG_OilWell4_Zoom.png, id=2134, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosEgg/imgsim5/EGG_OilWell4_Zoom.png Graphic file (type png)
 <use figs/resultadosEgg/imgsim5/EGG_OilWell4_Zoom.png>
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_OilWell4_Zoom.png  used
  on input line 269.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosEgg/imgsim5/EGG_WaterWell1_Zoom.png, id=2215, 600.74437pt x 508
+<figs/resultadosEgg/imgsim5/EGG_WaterWell1_Zoom.png, id=2135, 600.74437pt x 508
 .14844pt>
 File: figs/resultadosEgg/imgsim5/EGG_WaterWell1_Zoom.png Graphic file (type png
 )
@@ -3653,7 +3599,7 @@ File: figs/resultadosEgg/imgsim5/EGG_WaterWell1_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_WaterWell1_Zoom.png  us
 ed on input line 280.
 (pdftex.def)             Requested size: 139.30617pt x 117.83313pt.
-<figs/resultadosEgg/imgsim5/EGG_WaterWell2_Zoom.png, id=2216, 429.2838pt x 338.
+<figs/resultadosEgg/imgsim5/EGG_WaterWell2_Zoom.png, id=2136, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosEgg/imgsim5/EGG_WaterWell2_Zoom.png Graphic file (type png
 )
@@ -3661,7 +3607,7 @@ File: figs/resultadosEgg/imgsim5/EGG_WaterWell2_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_WaterWell2_Zoom.png  us
 ed on input line 286.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosEgg/imgsim5/EGG_WaterWell3_Zoom.png, id=2217, 429.2838pt x 338.
+<figs/resultadosEgg/imgsim5/EGG_WaterWell3_Zoom.png, id=2137, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosEgg/imgsim5/EGG_WaterWell3_Zoom.png Graphic file (type png
 )
@@ -3669,7 +3615,7 @@ File: figs/resultadosEgg/imgsim5/EGG_WaterWell3_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosEgg/imgsim5/EGG_WaterWell3_Zoom.png  us
 ed on input line 292.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosEgg/imgsim5/EGG_WaterWell4_Zoom.png, id=2218, 429.2838pt x 338.
+<figs/resultadosEgg/imgsim5/EGG_WaterWell4_Zoom.png, id=2138, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosEgg/imgsim5/EGG_WaterWell4_Zoom.png Graphic file (type png
 )
@@ -3682,7 +3628,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 326.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 326.
- [94
+ [92
 
  <./figs/resultadosEgg/imgsim5/EGG_OilWell1_Zoom.png (PNG copy)> <./figs/result
 adosEgg/imgsim5/EGG_OilWell2_Zoom.png (PNG copy)> <./figs/resultadosEgg/imgsim5
@@ -3697,42 +3643,42 @@ EGG_WaterWell4_Zoom.png (PNG copy)>]
 APENDICE F.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-<figs/resultadosSSAIGUP/SSAIGUP_OilWell1_Zoom.png, id=2231, 421.575pt x 316.060
+<figs/resultadosSSAIGUP/SSAIGUP_OilWell1_Zoom.png, id=2151, 421.575pt x 316.060
 8pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_OilWell1_Zoom.png Graphic file (type png)
 <use figs/resultadosSSAIGUP/SSAIGUP_OilWell1_Zoom.png>
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_OilWell1_Zoom.png  used
  on input line 5.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosSSAIGUP/SSAIGUP_OilWell2_Zoom.png, id=2232, 429.2838pt x 338.70
+<figs/resultadosSSAIGUP/SSAIGUP_OilWell2_Zoom.png, id=2152, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_OilWell2_Zoom.png Graphic file (type png)
 <use figs/resultadosSSAIGUP/SSAIGUP_OilWell2_Zoom.png>
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_OilWell2_Zoom.png  used
  on input line 11.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosSSAIGUP/SSAIGUP_OilWell3_Zoom.png, id=2233, 429.2838pt x 338.70
+<figs/resultadosSSAIGUP/SSAIGUP_OilWell3_Zoom.png, id=2153, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_OilWell3_Zoom.png Graphic file (type png)
 <use figs/resultadosSSAIGUP/SSAIGUP_OilWell3_Zoom.png>
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_OilWell3_Zoom.png  used
  on input line 17.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosSSAIGUP/SSAIGUP_OilWell4_Zoom.png, id=2234, 429.2838pt x 338.70
+<figs/resultadosSSAIGUP/SSAIGUP_OilWell4_Zoom.png, id=2154, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_OilWell4_Zoom.png Graphic file (type png)
 <use figs/resultadosSSAIGUP/SSAIGUP_OilWell4_Zoom.png>
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_OilWell4_Zoom.png  used
  on input line 23.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosSSAIGUP/SSAIGUP_OilWell5_Zoom.png, id=2235, 429.2838pt x 338.70
+<figs/resultadosSSAIGUP/SSAIGUP_OilWell5_Zoom.png, id=2155, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_OilWell5_Zoom.png Graphic file (type png)
 <use figs/resultadosSSAIGUP/SSAIGUP_OilWell5_Zoom.png>
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_OilWell5_Zoom.png  used
  on input line 29.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosSSAIGUP/SSAIGUP_WaterWell1_Zoom.png, id=2236, 429.2838pt x 338.
+<figs/resultadosSSAIGUP/SSAIGUP_WaterWell1_Zoom.png, id=2156, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_WaterWell1_Zoom.png Graphic file (type png
 )
@@ -3745,7 +3691,7 @@ File: figs/resultadosSSAIGUP/SSAIGUP_OilWell2_Zoom.png Graphic file (type png)
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_OilWell2_Zoom.png  used
  on input line 46.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosSSAIGUP/SSAIGUP_WaterWell3_Zoom.png, id=2237, 429.2838pt x 338.
+<figs/resultadosSSAIGUP/SSAIGUP_WaterWell3_Zoom.png, id=2157, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_WaterWell3_Zoom.png Graphic file (type png
 )
@@ -3753,7 +3699,7 @@ File: figs/resultadosSSAIGUP/SSAIGUP_WaterWell3_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_WaterWell3_Zoom.png  us
 ed on input line 52.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosSSAIGUP/SSAIGUP_WaterWell4_Zoom.png, id=2238, 429.2838pt x 338.
+<figs/resultadosSSAIGUP/SSAIGUP_WaterWell4_Zoom.png, id=2158, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_WaterWell4_Zoom.png Graphic file (type png
 )
@@ -3761,7 +3707,7 @@ File: figs/resultadosSSAIGUP/SSAIGUP_WaterWell4_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosSSAIGUP/SSAIGUP_WaterWell4_Zoom.png  us
 ed on input line 58.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosSSAIGUP/SSAIGUP_WaterWell5_Zoom.png, id=2239, 429.2838pt x 338.
+<figs/resultadosSSAIGUP/SSAIGUP_WaterWell5_Zoom.png, id=2159, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosSSAIGUP/SSAIGUP_WaterWell5_Zoom.png Graphic file (type png
 )
@@ -3773,7 +3719,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 74.
-[95
+[93
 
 
 
@@ -3788,42 +3734,42 @@ WaterWell5_Zoom.png (PNG copy)>]
 APENDICE G.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 74.
-<figs/resultadosLSAIGUP/LSAIGUP_OilWell1_Zoom.png, id=2256, 421.575pt x 316.060
+<figs/resultadosLSAIGUP/LSAIGUP_OilWell1_Zoom.png, id=2177, 421.575pt x 316.060
 8pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_OilWell1_Zoom.png Graphic file (type png)
 <use figs/resultadosLSAIGUP/LSAIGUP_OilWell1_Zoom.png>
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_OilWell1_Zoom.png  used
  on input line 79.
 (pdftex.def)             Requested size: 139.30617pt x 104.44023pt.
-<figs/resultadosLSAIGUP/LSAIGUP_OilWell2_Zoom.png, id=2257, 429.2838pt x 338.70
+<figs/resultadosLSAIGUP/LSAIGUP_OilWell2_Zoom.png, id=2178, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_OilWell2_Zoom.png Graphic file (type png)
 <use figs/resultadosLSAIGUP/LSAIGUP_OilWell2_Zoom.png>
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_OilWell2_Zoom.png  used
  on input line 85.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosLSAIGUP/LSAIGUP_OilWell3_Zoom.png, id=2258, 429.2838pt x 338.70
+<figs/resultadosLSAIGUP/LSAIGUP_OilWell3_Zoom.png, id=2179, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_OilWell3_Zoom.png Graphic file (type png)
 <use figs/resultadosLSAIGUP/LSAIGUP_OilWell3_Zoom.png>
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_OilWell3_Zoom.png  used
  on input line 91.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosLSAIGUP/LSAIGUP_OilWell4_Zoom.png, id=2259, 429.2838pt x 338.70
+<figs/resultadosLSAIGUP/LSAIGUP_OilWell4_Zoom.png, id=2180, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_OilWell4_Zoom.png Graphic file (type png)
 <use figs/resultadosLSAIGUP/LSAIGUP_OilWell4_Zoom.png>
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_OilWell4_Zoom.png  used
  on input line 97.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosLSAIGUP/LSAIGUP_OilWell5_Zoom.png, id=2260, 429.2838pt x 338.70
+<figs/resultadosLSAIGUP/LSAIGUP_OilWell5_Zoom.png, id=2181, 429.2838pt x 338.70
 54pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_OilWell5_Zoom.png Graphic file (type png)
 <use figs/resultadosLSAIGUP/LSAIGUP_OilWell5_Zoom.png>
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_OilWell5_Zoom.png  used
  on input line 103.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosLSAIGUP/LSAIGUP_WaterWell1_Zoom.png, id=2261, 429.2838pt x 338.
+<figs/resultadosLSAIGUP/LSAIGUP_WaterWell1_Zoom.png, id=2182, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_WaterWell1_Zoom.png Graphic file (type png
 )
@@ -3836,7 +3782,7 @@ File: figs/resultadosLSAIGUP/LSAIGUP_OilWell2_Zoom.png Graphic file (type png)
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_OilWell2_Zoom.png  used
  on input line 120.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosLSAIGUP/LSAIGUP_WaterWell3_Zoom.png, id=2262, 429.2838pt x 338.
+<figs/resultadosLSAIGUP/LSAIGUP_WaterWell3_Zoom.png, id=2183, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_WaterWell3_Zoom.png Graphic file (type png
 )
@@ -3844,7 +3790,7 @@ File: figs/resultadosLSAIGUP/LSAIGUP_WaterWell3_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_WaterWell3_Zoom.png  us
 ed on input line 126.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosLSAIGUP/LSAIGUP_WaterWell4_Zoom.png, id=2263, 429.2838pt x 338.
+<figs/resultadosLSAIGUP/LSAIGUP_WaterWell4_Zoom.png, id=2184, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_WaterWell4_Zoom.png Graphic file (type png
 )
@@ -3852,7 +3798,7 @@ File: figs/resultadosLSAIGUP/LSAIGUP_WaterWell4_Zoom.png Graphic file (type png
 Package pdftex.def Info: figs/resultadosLSAIGUP/LSAIGUP_WaterWell4_Zoom.png  us
 ed on input line 132.
 (pdftex.def)             Requested size: 139.30617pt x 109.91257pt.
-<figs/resultadosLSAIGUP/LSAIGUP_WaterWell5_Zoom.png, id=2264, 429.2838pt x 338.
+<figs/resultadosLSAIGUP/LSAIGUP_WaterWell5_Zoom.png, id=2185, 429.2838pt x 338.
 7054pt>
 File: figs/resultadosLSAIGUP/LSAIGUP_WaterWell5_Zoom.png Graphic file (type png
 )
@@ -3865,7 +3811,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 329.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 329.
- [96
+ [94
 
  <./figs/resultadosLSAIGUP/LSAIGUP_OilWell1_Zoom.png (PNG copy)> <./figs/result
 adosLSAIGUP/LSAIGUP_OilWell2_Zoom.png (PNG copy)> <./figs/resultadosLSAIGUP/LSA
@@ -3895,10 +3841,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 365.
  ) 
 Here is how much of TeX's memory you used:
- 26163 strings out of 492982
- 480215 string characters out of 6134895
- 552616 words of memory out of 5000000
- 28519 multiletter control sequences out of 15000+600000
+ 26112 strings out of 492982
+ 478929 string characters out of 6134895
+ 552126 words of memory out of 5000000
+ 28484 multiletter control sequences out of 15000+600000
  621455 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,14n,45p,10400b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4144,10 +4090,10 @@ etic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on relatorio.pdf (112 pages, 4041221 bytes).
+Output written on relatorio.pdf (110 pages, 3830429 bytes).
 PDF statistics:
- 2494 PDF objects out of 2984 (max. 8388607)
- 2174 compressed objects within 22 object streams
- 680 named destinations out of 1000 (max. 500000)
- 1051 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2413 PDF objects out of 2487 (max. 8388607)
+ 2115 compressed objects within 22 object streams
+ 671 named destinations out of 1000 (max. 500000)
+ 1016 words of extra memory for PDF output out of 10000 (max. 10000000)
 
