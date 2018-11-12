@@ -35,43 +35,43 @@ Warning--campo year vazio ou faltando em EOR:Intro
 +---------------------------------------------------------+
 You've used 84 entries,
             6714 wiz_defined-function locations,
-            1753 strings with 26065 characters,
-and the built_in function-call counts, 102203 in all, are:
-= -- 10487
-> -- 2594
-< -- 1833
-+ -- 2702
-- -- 776
-* -- 6906
-:= -- 12857
+            1756 strings with 26388 characters,
+and the built_in function-call counts, 105091 in all, are:
+= -- 10934
+> -- 2610
+< -- 1977
++ -- 2853
+- -- 781
+* -- 7073
+:= -- 13162
 add.period$ -- 353
 call.type$ -- 84
-change.case$ -- 901
-chr.to.int$ -- 220
+change.case$ -- 905
+chr.to.int$ -- 218
 cite$ -- 84
-duplicate$ -- 8414
-empty$ -- 5144
-format.name$ -- 3733
-if$ -- 21875
-int.to.chr$ -- 2
+duplicate$ -- 8840
+empty$ -- 5150
+format.name$ -- 3757
+if$ -- 22346
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1497
-newline$ -- 469
+missing$ -- 1494
+newline$ -- 468
 num.names$ -- 411
-pop$ -- 1853
+pop$ -- 1868
 preamble$ -- 1
-purify$ -- 338
+purify$ -- 339
 quote$ -- 0
-skip$ -- 8618
+skip$ -- 9044
 stack$ -- 1
-substring$ -- 4438
-swap$ -- 3417
-text.length$ -- 148
+substring$ -- 4583
+swap$ -- 3556
+text.length$ -- 149
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
+type$ -- 25
 warning$ -- 1
-while$ -- 620
+while$ -- 621
 width$ -- 0
 write$ -- 1402
 (There was 1 warning)

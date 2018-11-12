@@ -153,43 +153,6 @@ Seja $\bar{\mathbf{v}} \in \left[ -\infty,+\infty \right)$ definido por
 neste caso, $\bar{\mathbf{v}}$ \'{e} denominado \textit{valor \'{o}timo} do problema \eqref{basicProb}.
 \end{definition} 
 
-\subsection{Diferenciabilidade de Fun\c{c}\~{o}es Escalares}
-
-A maioria dos algoritmos de otimiza\c{c}\~{a}o e conceitos associados empregam conceitos de diferencia\c{c}\~{a}o de fun\c{c}\~{o}es. Esses conceitos aparecem principalmente no estudo de condi\c{c}\~{o}es de otimalidade, visto que a an\'{a}lise das derivadas de uma fun\c{c}\~{a}o em um ponto pode, por exemplo, confirmar ou n\~{a}o sua natureza como minimizador (ou maximizador) de uma fun\c{c}\~{a}o.
-
-Inicialmente, ser\~{a}o apresentados conceitos de continuidade e diferencia\c{c}\~{a}o b\'{a}sicos para uma fun\c{c}\~{a}o escalar (monovari\'{a}vel), isto \'{e}, $f: D \to \mathbb{R},~D \subset \mathbb{R}$.
-
-\begin{definition}\footnote{Ver \cite[p. 120]{thomas1}.} \label {scalarCont} 
-Uma fun\c{c}\~{a}o escalar $f(x)$ \'{e} considerada cont\'{i}nua em um ponto $c \in \mathbb{R}$ se:
-\begin{enumerate}[label=(\alph*)]
-\item $f$ \'{e} definida em $c$ ($\exists f(c)$);
-\item $\exists \lim_{x \to c} f(x)$;
-\item $\lim_{x \to c} f(x) = f(c)$.
-\end{enumerate}
-\end{definition}
-
-Diz-se que $f(x)$ \'{e} cont\'{i}nua se ela satisfaz as propriedades da Defini\c{c}\~{a}o \ref{scalarCont} em todos os pontos de seu dom\'{i}nio. Caso ela seja con\'{i}nua em intervalos separados do seu dom\'{i}nio, diz-se que $f(x)$ \'{e} \textit{cont\'{i}nua por partes}.
-
-\begin{definition}\footnote{\textit{Ibid.}, p. 145}
-Dizemos que a \textit{derivada} de $f(x)$ escalar em rela\c{c}\~{a}o a $x$ \'{e} equivalente ao limite
-\begin{equation}
-\frac{d}{dx}f(x) \equiv \frac{df}{dx} \equiv f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h},
-\end{equation}
-desde que tal limite exista.
-\end{definition}
-
-Caso $f$ possua derivada no ponto $x$, diz-se que $f$ \'{e} \textit{diferenci\'{a}vel} em $x$; se $f$ possui derivada em todos os pontos de seu dom\'{i}nio, diz-se simplesmente que $f$ \'{e} diferenci\'{a}vel.
-
-Vale ressaltar que a derivada possui algumas propriedades elementares, mostradas a seguir (ser\'{a} utilizada simplesmente a nota\c{c}\~{a}o $f'$ como redu\c{c}\~{a}o de $f'(x)$):
-\begin{enumerate}[label=(\alph*)]
-\item $(f \pm g)' = f' \pm g'$;
-\item $(fg)' = fg' + f'g$;
-\item $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$;
-\item \textit{(Regra da Cadeia)} $(f \circ g)' \equiv f'(g) = f'(g)g' \equiv (f' \circ g)g'$ \footnote{Uma prova dessa regra se encontra em \cite[p. 246]{thomas1}.}
-\end{enumerate}
-
-Em cursos introdut\'{o}rios de c\'{a}lculo, geralmente s\~{a}o apresentados conceitos relativos a testes de sinais de derivadas de uma fun\c{c}\~{a}o $f(x)$ qualquer de maneira a se encontrar pontos especiais, os \textit{pontos cr\'{i}ticos} ou \textit{estacion\'{a}ros} e sua natureza. Ser\'{a} visto nas Se\c{c}\~{o}es seguintes que esse estudo no fundo \'{e} uma aplica\c{c}\~{a}o espec\'{i}fica das condi\c{c}\~{o}es de otimalidade em problemas sem restri\c{c}\~{a}o; a seguir, os conceitos de continuidade e diferencia\c{c}\~{a}o ser\~{a}o extendidos de forma a abranger fun\c{c}\~{o}es de v\'{a}rias vari\'{a}veis e tamb\'{e}m fun\c{c}\~{o}es multiobjetivo, ou campos vetoriais.
-
 \subsection{Diferenciabilidade de Fun\c{c}\~{o}es Multivari\'{a}veis e Campos Vetoriais}
 
 Antes de se proceder \`{a} an\'{a}lise de fun\c{c}\~{o}es que possuem dom\'{i}nio ou contradom\'{i}nio (ou ambos) multidimensionais, ser\'{a} feita uma diferencia\c{c}\~{a}o conceitual entre fun\c{c}\~{o}es multivari\'{a}veis e campos vetoriais (fun\c{c}\~{o}es multiobjetivo):

@@ -62,40 +62,14 @@ Como a Equa\c{c}\~{a}o \eqref{consU} deve valer para qualquer tamanho de $\Omega
 \end{equation}
 No caso da modelagem de fluxo em reservat\'{o}rio, a vari\'{a}vel $u$ pode ser, por exemplo, a massa de uma dada fase (\'{a}gua, \'{o}leo ou g\'{a}s), a massa molecular das subst\^{a}ncias ou a energia t\'{e}rmica \cite{heimsund2005}.
 
-Al\'{e}m das leis b\'{a}sicas da f\'{i}sica, faz-se necess\'{a}rio o uso de v\'{a}rias leis, dependendo do simulador, que governam o comportamento dos fluidos envolvidos e a propriedade do reservat\'{o}rio estudado, apresentadas nas subse\c{c}\~{o}es a seguir\footnote{Os teoremas apresentados se encontram em \cite[pp. 520-522]{engres}}. Combinado-se as equa\c{c}\~{o}es correspondentes \`{a}s leis b\'{a}sicas, obt\'{e}m-se uma equa\c{c}\~{a}o diferencial parcial que rege o comportamento das vari\'{a}veis dependentes em fun\c{c}\~{a}o das vari\'{a}veis independentes e dos par\^{a}metros do sistema. Como normalmente a equa\c{c}\~{a}o obtida \'{e} n\~{a}o-linear, ela \'{e}, consequentemente, \'{e} resolvida por m\'{e}todos n\'{u}mericos; da\'{i} a nomenclatura \textit{simula\c{c}\~{a}o num\'{e}rica de reservat\'{o}rios}. 
-
-\subsubsection{Fen\^{o}menos de Transporte}
+Al\'{e}m das leis b\'{a}sicas da f\'{i}sica, faz-se necess\'{a}rio o uso de v\'{a}rias leis, dependendo do simulador, que governam o comportamento dos fluidos envolvidos e a propriedade do reservat\'{o}rio estudado, apresentadas nas subse\c{c}\~{o}es a seguir\footnote{Os teoremas apresentados se encontram em \cite[pp. 520-522]{engres}}. Combinado-se as equa\c{c}\~{o}es correspondentes \`{a}s leis b\'{a}sicas, obt\'{e}m-se uma equa\c{c}\~{a}o diferencial parcial que rege o comportamento das vari\'{a}veis dependentes em fun\c{c}\~{a}o das vari\'{a}veis independentes e dos par\^{a}metros do sistema. Como normalmente a equa\c{c}\~{a}o obtida \'{e} n\~{a}o-linear, ela \'{e}, consequentemente, \'{e} resolvida por m\'{e}todos n\'{u}mericos; da\'{i} a nomenclatura \textit{simula\c{c}\~{a}o num\'{e}rica de reservat\'{o}rios}. A principal lei considerada no estudo de reservat\'{o}rios \'{e} apresentada a seguir. 
 
 \begin{theorem}[Lei de Darcy]
-Na Lei de Darcy, ou lei do fluxo ``laminar'' ou Darcyano, a velocidade do fluxo viscoso de um fluido em meio poroso \'{e} dada por
+Na Lei de Darcy, ou lei do fluxo ``laminar'' ou Darcyano --- a in\'{e}rcia do fluido \'{e} desconsiderada (n\'{u}mero de Reynolds muito pr\'{o}ximo de zero) ---, a velocidade do fluxo viscoso de um fluido em meio poroso \'{e} dada por
 \begin{equation}
 	v_s = -\frac{k_s}{\mu} \frac{\partial\Phi}{\partial s},
 \end{equation}
 onde $k$ \'{e} a permeabilidade efetiva do meio ao fluido considerado, $\mu$ \'{e} a viscosidade do fluido, $\Phi$ \'{e} o potencial de fluxo e $s$ \'{e} a trajet\'{o}ria de fluxo.
-\end{theorem}
-
-\begin{theorem}[Lei de Forchheimer]
-Tamb\'{e}m conhecida como lei do fluxo ``turbulento'' ou n\~{a}o-Darcyano, \'{e} utilizada para fluxos turbulentos, notadamente de g\'{a}s; o gradiente de press\~{a}o \'{e} dado por
-\begin{equation}
-	-\frac{dp}{ds} = \frac{\mu}{k_s}v_s - \beta\rho v_s^2,
-\end{equation}
-onde $\rho$ \'{e} a massa espec\'{i}fica do fluido e $\beta$ \'{e} o coeficiente de resist\^{e}ncia inercial ou de fluxo n\~{a}o-Darcyano. 
-\end{theorem}
-
-\begin{theorem}[Lei de Fourier]
-Durante um fen\^{o}meno de transporte de calor por condu\c{c}\~{a}o, o fluxo de calor \'{e} dado por
-\begin{equation}
-	q_s = -k'\frac{\partial T}{\partial s},
-\end{equation}
-em que $k'$ \'{e} a condutividade t\'{e}rmica do meio e $T$ \'{e} a temperatura.
-\end{theorem}
-
-\begin{theorem}[Convec\c{c}\~{a}o]
-O fluxo de calor no caso de tranporte por convec\c{c}\~{a}o \'{e} dado por
-\begin{equation}
-	q_s = c_p v_s (T - T_0),
-\end{equation}
-onde $c_p$ \'{e} a capacidade calor\'{i}fica do fluido \`{a} press\~{a}o constante, $v$ a velocidade do fluido e $T_0$ uma temperatura de refer\^{e}ncia.
 \end{theorem}
 
 \subsubsection{Equa\c{c}\~{o}es de Estado}
@@ -162,13 +136,8 @@ As etapas normalmente seguidas durante a simula\c{c}\~{a}o num\'{e}rica de um re
 
 \begin{enumerate}
 \item \textbf{Coleta e prepara\c{c}\~{a}o dos dados:} \'{e} a fase de armazenamento e interpreta\c{c}\~{a}o de todos os dados cab\'{i}veis ao problema, sejam eles geol\'{o}gicos, propriedades da rocha e dos fluidos, entre outros. Quanto maiores a quantidade e a qualidade desses dados, mais confi\'{a}vel ser\'{a} a simula\c{c}\~{a}o. Breitenbach destaca que dados adicionais podem ser necess\'{a}rios considerando-se a dificuldade do problema de mec\^{a}nica dos fluidos e os objetivos de estudo, dependentes de qual processo do reservat\'{o}rio est\'{a} sendo modelado \cite{breitenbach1991}.
-\item \textbf{Prepara\c{c}\~{a}o do modelo num\'{e}rico:} Ocorre logo ap\'{o}s a tomada dos dados. Inicialmente, \'{e} feito o \textit{lan\c{c}amento do} grid \textit{ou malha}, onde \'{e} constru\'{i}da uma malha para se transpor as informa\c{c}\~{o}es necess\'{a}rias para o modelo. Logo, \'{e} feita a divis\~{a}o do reservat\'{o}rio em v\'{a}rias c\'{e}lulas, cada uma funcionando como um reservat\'{o}rio menor, conforme mostra a Figura \ref{fig:revisao_simsec3}. Breitenbach ressalta que combina\c{c}\~{o}es de modelos muitas vezes s\~{a}o selecionadas para se estudar, por exemplo, posicionamento de po\c{c}os, fen\^{o}menos de cone, inje\c{c}\~{a}o de fluidos, vaz\~{o}es de produ\c{c}\~{a}o, etc., e que o engenheiro deve utilizar a dimens\~{a}o da malha e os modelos corretos para resolver o problema desejado com as restri\c{c}\~{o}es de custo, tempo e acur\'{a}cia consideradas \cite{breitenbach1991}.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.5\textwidth]{figs/revisao/revisao_simsec3}
-	\caption{Malha utilizada na simula\c{c}\~{a}o num\'{e}rica de um reservat\'{o}rio \cite[p. 524]{engres}}
-	\label{fig:revisao_simsec3}
-\end{figure}
+\item \textbf{Prepara\c{c}\~{a}o do modelo num\'{e}rico:} Ocorre logo ap\'{o}s a tomada dos dados. Inicialmente, \'{e} feito o \textit{lan\c{c}amento do} grid \textit{ou malha}, onde \'{e} constru\'{i}da uma malha para se transpor as informa\c{c}\~{o}es necess\'{a}rias para o modelo. Logo, \'{e} feita a divis\~{a}o do reservat\'{o}rio em v\'{a}rias c\'{e}lulas, cada uma funcionando como um reservat\'{o}rio menor. Breitenbach ressalta que combina\c{c}\~{o}es de modelos muitas vezes s\~{a}o selecionadas para se estudar, por exemplo, posicionamento de po\c{c}os, fen\^{o}menos de cone, inje\c{c}\~{a}o de fluidos, vaz\~{o}es de produ\c{c}\~{a}o, etc., e que o engenheiro deve utilizar a dimens\~{a}o da malha e os modelos corretos para resolver o problema desejado com as restri\c{c}\~{o}es de custo, tempo e acur\'{a}cia consideradas \cite{breitenbach1991}.
+
 \item \textbf{Ajuste de hist\'{o}rico:} O objetivo desta etapa \'{e} calibrar o modelo num\'{e}rico com o reservat\'{o}rio real a partir dos melhores dados dispon\'{i}veis referentes aos hist\'{o}ricos de produ\c{c}\~{a}o e de press\~{a}o. Oliver e Chen afirmam que se trata de um problema inverso: ao inv\'{e}s de se obter um modelo de reservat\'{o}rio para predizer seu comportamento, a modelagem \'{e} feita a partir da observa\c{c}\~{a}o dos processos ocorridos no reservat\'{o}rio \cite{Oliver2011}\footnote{Oliver e Chen apresentam uma revis\~{a}o da literatura a respeito do ajuste de hist\'{o}rico; ver \cite{Oliver2011}}. O ajuste de hist\'{o}rico \'{e} um c\'{a}lculo do comportamento passado do reservat\'{o}rio e a consequente compara\c{c}\~{a}o com o hist\'{o}rico do campo ou do mesmo reservat\'{o}rio; se a concord\^{a}ncia n\~{a}o \'{e} satisfat\'{o}ria, s\~{a}o necess\'{a}rios ajustes nos dados at\'{e} se obter resultados adequados. De todo modo, a import\^{a}ncia de se obter um bom ajuste de hist\'{o}rico reside no fato de que o modelo poder\'{a} ser utilizado para se efetuar previs\~{o}es confi\'{a}veis em rela\c{c}\~{a}o ao seu comportamento futuro.
 \item \textbf{Extrapola\c{c}\~{a}o:} Uma vez que o ajuste de hist\'{o}rico \'{e} realizado, procede-se \`{a} fase de extrapola\c{c}\~{a}o, isto \'{e}, a previs\~{a}o de comportamento futuro do modelo. Podem ser impostas vaz\~{o}es e press\~{o}es para todos os po\c{c}os, condi\c{c}\~{o}es dessas vaz\~{o}es, entre outros. Essa etapa permite avaliar v\'{a}rios esquemas de produ\c{c}\~{a}o, e seus resultados podem ser utilizados em avalia\c{c}\~{o}es econ\^{o}micas, tornando poss\'{i}vel decidir pelo esquema \'{o}timo de produ\c{c}\~{a}o, conforme tamb\'{e}m sugere Fanchi \footnote{Ver \cite[p. 373]{fanchi}.}.
 \end{enumerate}

@@ -24,42 +24,41 @@
 \BOOKMARK [2][-]{subsection.2.3.5}{Uso de Simuladores Num\351ricos para Estudos de Reservat\363rios}{section.2.3}% 24
 \BOOKMARK [1][-]{section.2.4}{Conceitos de Otimiza\347\343o}{chapter.2}% 25
 \BOOKMARK [2][-]{subsection.2.4.1}{Defini\347\365es e Fatos B\341sicos}{section.2.4}% 26
-\BOOKMARK [2][-]{subsection.2.4.2}{Diferenciabilidade de Fun\347\365es Escalares}{section.2.4}% 27
-\BOOKMARK [2][-]{subsection.2.4.3}{Diferenciabilidade de Fun\347\365es Multivari\341veis e Campos Vetoriais}{section.2.4}% 28
-\BOOKMARK [2][-]{subsection.2.4.4}{Convexidade}{section.2.4}% 29
-\BOOKMARK [2][-]{subsection.2.4.5}{Condi\347\365es de Otimalidade}{section.2.4}% 30
-\BOOKMARK [2][-]{subsection.2.4.6}{Principais Algoritmos de Otimiza\347\343o}{section.2.4}% 31
-\BOOKMARK [2][-]{subsection.2.4.7}{Tratamento de Problemas de Otimiza\347\343o}{section.2.4}% 32
-\BOOKMARK [1][-]{section.2.5}{Otimiza\347\343o e Engenharia de Reservat\363rio}{chapter.2}% 33
-\BOOKMARK [2][-]{subsection.2.5.1}{Contexto}{section.2.5}% 34
-\BOOKMARK [2][-]{subsection.2.5.2}{Algoritmos de Gradiente Descendente}{section.2.5}% 35
-\BOOKMARK [2][-]{subsection.2.5.3}{Algoritmos Meta-heur\355sticos}{section.2.5}% 36
-\BOOKMARK [0][-]{chapter.3}{Construção do Algoritmo Smart Reservoir com Utilização do MRST}{}% 37
-\BOOKMARK [1][-]{section.3.1}{Introdução}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.2}{MATLAB Reservoir Simulation Toolbox}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.3}{Modelos de Reservatório Utilizados}{chapter.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.1}{Egg Model}{section.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 42
-\BOOKMARK [1][-]{section.3.4}{Função de Custo: VPL}{chapter.3}% 43
-\BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.5.1}{A Função VPL Modificada}{section.3.5}% 45
-\BOOKMARK [2][-]{subsection.3.5.2}{Núcleo do Algoritmo}{section.3.5}% 46
-\BOOKMARK [2][-]{subsection.3.5.3}{Métodos Adicionais}{section.3.5}% 47
-\BOOKMARK [1][-]{section.3.6}{O Smart Reservoir e a Programação Paralela}{chapter.3}% 48
-\BOOKMARK [0][-]{chapter.4}{Execução e Resultados do Algoritmo Smart Reservoir}{}% 49
-\BOOKMARK [1][-]{section.4.1}{Introdução}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.2}{Execução Utilizando o Egg Model}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.3}{Execução Utilizando o Modelo SAIGUP}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.4}{Discussão dos Resultados}{chapter.4}% 53
-\BOOKMARK [0][-]{chapter.5}{Conclusões}{}% 54
-\BOOKMARK [1][-]{section.5.1}{Conclusões do Trabalho}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.2}{Sugestões para Trabalhos Futuros}{chapter.5}% 56
-\BOOKMARK [0][-]{Item.59}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 57
-\BOOKMARK [0][-]{chapter*.14}{APÊNDICES}{}% 58
-\BOOKMARK [0][-]{appendix.A}{Simula\347\365es dos Po\347os no Egg Model, Fase 1}{}% 59
-\BOOKMARK [0][-]{appendix.B}{Simula\347\365es dos Po\347os no Egg Model, Fase 2}{}% 60
-\BOOKMARK [0][-]{appendix.C}{Simula\347\365es dos Po\347os no Egg Model, Fase 3}{}% 61
-\BOOKMARK [0][-]{appendix.D}{Simula\347\365es dos Po\347os no Egg Model, Fase 4}{}% 62
-\BOOKMARK [0][-]{appendix.E}{Simula\347\365es dos Po\347os no Egg Model, Fase 5}{}% 63
-\BOOKMARK [0][-]{appendix.F}{Simula\347\365es dos Po\347os no SAIGUP de Curto Prazo}{}% 64
-\BOOKMARK [0][-]{appendix.G}{Simula\347\365es dos Po\347os no SAIGUP de Longo Prazo}{}% 65
+\BOOKMARK [2][-]{subsection.2.4.2}{Diferenciabilidade de Fun\347\365es Multivari\341veis e Campos Vetoriais}{section.2.4}% 27
+\BOOKMARK [2][-]{subsection.2.4.3}{Convexidade}{section.2.4}% 28
+\BOOKMARK [2][-]{subsection.2.4.4}{Condi\347\365es de Otimalidade}{section.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.4.5}{Principais Algoritmos de Otimiza\347\343o}{section.2.4}% 30
+\BOOKMARK [2][-]{subsection.2.4.6}{Tratamento de Problemas de Otimiza\347\343o}{section.2.4}% 31
+\BOOKMARK [1][-]{section.2.5}{Otimiza\347\343o e Engenharia de Reservat\363rio}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.5.1}{Contexto}{section.2.5}% 33
+\BOOKMARK [2][-]{subsection.2.5.2}{Algoritmos de Gradiente Descendente}{section.2.5}% 34
+\BOOKMARK [2][-]{subsection.2.5.3}{Algoritmos Meta-heur\355sticos}{section.2.5}% 35
+\BOOKMARK [0][-]{chapter.3}{Construção do Algoritmo Smart Reservoir com Utilização do MRST}{}% 36
+\BOOKMARK [1][-]{section.3.1}{Introdução}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.2}{MATLAB Reservoir Simulation Toolbox}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.3}{Modelos de Reservatório Utilizados}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.1}{Egg Model}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.2}{Modelo SAIGUP}{section.3.3}% 41
+\BOOKMARK [1][-]{section.3.4}{Função de Custo: VPL}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.5}{Algoritmo Smart Reservoir}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.5.1}{A Função VPL Modificada}{section.3.5}% 44
+\BOOKMARK [2][-]{subsection.3.5.2}{Núcleo do Algoritmo}{section.3.5}% 45
+\BOOKMARK [2][-]{subsection.3.5.3}{Métodos Adicionais}{section.3.5}% 46
+\BOOKMARK [1][-]{section.3.6}{O Smart Reservoir e a Programação Paralela}{chapter.3}% 47
+\BOOKMARK [0][-]{chapter.4}{Execução e Resultados do Algoritmo Smart Reservoir}{}% 48
+\BOOKMARK [1][-]{section.4.1}{Introdução}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.2}{Execução Utilizando o Egg Model}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.3}{Execução Utilizando o Modelo SAIGUP}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.4}{Discussão dos Resultados}{chapter.4}% 52
+\BOOKMARK [0][-]{chapter.5}{Conclusões}{}% 53
+\BOOKMARK [1][-]{section.5.1}{Conclusões do Trabalho}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.2}{Sugestões para Trabalhos Futuros}{chapter.5}% 55
+\BOOKMARK [0][-]{Item.52}{REFERÊNCIAS BIBLIOGRÁFICAS}{}% 56
+\BOOKMARK [0][-]{chapter*.14}{APÊNDICES}{}% 57
+\BOOKMARK [0][-]{appendix.A}{Simula\347\365es dos Po\347os no Egg Model, Fase 1}{}% 58
+\BOOKMARK [0][-]{appendix.B}{Simula\347\365es dos Po\347os no Egg Model, Fase 2}{}% 59
+\BOOKMARK [0][-]{appendix.C}{Simula\347\365es dos Po\347os no Egg Model, Fase 3}{}% 60
+\BOOKMARK [0][-]{appendix.D}{Simula\347\365es dos Po\347os no Egg Model, Fase 4}{}% 61
+\BOOKMARK [0][-]{appendix.E}{Simula\347\365es dos Po\347os no Egg Model, Fase 5}{}% 62
+\BOOKMARK [0][-]{appendix.F}{Simula\347\365es dos Po\347os no SAIGUP de Curto Prazo}{}% 63
+\BOOKMARK [0][-]{appendix.G}{Simula\347\365es dos Po\347os no SAIGUP de Longo Prazo}{}% 64

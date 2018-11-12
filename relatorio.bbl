@@ -141,6 +141,14 @@ ISSN 0920-4105.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S0920410516302376}.}
 
+\bibitem[Emadi e Sohrabi 2012]{emadi2012}
+\abntrefinfo{Emadi e Sohrabi}{EMADI; SOHRABI}{2012}
+{EMADI, A.; SOHRABI, M. Mechanistic study of heavy oil recovery by waterflood:
+  Effect of oil viscosity and wettability. In:  \emph{International Symposium
+  of the Society of Core Analysts}. Aberdeen, Escócia, Reino Unido: [s.n.],
+  2012. Dispon{\'\i}vel em:
+  \url{https://www.researchgate.net/publication/315694703\_MECHANISTIC\_STUDY\_OF\_HEAVY\_OIL\_RECOVERY\_BY\_WATERFLOOD\_EFFECT\_OF\_OIL\_VISCOSITY\_AND\_WETTABILITY}.}
+
 \bibitem[Emerick et al. 2009]{emerick}
 \abntrefinfo{Emerick et al.}{EMERICK et al.}{2009}
 {EMERICK, A.~A. et al. Well placement optimization using a genetic algorithm
@@ -512,14 +520,8 @@ Society of Petroleum Engineers, Dec 1971.}
 \emph{Journal of Petroleum Technology}, Society of Petroleum Engineers, v.~40,
   n.~12, p. 1539--1543, 1988.}
 
-\bibitem[Thomas 2009]{thomas1}
-\abntrefinfo{Thomas}{THOMAS}{2009a}
-{THOMAS, G. \emph{Cálculo, volume 1}. 11th. ed. São Paulo, SP: Addison Wesley,
-  2009.
-ISBN 978-85-88639-31-7.}
-
 \bibitem[Thomas 2009]{thomas2}
-\abntrefinfo{Thomas}{THOMAS}{2009b}
+\abntrefinfo{Thomas}{THOMAS}{2009}
 {THOMAS, G. \emph{Cálculo, volume 2}. 11th. ed. São Paulo, SP: Addison Wesley,
   2009.
 ISBN 978-85-88639-36-2.}
