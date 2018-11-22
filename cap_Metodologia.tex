@@ -188,7 +188,7 @@ A ideia da solução proposta é fazer avaliações de diferentes estratégias de prod
 \label{fig:searchStrategies}
 \end{figure}
 
-Pode-se entender o \textit{Smart Reservoir} como um algoritmo de busca de caminho ótimo de controle dos poços produtores; tal controle é dado pela variação de pressão em cada poço. A cada passo de tempo, são examinadas algumas possibilidades de pressão de todos os poços produtores, calculando-se o VPL modificado de cada situação examinada. O conjunto de pressões que resulta no melhor resultado da função objetivo é então usado como base para a geração do próximo conjunto de possibilidades de controle, a ser avaliado no próximo instante de tempo --- a Figura \ref{altSearch}. Após cada passo do algoritmo, é calculado, então, o VPL segundo a Equação \eqref{VPLReservoir}, que é salvo. A condição de parada do \textit{Smart Reservoir} está diretamente relacionada ao VPL; caso se detecte que, em determinado tempo, o VPL se tornou negativo, isto é, passa-se a ocorrer prejuízos na produção, o algoritmo é interrompido.
+Pode-se entender o \textit{Smart Reservoir} como um algoritmo de busca de caminho ótimo de controle dos poços produtores; tal controle é dado pela variação de pressão em cada poço. O algoritmo leva em conta a relação entre a deterioração do reservatório na vizinhança do poço e a produção, de maneira que a convexidade do espaço de procura seja aumentada por meio de medidas comparáveis de estratégias rápidas e lentas de produção. A cada passo de tempo, são examinadas algumas possibilidades de pressão de todos os poços produtores, calculando-se o VPL modificado de cada situação examinada. O conjunto de pressões que resulta no melhor resultado da função objetivo é então usado como base para a geração do próximo conjunto de possibilidades de controle, a ser avaliado no próximo instante de tempo --- a Figura \ref{altSearch}. Após cada passo do algoritmo, é calculado, então, o VPL segundo a Equação \eqref{VPLReservoir}, que é salvo. A condição de parada do \textit{Smart Reservoir} está diretamente relacionada ao VPL; caso se detecte que, em determinado tempo, o VPL se tornou negativo, isto é, passa-se a ocorrer prejuízos na produção, o algoritmo é interrompido.
 
 A escolha de possibilidades de controle para os poços produtores, por meio de suas pressões, segue um padrão específico: a partir da condição inicial, cada uma das estratégias de controle a ser testada é obtida a partir de uma variação nas pressões de cada poço utilizando-se uma taxa específica de variação, chamada $\delta_W$. Assumindo-se que cada conjunto de possibilidades tenha $n_{bhp}$ vetores de pressão dos poços, e $\mathbf{p_W^{(n)}}$ o estado de controle dos poços no n-ésimo passo de tempo, o conjunto de pressões a serem testadas no próximo instante é dado por
 \begin{equation}\label{eq:pp1}
@@ -209,14 +209,14 @@ Por fim, analisando-se as entradas e as saídas do \textit{Smart Reservoir}, conc
 
 \begin{enumerate}
 	\item Inicialize o reservatório e as pressões de cada poço;
-	\item Estabeleça $n_{bhp}$ vetores de pressão, conforme as Equações \eqref{eq:pp1} e \eqref{eq:pp2};
+	\item Estabeleça $n_{bhp}$ vetores de pressão, conforme as Equações \eqref{eq:pp1} e \eqref{eq:pp2} --- para melhores resultados, tome $n_{bhp}$ como um número ímpar;
 	\item Para cada vetor de pressão obtido, simule o reservatório e calcule o VPL modificado com a Equação \eqref{eq:ModWellVPLDef} para cada poço;
 	\item Atualize as pressões de cada poço com aquelas que resultaram nos melhores valores do VPL modificado;
-	\item Salve as pressões obtidas em uma matriz de controle;
-	\item Simule novamente o reservatório, utilizando as pressões ótimas obtidas, e avalie o VPL normal por meio da Equação \eqref{VPLReservoir};
+	\item Salve as pressões obtidas em uma matriz de controle, de maneira a poder examiná-las ao final do algoritmo;
+	\item Simule novamente o reservatório, utilizando as pressões ótimas obtidas para cada poço produtor, e avalie o VPL normal por meio da Equação \eqref{VPLReservoir};
 	\item Atualize as taxas de variação, se necessário, e as condições iniciais do reservatório para a próxima simulação;
 	\item Se o VPL normal for positivo, incremente o passo de tempo e volte ao Passo 2; caso contrário, prosseguir com o próximo Passo;
-	\item Obter a soma cumulativa de todos os VPLs normais positivos;
+	\item Obtenha a soma cumulativa de todos os VPLs normais positivos;
 	\item Salve o VPL total, o número de passos de tempo e a matriz de controle;
 	\item Fim do algoritmo.
 \end{enumerate}
