@@ -31,7 +31,9 @@ Em cada fase, a cada iteração, são analisadas paralelamente 7 diferentes possibi
 \begin{equation}
 	\label{eq:resultDelta}
 	\delta_W^{(n+1)} = k_\delta \max\left(\kappa, h\left(s_o^{(n-1)}-s_o^{(n)}\right)\right),
-\end{equation} em que $k_\delta$ é um fator de escala, $\kappa$ é um valor fixo mínimo considerado de forma a se evitar erros de simulação, $h$ é o peso da variação de saturação definido de maneira que $\delta_W$ não assuma indefinidamente o valor de $\kappa$ e $s_o^{(n)}$ é a saturação de óleo no n-ésimo passo de tempo, considerada no ponto de encontro entre o poço produtor e o reservatório (lembrando que, caso não haja erros de simulação, $s_o^{(n-1)} \geq s_o^{(n)}$). No caso da primeira iteração, considerou-se $\delta_W^{(1)} = k_\delta \kappa$. A Tabela \ref{tab:deltaEgg} mostra o valor de cada uma das constantes que formam a taxa de variação dos poços produtores, em cada simulação realizada com o \textit{Egg Model}.
+\end{equation} em que $k_\delta$ é um fator de escala, $\kappa$ é um valor fixo mínimo considerado de forma a se evitar erros de simulação, $h$ é o peso da variação de saturação definido de maneira que $\delta_W$ não assuma indefinidamente o valor de $\kappa$ e $s_o^{(n)}$ é a saturação de óleo no n-ésimo passo de tempo, considerada no ponto de encontro entre o poço produtor e o reservatório (lembrando que, caso não haja erros de simulação, $s_o^{(n-1)} \geq s_o^{(n)}$). No caso da primeira iteração, considerou-se $\delta_W^{(1)} = k_\delta \kappa$.
+
+Um fato importante ao ser considerado na Equação \eqref{eq:resultDelta} é a escolha do peso $h$; uma vez que se deseja uma influência da variação da saturação no comportamento das pressões dos poços, o valor de $h$ deve ser tal que flutuações mais sensíveis da saturação no reservatório consigam influenciar no valor de $\delta_W$; para isso, é importante que valha a relação $h \gg \kappa$ --- no caso do presente estudo, tomou-se $h = 10\kappa$, nos testes em que o mesmo foi considerado não-nulo. A Tabela \ref{tab:deltaEgg} mostra o valor de cada uma das constantes que formam a taxa de variação dos poços produtores, em cada simulação realizada com o \textit{Egg Model}.
 
 \begin{table}[H]
 	\centering
@@ -252,7 +254,14 @@ A primeira análise da execução do \textit{Smart Reservoir} leva em conta um mode
 
 A ideia central de se dividir os testes do \textit{Egg Model} em cinco fases foi não só de mostrar a evolução de como o \textit{Smart Reservoir} foi construído, e quais adendos foram feitos ao longo do problema; um outro motivo do número de simulações feitas com o \textit{Egg Model} foi, através de testes sobre a taxa de variação das pressões, sobretudo sobre sua ordem de grandeza, testar a estabilidade até onde o algoritmo continuava estável numericamente antes de se progredir com os adicionais, como a taxa dependente da saturação dos poços e o fator de correção numérica; este último sendo um importante fator adicionado à função VPL modificada, de maneira a evitar inconsistências quando a variação de saturação em dado poço produtor tende a zero.
 
-Ao se fazer a análise dos resultados obtidos com a implementação do \textit{Smart Reservoir}, duas variáveis importantes foram consideradas: o VPL e o número de passos de tempo até que o VPL passe a decrescer (o ponto de parada do algoritmo). No caso do VPL, foi feita uma análise quantitativa, isto é, o quanto foi gerado ao final de cada fase, comparando-o com o que foi encontrado na literatura e com o gerado sem nenhum algoritmo de otimização. Em termos de tempo de simulação, foi considerado o quanto ele foi reduzido, na implementação do \textit{Smart Reservoir} em todas as fases propostas, em relação aos 40 passos utilizados por Fonseca \textit{et al}\footnote{Ver \cite{fonseca}}. A Tabela \ref{tab:EggAnalysis} faz um comparativo das variáveis citadas entre cada fase do \textit{Smart Reservoir}, o modelo sem algoritmo de otimização e a solução encontrada na literatura\footnote{Dentre as cinco fases testadas do \textit{Smart Reservoir}, apenas a fase 1 foi testada sem a adição da janela de predição.}.
+Ao se fazer a análise dos resultados obtidos com a implementação do \textit{Smart Reservoir}, duas variáveis importantes foram consideradas: o VPL e o número de passos de tempo até que o VPL passe a decrescer (o ponto de parada do algoritmo). No caso do VPL, foi feita uma análise quantitativa, isto é, o quanto foi gerado ao final de cada fase, comparando-o com o que foi encontrado na literatura e com o gerado sem nenhum algoritmo de otimização. Em termos de tempo de simulação, foi considerado o quanto ele foi reduzido, na implementação do \textit{Smart Reservoir} em todas as fases propostas, em relação aos 40 passos utilizados por Fonseca \textit{et al}\footnote{Ver \cite{fonseca}}. A Tabela \ref{tab:EggAnalysis} faz um comparativo das variáveis citadas entre cada fase do \textit{Smart Reservoir}, o modelo sem algoritmo de otimização e a solução encontrada na literatura; os testes apresentados na tabela incluem:
+\begin{itemize}
+	\item Teste sob injeção constante (CIB);
+	\item Teste com o controle ssStoSAG;
+	\item Teste com \textit{Smart}, fase 1 (sem janela de predição);
+	\item Teste com \textit{Smart}, fases 2-4 (com janela de predição);
+	\item Teste com \textit{Smart}, fase 5 (com fator de correção numérica).
+\end{itemize}
 
 %TODO tabela
 
