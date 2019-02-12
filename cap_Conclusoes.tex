@@ -17,9 +17,12 @@ Em todos os casos, foram observados os três efeitos decorrentes da implementação
 Sendo um algoritmo ainda em desenvolvimento, o \textit{Smart Reservoir} pode ser utilizado em pequisas futuras, principalmente no que concerne à estrutura da solução em si. Algumas sugestões de trabalhos futuros incluem:
 
 \begin{enumerate}
-\item A adição de uma etapa mais inteligente de controle de vazões de injeção, particularmente a partir do momento em que o custo de injeção de água passa a exceder a rentabilidade do óleo em determinado passo;
-\item A simulação em modelos de reservatório mais próximos aos reais, com maior quantidade de detalhes comumente ignorados em modelos mais simples;
+\item A adição de uma etapa mais inteligente de controle de vazões de injeção, particularmente a partir do momento em que o custo de injeção de água passa a exceder a rentabilidade do campo em determinado passo, de maneira que o VPL total seja aumentado;
+\item A simulação em modelos de reservatório mais próximos aos reais, com maior quantidade de detalhes comumente ignorados em modelos mais simples --- como o descarte da presença de gás nos modelos \textit{black-oil} utilizados nesta pesquisa;
 \item A adição de estratégias de fechamento de cada poço produtor à medida em que o mesmo se torna inviável economicamente, sobrepondo-se ao \textit{modus operandi} do MRST atualmente utilizado, que dificulta a adição deste passo ao \textit{Smart Reservoir};
-\item Estudos envolvendo a aplicação do \textit{Smart Reservoir} em outros tipos de simulação (envolvendo, por exemplo, a produção de gás) e utilizando-se outras estratégias de recuperação secundária, EOR ou IOR.
+\item Estudos envolvendo a aplicação do \textit{Smart Reservoir} em outros tipos de simulação (envolvendo, por exemplo, a produção de gás) e utilizando-se outras estratégias de recuperação secundária, EOR ou IOR;
+\item Adaptar o \textit{Smart Reservoir} a casos em que se exige o uso de técnicas de otimização robusta (modelos com incertezas);
+\item Usar outras abordagens para melhorar o desempenho e os resultados do \textit{Smart Reservoir}, como técnicas de identificação de sistemas e algoritmos meta-heurísticos com auto-aprendizagem;
+\item A partir do estudo do \textit{Smart Reservoir}, desenvolver um \textit{solver} com suporte à paralelização, escrito em linguagens como C e FORTRAN.
 
 \end{enumerate}
