@@ -3,7 +3,7 @@
 \section{Conceitos de Otimiza\c{c}\~{a}o}\label{subsec:otimconcepts}
 
 \subsection{Defini\c{c}\~{o}es e Fatos B\'{a}sicos}
-Antes de se proceder \`{a} an\'{a}lise do problema estudado, fazem-se necess\'{a}rios alguns conceitos b\'{a}sicos da \'{a}rea de otimiza\c{c}\~{a}o e \'{a}lgebra linear. A presente se\c{c}\~{a}o apresenta algumas defini\c{c}\~{o}es que ser\~{a}o importantes ao descorrer da an\'{a}lise de convexidade e de problemas de otimiza\c{c}\~{a}o. Primeiramente, s\~{a}o dadas algumas defini\c{c}\~{o}es sobre vetores e matrizes, conforme Aguirre \cite{aguirre}:
+Antes de se proceder \`{a} an\'{a}lise do problema estudado, fazem-se necess\'{a}rios alguns conceitos b\'{a}sicos da \'{a}rea de otimiza\c{c}\~{a}o e \'{a}lgebra linear. A presente se\c{c}\~{a}o apresenta algumas defini\c{c}\~{o}es que ser\~{a}o importantes ao descorrer da an\'{a}lise de convexidade e de problemas de otimiza\c{c}\~{a}o. Primeiramente, s\~{a}o dadas algumas defini\c{c}\~{o}es sobre vetores e matrizes \cite{aguirre}:
 \begin{definition}\label{dotProd}
 Dadas duas vari\'{a}veis $\mathbf{x} \in \mathbb{R}^{n}$ e $\mathbf{y} \in \mathbb{R}^{n}$, o \textit{produto interno} entre $\mathbf{x}$ e $\mathbf{y}$ \'{e} dado por $\left\langle \mathbf{x},\mathbf{y}\right\rangle = \mathbf{x}^{T}\mathbf{y} = \mathbf{y}^{T}\mathbf{x}$. Caso este produto seja nulo, os vetores s\~{a}o ditos \textit{ortogonais}.
 \end{definition}
@@ -19,7 +19,7 @@ Uma matriz $\mathbf{A} \in \mathbb{R}^{n \times n}$ \'{e} dita \textit{semidefin
 Uma matriz $\mathbf{A} \in \mathbb{R}^{n \times n}$ \'{e} dita \textit{indefinida} se ela n\~{a}o for semidefinida positiva nem semidefinida negativa.
 \end{definition}
 
-Uma \'{u}ltima defini\c{c}\~{a}o b\'{a}sica de \'{a}lgebra linear se refere ao conceito de normas de vetores e matrizes, de acordo com Yang \cite{yang}:
+Uma \'{u}ltima defini\c{c}\~{a}o b\'{a}sica de \'{a}lgebra linear se refere ao conceito de normas de vetores e matrizes \cite{yang}:
 
 \begin{definition} \label{pNorm}
 Seja $\mathbf{v} \in \mathbb{R}^{n}$. A \textit{p-norma} ou $\ell_p$\textit{-norma} de $v$ \'{e} dada por
@@ -56,7 +56,7 @@ Dada uma matriz $\mathbf{A} \in \mathbb{R}^{m \times n}$ qualquer, a sua \textit
 
 Um caso especial da norma matricial ocorre quando se aplica a Equa\c{c}\~{a}o \eqref{matNorm} com $p = 2$; tal norma \'{e} denominada \textit{norma de Frobenius} de $\mathbf{A}$. Outras normas matriciais populares s\~{a}o tidas como a m\'{a}xima soma de linhas ou de colunas da matriz ($\left\|\mathbf{A}\right\|_{1}$ e $\left\|\mathbf{A}\right\|_{\infty}$, respectivamente). Deve-se destacar tamb\'{e}m que todas as propriedades b\'{a}sicas satisfeitas para a norma vetorial devem ser verdadeiras tamb\'{e}m para a norma matricial.
 
-Outros conceitos b\'{a}sicos a serem apresentados s\~{a}o pertencentes \`{a} \'{a}rea de otimiza\c{c}\~{a}o. Izmailov e Solodov \cite{izmailov} trazem o conceito elementar de problema de otimiza\c{c}\~{a}o e m\'{i}nimo (ou m\'{a}ximo) de uma fun\c{c}\~{a}o:
+Outros conceitos b\'{a}sicos a serem apresentados s\~{a}o pertencentes \`{a} \'{a}rea de otimiza\c{c}\~{a}o. Izmailov e Solodov trazem o conceito elementar de problema de otimiza\c{c}\~{a}o e m\'{i}nimo (ou m\'{a}ximo) de uma fun\c{c}\~{a}o \cite{izmailov}:
 
 \begin{definition} 
 Sejam um conjunto $D \subset \mathbb{R}^{n}$ e uma fun\c{c}\~{a}o $f: D \to \mathbb{R}$. O problema de se encontrar uma minimizador de $f$ em $D$ \'{e} escrito como
@@ -82,7 +82,7 @@ Nota-se que o problema \eqref{def2_4} pode ser reescrito como um problema de min
 Visto que resolver um problema de maximiza\c{c}\~{a}o n\~{a}o exige t\'{e}cnicas substancialmente diferentes de um problema de minimiza\c{c}\~{a}o, uma vez que um pode ser reescrito como o outro, ser\~{a}o considerados a partir dessa se\c{c}\~{a}o problemas de minimiza\c{c}\~{a}o.
 
 Antes de se prosseguir com os conceitos de minimizador e valor \'{o}timo, s\~{a}o necess\'{a}rios os
-conceitos de supremo, \'{i}nfimo, m\'{a}ximos e m\'{i}nimos de um conjunto. A defini\c{c}\~{a}o a seguir \'{e} encontrada em Yang \cite{yang}:
+conceitos de supremo, \'{i}nfimo, m\'{a}ximos e m\'{i}nimos de um conjunto \cite{yang}:
 \begin{definition} \label{defSupInf}
 Dado um conjunto $S \in \mathbb{R}$, o n\'{u}mero $u$ \'{e} denominado \textit{limite superior} de $S$ se $u \ge x, ~ \forall x \in S$. Por consequ\^{e}ncia, o n\'{u}mero $\beta$ \'{e} denominado \textit{supremo} de $S$ se $\beta$ \'{e} o menor dos limites superiores $u$ de $S$ ($\beta \le u ,~\forall u$). O supremo de $S$ pode ser denotado por
 \begin{equation}
@@ -122,7 +122,7 @@ Vale notar que os conceitos de supremo e \'{i}nfimo apresentados n\~{a}o extende
 
 Considerando-se a Equa\c{c}\~{a}o \eqref{altR} e que $\sup(\emptyset) = -\infty$, para qualquer subconjunto de $\bar{\mathbb{R}}$, o supremo e \'{i}nfimo sempre existir\~{a}o, supondo-se $\sup \mathbb{R} = +\infty$ e $\inf \mathbb{R} = -\infty$.
 
-De posse das defini\c{c}\~{o}es at\'{e} aqui dadas, \'{e} poss\'{i}vel definir os conceitos de minimizador e valor \'{o}timo de uma fun\c{c}\~{a}o. As defini\c{c}\~{o}es a seguir s\~{a}o dadas por Izmailov e Solodov \cite{izmailov}:
+De posse das defini\c{c}\~{o}es at\'{e} aqui dadas, \'{e} poss\'{i}vel definir os conceitos de minimizador e valor \'{o}timo de uma fun\c{c}\~{a}o \cite{izmailov}:
 
 \begin{definition} 
 Dado o problema \eqref{basicProb}, diz-se que um ponto $\bar{\mathbf{x}} \in D$ \'{e}
@@ -165,7 +165,7 @@ Uma aplica\c{c}\~{a}o $f(\mathbf{x}): A \to B,~ A \subset \mathbb{R}^{n}$ \'{e} 
 Uma aplica\c{c}\~{a}o $\mathbf{F}(\mathbf{x}): A \to B,~ A \subset \mathbb{R}^{n}$ \'{e} denominada campo vetorial (ou fun\c{c}\~{a}o multiobjetivo) se seu contradom\'{i}nio \'{e} subconjunto de um espa\c{c}o euclidiano de dimens\~{a}o $m > 1$, isto \'{e}, $B \subset \mathbb{R}^{m}$.
 \end{definition}
 
-O conceito de continuidade, nesses casos, pode ser visto como uma extens\~{a}o da Defini\c{c}\~{a}o \ref{scalarCont}\footnote{Ver \cite[p. 301]{thomas2}.}; por\'{e}m, o conceito de diferenciabilidade deve ser largamente extendido, pois agora, ao contr\'{a}rio do caso escalar, o n\'{u}mero de dire\c{c}\~{o}es poss\'{i}veis \'{e} infinito. Em casos em que essas dire\c{c}\~{o}es correspondem aos vetores da base can\^{o}nica do espa\c{c}o do dom\'{i}nio ($\mathbf{e_i} = (0,...,1,...,0)$ com o elemento n\~{a}o-nulo na $i$-\'{e}sima posi\c{c}\~{a}o), as derivadas de uma fun\c{c}\~{a}o vetorial nessas dire\c{c}\~{o}es s\~{a}o conhecidas como \textit{derivadas parciais}.
+O conceito de continuidade, nesses casos, pode ser visto como uma extens\~{a}o do caso de continuidade de fun\c{c}\~{o}es escalares; por\'{e}m, o conceito de diferenciabilidade deve ser largamente estendido, pois agora, ao contr\'{a}rio do caso escalar, o n\'{u}mero de dire\c{c}\~{o}es poss\'{i}veis \'{e} infinito. Em casos em que essas dire\c{c}\~{o}es correspondem aos vetores da base can\^{o}nica do espa\c{c}o do dom\'{i}nio ($\mathbf{e_i} = (0,...,1,...,0)$ com o elemento n\~{a}o-nulo na $i$-\'{e}sima posi\c{c}\~{a}o), as derivadas de uma fun\c{c}\~{a}o vetorial nessas dire\c{c}\~{o}es s\~{a}o conhecidas como \textit{derivadas parciais}.
 
 \begin{definition}\footnote{Adaptado de \cite[p. 308]{thomas2}.}
 Dizemos que a \textit{derivada parcial} de $f(\mathbf{x})$ em rela\c{c}\~{a}o \`{a} componente $x_i$ \'{e} equivalente ao limite
@@ -189,7 +189,7 @@ com $\mathbf{e_i}$ sendo o $i$-\'{e}simo vetor de coordenadas, conceito j\'{a} d
 \begin{definition}\label{direcDif}
 A derivada direcional de $f$ em um ponto $\mathbf{x}$ de seu dom\'{i}nio na dire\c{c}\~{a}o $\mathbf{d} \in \mathbb{R}^{n}$ \'{e} dada por
 \begin{equation}
-f'(\mathbf{x};\mathbf{d}) = \lim_{t \searrow 0} \frac{f(\mathbf{x}+t\mathbf{d})-f(\mathbf{x})}{t},
+f'(\mathbf{x};\mathbf{d}) = \lim_{t \to 0^+} \frac{f(\mathbf{x}+t\mathbf{d})-f(\mathbf{x})}{t},
 \end{equation}
 desde que o limite exista \`{a} medida que $t \ge 0$ se aproxima de $0$.
 \end{definition}
@@ -255,7 +255,7 @@ H(f) \equiv \nabla^2 f \equiv f''(\mathbf{x}) = [h_{ij}],~h_{ij} = \frac{\partia
 
 Um fato interessante sobre a Hessiana \'{e} que, se as segundas derivadas parciais de $f$ existem e s\~{a}o cont\'{i}nuas, tem-se que $\frac{\partial^2 f}{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i}$; neste caso, temos que $H(f) = H^{T}(f)$, ou seja, tem-se $H(f)$ sim\'{e}trica. Este fato \'{e} largamente utilizado em alguns algoritmos de otimiza\c{c}\~{a}o, particularmente em problemas de programa\c{c}\~{a}o quadr\'{a}tica.
 
-Todos os conceitos vistos at\'{e} aqui para fun\c{c}\~{o}es $f: \mathbb{R}^{n} \to \mathbb{R}$ podem ser tamb\'{e}m aplicados a campos vetoriais $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$. Os conceitos de diferenciabilidade segundo G\^{a}teaux e Fr\'{e}chet s\~{a}o an\'{a}logos aos presentes nas Defini\c{c}\~{o}es \ref{gateauxDef} e \ref{frechetDef} \footnote{Ver \cite[pp. 8-9]{guller}.}. Guller ainda afirma que, se um campo $\mathbf{F}(\mathbf{x})$ \'{e} G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}vel em $\mathbf{x}$, ent\~{a}o suas fun\c{c}\~{o}es componentes $f_i(\mathbf{x})$ s\~{a}o G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}veis em $\mathbf{x}$. A mudan\c{c}a aqui \'{e} o c\'{a}lculo da derivada de $\mathbf{F}$, agora uma matriz.
+Todos os conceitos vistos at\'{e} aqui para fun\c{c}\~{o}es $f: \mathbb{R}^{n} \to \mathbb{R}$ podem ser tamb\'{e}m aplicados a campos vetoriais $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$. Os conceitos de diferenciabilidade segundo G\^{a}teaux e Fr\'{e}chet s\~{a}o an\'{a}logos aos presentes nas Defini\c{c}\~{o}es \ref{gateauxDef} e \ref{frechetDef} \footnote{Ver \cite[pp. 8-9]{guller}.}. Mais ainda, se um campo $\mathbf{F}(\mathbf{x})$ \'{e} G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}vel em $\mathbf{x}$, ent\~{a}o suas fun\c{c}\~{o}es componentes $f_i(\mathbf{x})$ s\~{a}o G\^{a}teaux (ou Fr\'{e}chet) diferenci\'{a}veis em $\mathbf{x}$ \cite{guller}. A mudan\c{c}a aqui \'{e} o c\'{a}lculo da derivada de $\mathbf{F}$, agora uma matriz.
 
 \begin{definition}\footnote{Adaptado de \cite[p. 9]{guller}.}
 Dado um campo vetorial $\mathbf{F}: \mathbb{R}^{n} \to \mathbb{R}^{m}$, sua derivada, denominada Jacobiana de $\mathbf{F}$, \'{e} dada por
@@ -267,7 +267,7 @@ J(\mathbf{F}) = \left[ \frac{\partial f_i}{\partial x_j} \right].
 Nota-se, pela defini\c{c}\~{a}o de Jacobiana, que o conceito de gradiente de uma fun\c{c}\~{a}o multivari\'{a}vel \'{e} um caso espec\'{i}fico de Jacobiana, assim como uma fun\c{c}\~{a}o multivari\'{a}vel \'{e} um tipo especial de campo vetorial, em que o contradom\'{i}nio \'{e} unidimensional.
 
 \subsection{Convexidade}
-Segundo Izmailov e Solodov \cite{izmailov}, o conceito de convexidade \'{e} muito importante na teoria de otimiza\c{c}\~{a}o; com no\c{c}\~{o}es de convexidade, condi\c{c}\~{o}es de otimalidade necess\'{a}rias passam a ser suficientes, ou seja, basta encontrar um ponto estacion\'{a}rio para o problema. Em particular, sob condi\c{c}\~{o}es de convexidade, todo minimizador local torna-se global. Outra possibilidade poss\'{i}vel utilizando convexidade \'{e} o uso da teoria da dualidade na sua forma mais completa, ou seja, \'{e} poss\'{i}vel associar o problema original (primal) a um problema alternativo (dual) que \'{e}, em determinadas condi\c{c}\~{o}es, equivalente ao original e \`{a}s vezes de mais f\'{a}cil resolu\c{c}\~{a}o. Por fim, o conceito de convexidade possibilita o uso de uma das condi\c{c}\~{o}es de otimalidade mais poderosas aplicadas a problemas com restri\c{c}\~{o}es: as condi\c{c}\~{o}es KKT.
+Segundo Izmailov e Solodov, o conceito de convexidade \'{e} muito importante na teoria de otimiza\c{c}\~{a}o; com no\c{c}\~{o}es de convexidade, condi\c{c}\~{o}es de otimalidade necess\'{a}rias passam a ser suficientes, ou seja, basta encontrar um ponto estacion\'{a}rio para o problema. Em particular, sob condi\c{c}\~{o}es de convexidade, todo minimizador local torna-se global. Outra possibilidade poss\'{i}vel utilizando convexidade \'{e} o uso da teoria da dualidade na sua forma mais completa, ou seja, \'{e} poss\'{i}vel associar o problema original (primal) a um problema alternativo (dual) que \'{e}, em determinadas condi\c{c}\~{o}es, equivalente ao original e \`{a}s vezes de mais f\'{a}cil resolu\c{c}\~{a}o. Por fim, o conceito de convexidade possibilita o uso de uma das condi\c{c}\~{o}es de otimalidade mais poderosas aplicadas a problemas com restri\c{c}\~{o}es: as condi\c{c}\~{o}es KKT \cite{izmailov}.
 
 \begin{definition}
 Um conjunto $D \subset \eucR{n}$ \'{e} dito convexo se, para quaisquer $\mathbf{x} \in D,~\mathbf{y} \in D$ e $\alpha \in [0,1]$, tem-se $\alpha\mathbf{x} + (1-\alpha)\mathbf{y} \in D$.
@@ -574,9 +574,9 @@ ent\~{a}o $\critP{x}$ \'{e} minimizador local estrito de $\setP$.
 As condi\c{c}\~{o}es de otimalidade at\'{e} aqui apresentadas foram al\'{e}m daquelas para problemas irrestritos; agora, al\'{e}m de procurar minimizar a fun\c{c}\~{a}o objetivo, deve-se ter cuidado com as restri\c{c}\~{o}es. Nota-se que \'{e} conveniente que essas restri\c{c}\~{o}es sejam de natureza espec\'{i}fica, de maneira a tornar o problema $\setP$ vi\'{a}vel em termos de resolu\c{c}\~{a}o\footnote{Todas as condi\c{c}\~{o}es at\'{e} aqui e suas provas se encontram em \cite[pp. 230-235]{guller}.}.
 
 \subsection{Principais Algoritmos de Otimiza\c{c}\~{a}o}
-O prop\'{o}sito desta Se\c{c}\~{a}o \'{e} oferecer uma vis\~{a}o geral dos principais algoritmos de otimiza\c{c}\~{a}o vistos na literatura; uma an\'{a}lise detalhada dos mesmos \'{e} excessiva do ponto de vista deste relat\'{o}rio de estudo dirigido; tal an\'{a}lise demanda at\'{e} v\'{a}rias produ\c{c}\~{o}es liter\'{a}rias, conforme destaca Yang \cite{yang}.
+O prop\'{o}sito desta Se\c{c}\~{a}o \'{e} oferecer uma vis\~{a}o geral dos principais algoritmos de otimiza\c{c}\~{a}o vistos na literatura; uma an\'{a}lise detalhada dos mesmos \'{e} excessiva do ponto de vista desta pesquisa \footnote{Segundo Yang, tal an\'{a}lise demanda at\'{e} v\'{a}rias produ\c{c}\~{o}es liter\'{a}rias \cite{yang}}.
 
-Segundo Yang, resolver um problema de otimiza\c{c}\~{a}o pode ser comparado a uma ca\c{c}a ao tesouro: imaginemos que estamos ca\c{c}ando um tesouro em uma cordilheira, com limite de tempo. Em um extremo, n\~{a}o temos ideia de onde come\c{c}ar a procurar e estamos de olhos vendados; isto resulta em uma busca aleat\'{o}ria, que n\~{a}o \'{e} t\~{a}o eficiente quanto poder\'{i}amos esperar. Por outro lado, temos ideia de que o tesouro se encontra no ponto mais alto da cordilheira; isto nos leva a buscar um caminho direto. Na maioria dos casos, estamos entre os dois extremos: n\~{a}o estamos de olhos vendados, mas n\~{a}o sabemos por onde come\c{c}ar a procurar. Uma vez que \'{e} ineficiente andar em passos aleat\'{o}rios, na pr\'{a}tica andamos seguindo algumas pistas, olhando de forma razoavelmente aleat\'{o}ria, mas com um prop\'{o}sito por tr\'{a}s; esta \'{e} a ess\^{e}ncia de v\'{a}rios algoritmos de otimiza\c{c}\~{a}o modernos.
+Segundo Yang, resolver um problema de otimiza\c{c}\~{a}o pode ser comparado a uma ca\c{c}a ao tesouro: imaginemos que estamos ca\c{c}ando um tesouro em uma cordilheira, com limite de tempo. Em um extremo, n\~{a}o temos ideia de onde come\c{c}ar a procurar e estamos de olhos vendados; isto resulta em uma busca aleat\'{o}ria, que n\~{a}o \'{e} t\~{a}o eficiente quanto poder\'{i}amos esperar. Por outro lado, temos ideia de que o tesouro se encontra no ponto mais alto da cordilheira; isto nos leva a buscar um caminho direto. Na maioria dos casos, estamos entre os dois extremos: n\~{a}o estamos de olhos vendados, mas n\~{a}o sabemos por onde come\c{c}ar a procurar. Uma vez que \'{e} ineficiente andar em passos aleat\'{o}rios, na pr\'{a}tica andamos seguindo algumas pistas, olhando de forma razoavelmente aleat\'{o}ria, mas com um prop\'{o}sito por tr\'{a}s; esta \'{e} a ess\^{e}ncia de v\'{a}rios algoritmos de otimiza\c{c}\~{a}o modernos \cite{yang}.
 
 De maneira geral, algoritmos de otimiza\c{c}\~{a}o podem ser classificados como \textit{determin\'{i}sticos} ou \textit{estoc\'{a}sticos}. Em alguns algoritmos determin\'{i}sticos, a no\c{c}\~{a}o de gradiente \'{e} utilizada; s\~{a}o os algoritmos \textit{baseados em gradiente}. Quando a fun\c{c}\~{a}o objetivo apresenta descontinuidades, tais algoritmos tendem a falhar; sendo assim, h\'{a} algoritmos determin\'{i}sticos que n\~{a}o utilizam gradiente; s\~{a}o os algoritmos \textit{livres de gradiente}.
 
@@ -613,7 +613,7 @@ Com $\mathbf{H}$ sim\'{e}trica. Em caso contr\'{a}rio, faz se a aproxima\c{c}\~{
 que \'{e} sempre sim\'{e}trica.
 \end{itemize}
 
-Ressalta-se que esses casos especiais s\~{a}o facilmente resolvidos sob dadas condi\c{c}\~{o}es --- por exemplo, a mtriz $\mathbf{H}$ (ou $\tilde{\mathbf{H}}$) ser semidefinida positiva. Para outras classes de problemas, ser\~{a}o apresentados v\'{a}rios algoritmos. Tais algoritmos podem ser encontrados alguns em \cite{guller} e outros em \cite{yang}:
+Ressalta-se que esses casos especiais s\~{a}o facilmente resolvidos sob dadas condi\c{c}\~{o}es --- por exemplo, a mtriz $\mathbf{H}$ (ou $\tilde{\mathbf{H}}$) ser semidefinida positiva. Para outras classes de problemas, ser\~{a}o apresentados v\'{a}rios algoritmos \footnote{Tais algoritmos podem ser encontrados alguns em \cite{guller} e em \cite{yang}}:
 
 \begin{itemize}
 \item \textbf{M\'{e}todo de Newton:} Assume que o problema $\setP$ \'{e} irrestrito e a fun\c{c}\~{a}o objetivo \'{e} continuamente diferenci\'{a}vel. Originalmente aplicado \`{a} solu\c{c}\~{a}o de equa\c{c}\~{o}es, o M\'{e}todo de Newton tamb\'{e}m pode ser aplicado em otimiza\c{c}\~{a}o no sentido de que ele \'{e} utilizado para resolver a condi\c{c}\~{a}o de otimalidade necess\'{a}ria de primeira ordem (ver Teorema \ref{theoCO1}). \'{E} um algoritmo iterativo cujos passos s\~{a}o dados por
@@ -673,7 +673,7 @@ Uma vez que \'{e} dispendioso calcular a Hessiana do Lagrangiano a cada itera\c{
 \end{itemize}
 
 \subsection{Tratamento de Problemas de Otimiza\c{c}\~{a}o}\label{sub:tratamento}
-Segundo Reklaitis \cite{reklaitis}, para que seja poss\'{i}vel se aplicar as t\'{e}cnicas e algoritmos de otimiza\c{c}\~{a}o descritos at\'{e} aqui em problemas concretos de engenharia, \'{e} necess\'{a}rio:
+Segundo Reklaitis, para que seja poss\'{i}vel se aplicar as t\'{e}cnicas e algoritmos de otimiza\c{c}\~{a}o descritos at\'{e} aqui em problemas concretos de engenharia, \'{e} necess\'{a}rio:
 \begin{itemize}
 \item Definir os limites do sistema a ser otimizado;
 \item Definir um crit\'{e}rio de classifica\c{c}\~{a}o das solu\c{c}\~{o}es candidatas para se determinar qual a ``melhor'';
@@ -687,4 +687,4 @@ Uma vez que o sistema tenha sido identificado e limitado, \'{e} necess\'{a}rio e
 
 O terceiro elemento na concep\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o \'{e} a escolha de vari\'{a}veis independentes que possam caracterizar poss\'{i}veis solu\c{c}\~{o}es para o sistema. Primeiramente, \'{e} necess\'{a}rio distinguir vari\'{a}veis que podem mudar daquelas cujos valores s\~{a}o fixos devido a fatores externos, estando al\'{e}m dos limites dados do sistema em quest\~{a}o. Al\'{e}m disso, \'{e} importante diferenciar par\^{a}metros fixos do sistema daqueles que s\~{a}o sujeitos a flutua\c{c}\~{o}es influenciadas por fatores externos n\~{a}o-control\'{a}veis. Segundamente, \'{e} importante incluir todas as vari\'{a}veis importantes que influenciam o desempenho do sistema ou afetam a defini\c{c}\~{a}o do modelo. Finalmente, \'{e} necess\'{a}rio se considerar o n\'{i}vel de detalhamento no qual o sistema se encontra; embora seja importante tratar todas as vari\'{a}veis independentes importantes, tamb\'{e}m \'{e} necess\'{a}rio que o problema n\~{a}o seja dificultado devido \`{a} inclus\~{a}o de um n\'{u}mero muito grande de detalhes de import\^{a}ncia menor. Uma boa regra nesse \'{u}ltimo quesito \'{e} selecionar apenas vari\'{a}veis que tenham impacto significativo no crit\'{e}rio de desempenho do sistema estudado.
 
-Por fim, o pr\'{o}ximo passo na formula\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o para engenharia \'{e} construir o modelo que descreve como as vari\'{a}veis do problema se relacionam e de que modo o crit\'{e}rio de desempenho \'{e} afetado pelas vari\'{a}veis independentes. Modelos s\~{a}o utilizados por que \'{e} caro, demorado ou arriscado usar o sistema real no estudo; logo, modelos s\~{a}o usados por oferecerem a maneira mais r\'{a}pida e barata de se estudar os efeitos de mudan\c{c}as das vari\'{a}veis essenciais no desempenho geral do sistema. No geral, o modelo \'{e} composto de equa\c{c}\~{o}es b\'{a}sicas de conserva\c{c}\~{a}o de mat\'{e}ria e energia, rela\c{c}\~{o}es de engenharia e equa\c{c}\~{o}es de propriedades f\'{i}sicas que descrevem fen\^{o}menos f\'{i}sicos presentes no sistema estudado; essas equa\c{c}\~{o}es s\~{a}o suplementadas por inequa\c{c}\~{o}es que definem regi\~{o}es de opera\c{c}\~{a}o, especificam restri\c{c}\~{o}es de desempenho m\'{a}ximas ou m\'{i}nimas, ou estabelecem limites de disponibilidade de recursos. Portanto, o modelo consiste de todos os elementos que devem ser considerados ao se prever o desempenho de um sistema de engenharia.
+Por fim, o pr\'{o}ximo passo na formula\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o para engenharia \'{e} construir o modelo que descreve como as vari\'{a}veis do problema se relacionam e de que modo o crit\'{e}rio de desempenho \'{e} afetado pelas vari\'{a}veis independentes. Modelos s\~{a}o utilizados por que \'{e} caro, demorado ou arriscado usar o sistema real no estudo; logo, modelos s\~{a}o usados por oferecerem a maneira mais r\'{a}pida e barata de se estudar os efeitos de mudan\c{c}as das vari\'{a}veis essenciais no desempenho geral do sistema. No geral, o modelo \'{e} composto de equa\c{c}\~{o}es b\'{a}sicas de conserva\c{c}\~{a}o de mat\'{e}ria e energia, rela\c{c}\~{o}es de engenharia e equa\c{c}\~{o}es de propriedades f\'{i}sicas que descrevem fen\^{o}menos f\'{i}sicos presentes no sistema estudado; essas equa\c{c}\~{o}es s\~{a}o suplementadas por inequa\c{c}\~{o}es que definem regi\~{o}es de opera\c{c}\~{a}o, especificam restri\c{c}\~{o}es de desempenho m\'{a}ximas ou m\'{i}nimas, ou estabelecem limites de disponibilidade de recursos. Portanto, o modelo consiste de todos os elementos que devem ser considerados ao se prever o desempenho de um sistema de engenharia \cite{reklaitis}.

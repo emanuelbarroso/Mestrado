@@ -8,13 +8,13 @@
 Este capítulo apresenta as ferramentas empregadas nesta dissertação, além da construção do algoritmo \textit{Smart Reservoir}. Inicialmente, é apresentada a \textit{toolbox} para simulação numérica de reservatórios no \textit{software} MATLAB, o MRST; além da \textit{toolbox}, são apresentados alguns dos modelos numéricos de reservatórios mais utilizados para testes na literatura, e que serão aproveitados para os testes com o algoritmo aqui proposto; como esse algoritmo é destinado a resolver um problema de otimização na produção de petróleo, é apresentada uma função de custo econômico que vai ser o objeto da busca pela solução desejada; esta função, denominada VPL, será apresentada e sua utilização discutida. Posteriormente, será feita uma construção do algoritmo \textit{Smart Reservoir}, desde sua fundamentação inicial até os passos que ele realiza em busca da solução do problema proposto; por fim, é discutido o uso de técnicas de programação paralela para se tentar incrementar o desempenho do \textit{Smart Reservoir}.
 
 \section{\textit{MATLAB Reservoir Simulation Toolbox}}
-O MRST --- \textit{MATLAB Reservoir Simulation Toolbox} --- é um conjunto de ferramentas programadas para utilização em conjunto com o \textit{software} MATLAB; trata-se de um conjunto de códigos e definições \textit{open-source} destinados à simulação numérica de reservatórios. Embora não seja primordialmente um simulador, o MRST oferece uma vasta quantidade de estruturas de dados e métodos computacionais de modo que o usuário possa combinar para gerar modelos e ferramentas de simulação em si. O MRST se encontra organizado em duas partes principais\footnote{Ver \cite{site:mrst}.}:
+O MRST --- \textit{MATLAB Reservoir Simulation Toolbox} --- é um conjunto de ferramentas programadas para utilização em conjunto com o \textit{software} MATLAB; trata-se de um conjunto de códigos e definições \textit{open-source} destinados à simulação numérica de reservatórios. Embora não seja primordialmente um simulador, o MRST oferece uma vasta quantidade de estruturas de dados e métodos computacionais de modo que o usuário possa combinar para gerar modelos e ferramentas de simulação em si. O MRST se encontra organizado em duas partes principais  \cite{site:mrst}:
 \begin{itemize}
 \item Um módulo \textit{\textbf{core}}, em que estão presentes estruturas de dados e funcionalidades básicas;
 \item Vários módulos adicionais (\textbf{\textit{add-ons}}), oferecendo discretizações, modelos físicos, simuladores, \textit{solvers}, entre outros.
 \end{itemize}
 
-Algumas das principais funcionalidades oferecidas pelo MRST se encontram reunidas a seguir\footnote{Ver \cite{Lie2012}.}: 
+Algumas das principais funcionalidades oferecidas pelo MRST se encontram reunidas a seguir \cite{Lie2012}: 
 \begin{itemize}
 \item \textbf{\textit{Grids}:} São estruturas de dados básicas do MRST, com suporte para malhas geométricas básicas, como triangulares, tetraédricas, entre outras.
 \item \textbf{Entradas e Saídas:} O MRST possui suporte para entrada de modelos industriais prontos, parâmetros petroquímicos, modelos de fluidos, poços, condições de contorno, parâmetros de simulação, etc.
@@ -29,10 +29,10 @@ Algumas das principais funcionalidades oferecidas pelo MRST se encontram reunida
 \section{Modelos de Reservatório Utilizados}
 Segundo Stags e Herbeck, um modelo de reservatório trata o reservatório real como um composto de vários segmentos individuais (normalmente denominados células), devido à matemática que rege o modelo. De forma simples, um modelo multicelular de reservatório simula a vazão de fluidos de um reservatório de óleo ou gás; embora não possam descrever exatamente o comportamento dos fluidos no ambiente estudado, os modelos de reservatórios produzem aproximações boas e válidas; além disso, os modelos são feitos para representar a vazão intercelular de fluidos em uma, duas ou até três dimensões. Cada célula, em um modelo de reservatório, possui informações próprias de propriedades do conjunto como tamanho, porosidade, permeabilidade, elevação, pressão e saturação dos fluidos presentes. Além disso, são necessários para um modelo os dados de cada poço presente, como localização, índice do poço, tipo do poço, vazões de produção/injeção, limites econômicos, de BHP, entre outros \cite{stags1971}.
 
-No presente trabalho, dentre os vários modelos de reservatório existentes na literatura, dois modelos foram selecionados para a aplicação do \textit{Smart Reservoir}. A escolha foi pautada principalmente pelo tamanho dos modelos, tendo em vista o equipamento disponível para a implementação e a simulação do algoritmo proposto. Além disso, são considerados modelos bifásicos, de apenas óleo e agua. Os modelos selecionados foram o \textit{Egg Model} e o SAIGUP (\textit{Sensistivity Analysis of the Impact of Geological Uncertainties on Production}), apresentados a seguir.
+No presente trabalho, dentre os vários modelos de reservatório existentes na literatura, dois modelos foram selecionados para a aplicação do \textit{Smart Reservoir}. A escolha foi pautada principalmente pelo tamanho dos modelos, tendo em vista o equipamento disponível para a implementação e a simulação do algoritmo proposto. Além disso, são considerados modelos bifásicos, de apenas óleo e água. Os modelos selecionados foram o \textit{Egg Model} e o SAIGUP (\textit{Sensistivity Analysis of the Impact of Geological Uncertainties on Production}), apresentados a seguir.
 
 \subsection{\textit{Egg Model}}
-Dos modelos selecionados para este estudo, o \textit{Egg Model} é o mais simples. De acordo com Jansen \textit{et al.}, o modelo foi desenvolvido como parte da tese de PHD de  Maarten Zandvliet and Gijs van Essen \cite{eggM}; a primeira referência do \textit{Egg Model} data de 2007, por  Zandvliet \textit{et al.}, contendo apenas uma realização determinística do modelo\footnote{Ver \cite{ZANDVLIET2007186}.}; logo após, em 2009, Van Essen \textit{et al.} utilizaram um conjunto de vários modelos \textit{Egg Model}\footnote{Ver \cite{SPE:RWO}.}. O modelo original ``estocástico'' consiste de 100 realizações de um reservatório canalizado na forma de campos de permeabilidade discreta modelados com $60 \times 60 \times 7 = 25.200$ células, das quais 18.553 são ativas, dando o formato de um ovo ao modelo, justificando seu nome \cite{eggM}. A Tabela \ref{tab:metodo_eggparam} mostra alguns parâmetros utilizados para o \textit{Egg Model}, enquanto que as Figuras \ref{fig:metodo_egg} e \ref{fig:metodo_eggtop} apresentam, respectivamente, um exemplo de realização do \textit{Egg Model} e uma visão de topo do mesmo obtida pelo MRST, destacando os poços existentes.
+Dos modelos selecionados para este estudo, o \textit{Egg Model} é o mais simples. De acordo com Jansen \textit{et al.}, o modelo foi desenvolvido como parte da tese de PHD de  Maarten Zandvliet and Gijs van Essen \cite{eggM}; a primeira referência do \textit{Egg Model} data de 2007, por  Zandvliet \textit{et al.}, contendo apenas uma realização determinística do modelo \cite{ZANDVLIET2007186}; logo após, em 2009, Van Essen \textit{et al.} utilizaram um conjunto de vários modelos \textit{Egg Model} \cite{SPE:RWO}. O modelo original ``estocástico'' consiste de 100 realizações de um reservatório canalizado na forma de campos de permeabilidade discreta modelados com $60 \times 60 \times 7 = 25.200$ células, das quais 18.553 são ativas, dando o formato de um ovo ao modelo, justificando seu nome \cite{eggM}. A Tabela \ref{tab:metodo_eggparam} mostra alguns parâmetros utilizados para o \textit{Egg Model}, enquanto que as Figuras \ref{fig:metodo_egg} e \ref{fig:metodo_eggtop} apresentam, respectivamente, um exemplo de realização do \textit{Egg Model} e uma visão de topo do mesmo obtida pelo MRST, destacando os poços existentes.
 
 \begin{figure}[H]
 	\centering
@@ -83,7 +83,7 @@ Dos modelos selecionados para este estudo, o \textit{Egg Model} é o mais simples
 \subsection{Modelo SAIGUP}
 O SAIGUP é, na realidade, um projeto concentrado em reservatórios na costa marítima. De acordo com Carter e Matthews, o projeto SAIGUP envolveu a criação de 400 modelos sedimentológicos que, ao serem acrescidos de falhas geológicas, geram aproximadamente 12000 reservatórios fragmentários sintéticos \cite{saigupCM}. 
 
-A história do estudo do SAIGUP está diretamente relacionada com os esforços da União Europeia em reduzir o tempo de produção do primeiro óleo e melhorar a eficiência de recuperação de hidrocarbonetos em geral, destacam Manzocchi \textit{et al.}; os principais objetivos do projeto são\footnote{Ver \cite{manzocchi2008sensitivity}.}:
+A história do estudo do SAIGUP está diretamente relacionada com os esforços da União Europeia em reduzir o tempo de produção do primeiro óleo e melhorar a eficiência de recuperação de hidrocarbonetos em geral, destacam Manzocchi \textit{et al.}; os principais objetivos do projeto são \cite{manzocchi2008sensitivity}:
 
 \begin{enumerate}
 	\item Quantificar as influências da sedimentologia, estrutura e \textit{upscaling}\footnote{Mais detalhes sobre \textit{upscaling} podem ser encontrados em \cite{upscaling}.} em incertezas na estimativa de produção de reservatórios com diferentes propriedades 
@@ -110,14 +110,14 @@ Dos vários métodos de análise de rentabilidade e sucesso de inovações tecnológic
 \item O VPL provê um número concreto que os administradores financeiros podem utilizar facilmente para comparar um desembolso inicial com valor de retorno presente.
 \end{itemize}
 
-Porém, \v{Z}i\v{z}lavsk\'{y} destaca algumas limitações, muitas vezes subestimadas, do VPL como ferramenta de análise de oportunidades de inovação\footnote{Ver \cite{ziz2014}}:
+Porém, \v{Z}i\v{z}lavsk\'{y} destaca algumas limitações, muitas vezes subestimadas, do VPL como ferramenta de análise de oportunidades de inovação \cite{ziz2014}:
 \begin{itemize}
 \item O fator de desconto em projetos de inovação deve ser composto de dois elementos: uma taxa livre de riscos que é normalmente considerada como a taxa de juros ofertada por laços governamentais de curto prazo, e uma taxa de risco \textit{premium} que considera os riscos identificados, sejam eles financeiros, técnicos ou comerciais, associados ao projeto específico.
 \item A definição de fluxo de caixa num horizonte de longo prazo --- o cálculo do VPL requer uma definição exata do fluxo de caixa a ser descontado para cada período de tempo considerado na avaliação; tal valor pode ser difícil, se não impossível, de ser determinado em projetos inovadores que possuam grande potencial a longo prazo, mas para os quais os administradores sejam impossibilitados de fazer uma análise adequada. Isso mostra que o VPL, aparentemente, discrimina injustificadamente
 projetos de longo prazo e mais arriscados.   
 \end{itemize}
 
-A questão a ser discutida agora é: como se calcula o VPL? Gallo cita que, por mais que não se calcule essa função na mão, é útil entender a matemática por trás dela; a Definição \ref{VPLdef} é um esboço matemático dos princípios que regem o VPL\footnote{Ver \cite{SITE:NPV}}.
+A questão a ser discutida agora é: como se calcula o VPL? Gallo cita que, por mais que não se calcule essa função na mão, é útil entender a matemática por trás dela; a Definição \ref{VPLdef} é um esboço matemático dos princípios que regem o VPL \cite{SITE:NPV}.
 
 \begin{definition}\label{VPLdef}
 A função VPL pode ser representada em sua forma básica pela expressão
@@ -192,7 +192,7 @@ Pode-se entender o \textit{Smart Reservoir} como um algoritmo de busca de caminh
 
 A escolha de possibilidades de controle para os poços produtores, por meio de suas pressões, segue um padrão específico: a partir da condição inicial, cada uma das estratégias de controle a ser testada é obtida a partir de uma variação nas pressões de cada poço utilizando-se uma taxa específica de variação, chamada $\delta_W$. Assumindo-se que cada conjunto de possibilidades tenha $n_{bhp}$ vetores de pressão dos poços, e $\mathbf{p_W^{(n)}}$ o estado de controle dos poços no n-ésimo passo de tempo, o conjunto de pressões a serem testadas no próximo instante é dado por
 \begin{equation}\label{eq:pp1}
-	\mathbf{p_W^{(n+1)}} = \mathbf{p_W^{(n)}} \left(1 \pm N\delta_W \right),
+	\mathbf{p_W^{(n+1)}} = \mathbf{p_W^{(n)}} \left(1 + N\delta_W \right),
 \end{equation}
 em que $N$ é um número inteiro que pode ser obtido utilizando-se a relação
 \begin{equation}\label{eq:pN}
@@ -210,7 +210,7 @@ Por fim, analisando-se as entradas e as saídas do \textit{Smart Reservoir}, conc
 \begin{enumerate}
 	\item Inicialize o reservatório e as pressões de cada poço;
 	\item Estabeleça $n_{bhp}$ vetores de pressão, conforme as Equações \eqref{eq:pp1} e \eqref{eq:pp2} --- para melhores resultados, tome $n_{bhp}$ como um número ímpar;
-	\item Para cada vetor de pressão obtido, simule o reservatório e calcule o VPL modificado com a Equação \eqref{eq:ModWellVPLDef} para cada poço;
+	\item Para cada vetor de pressão obtido, simule o reservatório e calcule o VPL modificado com a Equação \eqref{eq:ModWellVPLDef} paralelamente para cada poço;
 	\item Atualize as pressões de cada poço com aquelas que resultaram nos melhores valores do VPL modificado;
 	\item Salve as pressões obtidas em uma matriz de controle, de maneira a poder examiná-las ao final do algoritmo;
 	\item Simule novamente o reservatório, utilizando as pressões ótimas obtidas para cada poço produtor, e avalie o VPL normal por meio da Equação \eqref{VPLReservoir};
@@ -246,7 +246,7 @@ b = \frac{b_{\%}}{100\%-b_{\%}},
 \end{equation}
 com $b_{\%}$ sendo denominado o \textit{fator de correção numérica}. Valores pequenos e não nulos de $b_{\%}$, como inferiores a $5\%$, são suficientes para se estabilizar numericamente a Equação \eqref{eq:ModWellVPLDef2}; caso valores grandes sejam utilizados, o fator de correção numérica acaba dominando a variação de saturação no cálculo do VPL modificado.
 
-Outros adendos podem ser feitos ao \textit{Smart Reservoir}; contudo, no âmbito dessa pesquisa, apenas os adicionais citados acima foram incluídos no algoritmo. Uma sugestão para trabalhos futuros é a implementação de novas abordagens a serem adicionadas ao algoritmo proposto com vistas à economia de custos computacionais, redução de custos de produção e redução no tempo de explotação.
+Outros adendos podem ser feitos ao \textit{Smart Reservoir}; contudo, no âmbito dessa pesquisa, apenas os adicionais citados acima foram incluídos no algoritmo. Uma sugestão para trabalhos futuros é a implementação de novas abordagens a serem adicionadas ao algoritmo proposto com vistas à melhoria de seu desempenho.
 
 \section{O \textit{Smart Reservoir} e a Programação Paralela}
 Examinando-se o algoritmo proposto na Seção \ref{subsec:SR}, infere-se que, em determinado momento, o \textit{Smart Reservoir} executa o mesmo conjunto de instruções para diferentes dados de entrada, particularmente no Passo 3. Esse tipo de situação sugere que partes do \textit{Smart Reservoir} podem ser executados de forma \textit{paralela}, isto é, com a separação dos cálculos entre vários processadores, ou grupos de \textit{threads}.
@@ -259,7 +259,13 @@ Quanto ao número de processadores envolvidos na parte paralelizável do \textit{S
 
 Em resumo, admitindo-se o emprego de técnicas de paralelismo no \textit{Smart Reservoir}, é importante destacar que o número de simulações de reservatório necessárias para se examinar as possibilidades de controle dos poços produtores é $n_{bhp}$ vezes maior que o número de simulações para se calcular o VPL temporal a cada iteração\footnote{Com a janela de predição, essa razão é de $2n_{bhp}$}; nesta análise, como todas as outras operações do algoritmo levam tempos consideravelmente menores que as simulações em si, elas podem ser desprezadas em relação ao cálculo do custo do algoritmo. 
 
-No caso desta pesquisa, foi tomado $n_{bhp} = 7$; desta forma, se utilizássemos apenas a programação serial, cerca de $85.7\%$ ($92.9\%$ com a janela de predição) do tempo de execução do \textit{Smart Reservoir} seria destinado apenas ao exame das possibilidades de controle. Com a paralelização dessa parte do algoritmo, as simulações das possibilidades passam a responder por apenas $50\%$ ($66.7\%$ com a janela de predição) do tempo necessário para se executar o algoritmo, assumindo-se que todos os processos paralelos sejam executados de forma uniforme e com tempo constante\footnote{Desconsidera-se, para efeitos desta análise, a participação dos custos de comunicação envolvidos.}.
+No caso desta pesquisa, foi tomado $n_{bhp} = 7$; desta forma, se utilizássemos apenas a programação serial, cerca de $85.7\%$ ($92.9\%$ com a janela de predição) do tempo de execução do \textit{Smart Reservoir} seria destinado apenas ao exame das possibilidades de controle. Com a paralelização dessa parte do algoritmo, as simulações das possibilidades passam a responder por apenas $50\%$ ($66.7\%$ com a janela de predição) do tempo necessário para se executar o algoritmo, assumindo-se que todos os processos paralelos sejam executados de forma uniforme e com tempo constante\footnote{Desconsidera-se, para efeitos desta análise, a participação dos custos de comunicação envolvidos.}. A Figura \ref{fig:parcomp} ilustra como essa razão de tempo de execução entre o processo serial e seu equivalente paralelizado, em relação à execução do algoritmo inteiro, se comporta de acordo com o número de processos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{figs/metodologia/metodo_parcomp}
+	\caption{Comparação teórica das razões de tempo de execução entre o programa serial e o paralelo do \textit{Smart Reservoir}.\label{fig:parcomp}}
+\end{figure}
 
 Considerando-se, em teoria, que o tempo de execução de uma simulação é o mesmo para quaisquer valores de entrada empregados, a redução da participação das várias simulações 
-no tempo total de execução resulta em uma grande economia de recursos computacionais, evidenciando a evidente participação das técnicas paralelas na redução de tempo de produção e custos computacionais almejada pela utilização do \textit{Smart Reservoir}. 
+no tempo total de execução resulta em uma grande economia de recursos computacionais, evidenciando a participação das técnicas paralelas na redução de tempo de produção e custos computacionais almejada pela utilização do \textit{Smart Reservoir}. 

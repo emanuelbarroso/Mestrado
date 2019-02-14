@@ -21,7 +21,7 @@ Segundo Rosa, a primeira etapa de uma simula\c{c}\~{a}o num\'{e}rica \'{e} formu
 \end{figure}
 
 \subsection{Hist\'{o}ria da Simula\c{c}\~{a}o de Reservat\'{o}rios}
-Para se tra\c{c}ar a evolu\c{c}\~{a}o da simula\c{c}\~{a}o de reservat\'{o}rios ao longo da hist\'{o}ria, consideram-se aqui, inicialmente, fatos apresentados por Coats e por Breitenbach; de acordo com Coats, a simula\c{c}\~{a}o de reservat\'{o}rios \'{e} praticada desde o surgimento da engenharia de petr\'{o}leo, durante a d\'{e}cada de 1930. J\'{a} na d\'{e}cada de 1940, segundo Breitenbach, a simula\c{c}\~{a}o de reservat\'{o}rios passa a ser reconhecida, com as companhias desenvolvendo m\'{e}todos anal\'{i}ticos e num\'{e}ricos para a melhoria das solu\c{c}\~{o}es anal\'{i}ticas resistentes, balan\c{c}o de materiais e c\'{a}lculo de posicionamento 1-D de Buckley-Leverett; na d\'{e}cada seguinte (1950), as pesquisas por solu\c{c}\~{o}es num\'{e}ricas das equa\c{c}\~{o}es de vaz\~{a}o come\c{c}am a surtir efeito, com o surgimento de programas computacionais rudimentares, por\'{e}m eficientes, de simula\c{c}\~{o}es de reservat\'{o}rios. Considera-se um grande avan\c{c}o o surgimento dessas solu\c{c}\~{o}es, em que foi poss\'{i}vel resolver equa\c{c}\~{o}es de diferen\c{c}as finitas em modelos 2D e 3D, al\'{e}m de simula\c{c}\~{o}es em meios de porosidade heterog\^{e}nea; enfim, problemas mais complexos de engenharia de reservat\'{o}rio podiam ser resolvidos\footnote{Ver \cite{coats1982} e \cite{breitenbach1991}}.
+Para se tra\c{c}ar a evolu\c{c}\~{a}o da simula\c{c}\~{a}o de reservat\'{o}rios ao longo da hist\'{o}ria, consideram-se aqui, inicialmente, fatos apresentados por Coats e por Breitenbach; de acordo com Coats, a simula\c{c}\~{a}o de reservat\'{o}rios \'{e} praticada desde o surgimento da engenharia de petr\'{o}leo, durante a d\'{e}cada de 1930. J\'{a} na d\'{e}cada de 1940, segundo Breitenbach, a simula\c{c}\~{a}o de reservat\'{o}rios passa a ser reconhecida, com as companhias desenvolvendo m\'{e}todos anal\'{i}ticos e num\'{e}ricos para a melhoria das solu\c{c}\~{o}es anal\'{i}ticas existentes, balan\c{c}o de materiais e c\'{a}lculo de posicionamento 1-D de Buckley-Leverett; na d\'{e}cada seguinte (1950), as pesquisas por solu\c{c}\~{o}es num\'{e}ricas das equa\c{c}\~{o}es de vaz\~{a}o come\c{c}am a surtir efeito, com o surgimento de programas computacionais rudimentares, por\'{e}m eficientes, de simula\c{c}\~{o}es de reservat\'{o}rios. Considera-se um grande avan\c{c}o o surgimento dessas solu\c{c}\~{o}es, em que foi poss\'{i}vel resolver equa\c{c}\~{o}es de diferen\c{c}as finitas em modelos 2D e 3D, al\'{e}m de simula\c{c}\~{o}es em meios de porosidade heterog\^{e}nea; enfim, problemas mais complexos de engenharia de reservat\'{o}rio podiam ser resolvidos\footnote{Ver \cite{coats1982} e \cite{breitenbach1991}}.
 
 A d\'{e}cada de 1960 representou, segundo Coats, um marco importante, em que a palavra ``simula\c{c}\~{a}o'' se torna comum, \`{a} medida em que os programas destinados \`{a} resolu\c{c}\~{a}o de problemas de reservat\'{o}rios se tornavam mais sofisticados; durante essa d\'{e}cada, os esfor\c{c}os na busca de simuladores melhores de reservat\'{o}rios se concentraram em modelos bif\'{a}sicos de g\'{a}s/\'{a}gua e \textit{black-oil} trif\'{a}sicos; os m\'{e}todos de recupera\c{c}\~{a}o de \'{o}leo simulados se restringiam essencialmente \`{a} deple\c{c}\~{a}o ou manuten\c{c}\~{a}o da press\~{a}o. Era poss\'{i}vel, na \'{e}poca, o desenvolvimento de um \'{u}nico modelo de simula\c{c}\~{a}o que conseguia tratar de quase todos os problemas de reservat\'{o}rios encontrados, o que sempre atraiu o interesse das companhias operadoras do ramo por conta da redu\c{c}\~{a}o de custos com treinamento e uso e, potencialmente, de custos de manuten\c{c}\~{a}o e desenvolvimento do modelo \cite{coats1982}.
 
@@ -32,18 +32,6 @@ Durante a d\'{e}cada de 1980, a expans\~{a}o da gama de aplica\c{c}\~{o}es envol
 \'{E} poss\'{i}vel afirmar que a evolu\c{c}\~{a}o da simula\c{c}\~{a}o est\'{a} diretamente atrelada \`{a} evolu\c{c}\~{a}o da computa\c{c}\~{a}o; analisando-se as considera\c{c}\~{o}es feitas por Coats, Breitenbach e Lucia \textit{et al.}, percebe-se que os avan\c{c}os obtidos na \'{a}rea se tornaram poss\'{i}veis \`{a} medida em que os computadores se tornaram menores, por\'{e}m mais r\'{a}pidos. Atualmente, a simula\c{c}\~{a}o de reservat\'{o}rios chegou a um n\'{i}vel em que os mais variados modelos de reservat\'{o}rio, n\~{a}o necessariamente os mais simples, podem ser simulados com um computador pessoal, como \'{e} o caso nesta pesquisa.
 
 \subsection{Leis F\'{i}sicas Consideradas}
-
-No caso de um simulador de reservat\'{o}rios, as seguintes leis f\'{i}sicas b\'{a}sicas normalmente s\~{a}o consideradas, dependendo do tipo de simulador\footnote{Ver \cite[p. 520]{engres}}:
-
-\begin{itemize}
-\item Lei da conserva\c{c}\~{a}o de massa;
-\item Lei da conserva\c{c}\~{a}o de energia;
-\item Lei da conserva\c{c}\~{a}o de \textit{``momentum''} (Segunda Lei de Newton):
-\begin{equation}
-\sum F = \frac{\partial M}{\partial t},
-\end{equation}
-onde $F$ representa uma for\c{c}a e $M = mv$ o \textit{``momentum''}, com $m$ sendo a massa e $v$ a velocidade.
-\end{itemize}
 
 De um modo geral, na modelagem de fen\^{o}menos f\'{i}sicos, considera-se importante o estudo das equa\c{c}\~{o}es de conserva\c{c}\~{a}o; segundo Heimsund, o princ\'{i}pio da conserva\c{c}\~{a}o pode ser generalizado tomando-se uma vari\'{a}vel quantitativa $u$ contida em um volume de controle fixo $\Omega$. A vari\'{a}vel $u$ pode ser modificada dentro de $\Omega$ por um dado fluxo $\vec{F}$ sobre a superf\'{i}cie de contorno $\Gamma$ de $\Omega$. A conserva\c{c}\~{a}o de $u$ pode ser escrita, na sua forma integral, como
 \begin{equation}
@@ -60,23 +48,29 @@ Como a Equa\c{c}\~{a}o \eqref{consU} deve valer para qualquer tamanho de $\Omega
 \begin{equation}\label{consU2}
 \frac{\partial u}{\partial t} + \nabla\cdot\vec{F} = Q.
 \end{equation}
-No caso da modelagem de fluxo em reservat\'{o}rio, a vari\'{a}vel $u$ pode ser, por exemplo, a massa de uma dada fase (\'{a}gua, \'{o}leo ou g\'{a}s), a massa molecular das subst\^{a}ncias ou a energia t\'{e}rmica \cite{heimsund2005}.
+No caso da modelagem de fluxo em reservat\'{o}rio, a vari\'{a}vel $u$ pode ser, por exemplo, a massa de uma dada fase (\'{a}gua, \'{o}leo ou g\'{a}s), a massa molecular das subst\^{a}ncias ou a energia t\'{e}rmica \cite{heimsund2005}. Algumas das leis f\'{i}sicas b\'{a}sicas normalmente  consideradas, dependendo do tipo de simulador, s\~{a}o \cite[p. 520]{engres}:
 
-Al\'{e}m das leis b\'{a}sicas da f\'{i}sica, faz-se necess\'{a}rio o uso de v\'{a}rias leis, dependendo do simulador, que governam o comportamento dos fluidos envolvidos e a propriedade do reservat\'{o}rio estudado, apresentadas nas subse\c{c}\~{o}es a seguir\footnote{Os teoremas apresentados se encontram em \cite[pp. 520-522]{engres}}. Combinado-se as equa\c{c}\~{o}es correspondentes \`{a}s leis b\'{a}sicas, obt\'{e}m-se uma equa\c{c}\~{a}o diferencial parcial que rege o comportamento das vari\'{a}veis dependentes em fun\c{c}\~{a}o das vari\'{a}veis independentes e dos par\^{a}metros do sistema. Como normalmente a equa\c{c}\~{a}o obtida \'{e} n\~{a}o-linear, ela \'{e}, consequentemente, \'{e} resolvida por m\'{e}todos n\'{u}mericos; da\'{i} a nomenclatura \textit{simula\c{c}\~{a}o num\'{e}rica de reservat\'{o}rios}. A principal lei considerada no estudo de reservat\'{o}rios \'{e} apresentada a seguir. 
+\begin{itemize}
+	\item Lei da conserva\c{c}\~{a}o de massa;
+	\item Lei da conserva\c{c}\~{a}o de energia;
+	\item Lei da conserva\c{c}\~{a}o de \textit{``momentum''} (Segunda Lei de Newton).
+\end{itemize}
 
-\begin{theorem}[Lei de Darcy]
-Na Lei de Darcy, ou lei do fluxo ``laminar'' ou Darcyano --- a in\'{e}rcia do fluido \'{e} desconsiderada (n\'{u}mero de Reynolds muito pr\'{o}ximo de zero) ---, a velocidade do fluxo viscoso de um fluido em meio poroso \'{e} dada por
+Al\'{e}m das leis b\'{a}sicas da f\'{i}sica, faz-se necess\'{a}rio o uso de v\'{a}rias leis, dependendo do simulador, que governam o comportamento dos fluidos envolvidos e a propriedade do reservat\'{o}rio estudado, apresentadas nas subse\c{c}\~{o}es a seguir\footnote{Ver \cite[pp. 520-522]{engres}}. Combinado-se as equa\c{c}\~{o}es correspondentes \`{a}s leis b\'{a}sicas, obt\'{e}m-se uma equa\c{c}\~{a}o diferencial parcial que rege o comportamento das vari\'{a}veis dependentes em fun\c{c}\~{a}o das vari\'{a}veis independentes e dos par\^{a}metros do sistema. Como normalmente a equa\c{c}\~{a}o obtida \'{e} n\~{a}o-linear, ela \'{e}, consequentemente, resolvida por m\'{e}todos n\'{u}mericos; da\'{i} a nomenclatura \textit{simula\c{c}\~{a}o num\'{e}rica de reservat\'{o}rios}. A principal lei considerada no estudo de reservat\'{o}rios \'{e} apresentada a seguir. 
+
+\begin{law}[Lei de Darcy]
+Na Lei de Darcy, ou lei do fluxo ``laminar'' ou Darcyano --- a in\'{e}rcia do fluido \'{e} desconsiderada (n\'{u}mero de Reynolds muito pr\'{o}ximo de zero) ---, a velocidade do fluxo viscoso de um fluido em meio poroso $v_s$ \'{e} dada por
 \begin{equation}
 	v_s = -\frac{k_s}{\mu} \frac{\partial\Phi}{\partial s},
 \end{equation}
 onde $k$ \'{e} a permeabilidade efetiva do meio ao fluido considerado, $\mu$ \'{e} a viscosidade do fluido, $\Phi$ \'{e} o potencial de fluxo e $s$ \'{e} a trajet\'{o}ria de fluxo.
-\end{theorem}
+\end{law}
 
 \subsubsection{Equa\c{c}\~{o}es de Estado}
 As principais equa\c{c}\~{o}es de estado envolvidas na simula\c{c}\~{a}o do comportamento de um reservat\'{o}rio de petr\'{o}leo s\~{a}o as que lidam com fluidos (l\'{i}quidos ou gasosos) e rochas porosas. No caso de fluidos l\'{i}quidos, tem-se a seguinte defini\c{c}\~{a}o:
 
 \begin{definition}
-A compressibilidade isot\'{e}rmica de um fluido \'{e} dada por
+A compressibilidade isot\'{e}rmica de um fluido, em temperatura constante, \'{e} dada por
 \begin{equation}
 	c = -\frac{1}{V}\frac{\partial V}{\partial p} = \frac{1}{\rho}\frac{\partial \rho}{\partial p},
 \end{equation}
@@ -100,7 +94,7 @@ Por fim, para se representar o comportamento da rocha, utiliza-se a equa\c{c}\~{
 \end{equation}
 onde $c_f$ \'{e} a compressibilidade efetiva efetiva da forma\c{c}\~{a}o e $\phi$, sua porosidade.
 
-Al\'{e}m das leis at\'{e} aqui citadas, cabe ressaltar que outras podem ser utilizadas em caso de simula\c{c}\~{o}es de fen\^{o}menos espec\'{i}ficos, como inje\c{c}\~{a}o de vapor, inje\c{c}\~{a}o de pol\'{i}meros, al\'{e}m de outros m\'{e}todos empregados na produ\c{c}\~{a}o de petr\'{o}leo.
+Al\'{e}m das leis at\'{e} aqui citadas, cabe ressaltar que outras podem ser utilizadas em caso de simula\c{c}\~{o}es de fen\^{o}menos espec\'{i}ficos, como inje\c{c}\~{a}o de vapor, inje\c{c}\~{a}o de pol\'{i}meros, al\'{e}m de outros m\'{e}todos empregados na produ\c{c}\~{a}o de petr\'{o}leo. Nesta pesquisa, ser\~{a}o estudados modelos em que h\'{a} apenas escoamento de l\'{i}quidos.
 
 \subsection{Tipos de Simuladores}
 Segundo Rosa, os simuladores de reservat\'{o}rios podem ser classificados em fun\c{c}\~{a}o de tr\^{e}s crit\'{e}rios b\'{a}sicos: o tratamento matem\'{a}tico utilizado, o n\'{u}mero de dimens\~{o}es consideradas e o n\'{u}mero de fases admitidas. Em rela\c{c}\~{a}o \`{a} matem\'{a}tica do simulador, os simuladores podem ser classificados em: 
@@ -138,7 +132,7 @@ As etapas normalmente seguidas durante a simula\c{c}\~{a}o num\'{e}rica de um re
 \item \textbf{Coleta e prepara\c{c}\~{a}o dos dados:} \'{e} a fase de armazenamento e interpreta\c{c}\~{a}o de todos os dados cab\'{i}veis ao problema, sejam eles geol\'{o}gicos, propriedades da rocha e dos fluidos, entre outros. Quanto maiores a quantidade e a qualidade desses dados, mais confi\'{a}vel ser\'{a} a simula\c{c}\~{a}o. Breitenbach destaca que dados adicionais podem ser necess\'{a}rios considerando-se a dificuldade do problema de mec\^{a}nica dos fluidos e os objetivos de estudo, dependentes de qual processo do reservat\'{o}rio est\'{a} sendo modelado \cite{breitenbach1991}.
 \item \textbf{Prepara\c{c}\~{a}o do modelo num\'{e}rico:} Ocorre logo ap\'{o}s a tomada dos dados. Inicialmente, \'{e} feito o \textit{lan\c{c}amento do} grid \textit{ou malha}, onde \'{e} constru\'{i}da uma malha para se transpor as informa\c{c}\~{o}es necess\'{a}rias para o modelo. Logo, \'{e} feita a divis\~{a}o do reservat\'{o}rio em v\'{a}rias c\'{e}lulas, cada uma funcionando como um reservat\'{o}rio menor. Breitenbach ressalta que combina\c{c}\~{o}es de modelos muitas vezes s\~{a}o selecionadas para se estudar, por exemplo, posicionamento de po\c{c}os, fen\^{o}menos de cone, inje\c{c}\~{a}o de fluidos, vaz\~{o}es de produ\c{c}\~{a}o, etc., e que o engenheiro deve utilizar a dimens\~{a}o da malha e os modelos corretos para resolver o problema desejado com as restri\c{c}\~{o}es de custo, tempo e acur\'{a}cia consideradas \cite{breitenbach1991}.
 
-\item \textbf{Ajuste de hist\'{o}rico:} O objetivo desta etapa \'{e} calibrar o modelo num\'{e}rico com o reservat\'{o}rio real a partir dos melhores dados dispon\'{i}veis referentes aos hist\'{o}ricos de produ\c{c}\~{a}o e de press\~{a}o. Oliver e Chen afirmam que se trata de um problema inverso: ao inv\'{e}s de se obter um modelo de reservat\'{o}rio para predizer seu comportamento, a modelagem \'{e} feita a partir da observa\c{c}\~{a}o dos processos ocorridos no reservat\'{o}rio \cite{Oliver2011}\footnote{Oliver e Chen apresentam uma revis\~{a}o da literatura a respeito do ajuste de hist\'{o}rico; ver \cite{Oliver2011}}. O ajuste de hist\'{o}rico \'{e} um c\'{a}lculo do comportamento passado do reservat\'{o}rio e a consequente compara\c{c}\~{a}o com o hist\'{o}rico do campo ou do mesmo reservat\'{o}rio; se a concord\^{a}ncia n\~{a}o \'{e} satisfat\'{o}ria, s\~{a}o necess\'{a}rios ajustes nos dados at\'{e} se obter resultados adequados. De todo modo, a import\^{a}ncia de se obter um bom ajuste de hist\'{o}rico reside no fato de que o modelo poder\'{a} ser utilizado para se efetuar previs\~{o}es confi\'{a}veis em rela\c{c}\~{a}o ao seu comportamento futuro.
+\item \textbf{Ajuste de hist\'{o}rico:} O objetivo desta etapa \'{e} calibrar o modelo num\'{e}rico com o reservat\'{o}rio real a partir dos melhores dados dispon\'{i}veis referentes aos hist\'{o}ricos de produ\c{c}\~{a}o e de press\~{a}o. Oliver e Chen afirmam que se trata de um problema inverso: ao inv\'{e}s de se obter um modelo de reservat\'{o}rio para predizer seu comportamento, a modelagem \'{e} feita a partir da observa\c{c}\~{a}o dos processos ocorridos no reservat\'{o}rio \cite{Oliver2011}\footnote{Oliver e Chen apresentam uma revis\~{a}o da literatura a respeito do ajuste de hist\'{o}rico \cite{Oliver2011}}. O ajuste de hist\'{o}rico \'{e} um c\'{a}lculo do comportamento passado do reservat\'{o}rio e a consequente compara\c{c}\~{a}o com o hist\'{o}rico do campo ou do mesmo reservat\'{o}rio; se a concord\^{a}ncia n\~{a}o \'{e} satisfat\'{o}ria, s\~{a}o necess\'{a}rios ajustes nos dados at\'{e} se obter resultados adequados. De todo modo, a import\^{a}ncia de se obter um bom ajuste de hist\'{o}rico reside no fato de que o modelo poder\'{a} ser utilizado para se efetuar previs\~{o}es confi\'{a}veis em rela\c{c}\~{a}o ao seu comportamento futuro.
 \item \textbf{Extrapola\c{c}\~{a}o:} Uma vez que o ajuste de hist\'{o}rico \'{e} realizado, procede-se \`{a} fase de extrapola\c{c}\~{a}o, isto \'{e}, a previs\~{a}o de comportamento futuro do modelo. Podem ser impostas vaz\~{o}es e press\~{o}es para todos os po\c{c}os, condi\c{c}\~{o}es dessas vaz\~{o}es, entre outros. Essa etapa permite avaliar v\'{a}rios esquemas de produ\c{c}\~{a}o, e seus resultados podem ser utilizados em avalia\c{c}\~{o}es econ\^{o}micas, tornando poss\'{i}vel decidir pelo esquema \'{o}timo de produ\c{c}\~{a}o, conforme tamb\'{e}m sugere Fanchi \footnote{Ver \cite[p. 373]{fanchi}.}.
 \end{enumerate}
 
